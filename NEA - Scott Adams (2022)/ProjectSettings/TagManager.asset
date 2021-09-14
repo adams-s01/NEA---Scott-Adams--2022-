@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - menu
+  - settingsmenu
+  - Ground
+  - Block
+  - leg
+  - leg1
   layers:
   - Default
   - TransparentFX

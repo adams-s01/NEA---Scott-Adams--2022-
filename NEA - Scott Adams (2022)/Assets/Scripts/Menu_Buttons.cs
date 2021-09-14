@@ -9,11 +9,13 @@ using UnityEngine;
 
 public class Menu_Buttons : MonoBehaviour {
 
-
-
-	// Use this for initialization
+	private GameObject menu;
+	GameObject settings;
+	// Initialises menu and settings canvases
 	void Start () {
-		
+		menu = GameObject.FindGameObjectWithTag ("menu");
+		settings = GameObject.FindGameObjectWithTag ("settingsmenu");
+		settings.SetActive (false);
 	}
 	
 	// Update is called once per frame
@@ -21,13 +23,20 @@ public class Menu_Buttons : MonoBehaviour {
 		
 	}
 	//Activates when start button clicked
-	void Startbutton()
+	public void Startbutton()
 	{
-		Debug.Log("Start");
+		Debug.Log ("Start");
 	}
 	//Activates when tutorial button clicked
-	void Tutorialbutton()
+	public void Tutorialbutton()
 	{
-		Debug.Log("Tutorial");
+		Debug.Log ("Tutorial");
+	}
+	//Activates when settings button clicked,changes to settings menu
+	public void Settingsbutton()
+	{
+		Debug.Log ("Settings");
+		menu.SetActive (false);
+		settings.SetActive (true);
 	}
 }
