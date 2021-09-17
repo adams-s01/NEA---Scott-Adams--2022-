@@ -54,8 +54,12 @@ public class Player_Movement : MonoBehaviour {
 		if (Input.GetKey (KeyCode.LeftShift)) {
 			speed = 10;
 		}
+		//Stops sprint
 		if (Input.GetKey (KeyCode.LeftShift) == false) {
 			speed = 1;
 		}
+		if (Input.GetKeyDown (KeyCode.Mouse0))
+		{
+			
 	}
 }

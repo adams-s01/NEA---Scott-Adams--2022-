@@ -10,6 +10,10 @@ TagManager:
   - Block
   - leg
   - leg1
+  - move
+  - sprint
+  - jump
+  - slime
   layers:
   - Default
   - TransparentFX
