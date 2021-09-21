@@ -15,6 +15,9 @@ TagManager:
   - jump
   - slime
   - sprint2
+  - speedbar
+  - bow
+  - vase
   layers:
   - Default
   - TransparentFX

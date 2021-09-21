@@ -59,6 +59,9 @@ public class Tutorials : MonoBehaviour {
 			sprint2.SetActive (true);
 
 		}
+		if (Input.GetKey (KeyCode.LeftShift) == false) {
+			sprint2.SetActive (false);
+		}
 
 		
 	}
