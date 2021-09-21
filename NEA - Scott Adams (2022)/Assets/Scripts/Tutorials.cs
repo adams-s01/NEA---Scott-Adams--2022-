@@ -12,6 +12,8 @@ public class Tutorials : MonoBehaviour {
 	GameObject move;
 	GameObject sprint;
 	GameObject jump;
+	GameObject sprint2;
+
 	bool left;
 	bool right;
 	bool moving;
@@ -22,8 +24,11 @@ public class Tutorials : MonoBehaviour {
 		move = GameObject.FindGameObjectWithTag ("move");
 		sprint = GameObject.FindGameObjectWithTag ("sprint");
 		jump = GameObject.FindGameObjectWithTag ("jump");
+		sprint2 = GameObject.FindGameObjectWithTag ("sprint2");
+
 		sprint.SetActive (false);
 		jump.SetActive (false);
+		sprint2.SetActive (false);
 		left = false;
 		right = false;
 		moving = false;
@@ -49,6 +54,10 @@ public class Tutorials : MonoBehaviour {
 		if (sprinting == true&&moving==true) {
 			sprint.SetActive (false);
 			jump.SetActive (true);
+		}
+		if (Input.GetKey (KeyCode.LeftShift)) {
+			sprint2.SetActive (true);
+
 		}
 
 		

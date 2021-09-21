@@ -14,6 +14,7 @@ TagManager:
   - sprint
   - jump
   - slime
+  - sprint2
   layers:
   - Default
   - TransparentFX

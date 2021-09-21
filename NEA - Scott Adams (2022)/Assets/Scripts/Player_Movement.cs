@@ -12,14 +12,21 @@ public class Player_Movement : MonoBehaviour {
 	Rigidbody2D rb;
 	GameObject leg1;
 	GameObject leg;
+	GameObject speedbar;
+
 	int speed;
+
 
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody2D> ();
 		leg1 = GameObject.FindGameObjectWithTag ("leg1");
 		leg = GameObject.FindGameObjectWithTag ("leg");
+		speedbar = GameObject.FindGameObjectWithTag ("speedbar");
+
 		speed = 1;
+
+
 	}
 	
 	// Update is called once per frame
@@ -53,13 +60,16 @@ public class Player_Movement : MonoBehaviour {
 		//Sprint
 		if (Input.GetKey (KeyCode.LeftShift)) {
 			speed = 10;
+			speedbar.transform.localScale -= new Vector3 (0, -0.1f, 0);
+			
 		}
 		//Stops sprint
 		if (Input.GetKey (KeyCode.LeftShift) == false) {
 			speed = 1;
 		}
-		if (Input.GetKeyDown (KeyCode.Mouse0))
-		{
-			
+
+
+
 	}
+
 }
