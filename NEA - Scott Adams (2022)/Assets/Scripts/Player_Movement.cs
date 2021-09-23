@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 1
-* Last Edited: Sprint 1
+* Last Edited: Sprint 2
 * Purpose: Cause the player to move
 */
 using System.Collections;
@@ -16,8 +16,10 @@ public class Player_Movement : MonoBehaviour {
 	GameObject vase;
 	public Image speedbar;
 	public GameObject bow;
+	Inventory inventory;
 	bool resting;
 	int speed;
+	protected internal Collision2D col;
 
 
 	// Use this for initialization
@@ -27,7 +29,7 @@ public class Player_Movement : MonoBehaviour {
 		leg = GameObject.FindGameObjectWithTag ("leg");
 		vase = GameObject.FindGameObjectWithTag ("vase");
 		resting = false;
-
+		inventory = GameObject.FindObjectOfType (typeof(Inventory))as Inventory;
 		speed = 1;
 
 
@@ -76,6 +78,7 @@ public class Player_Movement : MonoBehaviour {
 
 
 	}
+	//Causes the palyer to not be able to sprint for 10 seconds
 	IEnumerator restingcoroutine()
 	{
 		resting=true;
@@ -85,12 +88,23 @@ public class Player_Movement : MonoBehaviour {
 		resting=false;
 		speedbar.transform.localScale = new Vector3(1,1,1);
 	}
+	//Allows player to break the vase and get an item from it when in contact
 	public void OnCollisionStay2D(Collision2D col)
 	{
 		if(Input.GetKeyDown(KeyCode.Mouse0)&&col.gameObject.tag=="vase")
 		{
 			Destroy (vase);
 			Instantiate (bow, new Vector2 (vase.transform.position.x, vase.transform.position.y), Quaternion.identity);
+		}
+		if (col.gameObject.tag == "bow") {
+			for (int i = 0; i < inventory.full.Length; i++) {
+				if(Inventory.full[i]==false)
+				{
+					Destroy (col.gameObject.tag);
+					//inventory.
+				}
+			}
+			
 		}
 	}
 
