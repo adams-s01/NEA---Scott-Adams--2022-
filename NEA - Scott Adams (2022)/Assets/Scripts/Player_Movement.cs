@@ -16,10 +16,8 @@ public class Player_Movement : MonoBehaviour {
 	GameObject vase;
 	public Image speedbar;
 	public GameObject bow;
-	Inventory inventory;
 	bool resting;
 	int speed;
-	protected internal Collision2D col;
 
 
 	// Use this for initialization
@@ -29,7 +27,6 @@ public class Player_Movement : MonoBehaviour {
 		leg = GameObject.FindGameObjectWithTag ("leg");
 		vase = GameObject.FindGameObjectWithTag ("vase");
 		resting = false;
-		inventory = GameObject.FindObjectOfType (typeof(Inventory))as Inventory;
 		speed = 1;
 
 
@@ -95,16 +92,6 @@ public class Player_Movement : MonoBehaviour {
 		{
 			Destroy (vase);
 			Instantiate (bow, new Vector2 (vase.transform.position.x, vase.transform.position.y), Quaternion.identity);
-		}
-		if (col.gameObject.tag == "bow") {
-			for (int i = 0; i < inventory.full.Length; i++) {
-				if(Inventory.full[i]==false)
-				{
-					Destroy (col.gameObject.tag);
-					//inventory.
-				}
-			}
-			
 		}
 	}
 
