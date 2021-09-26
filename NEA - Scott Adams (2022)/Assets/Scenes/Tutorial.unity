@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1220,6 +1220,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slimehealth: 10
   hitpoint: {fileID: 1298472307596048, guid: 068dc1634c869a14691bc34fd2057ec5, type: 2}
+  other: {fileID: 969310113}
+  damage: 0
 --- !u!50 &814440438
 Rigidbody2D:
   serializedVersion: 4
@@ -21014,14 +21016,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory:
-  - {fileID: 404711624}
-  - {fileID: 2046626906}
-  - {fileID: 1942857504}
-  - {fileID: 343220346}
-  - {fileID: 1258635461}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   full: 0000000000
-  bow: {fileID: 1041951001884160, guid: 409d4de753753f846b79c31e599f8dda, type: 2}
-  image: {fileID: 0}
+  bow: {fileID: 21300000, guid: 668df6f48e59c80439fa587624e5a84d, type: 3}
+  image: {fileID: 404711626}
+  image2: {fileID: 2046626908}
+  image3: {fileID: 1942857506}
+  image4: {fileID: 343220348}
+  image5: {fileID: 1258635463}
+  damage: 0
 --- !u!1 &983284606
 GameObject:
   m_ObjectHideFlags: 0
@@ -21272,6 +21279,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slimehealth: 10
   hitpoint: {fileID: 1298472307596048, guid: 068dc1634c869a14691bc34fd2057ec5, type: 2}
+  other: {fileID: 969310113}
+  damage: 0
 --- !u!50 &1069801599
 Rigidbody2D:
   serializedVersion: 4
