@@ -30,7 +30,7 @@ public class Inventory_1 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Weapon (damage);
+		Weapon ();
 		
 	}
 	//Collides with the player, causes them to pick up the item if space available
@@ -83,13 +83,20 @@ public class Inventory_1 : MonoBehaviour {
 		weaponname = image5.sprite.name;
 		Debug.Log (weaponname);
 	}
-	public void Weapon(int damage)
+	public int Weapon()
 	{
+		//do {
 		if (weaponname == "bow1") {
 			damage = 2;
 			GameObject weapon = GameObject.Find (weaponname);
 			weapon.SetActive (true);
 			return damage;
+		}
+		else
+		{
+			damage = 0;
+			return damage;
+		//} while(true);
 		}
 	}
 

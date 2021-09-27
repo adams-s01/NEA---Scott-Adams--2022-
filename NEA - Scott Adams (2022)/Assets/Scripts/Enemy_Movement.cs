@@ -19,6 +19,7 @@ public class Enemy_Movement : MonoBehaviour {
 	public Inventory_1 other;
 	public int damage;
 
+
 	// Initialises variables
 	void Start () {
 		sleep = false;
@@ -60,7 +61,7 @@ public class Enemy_Movement : MonoBehaviour {
 			string enemyname = gameObject.name;
 			enemy = GameObject.Find (enemyname);
 			if (Input.GetKeyDown (KeyCode.Mouse0)) {
-				other.Weapon (damage);
+				other.Weapon ();
 				slimehealth=slimehealth-damage;
 				enemyx = enemy.transform.position.x;
 				enemyy = enemy.transform.position.y+2;
