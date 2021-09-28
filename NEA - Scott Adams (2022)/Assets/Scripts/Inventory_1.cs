@@ -19,18 +19,22 @@ public class Inventory_1 : MonoBehaviour {
 	public Image image3;
 	public Image image4;
 	public Image image5;
-	string weaponname;
+	public string weaponname;
 	public int damage;
+	GameObject hidebow1;
 
 	// Use this for initialization
 	void Start () {
 		inventory = GameObject.FindGameObjectsWithTag ("image");
 		inventorycanvas = GameObject.FindGameObjectWithTag ("inventory");
+		hidebow1 = GameObject.Find ("Bow11");
+		hidebow1.SetActive (false);
 	}
 	
-	// Update is called once per frame
+	// Sets damage to the damage in the function Weapon
 	void Update () {
-		Weapon ();
+		damage=Weapon(damage);
+
 		
 	}
 	//Collides with the player, causes them to pick up the item if space available
@@ -83,20 +87,23 @@ public class Inventory_1 : MonoBehaviour {
 		weaponname = image5.sprite.name;
 		Debug.Log (weaponname);
 	}
-	public int Weapon()
+	//Function to set the damage of weapons for player
+	public int Weapon(int damage)
 	{
-		//do {
-		if (weaponname == "bow1") {
+		//Sets damage for the bow
+		if (weaponname == "Bow1") {
+			
 			damage = 2;
-			GameObject weapon = GameObject.Find (weaponname);
-			weapon.SetActive (true);
+			hidebow1.SetActive (true);
 			return damage;
 		}
+		//Sets damage for when nothing is selected
 		else
 		{
+			
 			damage = 0;
+			Debug.Log ("else" + damage);
 			return damage;
-		//} while(true);
 		}
 	}
 

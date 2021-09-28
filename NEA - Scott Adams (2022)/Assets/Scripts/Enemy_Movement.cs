@@ -16,8 +16,8 @@ public class Enemy_Movement : MonoBehaviour {
 	public GameObject hitpoint;
 	float enemyx;
 	float enemyy;
-	public Inventory_1 other;
-	public int damage;
+	public GameObject other;
+	int damage1;
 
 
 	// Initialises variables
@@ -25,12 +25,14 @@ public class Enemy_Movement : MonoBehaviour {
 		sleep = false;
 		rb = GetComponent<Rigidbody2D>();
 
+
+
 	}
 	
-	// Calls slime movement
+	// Calls slime movement sets GameObject to call other script
 	void Update () {
 		SlimeMovement ();
-
+		other = GameObject.FindGameObjectWithTag ("inventory");
 
 
 
@@ -55,14 +57,16 @@ public class Enemy_Movement : MonoBehaviour {
 	//Collides with player
 	public void OnCollisionStay2D(Collision2D col)
 	{
-		//Damages enemy and creates hitpoint over enemy
+		//Damages enemy and creates hitpoint over enemy,setting damage from Inventory_1
 		if (col.gameObject.tag == "Player") {
 			
 			string enemyname = gameObject.name;
 			enemy = GameObject.Find (enemyname);
 			if (Input.GetKeyDown (KeyCode.Mouse0)) {
-				other.Weapon ();
-				slimehealth=slimehealth-damage;
+				damage1 = other.GetComponent<Inventory_1> ().damage;
+				Debug.Log("Damage"+damage1);
+				slimehealth=slimehealth-damage1;
+				Debug.Log (slimehealth);
 				enemyx = enemy.transform.position.x;
 				enemyy = enemy.transform.position.y+2;
 				Instantiate (hitpoint, new Vector2 (enemyx, enemyy), Quaternion.identity);
