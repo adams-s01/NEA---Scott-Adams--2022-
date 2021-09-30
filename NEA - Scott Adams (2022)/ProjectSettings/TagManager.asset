@@ -24,6 +24,7 @@ TagManager:
   - image2
   - image3
   - image4
+  - shopmenu
   layers:
   - Default
   - TransparentFX

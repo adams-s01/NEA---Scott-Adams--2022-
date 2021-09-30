@@ -102,7 +102,6 @@ public class Inventory_1 : MonoBehaviour {
 		{
 			
 			damage = 0;
-			Debug.Log ("else" + damage);
 			return damage;
 		}
 	}
