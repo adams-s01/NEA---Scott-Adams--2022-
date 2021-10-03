@@ -7,6 +7,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class Shop : MonoBehaviour {
 
@@ -26,9 +27,25 @@ public class Shop : MonoBehaviour {
 	GameObject item13;
 	GameObject item14;
 	GameObject item15;
-
+	public Button item1button;
+	public Button item2button;
+	public Button item3button;
+	public Button item4button;
+	public Button item5button;
+	public Button item6button;
+	public Button item7button;
+	public Button item8button;
+	public Button item9button;
+	public Button item10button;
+	public Button item11button;
+	public Button item12button;
+	public Button item13button;
+	public Button item14button;
+	public Button item15button;
 	int gold;
 	public TextMeshProUGUI goldtext;
+	ColorBlock unusablecolour;
+	ColorBlock usablecolour;
 
 	//Initialises shopmenu and hides the shop menu canvas
 	void Start () {
@@ -65,11 +82,20 @@ public class Shop : MonoBehaviour {
 		item14.SetActive (false);
 		item15.SetActive (false);
 		gold = 10;
+		unusablecolour.highlightedColor = new Color (204, 0, 0);
+		unusablecolour.normalColor = new Color (255, 0, 0);
+		unusablecolour.pressedColor = new Color (255, 73, 73);
+		usablecolour.highlightedColor = new Color (0, 204, 0);
+		usablecolour.normalColor = new Color (0, 255, 0);
+		usablecolour.pressedColor = new Color (73, 255, 73);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		goldtext.text = "Gold: " + gold.ToString ();
+		if (gold >= 10) {
+			item1button.colors = usablecolour;
+		}
 		
 	}
 	//Collides with player and makes shop menu visible
