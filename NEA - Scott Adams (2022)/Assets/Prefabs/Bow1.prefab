@@ -86,11 +86,13 @@ MonoBehaviour:
   - {fileID: 0}
   full: 0000000000
   bow: {fileID: 21300000, guid: 668df6f48e59c80439fa587624e5a84d, type: 3}
+  sword: {fileID: 21300000, guid: c60f7cf1ed80f5840ac51195ae687e71, type: 3}
   image: {fileID: 0}
   image2: {fileID: 0}
   image3: {fileID: 0}
   image4: {fileID: 0}
   image5: {fileID: 0}
+  weaponname: 
   damage: 0
 --- !u!212 &212942579537676494
 SpriteRenderer:

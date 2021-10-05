@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 2
-* Last Edited: Sprint 2
+* Last Edited: Sprint 3
 * Purpose: Causes a shop to exist
 */
 using System.Collections;
@@ -46,6 +46,26 @@ public class Shop : MonoBehaviour {
 	public TextMeshProUGUI goldtext;
 	ColorBlock unusablecolour;
 	ColorBlock usablecolour;
+	float playerx;
+	float playery;
+	GameObject player;
+	public GameObject sword;
+	public GameObject apple;
+	public GameObject armour1;
+	public GameObject boots;
+	public GameObject club;
+	public GameObject mage;
+	public GameObject bat;
+	public GameObject shield;
+	public GameObject belt;
+	public GameObject gloves;
+	public GameObject belt1;
+	public GameObject bow;
+	public GameObject armour2;
+	public GameObject ring;
+	public GameObject potion;
+	public GameObject dagger;
+
 
 	//Initialises shopmenu and hides the shop menu canvas
 	void Start () {
@@ -82,20 +102,27 @@ public class Shop : MonoBehaviour {
 		item14.SetActive (false);
 		item15.SetActive (false);
 		gold = 10;
-		unusablecolour.highlightedColor = new Color (204, 0, 0);
-		unusablecolour.normalColor = new Color (255, 0, 0);
-		unusablecolour.pressedColor = new Color (255, 73, 73);
-		usablecolour.highlightedColor = new Color (0, 204, 0);
-		usablecolour.normalColor = new Color (0, 255, 0);
-		usablecolour.pressedColor = new Color (73, 255, 73);
+		unusablecolour = item1button.colors;
+		usablecolour = item1button.colors;
+		unusablecolour.highlightedColor = new Color32 (204, 0, 0, 255);
+		unusablecolour.normalColor = new Color32 (255, 0, 0, 255);
+		unusablecolour.pressedColor = new Color32 (255, 73, 73, 255);
+		usablecolour.highlightedColor = new Color32 (0, 204, 0, 255);
+		usablecolour.normalColor = new Color32 (0, 255, 0, 255);
+		usablecolour.pressedColor = new Color32 (73, 255, 73, 255);
+		player = GameObject.FindGameObjectWithTag ("Player");
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		gold = 10;
 		goldtext.text = "Gold: " + gold.ToString ();
-		if (gold >= 10) {
+		/*if (gold >= 10) {
 			item1button.colors = usablecolour;
 		}
+		if (gold < 10) {
+			item1button.colors = unusablecolour;
+		}*/
 		
 	}
 	//Collides with player and makes shop menu visible
@@ -130,6 +157,12 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		if (gold >= 10) {
+			item1button.colors = usablecolour;
+		}
+		if (gold < 10) {
+			item1button.colors = unusablecolour;
+		}
 	}
 	//Button to make item 2 stats appear
 	public void Item2()
@@ -149,6 +182,12 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		if (gold >= 15) {
+			item2button.colors = usablecolour;
+		}
+		if (gold < 15) {
+			item2button.colors = unusablecolour;
+		}
 	}
 	//Button to make item 3 stats appear
 	public void Item3()
@@ -168,6 +207,12 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		if (gold >= 20) {
+			item3button.colors = usablecolour;
+		}
+		if (gold < 20) {
+			item3button.colors = unusablecolour;
+		}
 	}
 	//Button to make item 4 stats appear
 	public void Item4()
@@ -187,6 +232,12 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		if (gold >= 15) {
+			item4button.colors = usablecolour;
+		}
+		if (gold < 15) {
+			item4button.colors = unusablecolour;
+		}
 	}
 	//Button to make item 5 stats appear
 	public void Item5()
@@ -206,6 +257,12 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		if (gold >= 20) {
+			item5button.colors = usablecolour;
+		}
+		if (gold < 20) {
+			item5button.colors = unusablecolour;
+		}
 	}
 	//Button to make item 6 stats appear
 	public void Item6()
@@ -225,6 +282,12 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		if (gold >= 100) {
+			item6button.colors = usablecolour;
+		}
+		if (gold < 100) {
+			item6button.colors = unusablecolour;
+		}
 	}
 	//Button to make item 7 stats appear
 	public void Item7()
@@ -244,6 +307,12 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		if (gold >= 30) {
+			item7button.colors = usablecolour;
+		}
+		if (gold < 30) {
+			item7button.colors = unusablecolour;
+		}
 	}
 	//Button to make item 8 stats appear
 	public void Item8()
@@ -263,6 +332,12 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		if (gold >= 30) {
+			item8button.colors = usablecolour;
+		}
+		if (gold < 30) {
+			item8button.colors = unusablecolour;
+		}
 	}
 	//Button to make item 9 stats appear
 	public void Item9()
@@ -282,6 +357,12 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		if (gold >= 15) {
+			item9button.colors = usablecolour;
+		}
+		if (gold < 15) {
+			item9button.colors = unusablecolour;
+		}
 	}
 	//Button to make item 10 stats appear
 	public void Item10()
@@ -301,6 +382,12 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		if (gold >= 25) {
+			item10button.colors = usablecolour;
+		}
+		if (gold < 25) {
+			item10button.colors = unusablecolour;
+		}
 	}
 	//Button to make item 11 stats appear
 	public void Item11()
@@ -320,6 +407,12 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		if (gold >= 25) {
+			item11button.colors = usablecolour;
+		}
+		if (gold < 25) {
+			item11button.colors = unusablecolour;
+		}
 	}
 	//Button to make item 12 stats appear
 	public void Item12()
@@ -339,6 +432,12 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		if (gold >= 50) {
+			item12button.colors = usablecolour;
+		}
+		if (gold < 50) {
+			item12button.colors = unusablecolour;
+		}
 	}
 	//Button to make item 13 stats appear
 	public void Item13()
@@ -358,6 +457,12 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (true);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		if (gold >= 15) {
+			item13button.colors = usablecolour;
+		}
+		if (gold < 15) {
+			item13button.colors = unusablecolour;
+		}
 	}
 	//Button to make item 14 stats appear
 	public void Item14()
@@ -377,6 +482,12 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (true);
 		item15.SetActive (false);
+		if (gold >= 20) {
+			item14button.colors = usablecolour;
+		}
+		if (gold < 20) {
+			item14button.colors = unusablecolour;
+		}
 	}
 	//Button to make item 15 stats appear
 	public void Item15()
@@ -396,6 +507,162 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (true);
+		if (gold >= 25) {
+			item15button.colors = usablecolour;
+		}
+		if (gold < 25) {
+			item15button.colors = unusablecolour;
+		}
+	}
+	public void Button1()
+	{
+		if(gold>=10)
+		{
+			gold -= 10;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (sword, new Vector2 (playerx, playery), Quaternion.identity);
+		}
+	}
+	public void Button2()
+	{
+		if(gold>=10)
+		{
+			gold -= 10;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (sword, new Vector2 (playerx, playery), Quaternion.identity);
+		}
+	}
+	public void Button3()
+	{
+		if(gold>=10)
+		{
+			gold -= 10;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (sword, new Vector2 (playerx, playery), Quaternion.identity);
+		}
+	}
+	public void Button4()
+	{
+		if(gold>=10)
+		{
+			gold -= 10;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (sword, new Vector2 (playerx, playery), Quaternion.identity);
+		}
+	}
+	public void Button5()
+	{
+		if(gold>=10)
+		{
+			gold -= 10;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (sword, new Vector2 (playerx, playery), Quaternion.identity);
+		}
+	}
+	public void Button6()
+	{
+		if(gold>=10)
+		{
+			gold -= 10;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (sword, new Vector2 (playerx, playery), Quaternion.identity);
+		}
+	}
+	public void Button7()
+	{
+		if(gold>=10)
+		{
+			gold -= 10;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (sword, new Vector2 (playerx, playery), Quaternion.identity);
+		}
+	}
+	public void Button8()
+	{
+		if(gold>=10)
+		{
+			gold -= 10;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (sword, new Vector2 (playerx, playery), Quaternion.identity);
+		}
+	}
+	public void Button9()
+	{
+		if(gold>=10)
+		{
+			gold -= 10;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (sword, new Vector2 (playerx, playery), Quaternion.identity);
+		}
+	}
+	public void Button10()
+	{
+		if(gold>=10)
+		{
+			gold -= 10;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (sword, new Vector2 (playerx, playery), Quaternion.identity);
+		}
+	}
+	public void Button11()
+	{
+		if(gold>=10)
+		{
+			gold -= 10;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (sword, new Vector2 (playerx, playery), Quaternion.identity);
+		}
+	}
+	public void Button12()
+	{
+		if(gold>=10)
+		{
+			gold -= 10;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (sword, new Vector2 (playerx, playery), Quaternion.identity);
+		}
+	}
+	public void Button13()
+	{
+		if(gold>=10)
+		{
+			gold -= 10;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (sword, new Vector2 (playerx, playery), Quaternion.identity);
+		}
+	}
+	public void Button14()
+	{
+		if(gold>=10)
+		{
+			gold -= 10;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (sword, new Vector2 (playerx, playery), Quaternion.identity);
+		}
+	}
+	public void Button15()
+	{
+		if(gold>=10)
+		{
+			gold -= 10;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (sword, new Vector2 (playerx, playery), Quaternion.identity);
+		}
 	}
 
 }

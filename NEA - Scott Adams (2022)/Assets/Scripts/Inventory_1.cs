@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 2
-* Last Edited: Sprint 2
+* Last Edited: Sprint 3
 * Purpose: Causes an inventory to exist
 */
 using System.Collections;
@@ -13,6 +13,7 @@ public class Inventory_1 : MonoBehaviour {
 	public GameObject[] inventory;
 	public bool[] full;
 	public Sprite bow;
+	public Sprite sword;
 	GameObject inventorycanvas;
 	public Image image;
 	public Image image2;
@@ -22,13 +23,16 @@ public class Inventory_1 : MonoBehaviour {
 	public string weaponname;
 	public int damage;
 	GameObject hidebow1;
+	GameObject hidesword;
 
 	// Use this for initialization
 	void Start () {
 		inventory = GameObject.FindGameObjectsWithTag ("image");
 		inventorycanvas = GameObject.FindGameObjectWithTag ("inventory");
 		hidebow1 = GameObject.Find ("Bow11");
+		hidesword = GameObject.Find ("sword1");
 		hidebow1.SetActive (false);
+		hidesword.SetActive (false);
 	}
 	
 	// Sets damage to the damage in the function Weapon
@@ -43,10 +47,19 @@ public class Inventory_1 : MonoBehaviour {
 		if (col.gameObject.tag == "Player") {
 			for (int i = 0; i < full.Length; i++) {
 				if (full [i] == false) {
-					inventory [i].GetComponent<Image> ().sprite = bow;
+					Debug.Log ("0");
+					full [i] = true;
+					if (gameObject.name == "Bow1(Clone)") {
+						Debug.Log ("1");
+						inventory [i].GetComponent<Image> ().sprite = bow;
+					}
+					if (gameObject.name == "sword(Clone)") {
+						Debug.Log ("2");
+						inventory [i].GetComponent<Image> ().sprite = sword;
+					}
 					GameObject bow1 = GameObject.FindGameObjectWithTag ("bow");
 					Destroy (bow1);
-					full [i] = true;
+
 					break;
 				}
 			}
@@ -95,6 +108,13 @@ public class Inventory_1 : MonoBehaviour {
 			
 			damage = 2;
 			hidebow1.SetActive (true);
+			hidesword.SetActive (false);
+			return damage;
+		}
+		if (weaponname == "sword") {
+			damage = 3;
+			hidesword.SetActive (true);
+			hidebow1.SetActive (false);
 			return damage;
 		}
 		//Sets damage for when nothing is selected
