@@ -115,7 +115,7 @@ public class Shop : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		gold = 10;
+		gold = 1000;
 		goldtext.text = "Gold: " + gold.ToString ();
 		/*if (gold >= 10) {
 			item1button.colors = usablecolour;
@@ -526,142 +526,142 @@ public class Shop : MonoBehaviour {
 	}
 	public void Button2()
 	{
-		if(gold>=10)
+		if(gold>=15)
 		{
-			gold -= 10;
+			gold -= 15;
 			playerx = player.transform.position.x;
 			playery = player.transform.position.y;
-			Instantiate (sword, new Vector2 (playerx, playery), Quaternion.identity);
+			Instantiate (apple, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
 	public void Button3()
 	{
-		if(gold>=10)
+		if(gold>=20)
 		{
-			gold -= 10;
+			gold -= 20;
 			playerx = player.transform.position.x;
 			playery = player.transform.position.y;
-			Instantiate (sword, new Vector2 (playerx, playery), Quaternion.identity);
+			Instantiate (armour1, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
 	public void Button4()
 	{
-		if(gold>=10)
+		if(gold>=15)
 		{
-			gold -= 10;
+			gold -= 15;
 			playerx = player.transform.position.x;
 			playery = player.transform.position.y;
-			Instantiate (sword, new Vector2 (playerx, playery), Quaternion.identity);
+			Instantiate (boots, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
 	public void Button5()
 	{
-		if(gold>=10)
+		if(gold>=20)
 		{
-			gold -= 10;
+			gold -= 20;
 			playerx = player.transform.position.x;
 			playery = player.transform.position.y;
-			Instantiate (sword, new Vector2 (playerx, playery), Quaternion.identity);
+			Instantiate (club, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
 	public void Button6()
 	{
-		if(gold>=10)
+		if(gold>=100)
 		{
-			gold -= 10;
+			gold -= 100;
 			playerx = player.transform.position.x;
 			playery = player.transform.position.y;
-			Instantiate (sword, new Vector2 (playerx, playery), Quaternion.identity);
+			Instantiate (mage, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
 	public void Button7()
 	{
-		if(gold>=10)
+		if(gold>=30)
 		{
-			gold -= 10;
+			gold -= 30;
 			playerx = player.transform.position.x;
 			playery = player.transform.position.y;
-			Instantiate (sword, new Vector2 (playerx, playery), Quaternion.identity);
+			Instantiate (bat, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
 	public void Button8()
 	{
-		if(gold>=10)
+		if(gold>=30)
 		{
-			gold -= 10;
+			gold -= 30;
 			playerx = player.transform.position.x;
 			playery = player.transform.position.y;
-			Instantiate (sword, new Vector2 (playerx, playery), Quaternion.identity);
+			Instantiate (shield, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
 	public void Button9()
 	{
-		if(gold>=10)
+		if(gold>=15)
 		{
-			gold -= 10;
+			gold -= 15;
 			playerx = player.transform.position.x;
 			playery = player.transform.position.y;
-			Instantiate (sword, new Vector2 (playerx, playery), Quaternion.identity);
+			Instantiate (belt1, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
 	public void Button10()
 	{
-		if(gold>=10)
+		if(gold>=25)
 		{
-			gold -= 10;
+			gold -= 25;
 			playerx = player.transform.position.x;
 			playery = player.transform.position.y;
-			Instantiate (sword, new Vector2 (playerx, playery), Quaternion.identity);
+			Instantiate (gloves, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
 	public void Button11()
 	{
-		if(gold>=10)
+		if(gold>=25)
 		{
-			gold -= 10;
+			gold -= 25;
 			playerx = player.transform.position.x;
 			playery = player.transform.position.y;
-			Instantiate (sword, new Vector2 (playerx, playery), Quaternion.identity);
+			Instantiate (bow, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
 	public void Button12()
 	{
-		if(gold>=10)
+		if(gold>=50)
 		{
-			gold -= 10;
+			gold -= 50;
 			playerx = player.transform.position.x;
 			playery = player.transform.position.y;
-			Instantiate (sword, new Vector2 (playerx, playery), Quaternion.identity);
+			Instantiate (armour2, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
 	public void Button13()
 	{
-		if(gold>=10)
+		if(gold>=15)
 		{
-			gold -= 10;
+			gold -= 15;
 			playerx = player.transform.position.x;
 			playery = player.transform.position.y;
-			Instantiate (sword, new Vector2 (playerx, playery), Quaternion.identity);
+			Instantiate (ring, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
 	public void Button14()
 	{
-		if(gold>=10)
+		if(gold>=20)
 		{
-			gold -= 10;
+			gold -= 20;
 			playerx = player.transform.position.x;
 			playery = player.transform.position.y;
-			Instantiate (sword, new Vector2 (playerx, playery), Quaternion.identity);
+			Instantiate (potion, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
 	public void Button15()
 	{
-		if(gold>=10)
+		if(gold>=25)
 		{
-			gold -= 10;
+			gold -= 25;
 			playerx = player.transform.position.x;
 			playery = player.transform.position.y;
-			Instantiate (sword, new Vector2 (playerx, playery), Quaternion.identity);
+			Instantiate (dagger, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
 

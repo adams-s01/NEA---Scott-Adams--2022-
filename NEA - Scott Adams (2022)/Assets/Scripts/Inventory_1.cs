@@ -45,22 +45,25 @@ public class Inventory_1 : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D col)
 	{
 		if (col.gameObject.tag == "Player") {
-			for (int i = 0; i < full.Length; i++) {
-				if (full [i] == false) {
+			for (int i = 0; i < inventory.Length; i++) {
+				if (full[i] == false) {
 					Debug.Log ("0");
-					full [i] = true;
+					full[0] = true;
 					if (gameObject.name == "Bow1(Clone)") {
 						Debug.Log ("1");
 						inventory [i].GetComponent<Image> ().sprite = bow;
 					}
 					if (gameObject.name == "sword(Clone)") {
 						Debug.Log ("2");
-						inventory [i].GetComponent<Image> ().sprite = sword;
+						inventory [i+1].GetComponent<Image> ().sprite = sword;
 					}
 					GameObject bow1 = GameObject.FindGameObjectWithTag ("bow");
 					Destroy (bow1);
-
+					full [i] = true;
 					break;
+				}
+				if (full [i] == true) {
+					Debug.Log ("3");
 				}
 			}
 		}
