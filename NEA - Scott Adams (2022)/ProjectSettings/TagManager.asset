@@ -40,6 +40,8 @@ TagManager:
   - item13
   - item14
   - item15
+  - slime2
+  - wall
   layers:
   - Default
   - TransparentFX

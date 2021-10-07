@@ -20,6 +20,7 @@ public class Enemy_Movement : MonoBehaviour {
 	int damage1;
 
 
+
 	// Initialises variables
 	void Start () {
 		sleep = false;
@@ -31,7 +32,12 @@ public class Enemy_Movement : MonoBehaviour {
 	
 	// Calls slime movement sets GameObject to call other script
 	void Update () {
-		SlimeMovement ();
+		if (gameObject.tag=="slime") {
+			SlimeMovement ();
+		}
+		if (gameObject.tag=="slime2") {
+			SlimeMovement2 ();
+		}
 		other = GameObject.FindGameObjectWithTag ("inventory");
 
 
@@ -46,12 +52,27 @@ public class Enemy_Movement : MonoBehaviour {
 
 
 	}
+	public void SlimeMovement2()
+	{
+		if (sleep == false) {
+			StartCoroutine (coroutine2 ());
+		}
+
+
+	}
 	//Coroutine for causing the slime to jump every 5 seconds
 	IEnumerator coroutine()
 	{
 		sleep = true;
 		yield return new WaitForSecondsRealtime (5);
 		rb.AddForce (new Vector2 (0, 2) * 2, ForceMode2D.Impulse);
+		sleep = false;
+	}
+	IEnumerator coroutine2()
+	{
+		sleep = true;
+		yield return new WaitForSecondsRealtime (5);
+		rb.AddForce (new Vector2 (Random.Range(-1,2), 2) * 2, ForceMode2D.Impulse);
 		sleep = false;
 	}
 	//Collides with player
@@ -75,6 +96,15 @@ public class Enemy_Movement : MonoBehaviour {
 			if (slimehealth <= 0) {
 				Destroy (enemy);
 			}
+			if (gameObject.tag == "slime2") {
+				Debug.Log ("4");
+			}
+		}
+	}
+	public void OnTriggerStay2D(Collider2D col)
+	{
+		if (col.gameObject.tag == "wall") {
+			rb.velocity = Vector2.zero;
 		}
 	}
 }
