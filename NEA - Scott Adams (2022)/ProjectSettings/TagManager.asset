@@ -42,6 +42,7 @@ TagManager:
   - item15
   - slime2
   - wall
+  - crosshair
   layers:
   - Default
   - TransparentFX

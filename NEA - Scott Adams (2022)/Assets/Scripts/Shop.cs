@@ -113,9 +113,9 @@ public class Shop : MonoBehaviour {
 		player = GameObject.FindGameObjectWithTag ("Player");
 	}
 	
-	// Update is called once per frame
+	// Sets text for amount of gold
 	void Update () {
-		gold = 1000;
+		gold = 10;
 		goldtext.text = "Gold: " + gold.ToString ();
 		/*if (gold >= 10) {
 			item1button.colors = usablecolour;
@@ -157,9 +157,11 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		//Mokes button green
 		if (gold >= 10) {
 			item1button.colors = usablecolour;
 		}
+		//Makes button red
 		if (gold < 10) {
 			item1button.colors = unusablecolour;
 		}
@@ -182,9 +184,11 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		//Makes button green
 		if (gold >= 15) {
 			item2button.colors = usablecolour;
 		}
+		//Makes button red
 		if (gold < 15) {
 			item2button.colors = unusablecolour;
 		}
@@ -207,9 +211,11 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		//Makes button green
 		if (gold >= 20) {
 			item3button.colors = usablecolour;
 		}
+		//Makes button red
 		if (gold < 20) {
 			item3button.colors = unusablecolour;
 		}
@@ -232,9 +238,11 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		//Makes button green
 		if (gold >= 15) {
 			item4button.colors = usablecolour;
 		}
+		//Makes button red
 		if (gold < 15) {
 			item4button.colors = unusablecolour;
 		}
@@ -257,9 +265,11 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		//Makes button green
 		if (gold >= 20) {
 			item5button.colors = usablecolour;
 		}
+		//Makes button red
 		if (gold < 20) {
 			item5button.colors = unusablecolour;
 		}
@@ -282,9 +292,11 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		//Makes button green
 		if (gold >= 100) {
 			item6button.colors = usablecolour;
 		}
+		//Makes button red
 		if (gold < 100) {
 			item6button.colors = unusablecolour;
 		}
@@ -307,9 +319,11 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		//Makes button green
 		if (gold >= 30) {
 			item7button.colors = usablecolour;
 		}
+		//Makes button red
 		if (gold < 30) {
 			item7button.colors = unusablecolour;
 		}
@@ -332,9 +346,11 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		//Makes button green
 		if (gold >= 30) {
 			item8button.colors = usablecolour;
 		}
+		//Makes button red
 		if (gold < 30) {
 			item8button.colors = unusablecolour;
 		}
@@ -357,9 +373,11 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		//Makes button green
 		if (gold >= 15) {
 			item9button.colors = usablecolour;
 		}
+		//Makes button red
 		if (gold < 15) {
 			item9button.colors = unusablecolour;
 		}
@@ -382,9 +400,11 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		//Makes button green
 		if (gold >= 25) {
 			item10button.colors = usablecolour;
 		}
+		//Makes button red
 		if (gold < 25) {
 			item10button.colors = unusablecolour;
 		}
@@ -407,9 +427,11 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		//Makes button green
 		if (gold >= 25) {
 			item11button.colors = usablecolour;
 		}
+		//Makes button red
 		if (gold < 25) {
 			item11button.colors = unusablecolour;
 		}
@@ -432,9 +454,11 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		//Makes button green
 		if (gold >= 50) {
 			item12button.colors = usablecolour;
 		}
+		//Makes button red
 		if (gold < 50) {
 			item12button.colors = unusablecolour;
 		}
@@ -457,9 +481,11 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (true);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		//Makes button green
 		if (gold >= 15) {
 			item13button.colors = usablecolour;
 		}
+		//Makes button red
 		if (gold < 15) {
 			item13button.colors = unusablecolour;
 		}
@@ -482,9 +508,11 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (true);
 		item15.SetActive (false);
+		//Makes button green
 		if (gold >= 20) {
 			item14button.colors = usablecolour;
 		}
+		//Makes button red
 		if (gold < 20) {
 			item14button.colors = unusablecolour;
 		}
@@ -507,15 +535,19 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (true);
+		//Makes button green
 		if (gold >= 25) {
 			item15button.colors = usablecolour;
 		}
+		//Makes button red
 		if (gold < 25) {
 			item15button.colors = unusablecolour;
 		}
 	}
+	//Activates Button 1
 	public void Button1()
 	{
+		//Button 1 only works when gold is 10 or over, creates image of item
 		if(gold>=10)
 		{
 			gold -= 10;
@@ -524,8 +556,10 @@ public class Shop : MonoBehaviour {
 			Instantiate (sword, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
+	//Activates Button 2
 	public void Button2()
 	{
+		//Button 2 only works when gold is 15 or over, creates image of item
 		if(gold>=15)
 		{
 			gold -= 15;
@@ -534,8 +568,10 @@ public class Shop : MonoBehaviour {
 			Instantiate (apple, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
+	//Activates Button 3
 	public void Button3()
 	{
+		//Button 3 only works when gold is 20 or over, creates image of item
 		if(gold>=20)
 		{
 			gold -= 20;
@@ -544,8 +580,10 @@ public class Shop : MonoBehaviour {
 			Instantiate (armour1, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
+	//Activates Button 4
 	public void Button4()
 	{
+		//Button 4 only works when gold is 15 or over, creates image of item
 		if(gold>=15)
 		{
 			gold -= 15;
@@ -554,8 +592,10 @@ public class Shop : MonoBehaviour {
 			Instantiate (boots, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
+	//Activates Button 5
 	public void Button5()
 	{
+		//Button 5 only works when gold is 20 or over, creates image of item
 		if(gold>=20)
 		{
 			gold -= 20;
@@ -564,8 +604,10 @@ public class Shop : MonoBehaviour {
 			Instantiate (club, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
+	//Activates Button 6
 	public void Button6()
 	{
+		//Button 6 only works when gold is 100 or over, creates image of item
 		if(gold>=100)
 		{
 			gold -= 100;
@@ -574,8 +616,10 @@ public class Shop : MonoBehaviour {
 			Instantiate (mage, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
+	//Activates Button 7
 	public void Button7()
 	{
+		//Button 7 only works when gold is 30 or over, creates image of item
 		if(gold>=30)
 		{
 			gold -= 30;
@@ -584,8 +628,10 @@ public class Shop : MonoBehaviour {
 			Instantiate (bat, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
+	//Activates Button 8
 	public void Button8()
 	{
+		//Button 8 only works when gold is 30 or over, creates image of item
 		if(gold>=30)
 		{
 			gold -= 30;
@@ -594,8 +640,10 @@ public class Shop : MonoBehaviour {
 			Instantiate (shield, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
+	//Activates Button 9
 	public void Button9()
 	{
+		//Button 9 only works when gold is 15 or over, creates image of item
 		if(gold>=15)
 		{
 			gold -= 15;
@@ -604,8 +652,10 @@ public class Shop : MonoBehaviour {
 			Instantiate (belt1, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
+	//Activates Button 10
 	public void Button10()
 	{
+		//Button 10 only works when gold is 25 or over, creates image of item
 		if(gold>=25)
 		{
 			gold -= 25;
@@ -614,8 +664,10 @@ public class Shop : MonoBehaviour {
 			Instantiate (gloves, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
+	//Activates Button 11
 	public void Button11()
 	{
+		//Button 11 only works when gold is 25 or over, creates image of item
 		if(gold>=25)
 		{
 			gold -= 25;
@@ -624,8 +676,10 @@ public class Shop : MonoBehaviour {
 			Instantiate (bow, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
+	//Activates Button 12
 	public void Button12()
 	{
+		//Button 12 only works when gold is 50 or over, creates image of item
 		if(gold>=50)
 		{
 			gold -= 50;
@@ -634,8 +688,10 @@ public class Shop : MonoBehaviour {
 			Instantiate (armour2, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
+	//Activates Button 13
 	public void Button13()
 	{
+		//Button 13 only works when gold is 15 or over, creates image of item
 		if(gold>=15)
 		{
 			gold -= 15;
@@ -644,8 +700,10 @@ public class Shop : MonoBehaviour {
 			Instantiate (ring, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
+	//Activates Button 14
 	public void Button14()
 	{
+		//Button 14 only works when gold is 20 or over, creates image of item
 		if(gold>=20)
 		{
 			gold -= 20;
@@ -654,8 +712,10 @@ public class Shop : MonoBehaviour {
 			Instantiate (potion, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
+	//Activates Button 15
 	public void Button15()
 	{
+		//Button 15 only works when gold is 25 or over, creates image of item
 		if(gold>=25)
 		{
 			gold -= 25;
