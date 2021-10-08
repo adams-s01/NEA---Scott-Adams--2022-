@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 1
-* Last Edited: Sprint 2
+* Last Edited: Sprint 3
 * Purpose: Cause the player to move
 */
 using System.Collections;
@@ -18,6 +18,11 @@ public class Player_Movement : MonoBehaviour {
 	public GameObject bow;
 	bool resting;
 	int speed;
+	public GameObject other2;
+	int playerdamage1;
+	public int playerhealth;
+	bool sleep;
+	Transform player;
 
 
 	// Use this for initialization
@@ -28,6 +33,7 @@ public class Player_Movement : MonoBehaviour {
 		vase = GameObject.FindGameObjectWithTag ("vase");
 		resting = false;
 		speed = 1;
+		player = GameObject.FindGameObjectWithTag ("Player").GetComponent<Transform> ();
 
 
 	}
@@ -71,6 +77,16 @@ public class Player_Movement : MonoBehaviour {
 		if (Input.GetKey (KeyCode.LeftShift) == false) {
 			speed = 1;
 		}
+		//Damages player, once every second
+		if (sleep == false) {
+			StartCoroutine (damagecoroutine ());
+		}
+		//Resets player when they die
+		if (playerhealth <= 0) {
+			player.SetPositionAndRotation (new Vector2 (-8, -2), Quaternion.identity);
+			playerhealth = 10;
+		}
+
 
 
 
@@ -93,6 +109,18 @@ public class Player_Movement : MonoBehaviour {
 			Destroy (vase);
 			Instantiate (bow, new Vector2 (vase.transform.position.x, vase.transform.position.y), Quaternion.identity);
 		}
+	}
+	//Causes the player to be damaged once every second, by the amount of damage from the Enemy_Movement
+	IEnumerator damagecoroutine()
+	{
+		sleep = true;
+		other2 = GameObject.FindGameObjectWithTag ("slime2");
+		playerdamage1 = other2.GetComponent<Enemy_Movement> ().playerdamage;
+		playerhealth -= playerdamage1;
+		Debug.Log (playerhealth);
+		Debug.Log (playerdamage1);
+		yield return new WaitForSecondsRealtime (1);
+		sleep = false;
 	}
 
 }

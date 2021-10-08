@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 1
-* Last Edited: Sprint 1
+* Last Edited: Sprint 3
 * Purpose: Causes the enemy to move
 */
 using System.Collections;
@@ -18,6 +18,7 @@ public class Enemy_Movement : MonoBehaviour {
 	float enemyy;
 	public GameObject other;
 	int damage1;
+	public int playerdamage;
 
 
 
@@ -52,6 +53,7 @@ public class Enemy_Movement : MonoBehaviour {
 
 
 	}
+	//Calls coroutine for slime2 to jump
 	public void SlimeMovement2()
 	{
 		if (sleep == false) {
@@ -68,6 +70,7 @@ public class Enemy_Movement : MonoBehaviour {
 		rb.AddForce (new Vector2 (0, 2) * 2, ForceMode2D.Impulse);
 		sleep = false;
 	}
+	//Coroutine for causing the slime2 to move every 5 seconds
 	IEnumerator coroutine2()
 	{
 		sleep = true;
@@ -96,15 +99,27 @@ public class Enemy_Movement : MonoBehaviour {
 			if (slimehealth <= 0) {
 				Destroy (enemy);
 			}
+			//Sets the damage to the palyer
 			if (gameObject.tag == "slime2") {
 				Debug.Log ("4");
+				playerdamage = 1;
 			}
 		}
 	}
+	//Collides with the wall, stops the slime leaviing the room
 	public void OnTriggerStay2D(Collider2D col)
 	{
 		if (col.gameObject.tag == "wall") {
 			rb.velocity = Vector2.zero;
+		}
+	}
+	//Ends collide with the player, stops the damage of the player
+	public void OnCollisionExit2D(Collision2D col)
+	{
+		if (col.gameObject.tag == "Player") {
+			if (gameObject.tag == "slime2") {
+				playerdamage = 0;
+			}
 		}
 	}
 }

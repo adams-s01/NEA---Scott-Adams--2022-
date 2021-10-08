@@ -48,7 +48,8 @@ public class Inventory_1 : MonoBehaviour {
 			for (int i = 0; i < inventory.Length; i++) {
 				if (full[i] == false) {
 					Debug.Log ("0");
-					full[0] = true;
+					full[i] = true;
+					Debug.Log (full [i]);
 					if (gameObject.name == "Bow1(Clone)") {
 						Debug.Log ("1");
 						inventory [i].GetComponent<Image> ().sprite = bow;
@@ -60,11 +61,13 @@ public class Inventory_1 : MonoBehaviour {
 					GameObject bow1 = GameObject.FindGameObjectWithTag ("bow");
 					Destroy (bow1);
 					full [i] = true;
-					break;
+					//break;
 				}
+
 				if (full [i] == true) {
 					Debug.Log ("3");
 				}
+				break;
 			}
 		}
 	}
@@ -114,6 +117,7 @@ public class Inventory_1 : MonoBehaviour {
 			hidesword.SetActive (false);
 			return damage;
 		}
+		//Sets damage for the sword
 		if (weaponname == "sword") {
 			damage = 3;
 			hidesword.SetActive (true);
