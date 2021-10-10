@@ -24,6 +24,7 @@ public class Inventory_1 : MonoBehaviour {
 	public int damage;
 	GameObject hidebow1;
 	GameObject hidesword;
+	GameObject hidecrosshair;
 
 	// Use this for initialization
 	void Start () {
@@ -31,8 +32,10 @@ public class Inventory_1 : MonoBehaviour {
 		inventorycanvas = GameObject.FindGameObjectWithTag ("inventory");
 		hidebow1 = GameObject.Find ("Bow11");
 		hidesword = GameObject.Find ("sword1");
+		hidecrosshair = GameObject.FindGameObjectWithTag ("crosshair");
 		hidebow1.SetActive (false);
 		hidesword.SetActive (false);
+		hidecrosshair.SetActive (false);
 	}
 	
 	// Sets damage to the damage in the function Weapon
@@ -62,6 +65,7 @@ public class Inventory_1 : MonoBehaviour {
 					Destroy (bow1);
 					full [i] = true;
 					//break;
+					return;
 				}
 
 				if (full [i] == true) {
@@ -115,6 +119,7 @@ public class Inventory_1 : MonoBehaviour {
 			damage = 2;
 			hidebow1.SetActive (true);
 			hidesword.SetActive (false);
+			hidecrosshair.SetActive (true);
 			return damage;
 		}
 		//Sets damage for the sword
@@ -122,6 +127,7 @@ public class Inventory_1 : MonoBehaviour {
 			damage = 3;
 			hidesword.SetActive (true);
 			hidebow1.SetActive (false);
+			hidecrosshair.SetActive (false);
 			return damage;
 		}
 		//Sets damage for when nothing is selected

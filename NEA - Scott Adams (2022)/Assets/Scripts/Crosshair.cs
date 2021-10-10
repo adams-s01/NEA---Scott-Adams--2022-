@@ -16,11 +16,11 @@ public class Crosshair : MonoBehaviour {
 		Vector2 positionOnScreen = Camera.main.WorldToViewportPoint (transform.position);
 		Vector2 mouseOnScreen = Camera.main.ScreenToViewportPoint (Input.mousePosition);
 		float angle = AngleBetweenTwoPoints (positionOnScreen, mouseOnScreen);
-		Debug.Log (angle);
-		transform.RotateAround (player.transform.position, new Vector3 (0f, 0f, -angle), Time.deltaTime * 20);
+		//transform.RotateAround (player.transform.position, new Vector3 (0f, 0f, angle), Time.deltaTime * 20);
+		transform.rotation=Quaternion.Euler(new Vector3(0f,0f,angle-90));
 	}
 	float AngleBetweenTwoPoints(Vector2 a,Vector2 b)
 	{
-		return Mathf.Atan2 (a.y - b.y, a.x - b.x) * Mathf.Rad2Deg;
+		return Mathf.Atan2 (b.y - a.y, b.x - a.x) * Mathf.Rad2Deg;
 	}
 }

@@ -2338,7 +2338,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 208899525}
   m_LocalRotation: {x: -0, y: -0, z: -0.70366096, w: 0.7105359}
-  m_LocalPosition: {x: 3.5899997, y: 0.27999997, z: 0}
+  m_LocalPosition: {x: 0.35000038, y: -0.42000008, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 272588712}
@@ -33832,22 +33832,22 @@ MonoBehaviour:
   item14button: {fileID: 683290081}
   item15button: {fileID: 239375941}
   goldtext: {fileID: 1207796493}
-  sword: {fileID: 1697417680}
-  apple: {fileID: 436425816}
-  armour1: {fileID: 2016639048}
-  boots: {fileID: 1268065260}
-  club: {fileID: 1252437718}
-  mage: {fileID: 748280183}
-  bat: {fileID: 1567481601}
-  shield: {fileID: 637855432}
-  belt: {fileID: 1841394441}
-  gloves: {fileID: 1837338835}
-  belt1: {fileID: 1841394441}
-  bow: {fileID: 602611494}
-  armour2: {fileID: 553479791}
-  ring: {fileID: 77630550}
-  potion: {fileID: 378209701}
-  dagger: {fileID: 93372582}
+  sword: {fileID: 1698076571196482, guid: 035d01b338c5adc4d83094ae73dd9f12, type: 2}
+  apple: {fileID: 1188680773142658, guid: fc1426381a2856f4ea43f169705e2ee5, type: 2}
+  armour1: {fileID: 1577995519453752, guid: 401f7a78c963b84498cbc57014b48bea, type: 2}
+  boots: {fileID: 1297269805641168, guid: 2219772d1d914214b9fdb96740b710b3, type: 2}
+  club: {fileID: 1080991363309510, guid: 6dd9b33bcb66ed347a31fa1ccbca0810, type: 2}
+  mage: {fileID: 1697233574726886, guid: 50762176e56840f4bba423f6691bee7a, type: 2}
+  bat: {fileID: 1542535162912456, guid: ba4b794ef7fe27e41a0d2ea0438d9dab, type: 2}
+  shield: {fileID: 1208982439183748, guid: 73260d016e2cd31479f05719c88d3ff8, type: 2}
+  belt: {fileID: 1137241609935408, guid: e6b1d2dbd3d3dda45a41507e760a7c6b, type: 2}
+  gloves: {fileID: 1061647365509318, guid: 6684ba93c41d5c44f92864e973cb4922, type: 2}
+  belt1: {fileID: 1137241609935408, guid: e6b1d2dbd3d3dda45a41507e760a7c6b, type: 2}
+  bow: {fileID: 1651795607493000, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30, type: 2}
+  armour2: {fileID: 1970873995879168, guid: 6947950a6ae8c384b86e8d4ecaac6863, type: 2}
+  ring: {fileID: 1795984540124724, guid: db255565d90e36e4388a92198e41dbff, type: 2}
+  potion: {fileID: 1104004081482022, guid: 06e684ad2f7a87344932e072de9119ed, type: 2}
+  dagger: {fileID: 1587950474950166, guid: d05bddd920a4b3340a12c73110564ba7, type: 2}
 --- !u!1 &1447533017
 GameObject:
   m_ObjectHideFlags: 0
