@@ -12,7 +12,7 @@ public class Enemy_Movement : MonoBehaviour {
 	Rigidbody2D rb;
 	GameObject enemy;
 	bool sleep;
-	public int slimehealth;
+	public int enemyhealth;
 	public GameObject hitpoint;
 	float enemyx;
 	float enemyy;
@@ -39,6 +39,9 @@ public class Enemy_Movement : MonoBehaviour {
 		if (gameObject.tag=="slime2") {
 			SlimeMovement2 ();
 		}
+		if (gameObject.tag == "bat") {
+			BatMovement ();
+		}
 		other = GameObject.FindGameObjectWithTag ("inventory");
 
 
@@ -62,6 +65,14 @@ public class Enemy_Movement : MonoBehaviour {
 
 
 	}
+	//Calls coroutine for bat to move
+	public void BatMovement()
+	{
+		if (sleep == false) {
+			StartCoroutine (batcoroutine ());
+		}
+			
+	}
 	//Coroutine for causing the slime to jump every 5 seconds
 	IEnumerator coroutine()
 	{
@@ -78,6 +89,18 @@ public class Enemy_Movement : MonoBehaviour {
 		rb.AddForce (new Vector2 (Random.Range(-1,2), 2) * 2, ForceMode2D.Impulse);
 		sleep = false;
 	}
+	//Coroutine for causing the bat to move
+	IEnumerator batcoroutine()
+	{
+		sleep = true;
+		rb.AddForce (new Vector2 (-1, 0) * 2, ForceMode2D.Impulse);
+		yield return new WaitForSecondsRealtime (4);
+		rb.velocity = Vector2.zero;
+		rb.AddForce (new Vector2 (1, 0) * 2, ForceMode2D.Impulse);
+		yield return new WaitForSecondsRealtime (4);
+		rb.velocity = Vector2.zero;
+		sleep = false;
+	}
 	//Collides with player
 	public void OnCollisionStay2D(Collision2D col)
 	{
@@ -89,19 +112,21 @@ public class Enemy_Movement : MonoBehaviour {
 			if (Input.GetKeyDown (KeyCode.Mouse0)) {
 				damage1 = other.GetComponent<Inventory_1> ().damage;
 				Debug.Log("Damage"+damage1);
-				slimehealth=slimehealth-damage1;
-				Debug.Log (slimehealth);
+				enemyhealth=enemyhealth-damage1;
+				Debug.Log (enemyhealth);
 				enemyx = enemy.transform.position.x;
 				enemyy = enemy.transform.position.y+2;
 				Instantiate (hitpoint, new Vector2 (enemyx, enemyy), Quaternion.identity);
 			}
 			//Destroys slime if health runs out
-			if (slimehealth <= 0) {
+			if (enemyhealth <= 0) {
 				Destroy (enemy);
 			}
 			//Sets the damage to the palyer
 			if (gameObject.tag == "slime2") {
-				Debug.Log ("4");
+				playerdamage = 1;
+			}
+			if (gameObject.tag == "bat") {
 				playerdamage = 1;
 			}
 		}

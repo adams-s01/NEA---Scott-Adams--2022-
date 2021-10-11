@@ -43,6 +43,7 @@ TagManager:
   - slime2
   - wall
   - crosshair
+  - bat
   layers:
   - Default
   - TransparentFX

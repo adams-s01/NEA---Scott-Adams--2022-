@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+* Created: Sprint 3
+* Last Edited: Sprint 3
+* Purpose: Creates a moving crosshair for the bow
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
