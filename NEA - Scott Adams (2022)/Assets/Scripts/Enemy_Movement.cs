@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 1
-* Last Edited: Sprint 3
+* Last Edited: Sprint 4
 * Purpose: Causes the enemy to move
 */
 using System.Collections;
@@ -43,6 +43,7 @@ public class Enemy_Movement : MonoBehaviour {
 			BatMovement ();
 		}
 		other = GameObject.FindGameObjectWithTag ("inventory");
+		PlayerPrefs.SetInt ("playerdamage", playerdamage);
 
 
 
@@ -125,9 +126,7 @@ public class Enemy_Movement : MonoBehaviour {
 			//Sets the damage to the palyer
 			if (gameObject.tag == "slime2") {
 				playerdamage = 1;
-			}
-			if (gameObject.tag == "bat") {
-				playerdamage = 1;
+				col.gameObject.SendMessage ("Damage", playerdamage);
 			}
 		}
 	}
@@ -137,13 +136,22 @@ public class Enemy_Movement : MonoBehaviour {
 		if (col.gameObject.tag == "wall") {
 			rb.velocity = Vector2.zero;
 		}
+		if (col.gameObject.tag == "Player") {
+			if (gameObject.tag == "bat") {
+				playerdamage = 1;
+				Debug.Log ("34");
+				col.gameObject.SendMessage ("Damage", playerdamage);
+			}
+		}
 	}
 	//Ends collide with the player, stops the damage of the player
 	public void OnCollisionExit2D(Collision2D col)
 	{
 		if (col.gameObject.tag == "Player") {
+			
 			if (gameObject.tag == "slime2") {
 				playerdamage = 0;
+				col.gameObject.SendMessage ("Damage", playerdamage);
 			}
 		}
 	}

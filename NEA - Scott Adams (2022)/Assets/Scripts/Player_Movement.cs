@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 1
-* Last Edited: Sprint 3
+* Last Edited: Sprint 4
 * Purpose: Cause the player to move
 */
 using System.Collections;
@@ -18,11 +18,13 @@ public class Player_Movement : MonoBehaviour {
 	public GameObject bow;
 	bool resting;
 	int speed;
-	public GameObject other2;
+	Enemy_Movement other2;
 	int playerdamage1;
 	public int playerhealth;
 	bool sleep;
 	Transform player;
+	int damage;
+	int playerdamage;
 
 
 	// Use this for initialization
@@ -79,7 +81,8 @@ public class Player_Movement : MonoBehaviour {
 		}
 		//Damages player, once every second
 		if (sleep == false) {
-			StartCoroutine (damagecoroutine ());
+			
+			Damage(playerdamage);
 		}
 		//Resets player when they die
 		if (playerhealth <= 0) {
@@ -111,16 +114,20 @@ public class Player_Movement : MonoBehaviour {
 		}
 	}
 	//Causes the player to be damaged once every second, by the amount of damage from the Enemy_Movement
-	IEnumerator damagecoroutine()
+	IEnumerator damagecoroutine(int playerdamage)
 	{
 		sleep = true;
-		other2 = GameObject.FindGameObjectWithTag ("slime2");
-		playerdamage1 = other2.GetComponent<Enemy_Movement> ().playerdamage;
-		playerhealth -= playerdamage1;
+		playerhealth -= playerdamage;
 		Debug.Log (playerhealth);
-		Debug.Log (playerdamage1);
+		Debug.Log (playerdamage);
 		yield return new WaitForSecondsRealtime (1);
 		sleep = false;
+	}
+	public void Damage(int playerdamage)
+	{
+		if (sleep == false) {
+			StartCoroutine (damagecoroutine (playerdamage));
+		}
 	}
 
 }
