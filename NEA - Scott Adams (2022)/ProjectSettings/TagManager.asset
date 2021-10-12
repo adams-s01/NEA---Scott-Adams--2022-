@@ -45,6 +45,7 @@ TagManager:
   - crosshair
   - bat
   - spawner
+  - skeleton
   layers:
   - Default
   - TransparentFX

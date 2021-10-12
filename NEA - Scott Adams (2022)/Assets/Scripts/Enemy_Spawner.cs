@@ -14,6 +14,7 @@ public class Enemy_Spawner : MonoBehaviour {
 	public List<GameObject> enemyspawned;
 	public bool[] spawnerfull;
 	int i;
+	public bool spawnerfalse;
 
 	// Use this for initialization
 	void Start () {
@@ -33,5 +34,10 @@ public class Enemy_Spawner : MonoBehaviour {
 				i = 0;
 			}
 		}
+		Full (spawnerfalse);
+	}
+	public void Full(bool spawnerfalse)
+	{
+		spawnerfull [0] = spawnerfalse;
 	}
 }

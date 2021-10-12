@@ -19,6 +19,7 @@ public class Enemy_Movement : MonoBehaviour {
 	public GameObject other;
 	int damage1;
 	public int playerdamage;
+	public bool spawnerfalse;
 
 
 
@@ -41,6 +42,9 @@ public class Enemy_Movement : MonoBehaviour {
 		}
 		if (gameObject.tag == "bat") {
 			BatMovement ();
+		}
+		if (gameObject.tag == "skeleton") {
+			SkeletonMovement ();
 		}
 		other = GameObject.FindGameObjectWithTag ("inventory");
 		PlayerPrefs.SetInt ("playerdamage", playerdamage);
@@ -74,6 +78,13 @@ public class Enemy_Movement : MonoBehaviour {
 		}
 			
 	}
+	//Calls coroutine for skeleton to move
+	public void SkeletonMovement()
+	{
+		if (sleep == false) {
+			StartCoroutine (skeletoncoroutine ());
+		}
+	}
 	//Coroutine for causing the slime to jump every 5 seconds
 	IEnumerator coroutine()
 	{
@@ -102,6 +113,14 @@ public class Enemy_Movement : MonoBehaviour {
 		rb.velocity = Vector2.zero;
 		sleep = false;
 	}
+	//Coroutine for causing the skeleton to move
+	IEnumerator skeletoncoroutine()
+	{
+		sleep = true;
+		rb.velocity = new Vector2 (Random.Range (-5, 6), 0);
+		yield return new WaitForSecondsRealtime (2);
+		sleep = false;
+	}
 	//Collides with player
 	public void OnCollisionStay2D(Collision2D col)
 	{
@@ -122,9 +141,22 @@ public class Enemy_Movement : MonoBehaviour {
 			//Destroys slime if health runs out
 			if (enemyhealth <= 0) {
 				Destroy (enemy);
+				if (gameObject.tag == "skeleton"&&enemyhealth<-1) {
+					spawnerfalse = false;
+					gameObject.SendMessage ("Full", spawnerfalse);
+				}
 			}
-			//Sets the damage to the palyer
+			if (enemyhealth > 0 && gameObject.tag == "skeleton") {
+				spawnerfalse = true;
+				gameObject.SendMessage ("Full", spawnerfalse);
+			}
+			//Sets the damage to the player for slime2
 			if (gameObject.tag == "slime2") {
+				playerdamage = 1;
+				col.gameObject.SendMessage ("Damage", playerdamage);
+			}
+			//Sets the damage to the player for skeleton
+			if (gameObject.tag == "skeleton") {
 				playerdamage = 1;
 				col.gameObject.SendMessage ("Damage", playerdamage);
 			}
@@ -133,10 +165,13 @@ public class Enemy_Movement : MonoBehaviour {
 	//Collides with the wall, stops the slime leaviing the room
 	public void OnTriggerStay2D(Collider2D col)
 	{
+		//When enemy collides with wall
 		if (col.gameObject.tag == "wall") {
 			rb.velocity = Vector2.zero;
 		}
+		//When enemy collides with player
 		if (col.gameObject.tag == "Player") {
+			//Sets the damage for the player for bat
 			if (gameObject.tag == "bat") {
 				playerdamage = 1;
 				Debug.Log ("34");
@@ -147,9 +182,10 @@ public class Enemy_Movement : MonoBehaviour {
 	//Ends collide with the player, stops the damage of the player
 	public void OnCollisionExit2D(Collision2D col)
 	{
+		//When enemy stops colliding with player
 		if (col.gameObject.tag == "Player") {
 			
-			if (gameObject.tag == "slime2") {
+			if (gameObject.tag == "slime2"||gameObject.tag=="bat"||gameObject.tag=="skeleton") {
 				playerdamage = 0;
 				col.gameObject.SendMessage ("Damage", playerdamage);
 			}
