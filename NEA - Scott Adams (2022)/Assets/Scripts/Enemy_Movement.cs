@@ -47,7 +47,7 @@ public class Enemy_Movement : MonoBehaviour {
 			SkeletonMovement ();
 		}
 		other = GameObject.FindGameObjectWithTag ("inventory");
-		PlayerPrefs.SetInt ("playerdamage", playerdamage);
+		//PlayerPrefs.SetInt ("playerdamage", playerdamage);
 
 
 
@@ -141,14 +141,6 @@ public class Enemy_Movement : MonoBehaviour {
 			//Destroys slime if health runs out
 			if (enemyhealth <= 0) {
 				Destroy (enemy);
-				if (gameObject.tag == "skeleton"&&enemyhealth<-1) {
-					spawnerfalse = false;
-					gameObject.SendMessage ("Full", spawnerfalse);
-				}
-			}
-			if (enemyhealth > 0 && gameObject.tag == "skeleton") {
-				spawnerfalse = true;
-				gameObject.SendMessage ("Full", spawnerfalse);
 			}
 			//Sets the damage to the player for slime2
 			if (gameObject.tag == "slime2") {

@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212942579537676494}
   - component: {fileID: 61820551630416606}
   - component: {fileID: 114056833800291030}
+  - component: {fileID: 114213718458003046}
   m_Layer: 0
   m_Name: Bow1
   m_TagString: bow
@@ -94,6 +95,17 @@ MonoBehaviour:
   image5: {fileID: 0}
   weaponname: 
   damage: 0
+--- !u!114 &114213718458003046
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1090393844292218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bf7aa96435939e4bb844eca7b469cb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212942579537676494
 SpriteRenderer:
   m_ObjectHideFlags: 1

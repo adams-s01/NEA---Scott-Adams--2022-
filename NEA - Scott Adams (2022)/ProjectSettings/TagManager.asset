@@ -46,6 +46,7 @@ TagManager:
   - bat
   - spawner
   - skeleton
+  - arrow
   layers:
   - Default
   - TransparentFX

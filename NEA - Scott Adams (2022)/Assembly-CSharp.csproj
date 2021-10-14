@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\FantasyIconsPackFree\Demo\IconViewer.cs" />
+     <Compile Include="Assets\Scripts\Bow_Shooting.cs" />
      <Compile Include="Assets\Scripts\Crosshair.cs" />
      <Compile Include="Assets\Scripts\Enemy_Movement.cs" />
      <Compile Include="Assets\Scripts\Enemy_Spawner.cs" />
