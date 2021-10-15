@@ -10,6 +10,7 @@ using UnityEngine;
 public class Crosshair : MonoBehaviour {
 
 	GameObject player;
+	public float angle;
 
 	// Use this for initialization
 	void Start () {
@@ -20,7 +21,7 @@ public class Crosshair : MonoBehaviour {
 	void Update () {
 		Vector2 positionOnScreen = Camera.main.WorldToViewportPoint (transform.position);
 		Vector2 mouseOnScreen = Camera.main.ScreenToViewportPoint (Input.mousePosition);
-		float angle = AngleBetweenTwoPoints (positionOnScreen, mouseOnScreen);
+		angle = AngleBetweenTwoPoints (positionOnScreen, mouseOnScreen);
 		//transform.RotateAround (player.transform.position, new Vector3 (0f, 0f, angle), Time.deltaTime * 20);
 		transform.rotation=Quaternion.Euler(new Vector3(0f,0f,angle-90));
 	}

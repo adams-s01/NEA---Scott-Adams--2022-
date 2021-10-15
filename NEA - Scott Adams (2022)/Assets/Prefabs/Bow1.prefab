@@ -21,8 +21,7 @@ GameObject:
   - component: {fileID: 4606878655614744}
   - component: {fileID: 212942579537676494}
   - component: {fileID: 61820551630416606}
-  - component: {fileID: 114056833800291030}
-  - component: {fileID: 114213718458003046}
+  - component: {fileID: 114904843529943424}
   m_Layer: 0
   m_Name: Bow1
   m_TagString: bow
@@ -68,7 +67,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.92, y: 1.92}
   m_EdgeRadius: 0
---- !u!114 &114056833800291030
+--- !u!114 &114904843529943424
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -87,7 +86,7 @@ MonoBehaviour:
   - {fileID: 0}
   full: 0000000000
   bow: {fileID: 21300000, guid: 668df6f48e59c80439fa587624e5a84d, type: 3}
-  sword: {fileID: 21300000, guid: c60f7cf1ed80f5840ac51195ae687e71, type: 3}
+  sword: {fileID: 0}
   image: {fileID: 0}
   image2: {fileID: 0}
   image3: {fileID: 0}
@@ -95,17 +94,6 @@ MonoBehaviour:
   image5: {fileID: 0}
   weaponname: 
   damage: 0
---- !u!114 &114213718458003046
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1090393844292218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bf7aa96435939e4bb844eca7b469cb5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &212942579537676494
 SpriteRenderer:
   m_ObjectHideFlags: 1
