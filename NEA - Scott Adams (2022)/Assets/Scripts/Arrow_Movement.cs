@@ -19,8 +19,9 @@ public class Arrow_Movement : MonoBehaviour {
 	void Start () {
 		arrow = GameObject.FindGameObjectWithTag ("arrow");
 		rb = GetComponent<Rigidbody2D> ();
-		rb.AddForce (new Vector2 (1, 0), ForceMode2D.Impulse);
 		other2 = other.GetComponent<Crosshair> ();
+		rb.velocity=transform.right;
+
 
 
 
@@ -28,7 +29,12 @@ public class Arrow_Movement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		angle1 = other2.angle;
-		Debug.Log (angle1);
+
+	}
+	void OnCollisionEnter2D(Collision col)
+	{
+		Debug.Log ("destroy");
+		Destroy (gameObject);
+
 	}
 }

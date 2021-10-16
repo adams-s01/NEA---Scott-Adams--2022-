@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4492,7 +4492,32 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!61 &518765957
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 518765952}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &526867791
 GameObject:
   m_ObjectHideFlags: 0
@@ -32323,7 +32348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyhealth: 10
-  hitpoint: {fileID: 0}
+  hitpoint: {fileID: 1298472307596048, guid: 068dc1634c869a14691bc34fd2057ec5, type: 2}
   other: {fileID: 0}
   playerdamage: 0
   spawnerfalse: 0
@@ -36015,6 +36040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bf7aa96435939e4bb844eca7b469cb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  other: {fileID: 208899525}
 --- !u!1 &1369691025
 GameObject:
   m_ObjectHideFlags: 0
@@ -36466,7 +36492,7 @@ MonoBehaviour:
   item13button: {fileID: 1596712880}
   item14button: {fileID: 683290081}
   item15button: {fileID: 239375941}
-  goldtext: {fileID: 1207796493}
+  goldtext: {fileID: 1819967630}
   sword: {fileID: 1698076571196482, guid: 035d01b338c5adc4d83094ae73dd9f12, type: 2}
   apple: {fileID: 1188680773142658, guid: fc1426381a2856f4ea43f169705e2ee5, type: 2}
   armour1: {fileID: 1577995519453752, guid: 401f7a78c963b84498cbc57014b48bea, type: 2}

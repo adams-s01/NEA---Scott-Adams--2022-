@@ -29,8 +29,8 @@ public class Bow_Shooting : MonoBehaviour {
 		angle1 = other2.angle;
 		playerx = player.transform.position.x;
 		playery = player.transform.position.y;
-		if (Input.GetKey (KeyCode.Mouse0)) {
-			Instantiate (arrow, new Vector2 (playerx, playery), Quaternion.identity, angle1);
+		if (Input.GetKeyDown (KeyCode.Mouse0)) {
+			Instantiate (arrow, new Vector2 (playerx, playery), Quaternion.Euler (0, 0, angle1));
 		}
 	}
 }
