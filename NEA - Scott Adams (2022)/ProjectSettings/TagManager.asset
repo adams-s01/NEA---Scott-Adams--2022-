@@ -47,6 +47,7 @@ TagManager:
   - spawner
   - skeleton
   - arrow
+  - vase2
   layers:
   - Default
   - TransparentFX

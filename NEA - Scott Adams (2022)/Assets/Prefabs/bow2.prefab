@@ -20,9 +20,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4200651584347416}
   - component: {fileID: 212722181480882770}
+  - component: {fileID: 114753108793847134}
+  - component: {fileID: 61732102410383066}
   m_Layer: 0
   m_Name: bow2
-  m_TagString: Untagged
+  m_TagString: bow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40,6 +42,72 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &61732102410383066
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1651795607493000}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.92, y: 1.92}
+    newSize: {x: 1.92, y: 1.92}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.92, y: 1.92}
+  m_EdgeRadius: 0
+--- !u!114 &114753108793847134
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1651795607493000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0d651c9851bb4841811586cc57fc5ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  full: 0000000000
+  bow: {fileID: 0}
+  sword: {fileID: 0}
+  potion: {fileID: 0}
+  apple: {fileID: 0}
+  armour1: {fileID: 0}
+  armour2: {fileID: 0}
+  bat: {fileID: 0}
+  belt: {fileID: 0}
+  boots: {fileID: 0}
+  bow2: {fileID: 21300000, guid: ed5c3e58951bf304c943dcb7430c42c7, type: 3}
+  club: {fileID: 0}
+  dagger: {fileID: 0}
+  gloves: {fileID: 0}
+  mage: {fileID: 0}
+  ring: {fileID: 0}
+  shield: {fileID: 0}
+  image: {fileID: 0}
+  image2: {fileID: 0}
+  image3: {fileID: 0}
+  image4: {fileID: 0}
+  image5: {fileID: 0}
+  weaponname: 
+  damage: 0
 --- !u!212 &212722181480882770
 SpriteRenderer:
   m_ObjectHideFlags: 1

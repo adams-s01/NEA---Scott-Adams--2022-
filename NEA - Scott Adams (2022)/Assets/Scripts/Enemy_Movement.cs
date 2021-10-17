@@ -153,6 +153,7 @@ public class Enemy_Movement : MonoBehaviour {
 				col.gameObject.SendMessage ("Damage", playerdamage);
 			}
 		}
+
 	}
 	//Collides with the wall, stops the slime leaviing the room
 	public void OnTriggerStay2D(Collider2D col)
@@ -181,6 +182,20 @@ public class Enemy_Movement : MonoBehaviour {
 				playerdamage = 0;
 				col.gameObject.SendMessage ("Damage", playerdamage);
 			}
+		}
+	}
+	//Starts collision with the enemy, from the arrow
+	public void OnCollisionEnter2D(Collision2D col)
+	{
+		//Damages enemy same way as player but when collides with arrow
+		if (col.gameObject.tag == "arrow") {
+			string enemyname = gameObject.name;
+			enemy = GameObject.Find (enemyname);
+			enemyhealth = enemyhealth - 2;
+			enemyx = enemy.transform.position.x;
+			enemyy = enemy.transform.position.y + 2;
+			Instantiate (hitpoint, new Vector2 (enemyx, enemyy), Quaternion.identity);
+			Debug.Log ("5");
 		}
 	}
 }

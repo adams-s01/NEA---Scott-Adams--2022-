@@ -31,10 +31,12 @@ public class Arrow_Movement : MonoBehaviour {
 	void Update () {
 
 	}
-	void OnCollisionEnter2D(Collision col)
+	void OnCollisionEnter2D(Collision2D col)
 	{
-		Debug.Log ("destroy");
-		Destroy (gameObject);
+		if (col.gameObject.tag != "Player") {
+			Debug.Log ("destroy");
+			Destroy (gameObject);
+		}
 
 	}
 }
