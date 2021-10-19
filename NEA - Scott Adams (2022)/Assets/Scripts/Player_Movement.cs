@@ -27,6 +27,8 @@ public class Player_Movement : MonoBehaviour {
 	Transform player;
 	int damage;
 	int playerdamage;
+	public GameObject other;
+	private Inventory_1 other3;
 
 
 	// Use this for initialization
@@ -39,6 +41,7 @@ public class Player_Movement : MonoBehaviour {
 		resting = false;
 		speed = 1;
 		player = GameObject.FindGameObjectWithTag ("Player").GetComponent<Transform> ();
+		other3 = other.GetComponent<Inventory_1> ();
 
 
 	}
@@ -80,7 +83,7 @@ public class Player_Movement : MonoBehaviour {
 		}
 		//Stops sprint
 		if (Input.GetKey (KeyCode.LeftShift) == false) {
-			speed = 1;
+			speed = other3.playerspeed;
 		}
 		//Damages player, once every second
 		if (sleep == false) {
@@ -92,6 +95,7 @@ public class Player_Movement : MonoBehaviour {
 			player.SetPositionAndRotation (new Vector2 (-8, -2), Quaternion.identity);
 			playerhealth = 10;
 		}
+
 
 
 

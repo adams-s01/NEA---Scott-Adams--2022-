@@ -36,7 +36,8 @@ public class Inventory_1 : MonoBehaviour {
 	public Image image5;
 	public string weaponname;
 	public int damage;
-	GameObject hidebow1;
+	public int playerspeed;
+	public GameObject hidebow1;
 	GameObject hidesword;
 	GameObject hidecrosshair;
 	GameObject hidepotion;
@@ -53,12 +54,13 @@ public class Inventory_1 : MonoBehaviour {
 	GameObject hidemage;
 	GameObject hidering;
 	GameObject hideshield;
+	bool sleep;
 
 	// Use this for initialization
 	void Start () {
 		inventory = GameObject.FindGameObjectsWithTag ("image");
 		inventorycanvas = GameObject.FindGameObjectWithTag ("inventory");
-		hidebow1 = GameObject.Find ("Bow11");
+		//hidebow1 = GameObject.Find ("Bow11");
 		hidesword = GameObject.Find ("sword1");
 		hidecrosshair = GameObject.FindGameObjectWithTag ("crosshair");
 		hidepotion = GameObject.Find ("potion");
@@ -92,11 +94,13 @@ public class Inventory_1 : MonoBehaviour {
 		hidemage.SetActive (false);
 		hidering.SetActive (false);
 		hideshield.SetActive (false);
+		sleep = false;
 	}
 	
 	// Sets damage to the damage in the function Weapon
 	void Update () {
 		damage=Weapon(damage);
+		playerspeed = Speed (playerspeed);
 
 		
 	}
@@ -235,7 +239,7 @@ public class Inventory_1 : MonoBehaviour {
 			return damage;
 		}
 		//Sets damage for the sword
-		if (weaponname == "sword") {
+		else if (weaponname == "sword") {
 			damage = 3;
 			hidesword.SetActive (true);
 			hidebow1.SetActive (false);
@@ -257,7 +261,7 @@ public class Inventory_1 : MonoBehaviour {
 			return damage;
 		}
 		//Sets damage for the bat
-		if (weaponname == "bat") {
+		else if (weaponname == "bat") {
 			damage = 4;
 			hidesword.SetActive (false);
 			hidebow1.SetActive (false);
@@ -279,7 +283,7 @@ public class Inventory_1 : MonoBehaviour {
 			return damage;
 		}
 		//Sets damage for the bow2
-		if (weaponname == "bow2") {
+		else if (weaponname == "bow2") {
 			damage = 3;
 			hidesword.SetActive (false);
 			hidebow1.SetActive (false);
@@ -301,7 +305,7 @@ public class Inventory_1 : MonoBehaviour {
 			return damage;
 		}
 		//Sets damage for the club
-		if (weaponname == "club") {
+		else if (weaponname == "club") {
 			damage = 6;
 			hidesword.SetActive (false);
 			hidebow1.SetActive (false);
@@ -323,7 +327,7 @@ public class Inventory_1 : MonoBehaviour {
 			return damage;
 		}
 		//Sets damage for the dagger
-		if (weaponname == "dagger") {
+		else if (weaponname == "dagger") {
 			damage = 4;
 			hidesword.SetActive (false);
 			hidebow1.SetActive (false);
@@ -345,7 +349,7 @@ public class Inventory_1 : MonoBehaviour {
 			return damage;
 		}
 		//Sets damage for the mage
-		if (weaponname == "mage") {
+		else if (weaponname == "mage") {
 			damage = 15;
 			hidesword.SetActive (false);
 			hidebow1.SetActive (false);
@@ -373,6 +377,52 @@ public class Inventory_1 : MonoBehaviour {
 			damage = 0;
 			return damage;
 		}
+	}
+	public int Speed(int playerspeed)
+	{
+		if (weaponname == "potion") {
+			hidesword.SetActive (false);
+			hidebow1.SetActive (false);
+			hidecrosshair.SetActive (false);
+			hidepotion.SetActive (true);
+			hideapple.SetActive (false);
+			hidearmour1.SetActive (false);
+			hidearmour2.SetActive (false);
+			hidebat.SetActive (false);
+			hidebelt.SetActive (false);
+			hideboots.SetActive (false);
+			hidebow2.SetActive (false);
+			hideclub.SetActive (false);
+			hidedagger.SetActive (false);
+			hidegloves.SetActive (false);
+			hidemage.SetActive (false);
+			hidering.SetActive (false);
+			hideshield.SetActive (false);
+			if (Input.GetKeyDown (KeyCode.Mouse0)) {
+				
+				if(sleep==false)
+				{
+					playerspeed = 5;
+					hidepotion.SetActive (false);
+					StartCoroutine (speedcoroutine ());
+				}
+			}
+			return playerspeed;
+		}
+		//Sets the speed when the potion is not used
+		else {
+			playerspeed = 1;
+			return playerspeed;
+		}
+	}
+	IEnumerator speedcoroutine()
+	{
+		sleep = true;
+		Debug.Log ("6");
+		yield return new WaitForSecondsRealtime (5);
+		Debug.Log ("7");
+		playerspeed = 1;
+		sleep = false;
 	}
 
 }

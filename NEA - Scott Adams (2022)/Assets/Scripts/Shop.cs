@@ -115,7 +115,7 @@ public class Shop : MonoBehaviour {
 	
 	// Sets text for amount of gold
 	void Update () {
-		gold = 10;
+		gold = 1000;
 		goldtext.text = "Gold: " + gold.ToString ();
 		/*if (gold >= 10) {
 			item1button.colors = usablecolour;
