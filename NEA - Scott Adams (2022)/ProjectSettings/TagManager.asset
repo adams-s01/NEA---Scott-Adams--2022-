@@ -48,6 +48,7 @@ TagManager:
   - skeleton
   - arrow
   - vase2
+  - armourcanvas
   layers:
   - Default
   - TransparentFX

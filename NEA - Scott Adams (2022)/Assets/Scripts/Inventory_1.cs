@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 2
-* Last Edited: Sprint 3
+* Last Edited: Sprint 5
 * Purpose: Causes an inventory to exist
 */
 using System.Collections;
@@ -34,9 +34,11 @@ public class Inventory_1 : MonoBehaviour {
 	public Image image3;
 	public Image image4;
 	public Image image5;
+	public Image armourimage;
 	public string weaponname;
 	public int damage;
 	public int playerspeed;
+	public int armourstat;
 	public GameObject hidebow1;
 	GameObject hidesword;
 	GameObject hidecrosshair;
@@ -55,11 +57,13 @@ public class Inventory_1 : MonoBehaviour {
 	GameObject hidering;
 	GameObject hideshield;
 	bool sleep;
+	GameObject armourcanvas;
 
 	// Use this for initialization
 	void Start () {
 		inventory = GameObject.FindGameObjectsWithTag ("image");
 		inventorycanvas = GameObject.FindGameObjectWithTag ("inventory");
+		armourcanvas = GameObject.FindGameObjectWithTag ("armourcanvas");
 		//hidebow1 = GameObject.Find ("Bow11");
 		hidesword = GameObject.Find ("sword1");
 		hidecrosshair = GameObject.FindGameObjectWithTag ("crosshair");
@@ -94,7 +98,10 @@ public class Inventory_1 : MonoBehaviour {
 		hidemage.SetActive (false);
 		hidering.SetActive (false);
 		hideshield.SetActive (false);
+		armourcanvas.SetActive (false);
 		sleep = false;
+
+
 	}
 	
 	// Sets damage to the damage in the function Weapon
@@ -183,6 +190,21 @@ public class Inventory_1 : MonoBehaviour {
 		Debug.Log ("1");
 		weaponname = image.sprite.name;
 		Debug.Log (weaponname);
+		if (weaponname == "potion") {
+			inventory [1].GetComponent<Image> ().sprite = null;
+		}
+		if (weaponname == "armour1") {
+			weaponname = null;
+			inventory [1].GetComponent<Image> ().sprite = null;
+			armourimage.GetComponent<Image> ().sprite = armour1;
+			armourstat = 2;
+		}
+		if (weaponname == "armour2") {
+			weaponname = null;
+			inventory [1].GetComponent<Image> ().sprite = null;
+			armourimage.GetComponent<Image> ().sprite = armour2;
+			armourstat = 5;
+		}
 	}
 	//Acitvates when slot two clicked
 	public void Inventory2()
@@ -190,6 +212,22 @@ public class Inventory_1 : MonoBehaviour {
 		Debug.Log ("2");
 		weaponname = image2.sprite.name;
 		Debug.Log (weaponname);
+		if (weaponname == "potion") {
+			inventory [4].GetComponent<Image> ().sprite = null;
+		}
+		if (weaponname == "armour1") {
+			weaponname = null;
+			inventory [4].GetComponent<Image> ().sprite = null;
+			armourimage.GetComponent<Image> ().sprite = armour1;
+			armourstat = 2;
+		}
+		if (weaponname == "armour2") {
+			weaponname = null;
+			inventory [4].GetComponent<Image> ().sprite = null;
+
+			armourimage.GetComponent<Image> ().sprite = armour2;
+			armourstat = 5;
+		}
 	}
 	//Activates when slot three clicked
 	public void Inventory3()
@@ -197,6 +235,21 @@ public class Inventory_1 : MonoBehaviour {
 		Debug.Log ("3");
 		weaponname = image3.sprite.name;
 		Debug.Log (weaponname);
+		if (weaponname == "potion") {
+			inventory [3].GetComponent<Image> ().sprite = null;
+		}
+		if (weaponname == "armour1") {
+			weaponname = null;
+			inventory [3].GetComponent<Image> ().sprite = null;
+			armourimage.GetComponent<Image> ().sprite = armour1;
+			armourstat = 2;
+		}
+		if (weaponname == "armour2") {
+			weaponname = null;
+			inventory [3].GetComponent<Image> ().sprite = null;
+			armourimage.GetComponent<Image> ().sprite = armour2;
+			armourstat = 5;
+		}
 	}
 	//Activates when slot four clicked
 	public void Inventory4()
@@ -204,6 +257,21 @@ public class Inventory_1 : MonoBehaviour {
 		Debug.Log ("4");
 		weaponname = image4.sprite.name;
 		Debug.Log (weaponname);
+		if (weaponname == "potion") {
+			inventory [0].GetComponent<Image> ().sprite = null;
+		}
+		if (weaponname == "armour1") {
+			weaponname = null;
+			inventory [0].GetComponent<Image> ().sprite = null;
+			armourimage.GetComponent<Image> ().sprite = armour1;
+			armourstat = 2;
+		}
+		if (weaponname == "armour2") {
+			weaponname = null;
+			inventory [0].GetComponent<Image> ().sprite = null;
+			armourimage.GetComponent<Image> ().sprite = armour2;
+			armourstat = 5;
+		}
 	}
 	//Activated when slot five clicked
 	public void Inventory5()
@@ -211,6 +279,25 @@ public class Inventory_1 : MonoBehaviour {
 		Debug.Log ("5");
 		weaponname = image5.sprite.name;
 		Debug.Log (weaponname);
+		if (weaponname == "potion") {
+			inventory [2].GetComponent<Image> ().sprite = null;
+		}
+		if (weaponname == "armour1") {
+			weaponname = null;
+			inventory [2].GetComponent<Image> ().sprite = null;
+			armourimage.GetComponent<Image> ().sprite = armour1;
+			armourstat = 2;
+		}
+		if (weaponname == "armour2") {
+			weaponname = null;
+			inventory [2].GetComponent<Image> ().sprite = null;
+			armourimage.GetComponent<Image> ().sprite = armour2;
+			armourstat = 5;
+		}
+	}
+	public void InventoryArmour()
+	{
+		armourcanvas.SetActive (true);
 	}
 	//Function to set the damage of weapons for player
 	public int Weapon(int damage)
@@ -403,8 +490,8 @@ public class Inventory_1 : MonoBehaviour {
 				if(sleep==false)
 				{
 					playerspeed = 5;
-					hidepotion.SetActive (false);
 					StartCoroutine (speedcoroutine ());
+
 				}
 			}
 			return playerspeed;
@@ -418,10 +505,10 @@ public class Inventory_1 : MonoBehaviour {
 	IEnumerator speedcoroutine()
 	{
 		sleep = true;
-		Debug.Log ("6");
 		yield return new WaitForSecondsRealtime (5);
-		Debug.Log ("7");
 		playerspeed = 1;
+		weaponname = null;
+		hidepotion.SetActive (false);
 		sleep = false;
 	}
 
