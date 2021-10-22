@@ -49,6 +49,7 @@ TagManager:
   - arrow
   - vase2
   - armourcanvas
+  - ringcanvas
   layers:
   - Default
   - TransparentFX

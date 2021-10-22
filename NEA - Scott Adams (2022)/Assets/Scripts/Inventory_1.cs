@@ -35,10 +35,22 @@ public class Inventory_1 : MonoBehaviour {
 	public Image image4;
 	public Image image5;
 	public Image armourimage;
+	public Image glovesimage;
+	public Image bootsimage;
+	public Image ring1image;
+	public Image ring2image;
+	public Image ring3image;
+	public Image ring4image;
+	public Image ring5image;
+	public Image ring6image;
 	public string weaponname;
 	public int damage;
 	public int playerspeed;
 	public int armourstat;
+	int armourarmourstat;
+	int armourglovesstat;
+	int armourbootsstat;
+	int armourringstat;
 	public GameObject hidebow1;
 	GameObject hidesword;
 	GameObject hidecrosshair;
@@ -58,12 +70,14 @@ public class Inventory_1 : MonoBehaviour {
 	GameObject hideshield;
 	bool sleep;
 	GameObject armourcanvas;
+	GameObject ringcanvas;
 
 	// Use this for initialization
 	void Start () {
 		inventory = GameObject.FindGameObjectsWithTag ("image");
 		inventorycanvas = GameObject.FindGameObjectWithTag ("inventory");
 		armourcanvas = GameObject.FindGameObjectWithTag ("armourcanvas");
+		ringcanvas = GameObject.FindGameObjectWithTag ("ringcanvas");
 		//hidebow1 = GameObject.Find ("Bow11");
 		hidesword = GameObject.Find ("sword1");
 		hidecrosshair = GameObject.FindGameObjectWithTag ("crosshair");
@@ -99,8 +113,9 @@ public class Inventory_1 : MonoBehaviour {
 		hidering.SetActive (false);
 		hideshield.SetActive (false);
 		armourcanvas.SetActive (false);
+		ringcanvas.SetActive (false);
 		sleep = false;
-
+		armourstat = 0;
 
 	}
 	
@@ -108,6 +123,7 @@ public class Inventory_1 : MonoBehaviour {
 	void Update () {
 		damage=Weapon(damage);
 		playerspeed = Speed (playerspeed);
+		armourstat = armourarmourstat + armourglovesstat + armourbootsstat+armourringstat;
 
 		
 	}
@@ -197,13 +213,37 @@ public class Inventory_1 : MonoBehaviour {
 			weaponname = null;
 			inventory [1].GetComponent<Image> ().sprite = null;
 			armourimage.GetComponent<Image> ().sprite = armour1;
-			armourstat = 2;
+			armourarmourstat = 2;
 		}
 		if (weaponname == "armour2") {
 			weaponname = null;
 			inventory [1].GetComponent<Image> ().sprite = null;
 			armourimage.GetComponent<Image> ().sprite = armour2;
-			armourstat = 5;
+			armourarmourstat = 5;
+		}
+		if (weaponname == "belt") {
+			weaponname = null;
+			inventory [1].GetComponent<Image> ().sprite = null;
+			glovesimage.GetComponent<Image> ().sprite = belt;
+			armourglovesstat = 2;
+		}
+		if (weaponname == "gloves") {
+			weaponname = null;
+			inventory [1].GetComponent<Image> ().sprite = null;
+			glovesimage.GetComponent<Image> ().sprite = gloves;
+			armourglovesstat = 3;
+		}
+		if (weaponname == "boots") {
+			weaponname = null;
+			inventory [1].GetComponent<Image> ().sprite = null;
+			bootsimage.GetComponent<Image> ().sprite = boots;
+			armourbootsstat = 2;
+		}
+		if (weaponname == "ring") {
+			weaponname = null;
+			inventory [1].GetComponent<Image> ().sprite = null;
+			ring1image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
+			armourringstat = 10;
 		}
 	}
 	//Acitvates when slot two clicked
@@ -219,15 +259,39 @@ public class Inventory_1 : MonoBehaviour {
 			weaponname = null;
 			inventory [4].GetComponent<Image> ().sprite = null;
 			armourimage.GetComponent<Image> ().sprite = armour1;
-			armourstat = 2;
+			armourarmourstat = 2;
 		}
 		if (weaponname == "armour2") {
 			weaponname = null;
 			inventory [4].GetComponent<Image> ().sprite = null;
-
 			armourimage.GetComponent<Image> ().sprite = armour2;
-			armourstat = 5;
+			armourarmourstat = 5;
 		}
+		if (weaponname == "belt") {
+			weaponname = null;
+			inventory [4].GetComponent<Image> ().sprite = null;
+			glovesimage.GetComponent<Image> ().sprite = belt;
+			armourglovesstat = 2;
+		}
+		if (weaponname == "gloves") {
+			weaponname = null;
+			inventory [4].GetComponent<Image> ().sprite = null;
+			glovesimage.GetComponent<Image> ().sprite = gloves;
+			armourglovesstat = 3;
+		}
+		if (weaponname == "boots") {
+			weaponname = null;
+			inventory [4].GetComponent<Image> ().sprite = null;
+			bootsimage.GetComponent<Image> ().sprite = boots;
+			armourbootsstat = 2;
+		}
+		if (weaponname == "ring") {
+			weaponname = null;
+			inventory [4].GetComponent<Image> ().sprite = null;
+			ring1image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
+			armourringstat = 10;
+		}
+
 	}
 	//Activates when slot three clicked
 	public void Inventory3()
@@ -242,13 +306,37 @@ public class Inventory_1 : MonoBehaviour {
 			weaponname = null;
 			inventory [3].GetComponent<Image> ().sprite = null;
 			armourimage.GetComponent<Image> ().sprite = armour1;
-			armourstat = 2;
+			armourarmourstat = 2;
 		}
 		if (weaponname == "armour2") {
 			weaponname = null;
 			inventory [3].GetComponent<Image> ().sprite = null;
 			armourimage.GetComponent<Image> ().sprite = armour2;
-			armourstat = 5;
+			armourarmourstat = 5;
+		}
+		if (weaponname == "belt") {
+			weaponname = null;
+			inventory [3].GetComponent<Image> ().sprite = null;
+			glovesimage.GetComponent<Image> ().sprite = belt;
+			armourglovesstat = 2;
+		}
+		if (weaponname == "gloves") {
+			weaponname = null;
+			inventory [3].GetComponent<Image> ().sprite = null;
+			glovesimage.GetComponent<Image> ().sprite = gloves;
+			armourglovesstat = 3;
+		}
+		if (weaponname == "boots") {
+			weaponname = null;
+			inventory [3].GetComponent<Image> ().sprite = null;
+			bootsimage.GetComponent<Image> ().sprite = boots;
+			armourbootsstat = 2;
+		}
+		if (weaponname == "ring") {
+			weaponname = null;
+			inventory [3].GetComponent<Image> ().sprite = null;
+			ring1image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
+			armourringstat = 10;
 		}
 	}
 	//Activates when slot four clicked
@@ -264,13 +352,37 @@ public class Inventory_1 : MonoBehaviour {
 			weaponname = null;
 			inventory [0].GetComponent<Image> ().sprite = null;
 			armourimage.GetComponent<Image> ().sprite = armour1;
-			armourstat = 2;
+			armourarmourstat = 2;
 		}
 		if (weaponname == "armour2") {
 			weaponname = null;
 			inventory [0].GetComponent<Image> ().sprite = null;
 			armourimage.GetComponent<Image> ().sprite = armour2;
-			armourstat = 5;
+			armourarmourstat = 5;
+		}
+		if (weaponname == "belt") {
+			weaponname = null;
+			inventory [0].GetComponent<Image> ().sprite = null;
+			glovesimage.GetComponent<Image> ().sprite = belt;
+			armourglovesstat = 2;
+		}
+		if (weaponname == "gloves") {
+			weaponname = null;
+			inventory [0].GetComponent<Image> ().sprite = null;
+			glovesimage.GetComponent<Image> ().sprite = gloves;
+			armourglovesstat = 3;
+		}
+		if (weaponname == "boots") {
+			weaponname = null;
+			inventory [0].GetComponent<Image> ().sprite = null;
+			bootsimage.GetComponent<Image> ().sprite = boots;
+			armourbootsstat = 2;
+		}
+		if (weaponname == "ring") {
+			weaponname = null;
+			inventory [0].GetComponent<Image> ().sprite = null;
+			ring1image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
+			armourringstat = 10;
 		}
 	}
 	//Activated when slot five clicked
@@ -286,18 +398,46 @@ public class Inventory_1 : MonoBehaviour {
 			weaponname = null;
 			inventory [2].GetComponent<Image> ().sprite = null;
 			armourimage.GetComponent<Image> ().sprite = armour1;
-			armourstat = 2;
+			armourarmourstat = 2;
 		}
 		if (weaponname == "armour2") {
 			weaponname = null;
 			inventory [2].GetComponent<Image> ().sprite = null;
 			armourimage.GetComponent<Image> ().sprite = armour2;
-			armourstat = 5;
+			armourarmourstat = 5;
+		}
+		if (weaponname == "belt") {
+			weaponname = null;
+			inventory [2].GetComponent<Image> ().sprite = null;
+			glovesimage.GetComponent<Image> ().sprite = belt;
+			armourglovesstat = 2;
+		}
+		if (weaponname == "gloves") {
+			weaponname = null;
+			inventory [2].GetComponent<Image> ().sprite = null;
+			glovesimage.GetComponent<Image> ().sprite = gloves;
+			armourglovesstat = 3;
+		}
+		if (weaponname == "boots") {
+			weaponname = null;
+			inventory [2].GetComponent<Image> ().sprite = null;
+			bootsimage.GetComponent<Image> ().sprite = boots;
+			armourbootsstat = 2;
+		}
+		if (weaponname == "ring") {
+			weaponname = null;
+			inventory [2].GetComponent<Image> ().sprite = null;
+			ring1image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
+			armourringstat = 10;
 		}
 	}
 	public void InventoryArmour()
 	{
 		armourcanvas.SetActive (true);
+	}
+	public void InventoryRing()
+	{
+		ringcanvas.SetActive (true);
 	}
 	//Function to set the damage of weapons for player
 	public int Weapon(int damage)
