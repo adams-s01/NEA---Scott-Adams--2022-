@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 1
-* Last Edited: Sprint 4
+* Last Edited: Sprint 5
 * Purpose: Cause the player to move
 */
 using System.Collections;
@@ -29,6 +29,8 @@ public class Player_Movement : MonoBehaviour {
 	int playerdamage;
 	public GameObject other;
 	private Inventory_1 other3;
+	bool ringhealth;
+	bool ringhealth2;
 
 
 	// Use this for initialization
@@ -95,8 +97,14 @@ public class Player_Movement : MonoBehaviour {
 			player.SetPositionAndRotation (new Vector2 (-8, -2), Quaternion.identity);
 			playerhealth = 10;
 		}
-
-
+		if (other3.playerhealth == true&&ringhealth==false) {
+			playerhealth += 20;
+			ringhealth = true;
+		}
+		if (other3.playerhealth2 == true&&ringhealth2==false) {
+			playerhealth += 50;
+			ringhealth2 = true;
+		}
 
 
 

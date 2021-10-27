@@ -4,11 +4,11 @@
     <Files>
       <File FileName="Assets\Scripts\Menu_Buttons.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Settings_Menu.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Player_Movement.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Player_Movement.cs" Line="106" Column="15" />
       <File FileName="Assets\Scripts\Tutorials.cs" Line="1" Column="1" />
       <File FileName="Assets\ActRPGsprites\readme.txt" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Enemy_Movement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Inventory_1.cs" Line="430" Column="75" />
+      <File FileName="Assets\Scripts\Inventory_1.cs" Line="592" Column="16" />
       <File FileName="Assets\Scripts\Shop.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Crosshair.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Enemy_Spawner.cs" Line="1" Column="1" />
