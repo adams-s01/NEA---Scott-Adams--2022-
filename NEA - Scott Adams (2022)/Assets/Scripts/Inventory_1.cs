@@ -33,6 +33,7 @@ public class Inventory_1 : MonoBehaviour {
 	public Sprite ring5;
 	public Sprite ring6;
 	public Sprite shield;
+	public Sprite key;
 	GameObject inventorycanvas;
 	public Image image;
 	public Image image2;
@@ -48,6 +49,7 @@ public class Inventory_1 : MonoBehaviour {
 	public Image ring4image;
 	public Image ring5image;
 	public Image ring6image;
+	public Image keyimage;
 	public string weaponname;
 	public int damage;
 	public int playerspeed;
@@ -79,6 +81,8 @@ public class Inventory_1 : MonoBehaviour {
 	int speeddouble;
 	public bool playerhealth;
 	public bool playerhealth2;
+	public bool playerhealth3;
+	public bool keytrue;
 	GameObject armourcanvas;
 	GameObject ringcanvas;
 
@@ -215,6 +219,9 @@ public class Inventory_1 : MonoBehaviour {
 					if (gameObject.name == "shield(Clone)") {
 						inventory [i + 0].GetComponent<Image> ().sprite = shield;
 					}
+					if (gameObject.name == "Key_B(Clone)") {
+						inventory [i + 0].GetComponent<Image> ().sprite = key;
+					}
 					GameObject bow1 = GameObject.FindGameObjectWithTag ("bow");
 					Destroy (bow1);
 					full [i] = true;
@@ -270,6 +277,10 @@ public class Inventory_1 : MonoBehaviour {
 			bootsimage.GetComponent<Image> ().sprite = boots;
 			armourbootsstat = 2;
 		}
+		if (weaponname == "apple") {
+			inventory [1].GetComponent<Image> ().sprite = null;
+			playerhealth3 = true;
+		}
 		if (weaponname == "ring") {
 			weaponname = null;
 			inventory [1].GetComponent<Image> ().sprite = null;
@@ -305,6 +316,12 @@ public class Inventory_1 : MonoBehaviour {
 			inventory [1].GetComponent<Image> ().sprite = null;
 			ring6image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerhealth2 = true;
+		}
+		if (weaponname == "Key_B") {
+			weaponname = null;
+			inventory [1].GetComponent<Image> ().sprite = null;
+			keyimage.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
+			keytrue = true;
 		}
 	}
 	//Acitvates when slot two clicked
@@ -352,6 +369,10 @@ public class Inventory_1 : MonoBehaviour {
 			bootsimage.GetComponent<Image> ().sprite = boots;
 			armourbootsstat = 2;
 		}
+		if (weaponname == "apple") {
+			inventory [4].GetComponent<Image> ().sprite = null;
+			playerhealth3 = true;
+		}
 		if (weaponname == "ring") {
 			weaponname = null;
 			inventory [4].GetComponent<Image> ().sprite = null;
@@ -387,6 +408,12 @@ public class Inventory_1 : MonoBehaviour {
 			inventory [4].GetComponent<Image> ().sprite = null;
 			ring6image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerhealth2 = true;
+		}
+		if (weaponname == "Key_B") {
+			weaponname = null;
+			inventory [4].GetComponent<Image> ().sprite = null;
+			keyimage.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
+			keytrue = true;
 		}
 
 	}
@@ -435,6 +462,10 @@ public class Inventory_1 : MonoBehaviour {
 			bootsimage.GetComponent<Image> ().sprite = boots;
 			armourbootsstat = 2;
 		}
+		if (weaponname == "apple") {
+			inventory [3].GetComponent<Image> ().sprite = null;
+			playerhealth3 = true;
+		}
 		if (weaponname == "ring") {
 			weaponname = null;
 			inventory [3].GetComponent<Image> ().sprite = null;
@@ -470,6 +501,12 @@ public class Inventory_1 : MonoBehaviour {
 			inventory [3].GetComponent<Image> ().sprite = null;
 			ring6image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerhealth2 = true;
+		}
+		if (weaponname == "Key_B") {
+			weaponname = null;
+			inventory [3].GetComponent<Image> ().sprite = null;
+			keyimage.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
+			keytrue = true;
 		}
 	}
 	//Activates when slot four clicked
@@ -517,6 +554,10 @@ public class Inventory_1 : MonoBehaviour {
 			bootsimage.GetComponent<Image> ().sprite = boots;
 			armourbootsstat = 2;
 		}
+		if (weaponname == "apple") {
+			inventory [0].GetComponent<Image> ().sprite = null;
+			playerhealth3 = true;
+		}
 		if (weaponname == "ring") {
 			weaponname = null;
 			inventory [0].GetComponent<Image> ().sprite = null;
@@ -552,6 +593,12 @@ public class Inventory_1 : MonoBehaviour {
 			inventory [0].GetComponent<Image> ().sprite = null;
 			ring6image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerhealth2 = true;
+		}
+		if (weaponname == "Key_B") {
+			weaponname = null;
+			inventory [0].GetComponent<Image> ().sprite = null;
+			keyimage.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
+			keytrue = true;
 		}
 	}
 	//Activated when slot five clicked
@@ -599,6 +646,10 @@ public class Inventory_1 : MonoBehaviour {
 			bootsimage.GetComponent<Image> ().sprite = boots;
 			armourbootsstat = 2;
 		}
+		if (weaponname == "apple") {
+			inventory [2].GetComponent<Image> ().sprite = null;
+			playerhealth3 = true;
+		}
 		if (weaponname == "ring") {
 			weaponname = null;
 			inventory [2].GetComponent<Image> ().sprite = null;
@@ -634,6 +685,12 @@ public class Inventory_1 : MonoBehaviour {
 			inventory [2].GetComponent<Image> ().sprite = null;
 			ring6image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerhealth2 = true;
+		}
+		if (weaponname == "Key_B") {
+			weaponname = null;
+			inventory [2].GetComponent<Image> ().sprite = null;
+			keyimage.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
+			keytrue = true;
 		}
 	}
 	public void InventoryArmour()

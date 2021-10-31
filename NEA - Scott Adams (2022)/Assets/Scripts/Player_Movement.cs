@@ -15,9 +15,11 @@ public class Player_Movement : MonoBehaviour {
 	GameObject leg;
 	GameObject vase;
 	GameObject vase2;
+	GameObject keyvase;
 	public Image speedbar;
 	public GameObject bow;
 	public GameObject potion;
+	public GameObject key;
 	bool resting;
 	int speed;
 	Enemy_Movement other2;
@@ -40,6 +42,7 @@ public class Player_Movement : MonoBehaviour {
 		leg = GameObject.FindGameObjectWithTag ("leg");
 		vase = GameObject.FindGameObjectWithTag ("vase");
 		vase2 = GameObject.FindGameObjectWithTag ("vase2");
+		keyvase = GameObject.FindGameObjectWithTag ("keyvase");
 		resting = false;
 		speed = 1;
 		player = GameObject.FindGameObjectWithTag ("Player").GetComponent<Transform> ();
@@ -105,6 +108,10 @@ public class Player_Movement : MonoBehaviour {
 			playerhealth += 50;
 			ringhealth2 = true;
 		}
+		if (other3.playerhealth3 == true) {
+			playerhealth += 10;
+			other3.playerhealth3 = false;
+		}
 
 
 
@@ -131,6 +138,11 @@ public class Player_Movement : MonoBehaviour {
 		{
 			Destroy (vase2);
 			Instantiate (potion, new Vector2 (vase2.transform.position.x, vase2.transform.position.y), Quaternion.identity);
+		}
+		if(Input.GetKeyDown(KeyCode.Mouse0)&&col.gameObject.tag=="keyvase")
+		{
+			Destroy (keyvase);
+			Instantiate (key, new Vector2 (keyvase.transform.position.x, keyvase.transform.position.y), Quaternion.identity);
 		}
 	}
 	//Causes the player to be damaged once every second, by the amount of damage from the Enemy_Movement

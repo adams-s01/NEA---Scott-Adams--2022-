@@ -50,6 +50,9 @@ TagManager:
   - vase2
   - armourcanvas
   - ringcanvas
+  - keyvase
+  - closeddoor
+  - opendoor
   layers:
   - Default
   - TransparentFX
