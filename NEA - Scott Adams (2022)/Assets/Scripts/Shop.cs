@@ -11,7 +11,7 @@ using UnityEngine.UI;
 
 public class Shop : MonoBehaviour {
 
-	GameObject shopmenu;
+	public GameObject shopmenu;
 	GameObject item1;
 	GameObject item2;
 	GameObject item3;

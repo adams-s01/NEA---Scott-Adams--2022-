@@ -13,11 +13,14 @@ public class Tutorials : MonoBehaviour {
 	GameObject sprint;
 	GameObject jump;
 	GameObject sprint2;
+	GameObject shop;
 
 	bool left;
 	bool right;
 	bool moving;
 	bool sprinting;
+	public GameObject other;
+	private Shop other2;
 
 	// Initialises canvases and variables
 	void Start () {
@@ -25,14 +28,17 @@ public class Tutorials : MonoBehaviour {
 		sprint = GameObject.FindGameObjectWithTag ("sprint");
 		jump = GameObject.FindGameObjectWithTag ("jump");
 		sprint2 = GameObject.FindGameObjectWithTag ("sprint2");
+		shop = GameObject.FindGameObjectWithTag ("shoptutorial");
 
 		sprint.SetActive (false);
 		jump.SetActive (false);
 		sprint2.SetActive (false);
+		shop.SetActive (false);
 		left = false;
 		right = false;
 		moving = false;
 		sprinting = false;
+		other2 = other.GetComponent<Shop> ();
 	}
 	
 	// Checks whether the requirements for tutorial canvas is met then switches canvas
@@ -62,7 +68,12 @@ public class Tutorials : MonoBehaviour {
 		if (Input.GetKey (KeyCode.LeftShift) == false) {
 			sprint2.SetActive (false);
 		}
-
+		if (other2.shopmenu.activeSelf) {
+			shop.SetActive (true);
+		}
+		if (other2.shopmenu.activeSelf == false) {
+			shop.SetActive (false);
+		}
 		
 	}
 }

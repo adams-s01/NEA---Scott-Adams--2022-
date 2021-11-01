@@ -1,20 +1,20 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Escape_Door.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Tutorials.cs">
     <Files>
       <File FileName="Assets\Scripts\Menu_Buttons.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Settings_Menu.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Player_Movement.cs" Line="145" Column="68" />
-      <File FileName="Assets\Scripts\Tutorials.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Tutorials.cs" Line="76" Column="4" />
       <File FileName="Assets\ActRPGsprites\readme.txt" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Enemy_Movement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Inventory_1.cs" Line="320" Column="27" />
-      <File FileName="Assets\Scripts\Shop.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Inventory_1.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Shop.cs" Line="14" Column="9" />
       <File FileName="Assets\Scripts\Crosshair.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Enemy_Spawner.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Bow_Shooting.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Arrow_Movement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Escape_Door.cs" Line="28" Column="20" />
+      <File FileName="Assets\Scripts\Escape_Door.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

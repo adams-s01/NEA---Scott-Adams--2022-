@@ -53,6 +53,7 @@ TagManager:
   - keyvase
   - closeddoor
   - opendoor
+  - shoptutorial
   layers:
   - Default
   - TransparentFX
