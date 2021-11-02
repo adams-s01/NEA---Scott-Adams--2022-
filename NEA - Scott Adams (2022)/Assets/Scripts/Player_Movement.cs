@@ -7,6 +7,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player_Movement : MonoBehaviour {
 
@@ -33,6 +34,7 @@ public class Player_Movement : MonoBehaviour {
 	private Inventory_1 other3;
 	bool ringhealth;
 	bool ringhealth2;
+	public int lives;
 
 
 	// Use this for initialization
@@ -47,7 +49,7 @@ public class Player_Movement : MonoBehaviour {
 		speed = 1;
 		player = GameObject.FindGameObjectWithTag ("Player").GetComponent<Transform> ();
 		other3 = other.GetComponent<Inventory_1> ();
-
+		lives = 3;
 	}
 	
 	// Update is called once per frame
@@ -98,6 +100,7 @@ public class Player_Movement : MonoBehaviour {
 		if (playerhealth <= 0) {
 			player.SetPositionAndRotation (new Vector2 (-8, -2), Quaternion.identity);
 			playerhealth = 10;
+			lives--;
 		}
 		//Adds 20 health from first ring
 		if (other3.playerhealth == true&&ringhealth==false) {
@@ -114,7 +117,9 @@ public class Player_Movement : MonoBehaviour {
 			playerhealth += 10;
 			other3.playerhealth3 = false;
 		}
-
+		if (lives == 0) {
+			SceneManager.LoadScene (0);
+		}
 
 
 	}

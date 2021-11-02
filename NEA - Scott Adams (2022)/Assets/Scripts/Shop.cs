@@ -42,7 +42,7 @@ public class Shop : MonoBehaviour {
 	public Button item13button;
 	public Button item14button;
 	public Button item15button;
-	int gold;
+	public int gold;
 	public TextMeshProUGUI goldtext;
 	ColorBlock unusablecolour;
 	ColorBlock usablecolour;
