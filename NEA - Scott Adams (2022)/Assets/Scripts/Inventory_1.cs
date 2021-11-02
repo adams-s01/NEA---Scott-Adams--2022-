@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 2
-* Last Edited: Sprint 5
+* Last Edited: Sprint 6
 * Purpose: Causes an inventory to exist
 */
 using System.Collections;
@@ -59,7 +59,7 @@ public class Inventory_1 : MonoBehaviour {
 	int armourbootsstat;
 	int armourringstat;
 	public GameObject hidebow1;
-	GameObject hidesword;
+	public GameObject hidesword;
 	GameObject hidecrosshair;
 	GameObject hidepotion;
 	GameObject hideapple;
@@ -93,7 +93,7 @@ public class Inventory_1 : MonoBehaviour {
 		armourcanvas = GameObject.FindGameObjectWithTag ("armourcanvas");
 		ringcanvas = GameObject.FindGameObjectWithTag ("ringcanvas");
 		//hidebow1 = GameObject.Find ("Bow11");
-		hidesword = GameObject.Find ("sword1");
+		//hidesword = GameObject.Find ("sword1");
 		hidecrosshair = GameObject.FindGameObjectWithTag ("crosshair");
 		hidepotion = GameObject.Find ("potion");
 		hideapple = GameObject.Find ("apple");
@@ -139,9 +139,11 @@ public class Inventory_1 : MonoBehaviour {
 		damage=Weapon(damage);
 		playerspeed = Speed (playerspeed);
 		armourstat = armourarmourstat + armourglovesstat + armourbootsstat+armourringstat;
+		//Doubles speed so long as its not tripled
 		if (playerspeedtrue == true && playerspeedtrue2 == false) {
 			speeddouble = 2;
 		}
+		//Triples speed
 		if (playerspeedtrue2 == true) {
 			speeddouble = 3;
 		} else {
@@ -693,18 +695,22 @@ public class Inventory_1 : MonoBehaviour {
 			keytrue = true;
 		}
 	}
+	//Activates canvas showing armour
 	public void InventoryArmour()
 	{
 		armourcanvas.SetActive (true);
 	}
+	//Deactivates canvas showing armour
 	public void InventoryArmourExit()
 	{
 		armourcanvas.SetActive (false);
 	}
+	//Activates canvas showing rings
 	public void InventoryRing()
 	{
 		ringcanvas.SetActive (true);
 	}
+	//Deactivates canvas showing armour
 	public void InventoryRingExit()
 	{
 		ringcanvas.SetActive (false);
@@ -875,6 +881,7 @@ public class Inventory_1 : MonoBehaviour {
 			return damage;
 		}
 	}
+	//Causes speed increase from potion
 	public int Speed(int playerspeed)
 	{
 		if (weaponname == "potion") {
@@ -912,6 +919,7 @@ public class Inventory_1 : MonoBehaviour {
 			return playerspeed;
 		}
 	}
+	//Resets speed after 5 seconds
 	IEnumerator speedcoroutine()
 	{
 		sleep = true;

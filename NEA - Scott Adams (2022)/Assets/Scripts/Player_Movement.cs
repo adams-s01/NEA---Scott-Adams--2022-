@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 1
-* Last Edited: Sprint 5
+* Last Edited: Sprint 6
 * Purpose: Cause the player to move
 */
 using System.Collections;
@@ -48,7 +48,6 @@ public class Player_Movement : MonoBehaviour {
 		player = GameObject.FindGameObjectWithTag ("Player").GetComponent<Transform> ();
 		other3 = other.GetComponent<Inventory_1> ();
 
-
 	}
 	
 	// Update is called once per frame
@@ -79,7 +78,7 @@ public class Player_Movement : MonoBehaviour {
 		}
 		//Sprint
 		if (Input.GetKey (KeyCode.LeftShift)&&resting==false) {
-			speed = 10;
+			speed = 8;
 			speedbar.transform.localScale -= new Vector3 (0.002f, 0, 0);
 			if (speedbar.transform.localScale.x <= 0) {
 				StartCoroutine (restingcoroutine ());
@@ -100,14 +99,17 @@ public class Player_Movement : MonoBehaviour {
 			player.SetPositionAndRotation (new Vector2 (-8, -2), Quaternion.identity);
 			playerhealth = 10;
 		}
+		//Adds 20 health from first ring
 		if (other3.playerhealth == true&&ringhealth==false) {
 			playerhealth += 20;
 			ringhealth = true;
 		}
+		//Adds 50 health from second ring
 		if (other3.playerhealth2 == true&&ringhealth2==false) {
 			playerhealth += 50;
 			ringhealth2 = true;
 		}
+		//Adds 10 health from eating apple
 		if (other3.playerhealth3 == true) {
 			playerhealth += 10;
 			other3.playerhealth3 = false;
@@ -129,16 +131,19 @@ public class Player_Movement : MonoBehaviour {
 	//Allows player to break the vase and get an item from it when in contact
 	public void OnCollisionStay2D(Collision2D col)
 	{
+		//Bow vase
 		if(Input.GetKeyDown(KeyCode.Mouse0)&&col.gameObject.tag=="vase")
 		{
 			Destroy (vase);
 			Instantiate (bow, new Vector2 (vase.transform.position.x, vase.transform.position.y), Quaternion.identity);
 		}
+		//Potion vase
 		if(Input.GetKeyDown(KeyCode.Mouse0)&&col.gameObject.tag=="vase2")
 		{
 			Destroy (vase2);
 			Instantiate (potion, new Vector2 (vase2.transform.position.x, vase2.transform.position.y), Quaternion.identity);
 		}
+		//Key vase
 		if(Input.GetKeyDown(KeyCode.Mouse0)&&col.gameObject.tag=="keyvase")
 		{
 			Destroy (keyvase);
@@ -155,6 +160,7 @@ public class Player_Movement : MonoBehaviour {
 		yield return new WaitForSecondsRealtime (1);
 		sleep = false;
 	}
+	//Damages player, only once at a time
 	public void Damage(int playerdamage)
 	{
 		if (sleep == false) {

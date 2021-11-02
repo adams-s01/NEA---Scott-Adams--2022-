@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 4
-* Last Edited: Sprint 4
+* Last Edited: Sprint 6
 * Purpose: Creates a spawner to create more enemies
 */
 using System.Collections;
@@ -30,6 +30,7 @@ public class Enemy_Spawner : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		//Spawns new enemy when old one destroyed
 		if (spawnerfull[2]==false) {
 			enemyspawned.Insert (2, (Instantiate (enemy, new Vector2 (90.1f, 2.8f), Quaternion.identity)));
 			spawnerfull [2] = true;
@@ -48,6 +49,7 @@ public class Enemy_Spawner : MonoBehaviour {
 			
 			
 		//}
+		//Checks if old enemy is destroyed
 		if (enemyspawned [0] == null) {
 			spawnerfull [0] = false;
 			Debug.Log ("I0:False");
@@ -61,6 +63,7 @@ public class Enemy_Spawner : MonoBehaviour {
 			spawnerfull [2] = false;
 			Debug.Log ("I2:False");
 		}
+		//Removes excess enemies
 		if (enemyspawned.Count >= 4) {
 			for (int i = 3; i < enemyspawned.Count; i++) {
 				Destroy (enemyspawned [i]);

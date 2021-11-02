@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 4
-* Last Edited: Sprint 4
+* Last Edited: Sprint 6
 * Purpose: To make the bow shoot an arrow
 */
 using System.Collections;
@@ -26,6 +26,7 @@ public class Bow_Shooting : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//Sets angle to shoot arrow based on crosshair
 		angle1 = other2.angle;
 		playerx = player.transform.position.x;
 		playery = player.transform.position.y;

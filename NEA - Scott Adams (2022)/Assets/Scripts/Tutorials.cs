@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 1
-* Last Edited: Sprint 2
+* Last Edited: Sprint 6
 * Purpose: Change canvases holding tutorial
 */
 using System.Collections;

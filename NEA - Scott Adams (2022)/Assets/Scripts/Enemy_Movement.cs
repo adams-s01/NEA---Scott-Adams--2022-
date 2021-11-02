@@ -167,7 +167,6 @@ public class Enemy_Movement : MonoBehaviour {
 			//Sets the damage for the player for bat
 			if (gameObject.tag == "bat") {
 				playerdamage = 1;
-				Debug.Log ("34");
 				col.gameObject.SendMessage ("Damage", playerdamage);
 			}
 		}
@@ -195,7 +194,6 @@ public class Enemy_Movement : MonoBehaviour {
 			enemyx = enemy.transform.position.x;
 			enemyy = enemy.transform.position.y + 2;
 			Instantiate (hitpoint, new Vector2 (enemyx, enemyy), Quaternion.identity);
-			Debug.Log ("5");
 		}
 	}
 }

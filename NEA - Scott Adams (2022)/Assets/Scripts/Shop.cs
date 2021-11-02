@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 2
-* Last Edited: Sprint 3
+* Last Edited: Sprint 6
 * Purpose: Causes a shop to exist
 */
 using System.Collections;
@@ -115,7 +115,7 @@ public class Shop : MonoBehaviour {
 	
 	// Sets text for amount of gold
 	void Update () {
-		gold = 1000;
+		gold = 10;
 		goldtext.text = "Gold: " + gold.ToString ();
 		/*if (gold >= 10) {
 			item1button.colors = usablecolour;

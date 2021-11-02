@@ -54,6 +54,8 @@ TagManager:
   - closeddoor
   - opendoor
   - shoptutorial
+  - easycheck
+  - spikes
   layers:
   - Default
   - TransparentFX

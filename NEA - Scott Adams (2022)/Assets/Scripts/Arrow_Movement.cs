@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 4
-* Last Edited: Sprint 4
+* Last Edited: Sprint 6
 * Purpose: To make the arrow shot work
 */
 using System.Collections;
@@ -20,6 +20,7 @@ public class Arrow_Movement : MonoBehaviour {
 		arrow = GameObject.FindGameObjectWithTag ("arrow");
 		rb = GetComponent<Rigidbody2D> ();
 		other2 = other.GetComponent<Crosshair> ();
+		//Causes arrow to move at speed in the right direction
 		rb.velocity=transform.right;
 
 
@@ -31,6 +32,7 @@ public class Arrow_Movement : MonoBehaviour {
 	void Update () {
 
 	}
+	//Destroys arrow when it collides with anything not the player
 	void OnCollisionEnter2D(Collision2D col)
 	{
 		if (col.gameObject.tag != "Player") {
