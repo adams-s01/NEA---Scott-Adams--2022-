@@ -65,6 +65,8 @@ public class Shop : MonoBehaviour {
 	public GameObject ring;
 	public GameObject potion;
 	public GameObject dagger;
+	public GameObject other;
+	private Player_Movement other2;
 
 
 	//Initialises shopmenu and hides the shop menu canvas
@@ -111,11 +113,12 @@ public class Shop : MonoBehaviour {
 		usablecolour.normalColor = new Color32 (0, 255, 0, 255);
 		usablecolour.pressedColor = new Color32 (73, 255, 73, 255);
 		player = GameObject.FindGameObjectWithTag ("Player");
+		other2 = other.GetComponent<Player_Movement> ();
 	}
 	
 	// Sets text for amount of gold
 	void Update () {
-		gold = 10;
+		gold += other2.gold;
 		goldtext.text = "Gold: " + gold.ToString ();
 		/*if (gold >= 10) {
 			item1button.colors = usablecolour;

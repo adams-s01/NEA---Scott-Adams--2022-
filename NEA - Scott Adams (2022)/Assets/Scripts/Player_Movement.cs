@@ -35,6 +35,7 @@ public class Player_Movement : MonoBehaviour {
 	bool ringhealth;
 	bool ringhealth2;
 	public int lives;
+	public int gold;
 
 
 	// Use this for initialization
@@ -145,6 +146,8 @@ public class Player_Movement : MonoBehaviour {
 		//Potion vase
 		if(Input.GetKeyDown(KeyCode.Mouse0)&&col.gameObject.tag=="vase2")
 		{
+			string vasename = col.gameObject.name;
+			vase2 = GameObject.Find (vasename);
 			Destroy (vase2);
 			Instantiate (potion, new Vector2 (vase2.transform.position.x, vase2.transform.position.y), Quaternion.identity);
 		}
@@ -153,6 +156,13 @@ public class Player_Movement : MonoBehaviour {
 		{
 			Destroy (keyvase);
 			Instantiate (key, new Vector2 (keyvase.transform.position.x, keyvase.transform.position.y), Quaternion.identity);
+		}
+		if (col.gameObject.name == "coin(Clone)") {
+			gold = 2;
+			Destroy (col.gameObject);
+		}
+		if (col.gameObject.name != "coin(Clone)") {
+			gold = 0;
 		}
 	}
 	//Causes the player to be damaged once every second, by the amount of damage from the Enemy_Movement

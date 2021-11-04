@@ -6,6 +6,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemy_Spawner : MonoBehaviour {
 
@@ -21,31 +22,59 @@ public class Enemy_Spawner : MonoBehaviour {
 	void Start () {
 		spawner = GameObject.FindGameObjectWithTag ("spawner");
 		enemyspawned=new List<GameObject>();
-		for (int i = 0; i < 3; i++) {
-			enemyspawned.Add(Instantiate(enemy,new Vector2(90.1f,2.8f),Quaternion.identity));
-			spawnerfull [i] = true;
+		if (SceneManager.GetActiveScene ().buildIndex == 1) {
+			for (int i = 0; i < 3; i++) {
+				enemyspawned.Add (Instantiate (enemy, new Vector2 (90.1f, 2.8f), Quaternion.identity));
+				spawnerfull [i] = true;
+			}
 		}
-		
+		if (SceneManager.GetActiveScene ().buildIndex == 2) {
+			for (int i = 0; i < 3; i++) {
+				enemyspawned.Add (Instantiate (enemy, new Vector2 (10.91f, -27.54f), Quaternion.identity));
+				spawnerfull [i] = true;
+			}
+		}
 	}
 
 	// Update is called once per frame
 	void Update () {
 		//Spawns new enemy when old one destroyed
-		if (spawnerfull[2]==false) {
-			enemyspawned.Insert (2, (Instantiate (enemy, new Vector2 (90.1f, 2.8f), Quaternion.identity)));
-			spawnerfull [2] = true;
-			Debug.Log ("I2:True");
+		//Spawns at location in tutorial
+		if (SceneManager.GetActiveScene ().buildIndex == 1) {
+			if (spawnerfull [2] == false) {
+				enemyspawned.Insert (2, (Instantiate (enemy, new Vector2 (90.1f, 2.8f), Quaternion.identity)));
+				spawnerfull [2] = true;
+				Debug.Log ("I2:True");
+			}
+			if (spawnerfull [1] == false) {
+				enemyspawned.Insert (1, (Instantiate (enemy, new Vector2 (90.1f, 2.8f), Quaternion.identity)));
+				spawnerfull [1] = true;
+				Debug.Log ("I1:True");
+			}
+			if (spawnerfull [0] == false) {
+				enemyspawned.Insert (0, (Instantiate (enemy, new Vector2 (90.1f, 2.8f), Quaternion.identity)));
+				spawnerfull [0] = true;
+				Debug.Log ("I0:True");
+			}
 		}
-		if (spawnerfull[1]==false) {
-			enemyspawned.Insert (1, (Instantiate (enemy, new Vector2 (90.1f, 2.8f), Quaternion.identity)));
-			spawnerfull [1] = true;
-			Debug.Log ("I1:True");
+		//Spawns at location in level 1
+		if(SceneManager.GetActiveScene ().buildIndex == 2) {
+			if (spawnerfull [2] == false) {
+				enemyspawned.Insert (2, (Instantiate (enemy, new Vector2 (10.91f, -27.54f), Quaternion.identity)));
+				spawnerfull [2] = true;
+				Debug.Log ("I2:True");
+			}
+			if (spawnerfull [1] == false) {
+				enemyspawned.Insert (1, (Instantiate (enemy, new Vector2 (10.91f, -27.54f), Quaternion.identity)));
+				spawnerfull [1] = true;
+				Debug.Log ("I1:True");
+			}
+			if (spawnerfull [0] == false) {
+				enemyspawned.Insert (0, (Instantiate (enemy, new Vector2 (10.91f, -27.54f), Quaternion.identity)));
+				spawnerfull [0] = true;
+				Debug.Log ("I0:True");
+			}
 		}
-		if (spawnerfull[0]==false) {
-			enemyspawned.Insert (0, (Instantiate (enemy, new Vector2 (90.1f, 2.8f), Quaternion.identity)));
-			spawnerfull [0] = true;
-			Debug.Log ("I0:True");
-		}	
 			
 			
 		//}

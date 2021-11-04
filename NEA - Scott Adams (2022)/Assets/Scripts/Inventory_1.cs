@@ -109,6 +109,8 @@ public class Inventory_1 : MonoBehaviour {
 		hidemage = GameObject.Find ("mage");
 		hidering = GameObject.Find ("ring");
 		hideshield = GameObject.Find ("shield");
+		armourcanvas.SetActive (false);
+		ringcanvas.SetActive (false);
 		hidebow1.SetActive (false);
 		hidesword.SetActive (false);
 		hidecrosshair.SetActive (false);
@@ -126,8 +128,7 @@ public class Inventory_1 : MonoBehaviour {
 		hidemage.SetActive (false);
 		hidering.SetActive (false);
 		hideshield.SetActive (false);
-		armourcanvas.SetActive (false);
-		ringcanvas.SetActive (false);
+
 		sleep = false;
 		playerspeedtrue = false;
 		armourstat = 0;

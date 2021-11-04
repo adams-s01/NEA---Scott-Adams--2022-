@@ -31,8 +31,8 @@ public class Tutorials : MonoBehaviour {
 		shop = GameObject.FindGameObjectWithTag ("shoptutorial");
 
 		sprint.SetActive (false);
-		jump.SetActive (false);
 		sprint2.SetActive (false);
+		jump.SetActive (false);
 		shop.SetActive (false);
 		left = false;
 		right = false;

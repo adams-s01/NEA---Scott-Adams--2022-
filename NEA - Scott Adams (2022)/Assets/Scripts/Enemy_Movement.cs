@@ -20,6 +20,7 @@ public class Enemy_Movement : MonoBehaviour {
 	int damage1;
 	public int playerdamage;
 	public bool spawnerfalse;
+	public GameObject coin;
 
 
 
@@ -141,6 +142,12 @@ public class Enemy_Movement : MonoBehaviour {
 			//Destroys slime if health runs out
 			if (enemyhealth <= 0) {
 				Destroy (enemy);
+				enemyx = enemy.transform.position.x;
+				enemyy = enemy.transform.position.y;
+				if(gameObject.tag=="slime2")
+				{
+					Instantiate (coin, new Vector2 (enemyx, enemyy), Quaternion.identity);
+				}
 			}
 			//Sets the damage to the player for slime2
 			if (gameObject.tag == "slime2") {
