@@ -197,6 +197,23 @@ public class Enemy_Movement : MonoBehaviour {
 				enemyy = enemy.transform.position.y+2;
 				Instantiate (hitpoint, new Vector2 (enemyx, enemyy), Quaternion.identity);
 			}
+			if (enemyhealth <= 0) {
+				Destroy (enemy);
+				enemyx = enemy.transform.position.x;
+				enemyy = enemy.transform.position.y;
+				if(gameObject.tag=="slime2")
+				{
+					Instantiate (coin, new Vector2 (enemyx, enemyy), Quaternion.identity);
+				}
+				if(gameObject.tag=="bat")
+				{
+					Instantiate (coin2, new Vector2 (enemyx, enemyy), Quaternion.identity);
+				}
+				if(gameObject.tag=="skeleton")
+				{
+					Instantiate (coin3, new Vector2 (enemyx, enemyy), Quaternion.identity);
+				}
+			}
 		}
 	}
 	//Ends collide with the player, stops the damage of the player

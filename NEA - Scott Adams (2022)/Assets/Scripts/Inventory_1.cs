@@ -7,6 +7,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Inventory_1 : MonoBehaviour {
 
@@ -52,7 +53,7 @@ public class Inventory_1 : MonoBehaviour {
 	public Image keyimage;
 	public string weaponname;
 	public int damage;
-	public int playerspeed;
+	public float playerspeed;
 	public int armourstat;
 	int armourarmourstat;
 	int armourglovesstat;
@@ -85,6 +86,11 @@ public class Inventory_1 : MonoBehaviour {
 	public bool keytrue;
 	GameObject armourcanvas;
 	GameObject ringcanvas;
+	int inventory1;
+	int inventory2;
+	int inventory3;
+	int inventory4;
+	int inventory5;
 
 	// Use this for initialization
 	void Start () {
@@ -132,7 +138,20 @@ public class Inventory_1 : MonoBehaviour {
 		sleep = false;
 		playerspeedtrue = false;
 		armourstat = 0;
-
+		if (SceneManager.GetActiveScene ().buildIndex == 1) {
+			inventory1 = 1;
+			inventory2 = 4;
+			inventory3 = 3;
+			inventory4 = 0;
+			inventory5 = 2;
+		}
+		if (SceneManager.GetActiveScene ().buildIndex == 2) {
+			inventory1 = 2;
+			inventory2 = 4;
+			inventory3 = 3;
+			inventory4 = 1;
+			inventory5 = 0;
+		}
 	}
 	
 	// Sets damage to the damage in the function Weapon
@@ -242,87 +261,87 @@ public class Inventory_1 : MonoBehaviour {
 		weaponname = image.sprite.name;
 		Debug.Log (weaponname);
 		if (weaponname == "potion") {
-			inventory [1].GetComponent<Image> ().sprite = null;
+			inventory [inventory1].GetComponent<Image> ().sprite = null;
 		}
 		if (weaponname == "armour1") {
 			weaponname = null;
-			inventory [1].GetComponent<Image> ().sprite = null;
+			inventory [inventory1].GetComponent<Image> ().sprite = null;
 			armourimage.GetComponent<Image> ().sprite = armour1;
 			armourarmourstat = 2;
 		}
 		if (weaponname == "armour2") {
 			weaponname = null;
-			inventory [1].GetComponent<Image> ().sprite = null;
+			inventory [inventory1].GetComponent<Image> ().sprite = null;
 			armourimage.GetComponent<Image> ().sprite = armour2;
 			armourarmourstat = 5;
 		}
 		if (weaponname == "belt") {
 			weaponname = null;
-			inventory [1].GetComponent<Image> ().sprite = null;
+			inventory [inventory1].GetComponent<Image> ().sprite = null;
 			glovesimage.GetComponent<Image> ().sprite = belt;
 			armourglovesstat = 2;
 		}
 		if (weaponname == "gloves") {
 			weaponname = null;
-			inventory [1].GetComponent<Image> ().sprite = null;
+			inventory [inventory1].GetComponent<Image> ().sprite = null;
 			glovesimage.GetComponent<Image> ().sprite = gloves;
 			armourglovesstat = 3;
 		}
 		if (weaponname == "shield") {
 			weaponname = null;
-			inventory [1].GetComponent<Image> ().sprite = null;
+			inventory [inventory1].GetComponent<Image> ().sprite = null;
 			glovesimage.GetComponent<Image> ().sprite = shield;
 			armourglovesstat = 5;
 		}
 		if (weaponname == "boots") {
 			weaponname = null;
-			inventory [1].GetComponent<Image> ().sprite = null;
+			inventory [inventory1].GetComponent<Image> ().sprite = null;
 			bootsimage.GetComponent<Image> ().sprite = boots;
 			armourbootsstat = 2;
 		}
 		if (weaponname == "apple") {
-			inventory [1].GetComponent<Image> ().sprite = null;
+			inventory [inventory1].GetComponent<Image> ().sprite = null;
 			playerhealth3 = true;
 		}
 		if (weaponname == "ring") {
 			weaponname = null;
-			inventory [1].GetComponent<Image> ().sprite = null;
+			inventory [inventory1].GetComponent<Image> ().sprite = null;
 			ring1image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			armourringstat += 10;
 		}
 		if (weaponname == "ring2") {
 			weaponname = null;
-			inventory [1].GetComponent<Image> ().sprite = null;
+			inventory [inventory1].GetComponent<Image> ().sprite = null;
 			ring2image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerspeedtrue = true;
 		}
 		if (weaponname == "ring3") {
 			weaponname = null;
-			inventory [1].GetComponent<Image> ().sprite = null;
+			inventory [inventory1].GetComponent<Image> ().sprite = null;
 			ring3image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerhealth = true;
 		}
 		if (weaponname == "ring4") {
 			weaponname = null;
-			inventory [1].GetComponent<Image> ().sprite = null;
+			inventory [inventory1].GetComponent<Image> ().sprite = null;
 			ring4image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			armourringstat += 40;
 		}
 		if (weaponname == "ring5") {
 			weaponname = null;
-			inventory [1].GetComponent<Image> ().sprite = null;
+			inventory [inventory1].GetComponent<Image> ().sprite = null;
 			ring5image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerspeedtrue2 = true;
 		}
 		if (weaponname == "ring6") {
 			weaponname = null;
-			inventory [1].GetComponent<Image> ().sprite = null;
+			inventory [inventory1].GetComponent<Image> ().sprite = null;
 			ring6image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerhealth2 = true;
 		}
 		if (weaponname == "Key_B") {
 			weaponname = null;
-			inventory [1].GetComponent<Image> ().sprite = null;
+			inventory [inventory1].GetComponent<Image> ().sprite = null;
 			keyimage.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			keytrue = true;
 		}
@@ -334,87 +353,87 @@ public class Inventory_1 : MonoBehaviour {
 		weaponname = image2.sprite.name;
 		Debug.Log (weaponname);
 		if (weaponname == "potion") {
-			inventory [4].GetComponent<Image> ().sprite = null;
+			inventory [inventory2].GetComponent<Image> ().sprite = null;
 		}
 		if (weaponname == "armour1") {
 			weaponname = null;
-			inventory [4].GetComponent<Image> ().sprite = null;
+			inventory [inventory2].GetComponent<Image> ().sprite = null;
 			armourimage.GetComponent<Image> ().sprite = armour1;
 			armourarmourstat = 2;
 		}
 		if (weaponname == "armour2") {
 			weaponname = null;
-			inventory [4].GetComponent<Image> ().sprite = null;
+			inventory [inventory2].GetComponent<Image> ().sprite = null;
 			armourimage.GetComponent<Image> ().sprite = armour2;
 			armourarmourstat = 5;
 		}
 		if (weaponname == "belt") {
 			weaponname = null;
-			inventory [4].GetComponent<Image> ().sprite = null;
+			inventory [inventory2].GetComponent<Image> ().sprite = null;
 			glovesimage.GetComponent<Image> ().sprite = belt;
 			armourglovesstat = 2;
 		}
 		if (weaponname == "gloves") {
 			weaponname = null;
-			inventory [4].GetComponent<Image> ().sprite = null;
+			inventory [inventory2].GetComponent<Image> ().sprite = null;
 			glovesimage.GetComponent<Image> ().sprite = gloves;
 			armourglovesstat = 3;
 		}
 		if (weaponname == "shield") {
 			weaponname = null;
-			inventory [4].GetComponent<Image> ().sprite = null;
+			inventory [inventory2].GetComponent<Image> ().sprite = null;
 			glovesimage.GetComponent<Image> ().sprite = shield;
 			armourglovesstat = 5;
 		}
 		if (weaponname == "boots") {
 			weaponname = null;
-			inventory [4].GetComponent<Image> ().sprite = null;
+			inventory [inventory2].GetComponent<Image> ().sprite = null;
 			bootsimage.GetComponent<Image> ().sprite = boots;
 			armourbootsstat = 2;
 		}
 		if (weaponname == "apple") {
-			inventory [4].GetComponent<Image> ().sprite = null;
+			inventory [inventory2].GetComponent<Image> ().sprite = null;
 			playerhealth3 = true;
 		}
 		if (weaponname == "ring") {
 			weaponname = null;
-			inventory [4].GetComponent<Image> ().sprite = null;
+			inventory [inventory2].GetComponent<Image> ().sprite = null;
 			ring1image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			armourringstat += 10;
 		}
 		if (weaponname == "ring2") {
 			weaponname = null;
-			inventory [4].GetComponent<Image> ().sprite = null;
+			inventory [inventory2].GetComponent<Image> ().sprite = null;
 			ring2image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerspeedtrue = true;
 		}
 		if (weaponname == "ring3") {
 			weaponname = null;
-			inventory [4].GetComponent<Image> ().sprite = null;
+			inventory [inventory2].GetComponent<Image> ().sprite = null;
 			ring3image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerhealth = true;
 		}
 		if (weaponname == "ring4") {
 			weaponname = null;
-			inventory [4].GetComponent<Image> ().sprite = null;
+			inventory [inventory2].GetComponent<Image> ().sprite = null;
 			ring4image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			armourringstat += 40;
 		}
 		if (weaponname == "ring5") {
 			weaponname = null;
-			inventory [4].GetComponent<Image> ().sprite = null;
+			inventory [inventory2].GetComponent<Image> ().sprite = null;
 			ring5image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerspeedtrue2 = true;
 		}
 		if (weaponname == "ring6") {
 			weaponname = null;
-			inventory [4].GetComponent<Image> ().sprite = null;
+			inventory [inventory2].GetComponent<Image> ().sprite = null;
 			ring6image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerhealth2 = true;
 		}
 		if (weaponname == "Key_B") {
 			weaponname = null;
-			inventory [4].GetComponent<Image> ().sprite = null;
+			inventory [inventory2].GetComponent<Image> ().sprite = null;
 			keyimage.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			keytrue = true;
 		}
@@ -427,87 +446,87 @@ public class Inventory_1 : MonoBehaviour {
 		weaponname = image3.sprite.name;
 		Debug.Log (weaponname);
 		if (weaponname == "potion") {
-			inventory [3].GetComponent<Image> ().sprite = null;
+			inventory [inventory3].GetComponent<Image> ().sprite = null;
 		}
 		if (weaponname == "armour1") {
 			weaponname = null;
-			inventory [3].GetComponent<Image> ().sprite = null;
+			inventory [inventory3].GetComponent<Image> ().sprite = null;
 			armourimage.GetComponent<Image> ().sprite = armour1;
 			armourarmourstat = 2;
 		}
 		if (weaponname == "armour2") {
 			weaponname = null;
-			inventory [3].GetComponent<Image> ().sprite = null;
+			inventory [inventory3].GetComponent<Image> ().sprite = null;
 			armourimage.GetComponent<Image> ().sprite = armour2;
 			armourarmourstat = 5;
 		}
 		if (weaponname == "belt") {
 			weaponname = null;
-			inventory [3].GetComponent<Image> ().sprite = null;
+			inventory [inventory3].GetComponent<Image> ().sprite = null;
 			glovesimage.GetComponent<Image> ().sprite = belt;
 			armourglovesstat = 2;
 		}
 		if (weaponname == "gloves") {
 			weaponname = null;
-			inventory [3].GetComponent<Image> ().sprite = null;
+			inventory [inventory3].GetComponent<Image> ().sprite = null;
 			glovesimage.GetComponent<Image> ().sprite = gloves;
 			armourglovesstat = 3;
 		}
 		if (weaponname == "shield") {
 			weaponname = null;
-			inventory [3].GetComponent<Image> ().sprite = null;
+			inventory [inventory3].GetComponent<Image> ().sprite = null;
 			glovesimage.GetComponent<Image> ().sprite = shield;
 			armourglovesstat = 5;
 		}
 		if (weaponname == "boots") {
 			weaponname = null;
-			inventory [3].GetComponent<Image> ().sprite = null;
+			inventory [inventory3].GetComponent<Image> ().sprite = null;
 			bootsimage.GetComponent<Image> ().sprite = boots;
 			armourbootsstat = 2;
 		}
 		if (weaponname == "apple") {
-			inventory [3].GetComponent<Image> ().sprite = null;
+			inventory [inventory3].GetComponent<Image> ().sprite = null;
 			playerhealth3 = true;
 		}
 		if (weaponname == "ring") {
 			weaponname = null;
-			inventory [3].GetComponent<Image> ().sprite = null;
+			inventory [inventory3].GetComponent<Image> ().sprite = null;
 			ring1image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			armourringstat += 10;
 		}
 		if (weaponname == "ring2") {
 			weaponname = null;
-			inventory [3].GetComponent<Image> ().sprite = null;
+			inventory [inventory3].GetComponent<Image> ().sprite = null;
 			ring2image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerspeedtrue = true;
 		}
 		if (weaponname == "ring3") {
 			weaponname = null;
-			inventory [3].GetComponent<Image> ().sprite = null;
+			inventory [inventory3].GetComponent<Image> ().sprite = null;
 			ring3image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerhealth = true;
 		}
 		if (weaponname == "ring4") {
 			weaponname = null;
-			inventory [3].GetComponent<Image> ().sprite = null;
+			inventory [inventory3].GetComponent<Image> ().sprite = null;
 			ring4image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			armourringstat += 40;
 		}
 		if (weaponname == "ring5") {
 			weaponname = null;
-			inventory [3].GetComponent<Image> ().sprite = null;
+			inventory [inventory3].GetComponent<Image> ().sprite = null;
 			ring5image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerspeedtrue2 = true;
 		}
 		if (weaponname == "ring6") {
 			weaponname = null;
-			inventory [3].GetComponent<Image> ().sprite = null;
+			inventory [inventory3].GetComponent<Image> ().sprite = null;
 			ring6image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerhealth2 = true;
 		}
 		if (weaponname == "Key_B") {
 			weaponname = null;
-			inventory [3].GetComponent<Image> ().sprite = null;
+			inventory [inventory3].GetComponent<Image> ().sprite = null;
 			keyimage.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			keytrue = true;
 		}
@@ -519,87 +538,87 @@ public class Inventory_1 : MonoBehaviour {
 		weaponname = image4.sprite.name;
 		Debug.Log (weaponname);
 		if (weaponname == "potion") {
-			inventory [0].GetComponent<Image> ().sprite = null;
+			inventory [inventory4].GetComponent<Image> ().sprite = null;
 		}
 		if (weaponname == "armour1") {
 			weaponname = null;
-			inventory [0].GetComponent<Image> ().sprite = null;
+			inventory [inventory4].GetComponent<Image> ().sprite = null;
 			armourimage.GetComponent<Image> ().sprite = armour1;
 			armourarmourstat = 2;
 		}
 		if (weaponname == "armour2") {
 			weaponname = null;
-			inventory [0].GetComponent<Image> ().sprite = null;
+			inventory [inventory4].GetComponent<Image> ().sprite = null;
 			armourimage.GetComponent<Image> ().sprite = armour2;
 			armourarmourstat = 5;
 		}
 		if (weaponname == "belt") {
 			weaponname = null;
-			inventory [0].GetComponent<Image> ().sprite = null;
+			inventory [inventory4].GetComponent<Image> ().sprite = null;
 			glovesimage.GetComponent<Image> ().sprite = belt;
 			armourglovesstat = 2;
 		}
 		if (weaponname == "gloves") {
 			weaponname = null;
-			inventory [0].GetComponent<Image> ().sprite = null;
+			inventory [inventory4].GetComponent<Image> ().sprite = null;
 			glovesimage.GetComponent<Image> ().sprite = gloves;
 			armourglovesstat = 3;
 		}
 		if (weaponname == "shield") {
 			weaponname = null;
-			inventory [0].GetComponent<Image> ().sprite = null;
+			inventory [inventory4].GetComponent<Image> ().sprite = null;
 			glovesimage.GetComponent<Image> ().sprite = shield;
 			armourglovesstat = 5;
 		}
 		if (weaponname == "boots") {
 			weaponname = null;
-			inventory [0].GetComponent<Image> ().sprite = null;
+			inventory [inventory4].GetComponent<Image> ().sprite = null;
 			bootsimage.GetComponent<Image> ().sprite = boots;
 			armourbootsstat = 2;
 		}
 		if (weaponname == "apple") {
-			inventory [0].GetComponent<Image> ().sprite = null;
+			inventory [inventory4].GetComponent<Image> ().sprite = null;
 			playerhealth3 = true;
 		}
 		if (weaponname == "ring") {
 			weaponname = null;
-			inventory [0].GetComponent<Image> ().sprite = null;
+			inventory [inventory4].GetComponent<Image> ().sprite = null;
 			ring1image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			armourringstat += 10;
 		}
 		if (weaponname == "ring2") {
 			weaponname = null;
-			inventory [0].GetComponent<Image> ().sprite = null;
+			inventory [inventory4].GetComponent<Image> ().sprite = null;
 			ring2image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerspeedtrue = true;
 		}
 		if (weaponname == "ring3") {
 			weaponname = null;
-			inventory [0].GetComponent<Image> ().sprite = null;
+			inventory [inventory4].GetComponent<Image> ().sprite = null;
 			ring3image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerhealth = true;
 		}
 		if (weaponname == "ring4") {
 			weaponname = null;
-			inventory [0].GetComponent<Image> ().sprite = null;
+			inventory [inventory4].GetComponent<Image> ().sprite = null;
 			ring4image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			armourringstat += 40;
 		}
 		if (weaponname == "ring5") {
 			weaponname = null;
-			inventory [0].GetComponent<Image> ().sprite = null;
+			inventory [inventory4].GetComponent<Image> ().sprite = null;
 			ring5image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerspeedtrue2 = true;
 		}
 		if (weaponname == "ring6") {
 			weaponname = null;
-			inventory [0].GetComponent<Image> ().sprite = null;
+			inventory [inventory4].GetComponent<Image> ().sprite = null;
 			ring6image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerhealth2 = true;
 		}
 		if (weaponname == "Key_B") {
 			weaponname = null;
-			inventory [0].GetComponent<Image> ().sprite = null;
+			inventory [inventory4].GetComponent<Image> ().sprite = null;
 			keyimage.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			keytrue = true;
 		}
@@ -611,87 +630,87 @@ public class Inventory_1 : MonoBehaviour {
 		weaponname = image5.sprite.name;
 		Debug.Log (weaponname);
 		if (weaponname == "potion") {
-			inventory [2].GetComponent<Image> ().sprite = null;
+			inventory [inventory5].GetComponent<Image> ().sprite = null;
 		}
 		if (weaponname == "armour1") {
 			weaponname = null;
-			inventory [2].GetComponent<Image> ().sprite = null;
+			inventory [inventory5].GetComponent<Image> ().sprite = null;
 			armourimage.GetComponent<Image> ().sprite = armour1;
 			armourarmourstat = 2;
 		}
 		if (weaponname == "armour2") {
 			weaponname = null;
-			inventory [2].GetComponent<Image> ().sprite = null;
+			inventory [inventory5].GetComponent<Image> ().sprite = null;
 			armourimage.GetComponent<Image> ().sprite = armour2;
 			armourarmourstat = 5;
 		}
 		if (weaponname == "belt") {
 			weaponname = null;
-			inventory [2].GetComponent<Image> ().sprite = null;
+			inventory [inventory5].GetComponent<Image> ().sprite = null;
 			glovesimage.GetComponent<Image> ().sprite = belt;
 			armourglovesstat = 2;
 		}
 		if (weaponname == "gloves") {
 			weaponname = null;
-			inventory [2].GetComponent<Image> ().sprite = null;
+			inventory [inventory5].GetComponent<Image> ().sprite = null;
 			glovesimage.GetComponent<Image> ().sprite = gloves;
 			armourglovesstat = 3;
 		}
 		if (weaponname == "shield") {
 			weaponname = null;
-			inventory [2].GetComponent<Image> ().sprite = null;
+			inventory [inventory5].GetComponent<Image> ().sprite = null;
 			glovesimage.GetComponent<Image> ().sprite = shield;
 			armourglovesstat = 5;
 		}
 		if (weaponname == "boots") {
 			weaponname = null;
-			inventory [2].GetComponent<Image> ().sprite = null;
+			inventory [inventory5].GetComponent<Image> ().sprite = null;
 			bootsimage.GetComponent<Image> ().sprite = boots;
 			armourbootsstat = 2;
 		}
 		if (weaponname == "apple") {
-			inventory [2].GetComponent<Image> ().sprite = null;
+			inventory [inventory5].GetComponent<Image> ().sprite = null;
 			playerhealth3 = true;
 		}
 		if (weaponname == "ring") {
 			weaponname = null;
-			inventory [2].GetComponent<Image> ().sprite = null;
+			inventory [inventory5].GetComponent<Image> ().sprite = null;
 			ring1image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			armourringstat += 10;
 		}
 		if (weaponname == "ring2") {
 			weaponname = null;
-			inventory [2].GetComponent<Image> ().sprite = null;
+			inventory [inventory5].GetComponent<Image> ().sprite = null;
 			ring2image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerspeedtrue = true;
 		}
 		if (weaponname == "ring3") {
 			weaponname = null;
-			inventory [2].GetComponent<Image> ().sprite = null;
+			inventory [inventory5].GetComponent<Image> ().sprite = null;
 			ring3image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerhealth = true;
 		}
 		if (weaponname == "ring4") {
 			weaponname = null;
-			inventory [2].GetComponent<Image> ().sprite = null;
+			inventory [inventory5].GetComponent<Image> ().sprite = null;
 			ring4image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			armourringstat += 40;
 		}
 		if (weaponname == "ring5") {
 			weaponname = null;
-			inventory [2].GetComponent<Image> ().sprite = null;
+			inventory [inventory5].GetComponent<Image> ().sprite = null;
 			ring5image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerspeedtrue2 = true;
 		}
 		if (weaponname == "ring6") {
 			weaponname = null;
-			inventory [2].GetComponent<Image> ().sprite = null;
+			inventory [inventory5].GetComponent<Image> ().sprite = null;
 			ring6image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerhealth2 = true;
 		}
 		if (weaponname == "Key_B") {
 			weaponname = null;
-			inventory [2].GetComponent<Image> ().sprite = null;
+			inventory [inventory5].GetComponent<Image> ().sprite = null;
 			keyimage.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			keytrue = true;
 		}
@@ -883,7 +902,7 @@ public class Inventory_1 : MonoBehaviour {
 		}
 	}
 	//Causes speed increase from potion
-	public int Speed(int playerspeed)
+	public float Speed(float playerspeed)
 	{
 		if (weaponname == "potion") {
 			hidesword.SetActive (false);
@@ -907,7 +926,8 @@ public class Inventory_1 : MonoBehaviour {
 				
 				if(sleep==false)
 				{
-					playerspeed = 5 * speeddouble;
+					playerspeed = Random.Range (0f, 5f) * speeddouble;
+					Debug.Log (playerspeed);
 					StartCoroutine (speedcoroutine ());
 
 				}

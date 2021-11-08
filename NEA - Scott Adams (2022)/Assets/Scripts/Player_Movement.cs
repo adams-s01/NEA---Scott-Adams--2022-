@@ -22,7 +22,7 @@ public class Player_Movement : MonoBehaviour {
 	public GameObject potion;
 	public GameObject key;
 	bool resting;
-	int speed;
+	float speed;
 	Enemy_Movement other2;
 	int playerdamage1;
 	public int playerhealth;

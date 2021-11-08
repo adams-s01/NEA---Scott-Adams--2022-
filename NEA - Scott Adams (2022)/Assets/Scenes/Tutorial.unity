@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1576,6 +1576,91 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: hidebow1
+      value: 
+      objectReference: {fileID: 1349182062}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: hidesword
+      value: 
+      objectReference: {fileID: 648529108}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: hidecrosshair
+      value: 
+      objectReference: {fileID: 208899525}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: hidepotion
+      value: 
+      objectReference: {fileID: 499181763}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: hideapple
+      value: 
+      objectReference: {fileID: 606729902}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: hidearmour1
+      value: 
+      objectReference: {fileID: 1504754764}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: hidearmour2
+      value: 
+      objectReference: {fileID: 1317207366}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: hidebat
+      value: 
+      objectReference: {fileID: 145618790}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: hidebelt
+      value: 
+      objectReference: {fileID: 537636337}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: hideboots
+      value: 
+      objectReference: {fileID: 1905050919}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: hidebow2
+      value: 
+      objectReference: {fileID: 1010784983}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: hideclub
+      value: 
+      objectReference: {fileID: 1871245526}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: hidedagger
+      value: 
+      objectReference: {fileID: 1964283975}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: hidegloves
+      value: 
+      objectReference: {fileID: 504000145}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: hidemage
+      value: 
+      objectReference: {fileID: 1027459875}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: hidering
+      value: 
+      objectReference: {fileID: 1714530439}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: hideshield
+      value: 
+      objectReference: {fileID: 182791715}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2219772d1d914214b9fdb96740b710b3, type: 2}
   m_IsPrefabAsset: 0
@@ -1951,6 +2036,11 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 143493722}
   m_CullTransparentMesh: 0
+--- !u!1 &145618790 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1542535162912456, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+    type: 2}
+  m_PrefabInternal: {fileID: 1099462232}
 --- !u!1 &149132275
 GameObject:
   m_ObjectHideFlags: 0
@@ -2271,6 +2361,11 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 174210598}
   m_CullTransparentMesh: 0
+--- !u!1 &182791715 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1208982439183748, guid: 73260d016e2cd31479f05719c88d3ff8,
+    type: 2}
+  m_PrefabInternal: {fileID: 2122042607}
 --- !u!1 &183844263
 GameObject:
   m_ObjectHideFlags: 0
@@ -3130,6 +3225,8 @@ MonoBehaviour:
   key: {fileID: 1812200584171212, guid: 1a21e0af2113580418ad8d07f9268158, type: 2}
   playerhealth: 10
   other: {fileID: 969310108}
+  lives: 0
+  gold: 0
 --- !u!4 &272588712
 Transform:
   m_ObjectHideFlags: 0
@@ -5355,6 +5452,16 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 492645512}
   m_CullTransparentMesh: 0
+--- !u!1 &499181763 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1104004081482022, guid: 06e684ad2f7a87344932e072de9119ed,
+    type: 2}
+  m_PrefabInternal: {fileID: 991082022}
+--- !u!1 &504000145 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1061647365509318, guid: 6684ba93c41d5c44f92864e973cb4922,
+    type: 2}
+  m_PrefabInternal: {fileID: 1549035543}
 --- !u!1 &507834448
 GameObject:
   m_ObjectHideFlags: 0
@@ -5802,6 +5909,11 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 536838367}
   m_CullTransparentMesh: 0
+--- !u!1 &537636337 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1137241609935408, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+    type: 2}
+  m_PrefabInternal: {fileID: 742646041}
 --- !u!1 &542007853
 GameObject:
   m_ObjectHideFlags: 0
@@ -6462,6 +6574,11 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!1 &606729902 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1188680773142658, guid: fc1426381a2856f4ea43f169705e2ee5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1407557940}
 --- !u!1 &609306640
 GameObject:
   m_ObjectHideFlags: 0
@@ -8568,6 +8685,91 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: hidebow1
+      value: 
+      objectReference: {fileID: 1349182062}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: hidesword
+      value: 
+      objectReference: {fileID: 648529108}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: hidecrosshair
+      value: 
+      objectReference: {fileID: 208899525}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: hidepotion
+      value: 
+      objectReference: {fileID: 499181763}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: hideapple
+      value: 
+      objectReference: {fileID: 606729902}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: hidearmour1
+      value: 
+      objectReference: {fileID: 1504754764}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: hidearmour2
+      value: 
+      objectReference: {fileID: 1317207366}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: hidebat
+      value: 
+      objectReference: {fileID: 145618790}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: hidebelt
+      value: 
+      objectReference: {fileID: 537636337}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: hideboots
+      value: 
+      objectReference: {fileID: 1905050919}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: hidebow2
+      value: 
+      objectReference: {fileID: 1010784983}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: hideclub
+      value: 
+      objectReference: {fileID: 1871245526}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: hidedagger
+      value: 
+      objectReference: {fileID: 1964283975}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: hidegloves
+      value: 
+      objectReference: {fileID: 504000145}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: hidemage
+      value: 
+      objectReference: {fileID: 1027459875}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: hidering
+      value: 
+      objectReference: {fileID: 1714530439}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: hideshield
+      value: 
+      objectReference: {fileID: 182791715}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6b1d2dbd3d3dda45a41507e760a7c6b, type: 2}
   m_IsPrefabAsset: 0
@@ -9410,6 +9612,9 @@ MonoBehaviour:
   other: {fileID: 0}
   playerdamage: 0
   spawnerfalse: 0
+  coin: {fileID: 0}
+  coin2: {fileID: 0}
+  coin3: {fileID: 0}
 --- !u!50 &814440438
 Rigidbody2D:
   serializedVersion: 4
@@ -54647,6 +54852,22 @@ MonoBehaviour:
   playerspeed: 0
   armourstat: 0
   hidebow1: {fileID: 1349182062}
+  hidesword: {fileID: 648529108}
+  hidecrosshair: {fileID: 208899525}
+  hidepotion: {fileID: 499181763}
+  hideapple: {fileID: 606729902}
+  hidearmour1: {fileID: 1504754764}
+  hidearmour2: {fileID: 1317207366}
+  hidebat: {fileID: 145618790}
+  hidebelt: {fileID: 537636337}
+  hideboots: {fileID: 1905050919}
+  hidebow2: {fileID: 1010784983}
+  hideclub: {fileID: 1871245526}
+  hidedagger: {fileID: 1964283975}
+  hidegloves: {fileID: 504000145}
+  hidemage: {fileID: 1027459875}
+  hidering: {fileID: 1714530439}
+  hideshield: {fileID: 182791715}
   playerhealth: 0
   playerhealth2: 0
   playerhealth3: 0
@@ -55085,6 +55306,91 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: hidebow1
+      value: 
+      objectReference: {fileID: 1349182062}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: hidesword
+      value: 
+      objectReference: {fileID: 648529108}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: hidecrosshair
+      value: 
+      objectReference: {fileID: 208899525}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: hidepotion
+      value: 
+      objectReference: {fileID: 499181763}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: hideapple
+      value: 
+      objectReference: {fileID: 606729902}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: hidearmour1
+      value: 
+      objectReference: {fileID: 1504754764}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: hidearmour2
+      value: 
+      objectReference: {fileID: 1317207366}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: hidebat
+      value: 
+      objectReference: {fileID: 145618790}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: hidebelt
+      value: 
+      objectReference: {fileID: 537636337}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: hideboots
+      value: 
+      objectReference: {fileID: 1905050919}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: hidebow2
+      value: 
+      objectReference: {fileID: 1010784983}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: hideclub
+      value: 
+      objectReference: {fileID: 1871245526}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: hidedagger
+      value: 
+      objectReference: {fileID: 1964283975}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: hidegloves
+      value: 
+      objectReference: {fileID: 504000145}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: hidemage
+      value: 
+      objectReference: {fileID: 1027459875}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: hidering
+      value: 
+      objectReference: {fileID: 1714530439}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: hideshield
+      value: 
+      objectReference: {fileID: 182791715}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06e684ad2f7a87344932e072de9119ed, type: 2}
   m_IsPrefabAsset: 0
@@ -55418,6 +55724,9 @@ MonoBehaviour:
   other: {fileID: 0}
   playerdamage: 0
   spawnerfalse: 0
+  coin: {fileID: 0}
+  coin2: {fileID: 0}
+  coin3: {fileID: 0}
 --- !u!212 &1010158825
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -55522,6 +55831,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.8867925, y: 1.6352202}
   m_EdgeRadius: 0
+--- !u!1 &1010784983 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1651795607493000, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+    type: 2}
+  m_PrefabInternal: {fileID: 2036925699}
 --- !u!1 &1015432347
 GameObject:
   m_ObjectHideFlags: 0
@@ -55690,6 +56004,11 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1026125769}
   m_CullTransparentMesh: 0
+--- !u!1 &1027459875 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1697233574726886, guid: 50762176e56840f4bba423f6691bee7a,
+    type: 2}
+  m_PrefabInternal: {fileID: 2087243713}
 --- !u!1 &1031799506
 GameObject:
   m_ObjectHideFlags: 0
@@ -56121,6 +56440,9 @@ MonoBehaviour:
   other: {fileID: 0}
   playerdamage: 0
   spawnerfalse: 0
+  coin: {fileID: 0}
+  coin2: {fileID: 0}
+  coin3: {fileID: 0}
 --- !u!50 &1069801599
 Rigidbody2D:
   serializedVersion: 4
@@ -56502,6 +56824,91 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: hidebow1
+      value: 
+      objectReference: {fileID: 1349182062}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: hidesword
+      value: 
+      objectReference: {fileID: 648529108}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: hidecrosshair
+      value: 
+      objectReference: {fileID: 208899525}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: hidepotion
+      value: 
+      objectReference: {fileID: 499181763}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: hideapple
+      value: 
+      objectReference: {fileID: 606729902}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: hidearmour1
+      value: 
+      objectReference: {fileID: 1504754764}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: hidearmour2
+      value: 
+      objectReference: {fileID: 1317207366}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: hidebat
+      value: 
+      objectReference: {fileID: 145618790}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: hidebelt
+      value: 
+      objectReference: {fileID: 537636337}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: hideboots
+      value: 
+      objectReference: {fileID: 1905050919}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: hidebow2
+      value: 
+      objectReference: {fileID: 1010784983}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: hideclub
+      value: 
+      objectReference: {fileID: 1871245526}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: hidedagger
+      value: 
+      objectReference: {fileID: 1964283975}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: hidegloves
+      value: 
+      objectReference: {fileID: 504000145}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: hidemage
+      value: 
+      objectReference: {fileID: 1027459875}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: hidering
+      value: 
+      objectReference: {fileID: 1714530439}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: hideshield
+      value: 
+      objectReference: {fileID: 182791715}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab, type: 2}
   m_IsPrefabAsset: 0
@@ -57149,6 +57556,91 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: hidebow1
+      value: 
+      objectReference: {fileID: 1349182062}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: hidesword
+      value: 
+      objectReference: {fileID: 648529108}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: hidecrosshair
+      value: 
+      objectReference: {fileID: 208899525}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: hidepotion
+      value: 
+      objectReference: {fileID: 499181763}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: hideapple
+      value: 
+      objectReference: {fileID: 606729902}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: hidearmour1
+      value: 
+      objectReference: {fileID: 1504754764}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: hidearmour2
+      value: 
+      objectReference: {fileID: 1317207366}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: hidebat
+      value: 
+      objectReference: {fileID: 145618790}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: hidebelt
+      value: 
+      objectReference: {fileID: 537636337}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: hideboots
+      value: 
+      objectReference: {fileID: 1905050919}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: hidebow2
+      value: 
+      objectReference: {fileID: 1010784983}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: hideclub
+      value: 
+      objectReference: {fileID: 1871245526}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: hidedagger
+      value: 
+      objectReference: {fileID: 1964283975}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: hidegloves
+      value: 
+      objectReference: {fileID: 504000145}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: hidemage
+      value: 
+      objectReference: {fileID: 1027459875}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: hidering
+      value: 
+      objectReference: {fileID: 1714530439}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: hideshield
+      value: 
+      objectReference: {fileID: 182791715}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dd9b33bcb66ed347a31fa1ccbca0810, type: 2}
   m_IsPrefabAsset: 0
@@ -57983,6 +58475,91 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: hidebow1
+      value: 
+      objectReference: {fileID: 1349182062}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: hidesword
+      value: 
+      objectReference: {fileID: 648529108}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: hidecrosshair
+      value: 
+      objectReference: {fileID: 208899525}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: hidepotion
+      value: 
+      objectReference: {fileID: 499181763}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: hideapple
+      value: 
+      objectReference: {fileID: 606729902}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: hidearmour1
+      value: 
+      objectReference: {fileID: 1504754764}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: hidearmour2
+      value: 
+      objectReference: {fileID: 1317207366}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: hidebat
+      value: 
+      objectReference: {fileID: 145618790}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: hidebelt
+      value: 
+      objectReference: {fileID: 537636337}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: hideboots
+      value: 
+      objectReference: {fileID: 1905050919}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: hidebow2
+      value: 
+      objectReference: {fileID: 1010784983}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: hideclub
+      value: 
+      objectReference: {fileID: 1871245526}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: hidedagger
+      value: 
+      objectReference: {fileID: 1964283975}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: hidegloves
+      value: 
+      objectReference: {fileID: 504000145}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: hidemage
+      value: 
+      objectReference: {fileID: 1027459875}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: hidering
+      value: 
+      objectReference: {fileID: 1714530439}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: hideshield
+      value: 
+      objectReference: {fileID: 182791715}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db255565d90e36e4388a92198e41dbff, type: 2}
   m_IsPrefabAsset: 0
@@ -59652,6 +60229,11 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1303593232}
   m_CullTransparentMesh: 0
+--- !u!1 &1317207366 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1970873995879168, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+    type: 2}
+  m_PrefabInternal: {fileID: 1886921335}
 --- !u!1 &1326738210
 GameObject:
   m_ObjectHideFlags: 0
@@ -60194,6 +60776,9 @@ MonoBehaviour:
   other: {fileID: 0}
   playerdamage: 0
   spawnerfalse: 0
+  coin: {fileID: 0}
+  coin2: {fileID: 0}
+  coin3: {fileID: 0}
 --- !u!50 &1370460748
 Rigidbody2D:
   serializedVersion: 4
@@ -60364,6 +60949,91 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: hidebow1
+      value: 
+      objectReference: {fileID: 1349182062}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: hidesword
+      value: 
+      objectReference: {fileID: 648529108}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: hidecrosshair
+      value: 
+      objectReference: {fileID: 208899525}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: hidepotion
+      value: 
+      objectReference: {fileID: 499181763}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: hideapple
+      value: 
+      objectReference: {fileID: 606729902}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: hidearmour1
+      value: 
+      objectReference: {fileID: 1504754764}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: hidearmour2
+      value: 
+      objectReference: {fileID: 1317207366}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: hidebat
+      value: 
+      objectReference: {fileID: 145618790}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: hidebelt
+      value: 
+      objectReference: {fileID: 537636337}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: hideboots
+      value: 
+      objectReference: {fileID: 1905050919}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: hidebow2
+      value: 
+      objectReference: {fileID: 1010784983}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: hideclub
+      value: 
+      objectReference: {fileID: 1871245526}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: hidedagger
+      value: 
+      objectReference: {fileID: 1964283975}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: hidegloves
+      value: 
+      objectReference: {fileID: 504000145}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: hidemage
+      value: 
+      objectReference: {fileID: 1027459875}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: hidering
+      value: 
+      objectReference: {fileID: 1714530439}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: hideshield
+      value: 
+      objectReference: {fileID: 182791715}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc1426381a2856f4ea43f169705e2ee5, type: 2}
   m_IsPrefabAsset: 0
@@ -60558,6 +61228,7 @@ MonoBehaviour:
   item13button: {fileID: 1596712880}
   item14button: {fileID: 683290081}
   item15button: {fileID: 239375941}
+  gold: 0
   goldtext: {fileID: 1207796493}
   sword: {fileID: 1698076571196482, guid: 035d01b338c5adc4d83094ae73dd9f12, type: 2}
   apple: {fileID: 1188680773142658, guid: fc1426381a2856f4ea43f169705e2ee5, type: 2}
@@ -60575,6 +61246,7 @@ MonoBehaviour:
   ring: {fileID: 1795984540124724, guid: db255565d90e36e4388a92198e41dbff, type: 2}
   potion: {fileID: 1104004081482022, guid: 06e684ad2f7a87344932e072de9119ed, type: 2}
   dagger: {fileID: 1587950474950166, guid: d05bddd920a4b3340a12c73110564ba7, type: 2}
+  other: {fileID: 0}
 --- !u!4 &1445204244 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4443640644666716, guid: fc1426381a2856f4ea43f169705e2ee5,
@@ -61244,6 +61916,11 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1504196678}
   m_CullTransparentMesh: 0
+--- !u!1 &1504754764 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1577995519453752, guid: 401f7a78c963b84498cbc57014b48bea,
+    type: 2}
+  m_PrefabInternal: {fileID: 1612570375}
 --- !u!1 &1510675525
 GameObject:
   m_ObjectHideFlags: 0
@@ -61733,6 +62410,91 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: hidebow1
+      value: 
+      objectReference: {fileID: 1349182062}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: hidesword
+      value: 
+      objectReference: {fileID: 648529108}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: hidecrosshair
+      value: 
+      objectReference: {fileID: 208899525}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: hidepotion
+      value: 
+      objectReference: {fileID: 499181763}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: hideapple
+      value: 
+      objectReference: {fileID: 606729902}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: hidearmour1
+      value: 
+      objectReference: {fileID: 1504754764}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: hidearmour2
+      value: 
+      objectReference: {fileID: 1317207366}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: hidebat
+      value: 
+      objectReference: {fileID: 145618790}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: hidebelt
+      value: 
+      objectReference: {fileID: 537636337}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: hideboots
+      value: 
+      objectReference: {fileID: 1905050919}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: hidebow2
+      value: 
+      objectReference: {fileID: 1010784983}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: hideclub
+      value: 
+      objectReference: {fileID: 1871245526}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: hidedagger
+      value: 
+      objectReference: {fileID: 1964283975}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: hidegloves
+      value: 
+      objectReference: {fileID: 504000145}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: hidemage
+      value: 
+      objectReference: {fileID: 1027459875}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: hidering
+      value: 
+      objectReference: {fileID: 1714530439}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: hideshield
+      value: 
+      objectReference: {fileID: 182791715}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6684ba93c41d5c44f92864e973cb4922, type: 2}
   m_IsPrefabAsset: 0
@@ -62464,6 +63226,91 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: hidebow1
+      value: 
+      objectReference: {fileID: 1349182062}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: hidesword
+      value: 
+      objectReference: {fileID: 648529108}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: hidecrosshair
+      value: 
+      objectReference: {fileID: 208899525}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: hidepotion
+      value: 
+      objectReference: {fileID: 499181763}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: hideapple
+      value: 
+      objectReference: {fileID: 606729902}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: hidearmour1
+      value: 
+      objectReference: {fileID: 1504754764}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: hidearmour2
+      value: 
+      objectReference: {fileID: 1317207366}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: hidebat
+      value: 
+      objectReference: {fileID: 145618790}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: hidebelt
+      value: 
+      objectReference: {fileID: 537636337}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: hideboots
+      value: 
+      objectReference: {fileID: 1905050919}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: hidebow2
+      value: 
+      objectReference: {fileID: 1010784983}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: hideclub
+      value: 
+      objectReference: {fileID: 1871245526}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: hidedagger
+      value: 
+      objectReference: {fileID: 1964283975}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: hidegloves
+      value: 
+      objectReference: {fileID: 504000145}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: hidemage
+      value: 
+      objectReference: {fileID: 1027459875}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: hidering
+      value: 
+      objectReference: {fileID: 1714530439}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: hideshield
+      value: 
+      objectReference: {fileID: 182791715}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 401f7a78c963b84498cbc57014b48bea, type: 2}
   m_IsPrefabAsset: 0
@@ -63653,6 +64500,7 @@ MonoBehaviour:
   item13button: {fileID: 1596712880}
   item14button: {fileID: 683290081}
   item15button: {fileID: 239375941}
+  gold: 0
   goldtext: {fileID: 1207796493}
   sword: {fileID: 1698076571196482, guid: 035d01b338c5adc4d83094ae73dd9f12, type: 2}
   apple: {fileID: 1188680773142658, guid: fc1426381a2856f4ea43f169705e2ee5, type: 2}
@@ -63670,6 +64518,7 @@ MonoBehaviour:
   ring: {fileID: 1795984540124724, guid: db255565d90e36e4388a92198e41dbff, type: 2}
   potion: {fileID: 1104004081482022, guid: 06e684ad2f7a87344932e072de9119ed, type: 2}
   dagger: {fileID: 1587950474950166, guid: d05bddd920a4b3340a12c73110564ba7, type: 2}
+  other: {fileID: 0}
 --- !u!1 &1697417680
 GameObject:
   m_ObjectHideFlags: 0
@@ -63947,6 +64796,11 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1709217174}
   m_CullTransparentMesh: 0
+--- !u!1 &1714530439 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1795984540124724, guid: db255565d90e36e4388a92198e41dbff,
+    type: 2}
+  m_PrefabInternal: {fileID: 1212097107}
 --- !u!1 &1760244983
 GameObject:
   m_ObjectHideFlags: 0
@@ -64856,6 +65710,91 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: hidebow1
+      value: 
+      objectReference: {fileID: 1349182062}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: hidesword
+      value: 
+      objectReference: {fileID: 648529108}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: hidecrosshair
+      value: 
+      objectReference: {fileID: 208899525}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: hidepotion
+      value: 
+      objectReference: {fileID: 499181763}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: hideapple
+      value: 
+      objectReference: {fileID: 606729902}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: hidearmour1
+      value: 
+      objectReference: {fileID: 1504754764}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: hidearmour2
+      value: 
+      objectReference: {fileID: 1317207366}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: hidebat
+      value: 
+      objectReference: {fileID: 145618790}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: hidebelt
+      value: 
+      objectReference: {fileID: 537636337}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: hideboots
+      value: 
+      objectReference: {fileID: 1905050919}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: hidebow2
+      value: 
+      objectReference: {fileID: 1010784983}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: hideclub
+      value: 
+      objectReference: {fileID: 1871245526}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: hidedagger
+      value: 
+      objectReference: {fileID: 1964283975}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: hidegloves
+      value: 
+      objectReference: {fileID: 504000145}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: hidemage
+      value: 
+      objectReference: {fileID: 1027459875}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: hidering
+      value: 
+      objectReference: {fileID: 1714530439}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: hideshield
+      value: 
+      objectReference: {fileID: 182791715}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d05bddd920a4b3340a12c73110564ba7, type: 2}
   m_IsPrefabAsset: 0
@@ -69964,6 +70903,11 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1871189237}
   m_CullTransparentMesh: 0
+--- !u!1 &1871245526 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1080991363309510, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+    type: 2}
+  m_PrefabInternal: {fileID: 1128647789}
 --- !u!1001 &1883693004
 Prefab:
   m_ObjectHideFlags: 0
@@ -70058,9 +71002,99 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: hidebow1
+      value: 
+      objectReference: {fileID: 1349182062}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: hidesword
+      value: 
+      objectReference: {fileID: 648529108}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: hidecrosshair
+      value: 
+      objectReference: {fileID: 208899525}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: hidepotion
+      value: 
+      objectReference: {fileID: 499181763}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: hideapple
+      value: 
+      objectReference: {fileID: 606729902}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: hidearmour1
+      value: 
+      objectReference: {fileID: 1504754764}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: hidearmour2
+      value: 
+      objectReference: {fileID: 1317207366}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: hidebat
+      value: 
+      objectReference: {fileID: 145618790}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: hidebelt
+      value: 
+      objectReference: {fileID: 537636337}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: hideboots
+      value: 
+      objectReference: {fileID: 1905050919}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: hidebow2
+      value: 
+      objectReference: {fileID: 1010784983}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: hideclub
+      value: 
+      objectReference: {fileID: 1871245526}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: hidedagger
+      value: 
+      objectReference: {fileID: 1964283975}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: hidegloves
+      value: 
+      objectReference: {fileID: 504000145}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: hidemage
+      value: 
+      objectReference: {fileID: 1027459875}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: hidering
+      value: 
+      objectReference: {fileID: 1714530439}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: hideshield
+      value: 
+      objectReference: {fileID: 182791715}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6947950a6ae8c384b86e8d4ecaac6863, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1905050919 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1297269805641168, guid: 2219772d1d914214b9fdb96740b710b3,
+    type: 2}
+  m_PrefabInternal: {fileID: 109240041}
 --- !u!4 &1907670494 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4593751718048852, guid: 0eb2f5adb2435e74a9f73ead305b1ac3,
@@ -70514,6 +71548,11 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1955291599}
   m_CullTransparentMesh: 0
+--- !u!1 &1964283975 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1587950474950166, guid: d05bddd920a4b3340a12c73110564ba7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1841886324}
 --- !u!1 &1986327448
 GameObject:
   m_ObjectHideFlags: 0
@@ -71295,6 +72334,91 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: hidebow1
+      value: 
+      objectReference: {fileID: 1349182062}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: hidesword
+      value: 
+      objectReference: {fileID: 648529108}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: hidecrosshair
+      value: 
+      objectReference: {fileID: 208899525}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: hidepotion
+      value: 
+      objectReference: {fileID: 499181763}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: hideapple
+      value: 
+      objectReference: {fileID: 606729902}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: hidearmour1
+      value: 
+      objectReference: {fileID: 1504754764}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: hidearmour2
+      value: 
+      objectReference: {fileID: 1317207366}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: hidebat
+      value: 
+      objectReference: {fileID: 145618790}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: hidebelt
+      value: 
+      objectReference: {fileID: 537636337}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: hideboots
+      value: 
+      objectReference: {fileID: 1905050919}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: hidebow2
+      value: 
+      objectReference: {fileID: 1010784983}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: hideclub
+      value: 
+      objectReference: {fileID: 1871245526}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: hidedagger
+      value: 
+      objectReference: {fileID: 1964283975}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: hidegloves
+      value: 
+      objectReference: {fileID: 504000145}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: hidemage
+      value: 
+      objectReference: {fileID: 1027459875}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: hidering
+      value: 
+      objectReference: {fileID: 1714530439}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: hideshield
+      value: 
+      objectReference: {fileID: 182791715}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30, type: 2}
   m_IsPrefabAsset: 0
@@ -72013,6 +73137,91 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: hidebow1
+      value: 
+      objectReference: {fileID: 1349182062}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: hidesword
+      value: 
+      objectReference: {fileID: 648529108}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: hidecrosshair
+      value: 
+      objectReference: {fileID: 208899525}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: hidepotion
+      value: 
+      objectReference: {fileID: 499181763}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: hideapple
+      value: 
+      objectReference: {fileID: 606729902}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: hidearmour1
+      value: 
+      objectReference: {fileID: 1504754764}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: hidearmour2
+      value: 
+      objectReference: {fileID: 1317207366}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: hidebat
+      value: 
+      objectReference: {fileID: 145618790}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: hidebelt
+      value: 
+      objectReference: {fileID: 537636337}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: hideboots
+      value: 
+      objectReference: {fileID: 1905050919}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: hidebow2
+      value: 
+      objectReference: {fileID: 1010784983}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: hideclub
+      value: 
+      objectReference: {fileID: 1871245526}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: hidedagger
+      value: 
+      objectReference: {fileID: 1964283975}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: hidegloves
+      value: 
+      objectReference: {fileID: 504000145}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: hidemage
+      value: 
+      objectReference: {fileID: 1027459875}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: hidering
+      value: 
+      objectReference: {fileID: 1714530439}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: hideshield
+      value: 
+      objectReference: {fileID: 182791715}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50762176e56840f4bba423f6691bee7a, type: 2}
   m_IsPrefabAsset: 0
@@ -72600,6 +73809,91 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: hidebow1
+      value: 
+      objectReference: {fileID: 1349182062}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: hidesword
+      value: 
+      objectReference: {fileID: 648529108}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: hidecrosshair
+      value: 
+      objectReference: {fileID: 208899525}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: hidepotion
+      value: 
+      objectReference: {fileID: 499181763}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: hideapple
+      value: 
+      objectReference: {fileID: 606729902}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: hidearmour1
+      value: 
+      objectReference: {fileID: 1504754764}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: hidearmour2
+      value: 
+      objectReference: {fileID: 1317207366}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: hidebat
+      value: 
+      objectReference: {fileID: 145618790}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: hidebelt
+      value: 
+      objectReference: {fileID: 537636337}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: hideboots
+      value: 
+      objectReference: {fileID: 1905050919}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: hidebow2
+      value: 
+      objectReference: {fileID: 1010784983}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: hideclub
+      value: 
+      objectReference: {fileID: 1871245526}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: hidedagger
+      value: 
+      objectReference: {fileID: 1964283975}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: hidegloves
+      value: 
+      objectReference: {fileID: 504000145}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: hidemage
+      value: 
+      objectReference: {fileID: 1027459875}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: hidering
+      value: 
+      objectReference: {fileID: 1714530439}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: hideshield
+      value: 
+      objectReference: {fileID: 182791715}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73260d016e2cd31479f05719c88d3ff8, type: 2}
   m_IsPrefabAsset: 0
