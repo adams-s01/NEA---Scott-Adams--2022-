@@ -161,7 +161,15 @@ public class Player_Movement : MonoBehaviour {
 			gold = 2;
 			Destroy (col.gameObject);
 		}
-		if (col.gameObject.name != "coin(Clone)") {
+		if (col.gameObject.name == "coin2(Clone)") {
+			gold = 4;
+			Destroy (col.gameObject);
+		}
+		if (col.gameObject.name == "coin3(Clone)") {
+			gold = 3;
+			Destroy (col.gameObject);
+		}
+		if (col.gameObject.name != "coin(Clone)" && col.gameObject.name != "coin2(Clone)" && col.gameObject.name != "coin3(Clone)") {
 			gold = 0;
 		}
 	}

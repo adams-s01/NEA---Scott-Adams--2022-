@@ -104,6 +104,9 @@ MonoBehaviour:
   other: {fileID: 0}
   playerdamage: 0
   spawnerfalse: 0
+  coin: {fileID: 0}
+  coin2: {fileID: 0}
+  coin3: {fileID: 1091043346124914, guid: ebfcacb6972f6c449aed6513e0ff8b90, type: 2}
 --- !u!212 &212208927543745420
 SpriteRenderer:
   m_ObjectHideFlags: 1

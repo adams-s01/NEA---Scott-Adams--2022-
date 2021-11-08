@@ -21,6 +21,8 @@ public class Enemy_Movement : MonoBehaviour {
 	public int playerdamage;
 	public bool spawnerfalse;
 	public GameObject coin;
+	public GameObject coin2;
+	public GameObject coin3;
 
 
 
@@ -148,6 +150,14 @@ public class Enemy_Movement : MonoBehaviour {
 				{
 					Instantiate (coin, new Vector2 (enemyx, enemyy), Quaternion.identity);
 				}
+				if(gameObject.tag=="bat")
+				{
+					Instantiate (coin2, new Vector2 (enemyx, enemyy), Quaternion.identity);
+				}
+				if(gameObject.tag=="skeleton")
+				{
+					Instantiate (coin3, new Vector2 (enemyx, enemyy), Quaternion.identity);
+				}
 			}
 			//Sets the damage to the player for slime2
 			if (gameObject.tag == "slime2") {
@@ -175,6 +185,17 @@ public class Enemy_Movement : MonoBehaviour {
 			if (gameObject.tag == "bat") {
 				playerdamage = 1;
 				col.gameObject.SendMessage ("Damage", playerdamage);
+			}
+			string enemyname = gameObject.name;
+			enemy = GameObject.Find (enemyname);
+			if (Input.GetKeyDown (KeyCode.Mouse0)) {
+				damage1 = other.GetComponent<Inventory_1> ().damage;
+				Debug.Log("Damage"+damage1);
+				enemyhealth=enemyhealth-damage1;
+				Debug.Log (enemyhealth);
+				enemyx = enemy.transform.position.x;
+				enemyy = enemy.transform.position.y+2;
+				Instantiate (hitpoint, new Vector2 (enemyx, enemyy), Quaternion.identity);
 			}
 		}
 	}
