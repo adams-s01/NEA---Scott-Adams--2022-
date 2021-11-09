@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 1
-* Last Edited: Sprint 1
+* Last Edited: Sprint 7
 * Purpose: Settings menu buttons,changes difficulty and goes back to menu
 */
 using System.Collections;
@@ -15,13 +15,19 @@ public class Settings_Menu : MonoBehaviour {
 	public Toggle hard;
 	GameObject menu;
 	GameObject settings;
+	public string settings2;
 
 	// Initialises menu and settings canvases, toggles medium and hard off
 	void Start () {
-		menu = GameObject.FindGameObjectWithTag ("menu");
-		settings = GameObject.FindGameObjectWithTag ("settingsmenu");
+		
 		medium.isOn = false;
 		hard.isOn = false;
+	}
+	//Initialises menu and settings when they are awake
+	void Awake()
+	{
+		menu = GameObject.FindGameObjectWithTag ("menu");
+		settings = GameObject.FindGameObjectWithTag ("settingsmenu");
 	}
 	
 	// Update is called once per frame
@@ -36,6 +42,8 @@ public class Settings_Menu : MonoBehaviour {
 			Debug.Log ("Easy");
 			medium.isOn = false;
 			hard.isOn = false;
+			settings2 = "easy";
+			gameObject.SendMessage ("Settings", settings2);
 		}
 	}
 	//Checks if medium is toggled on, toggles others off
@@ -45,6 +53,8 @@ public class Settings_Menu : MonoBehaviour {
 			Debug.Log ("Medium");
 			easy.isOn = false;
 			hard.isOn = false;
+			settings2 = "medium";
+			gameObject.SendMessage ("Settings", settings2);
 		}
 	}
 	//Checks if hard is toggled on, toggles others off
@@ -55,13 +65,16 @@ public class Settings_Menu : MonoBehaviour {
 			Debug.Log ("Hard");
 			easy.isOn = false;
 			medium.isOn = false;
+			settings2 = "hard";
+			gameObject.SendMessage ("Settings", settings2);
 		}
 	}
 	//Activates when exit button clicked, exits back to menu
 	public void Exit()
 	{
 		Debug.Log ("Exit");
-		settings.SetActive (false);
 		menu.SetActive (true);
+		settings.SetActive (false);
+
 	}
 }

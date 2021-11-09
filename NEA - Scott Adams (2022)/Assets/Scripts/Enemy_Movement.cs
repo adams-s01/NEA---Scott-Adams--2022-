@@ -23,6 +23,7 @@ public class Enemy_Movement : MonoBehaviour {
 	public GameObject coin;
 	public GameObject coin2;
 	public GameObject coin3;
+	string setting;
 
 
 
@@ -30,6 +31,8 @@ public class Enemy_Movement : MonoBehaviour {
 	void Start () {
 		sleep = false;
 		rb = GetComponent<Rigidbody2D>();
+		setting = PlayerPrefs.GetString ("setting", "easy");
+		Debug.Log ("1"+setting);
 
 
 
