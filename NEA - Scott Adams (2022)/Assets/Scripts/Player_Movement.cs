@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class Player_Movement : MonoBehaviour {
 
@@ -36,6 +37,7 @@ public class Player_Movement : MonoBehaviour {
 	bool ringhealth2;
 	public int lives;
 	public int gold;
+	public TextMeshProUGUI healthtext;
 
 
 	// Use this for initialization
@@ -121,7 +123,7 @@ public class Player_Movement : MonoBehaviour {
 		if (lives == 0) {
 			SceneManager.LoadScene (0);
 		}
-
+		healthtext.text = "Health: " + playerhealth.ToString ();
 
 	}
 	//Causes the palyer to not be able to sprint for 10 seconds

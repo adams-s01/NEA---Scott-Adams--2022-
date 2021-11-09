@@ -24,7 +24,9 @@ public class Enemy_Movement : MonoBehaviour {
 	public GameObject coin2;
 	public GameObject coin3;
 	string setting;
-
+	public GameObject[] hitpoints;
+	int enemyhealthdifficulty;
+	int enemydamagedifficulty;
 
 
 	// Initialises variables
@@ -33,9 +35,19 @@ public class Enemy_Movement : MonoBehaviour {
 		rb = GetComponent<Rigidbody2D>();
 		setting = PlayerPrefs.GetString ("setting", "easy");
 		Debug.Log ("1"+setting);
-
-
-
+		if (setting == "easy") {
+			enemyhealthdifficulty = 1;
+			enemydamagedifficulty = 1;
+		}
+		if (setting == "medium") {
+			enemyhealthdifficulty = 2;
+			enemydamagedifficulty = 1;
+		}
+		if (setting == "hard") {
+			enemyhealthdifficulty = 2;
+			enemydamagedifficulty = 2;
+		}
+		enemyhealth = enemyhealth * enemyhealthdifficulty;
 	}
 	
 	// Calls slime movement sets GameObject to call other script
@@ -142,7 +154,7 @@ public class Enemy_Movement : MonoBehaviour {
 				Debug.Log (enemyhealth);
 				enemyx = enemy.transform.position.x;
 				enemyy = enemy.transform.position.y+2;
-				Instantiate (hitpoint, new Vector2 (enemyx, enemyy), Quaternion.identity);
+				Instantiate (hitpoints[damage1], new Vector2 (enemyx, enemyy), Quaternion.identity);
 			}
 			//Destroys slime if health runs out
 			if (enemyhealth <= 0) {
@@ -164,12 +176,12 @@ public class Enemy_Movement : MonoBehaviour {
 			}
 			//Sets the damage to the player for slime2
 			if (gameObject.tag == "slime2") {
-				playerdamage = 1;
+				playerdamage = 1 * enemydamagedifficulty;
 				col.gameObject.SendMessage ("Damage", playerdamage);
 			}
 			//Sets the damage to the player for skeleton
 			if (gameObject.tag == "skeleton") {
-				playerdamage = 1;
+				playerdamage = 1 * enemydamagedifficulty;
 				col.gameObject.SendMessage ("Damage", playerdamage);
 			}
 		}
@@ -186,7 +198,7 @@ public class Enemy_Movement : MonoBehaviour {
 		if (col.gameObject.tag == "Player") {
 			//Sets the damage for the player for bat
 			if (gameObject.tag == "bat") {
-				playerdamage = 1;
+				playerdamage = 1 * enemydamagedifficulty;
 				col.gameObject.SendMessage ("Damage", playerdamage);
 			}
 			string enemyname = gameObject.name;
@@ -198,7 +210,7 @@ public class Enemy_Movement : MonoBehaviour {
 				Debug.Log (enemyhealth);
 				enemyx = enemy.transform.position.x;
 				enemyy = enemy.transform.position.y+2;
-				Instantiate (hitpoint, new Vector2 (enemyx, enemyy), Quaternion.identity);
+				Instantiate (hitpoints[damage1], new Vector2 (enemyx, enemyy), Quaternion.identity);
 			}
 			if (enemyhealth <= 0) {
 				Destroy (enemy);

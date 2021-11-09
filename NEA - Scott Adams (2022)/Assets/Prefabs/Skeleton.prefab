@@ -107,6 +107,17 @@ MonoBehaviour:
   coin: {fileID: 0}
   coin2: {fileID: 0}
   coin3: {fileID: 1091043346124914, guid: ebfcacb6972f6c449aed6513e0ff8b90, type: 2}
+  hitpoints:
+  - {fileID: 1399659383109238, guid: 85414c430381c224784b0d7fb2e00fbf, type: 2}
+  - {fileID: 1915316913621360, guid: 150f82483ce9e464f947dedc29b0267d, type: 2}
+  - {fileID: 1352695407559848, guid: b70d1a59c4ff1e944985da366ec68d21, type: 2}
+  - {fileID: 1272821448231262, guid: 07cf9a106ca619a49aebde4b84f200d8, type: 2}
+  - {fileID: 1371179104205272, guid: ce46000fc4fa7224882a5e3b0d414714, type: 2}
+  - {fileID: 1699095981426436, guid: b803dd4dd35409c48a5c457a399a37b1, type: 2}
+  - {fileID: 1157399740938410, guid: e372645c6293bed43aafa8acfe6a4c82, type: 2}
+  - {fileID: 1282225335504488, guid: d463045feb2e8da4699eea3f100c9532, type: 2}
+  - {fileID: 1183904260319276, guid: f462940d0ec18cf429000273f704937a, type: 2}
+  - {fileID: 1535202515768940, guid: 211e08155ac435b4281b1c965fd8ba43, type: 2}
 --- !u!212 &212208927543745420
 SpriteRenderer:
   m_ObjectHideFlags: 1
