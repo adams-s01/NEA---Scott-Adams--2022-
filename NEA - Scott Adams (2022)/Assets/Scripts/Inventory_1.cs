@@ -35,6 +35,8 @@ public class Inventory_1 : MonoBehaviour {
 	public Sprite ring6;
 	public Sprite shield;
 	public Sprite key;
+	public Sprite potiondoubledamage;
+	public Sprite potionweak;
 	GameObject inventorycanvas;
 	public Image image;
 	public Image image2;
@@ -76,28 +78,36 @@ public class Inventory_1 : MonoBehaviour {
 	public GameObject hidemage;
 	public GameObject hidering;
 	public GameObject hideshield;
+	public GameObject hidepotiondouble;
+	public GameObject hidepotionweak;
 	bool sleep;
 	bool playerspeedtrue;
 	bool playerspeedtrue2;
 	int speeddouble;
+	int doubledamage;
 	public bool playerhealth;
 	public bool playerhealth2;
 	public bool playerhealth3;
 	public bool keytrue;
-	GameObject armourcanvas;
-	GameObject ringcanvas;
+	public GameObject armourcanvas;
+	public GameObject ringcanvas;
 	int inventory1;
 	int inventory2;
 	int inventory3;
 	int inventory4;
 	int inventory5;
+	GameObject player;
+	float playerx;
+	float playery;
+	public GameObject weak;
 
 	// Use this for initialization
 	void Start () {
 		inventory = GameObject.FindGameObjectsWithTag ("image");
 		inventorycanvas = GameObject.FindGameObjectWithTag ("inventory");
-		armourcanvas = GameObject.FindGameObjectWithTag ("armourcanvas");
-		ringcanvas = GameObject.FindGameObjectWithTag ("ringcanvas");
+		player = GameObject.FindGameObjectWithTag ("Player");
+		//armourcanvas = GameObject.FindGameObjectWithTag ("armourcanvas");
+		//ringcanvas = GameObject.FindGameObjectWithTag ("ringcanvas");
 		//hidebow1 = GameObject.Find ("Bow11");
 		//hidesword = GameObject.Find ("sword1");
 		//hidecrosshair = GameObject.FindGameObjectWithTag ("crosshair");
@@ -121,6 +131,8 @@ public class Inventory_1 : MonoBehaviour {
 		hidesword.SetActive (false);
 		hidecrosshair.SetActive (false);
 		hidepotion.SetActive (false);
+		hidepotiondouble.SetActive (false);
+		hidepotionweak.SetActive (false);
 		hideapple.SetActive (false);
 		hidearmour1.SetActive (false);
 		hidearmour2.SetActive (false);
@@ -134,6 +146,7 @@ public class Inventory_1 : MonoBehaviour {
 		hidemage.SetActive (false);
 		hidering.SetActive (false);
 		hideshield.SetActive (false);
+
 
 		sleep = false;
 		playerspeedtrue = false;
@@ -244,6 +257,12 @@ public class Inventory_1 : MonoBehaviour {
 					if (gameObject.name == "Key_B(Clone)") {
 						inventory [i + 0].GetComponent<Image> ().sprite = key;
 					}
+					if (gameObject.name == "potiondoubledamage(Clone)") {
+						inventory [i + 0].GetComponent<Image> ().sprite = potiondoubledamage;
+					}
+					if (gameObject.name == "potionweak(Clone)") {
+						inventory [i + 0].GetComponent<Image> ().sprite = potionweak;
+					}
 					GameObject bow1 = GameObject.FindGameObjectWithTag ("bow");
 					Destroy (bow1);
 					full [i] = true;
@@ -345,6 +364,17 @@ public class Inventory_1 : MonoBehaviour {
 			keyimage.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			keytrue = true;
 		}
+		if (weaponname == "potiondoubledamage") {
+			inventory [inventory1].GetComponent<Image> ().sprite = null;
+			doubledamage = 2;
+			StartCoroutine (coroutine ());
+		}
+		if (weaponname == "potionweak") {
+			inventory [inventory1].GetComponent<Image> ().sprite = null;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (weak, new Vector2 (playerx, playery), Quaternion.identity);
+		}
 	}
 	//Acitvates when slot two clicked
 	public void Inventory2()
@@ -436,6 +466,17 @@ public class Inventory_1 : MonoBehaviour {
 			inventory [inventory2].GetComponent<Image> ().sprite = null;
 			keyimage.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			keytrue = true;
+		}
+		if (weaponname == "potiondoubledamage") {
+			inventory [inventory2].GetComponent<Image> ().sprite = null;
+			doubledamage = 2;
+			StartCoroutine (coroutine ());
+		}
+		if (weaponname == "potionweak") {
+			inventory [inventory2].GetComponent<Image> ().sprite = null;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (weak, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 
 	}
@@ -530,6 +571,17 @@ public class Inventory_1 : MonoBehaviour {
 			keyimage.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			keytrue = true;
 		}
+		if (weaponname == "potiondoubledamage") {
+			inventory [inventory3].GetComponent<Image> ().sprite = null;
+			doubledamage = 2;
+			StartCoroutine (coroutine ());
+		}
+		if (weaponname == "potionweak") {
+			inventory [inventory3].GetComponent<Image> ().sprite = null;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (weak, new Vector2 (playerx, playery), Quaternion.identity);
+		}
 	}
 	//Activates when slot four clicked
 	public void Inventory4()
@@ -621,6 +673,17 @@ public class Inventory_1 : MonoBehaviour {
 			inventory [inventory4].GetComponent<Image> ().sprite = null;
 			keyimage.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			keytrue = true;
+		}
+		if (weaponname == "potiondoubledamage") {
+			inventory [inventory4].GetComponent<Image> ().sprite = null;
+			doubledamage = 2;
+			StartCoroutine (coroutine ());
+		}
+		if (weaponname == "potionweak") {
+			inventory [inventory4].GetComponent<Image> ().sprite = null;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (weak, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
 	//Activated when slot five clicked
@@ -714,6 +777,17 @@ public class Inventory_1 : MonoBehaviour {
 			keyimage.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			keytrue = true;
 		}
+		if (weaponname == "potiondoubledamage") {
+			inventory [inventory5].GetComponent<Image> ().sprite = null;
+			doubledamage = 2;
+			StartCoroutine (coroutine ());
+		}
+		if (weaponname == "potionweak") {
+			inventory [inventory5].GetComponent<Image> ().sprite = null;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (weak, new Vector2 (playerx, playery), Quaternion.identity);
+		}
 	}
 	//Activates canvas showing armour
 	public void InventoryArmour()
@@ -741,7 +815,7 @@ public class Inventory_1 : MonoBehaviour {
 		//Sets damage for the bow
 		if (weaponname == "Bow1") {
 			
-			damage = 2;
+			damage = 2 * doubledamage;
 			hidebow1.SetActive (true);
 			hidesword.SetActive (false);
 			hidecrosshair.SetActive (true);
@@ -759,11 +833,12 @@ public class Inventory_1 : MonoBehaviour {
 			hidemage.SetActive (false);
 			hidering.SetActive (false);
 			hideshield.SetActive (false);
+			hidepotiondouble.SetActive (false);
 			return damage;
 		}
 		//Sets damage for the sword
 		else if (weaponname == "sword") {
-			damage = 3;
+			damage = 3 * doubledamage;
 			hidesword.SetActive (true);
 			hidebow1.SetActive (false);
 			hidecrosshair.SetActive (false);
@@ -781,11 +856,12 @@ public class Inventory_1 : MonoBehaviour {
 			hidemage.SetActive (false);
 			hidering.SetActive (false);
 			hideshield.SetActive (false);
+			hidepotiondouble.SetActive (false);
 			return damage;
 		}
 		//Sets damage for the bat
 		else if (weaponname == "bat") {
-			damage = 4;
+			damage = 4 * doubledamage;
 			hidesword.SetActive (false);
 			hidebow1.SetActive (false);
 			hidecrosshair.SetActive (false);
@@ -803,11 +879,12 @@ public class Inventory_1 : MonoBehaviour {
 			hidemage.SetActive (false);
 			hidering.SetActive (false);
 			hideshield.SetActive (false);
+			hidepotiondouble.SetActive (false);
 			return damage;
 		}
 		//Sets damage for the bow2
 		else if (weaponname == "bow2") {
-			damage = 3;
+			damage = 3 * doubledamage;
 			hidesword.SetActive (false);
 			hidebow1.SetActive (false);
 			hidecrosshair.SetActive (true);
@@ -825,11 +902,12 @@ public class Inventory_1 : MonoBehaviour {
 			hidemage.SetActive (false);
 			hidering.SetActive (false);
 			hideshield.SetActive (false);
+			hidepotiondouble.SetActive (false);
 			return damage;
 		}
 		//Sets damage for the club
 		else if (weaponname == "club") {
-			damage = 6;
+			damage = 6 * doubledamage;
 			hidesword.SetActive (false);
 			hidebow1.SetActive (false);
 			hidecrosshair.SetActive (false);
@@ -847,11 +925,12 @@ public class Inventory_1 : MonoBehaviour {
 			hidemage.SetActive (false);
 			hidering.SetActive (false);
 			hideshield.SetActive (false);
+			hidepotiondouble.SetActive (false);
 			return damage;
 		}
 		//Sets damage for the dagger
 		else if (weaponname == "dagger") {
-			damage = 4;
+			damage = 4 * doubledamage;
 			hidesword.SetActive (false);
 			hidebow1.SetActive (false);
 			hidecrosshair.SetActive (false);
@@ -869,11 +948,12 @@ public class Inventory_1 : MonoBehaviour {
 			hidemage.SetActive (false);
 			hidering.SetActive (false);
 			hideshield.SetActive (false);
+			hidepotiondouble.SetActive (false);
 			return damage;
 		}
 		//Sets damage for the mage
 		else if (weaponname == "mage") {
-			damage = 15;
+			damage = 15 * doubledamage;
 			hidesword.SetActive (false);
 			hidebow1.SetActive (false);
 			hidecrosshair.SetActive (false);
@@ -891,6 +971,7 @@ public class Inventory_1 : MonoBehaviour {
 			hidemage.SetActive (true);
 			hidering.SetActive (false);
 			hideshield.SetActive (false);
+			hidepotiondouble.SetActive (false);
 			return damage;
 		}
 		//Sets damage for when nothing is selected
@@ -922,6 +1003,7 @@ public class Inventory_1 : MonoBehaviour {
 			hidemage.SetActive (false);
 			hidering.SetActive (false);
 			hideshield.SetActive (false);
+			hidepotiondouble.SetActive (false);
 			if (Input.GetKeyDown (KeyCode.Mouse0)) {
 				
 				if(sleep==false)
@@ -949,6 +1031,30 @@ public class Inventory_1 : MonoBehaviour {
 		weaponname = null;
 		hidepotion.SetActive (false);
 		sleep = false;
+	}
+	//Waits for 10 seconds for double damage potion
+	IEnumerator coroutine()
+	{
+		hidesword.SetActive (false);
+		hidebow1.SetActive (false);
+		hidecrosshair.SetActive (false);
+		hidepotion.SetActive (false);
+		hideapple.SetActive (false);
+		hidearmour1.SetActive (false);
+		hidearmour2.SetActive (false);
+		hidebat.SetActive (false);
+		hidebelt.SetActive (false);
+		hideboots.SetActive (false);
+		hidebow2.SetActive (false);
+		hideclub.SetActive (false);
+		hidedagger.SetActive (false);
+		hidegloves.SetActive (false);
+		hidemage.SetActive (false);
+		hidering.SetActive (false);
+		hideshield.SetActive (false);
+		hidepotiondouble.SetActive (true);
+		yield return new WaitForSecondsRealtime (10);
+		doubledamage = 1;
 	}
 
 }
