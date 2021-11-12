@@ -372,7 +372,7 @@ public class Inventory_1 : MonoBehaviour {
 		if (weaponname == "potionweak") {
 			inventory [inventory1].GetComponent<Image> ().sprite = null;
 			playerx = player.transform.position.x;
-			playery = player.transform.position.y;
+			playery = player.transform.position.y + 2.5f;
 			Instantiate (weak, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
@@ -475,7 +475,7 @@ public class Inventory_1 : MonoBehaviour {
 		if (weaponname == "potionweak") {
 			inventory [inventory2].GetComponent<Image> ().sprite = null;
 			playerx = player.transform.position.x;
-			playery = player.transform.position.y;
+			playery = player.transform.position.y + 2.5f;
 			Instantiate (weak, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 
@@ -579,7 +579,7 @@ public class Inventory_1 : MonoBehaviour {
 		if (weaponname == "potionweak") {
 			inventory [inventory3].GetComponent<Image> ().sprite = null;
 			playerx = player.transform.position.x;
-			playery = player.transform.position.y;
+			playery = player.transform.position.y + 2.5f;
 			Instantiate (weak, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
@@ -682,7 +682,7 @@ public class Inventory_1 : MonoBehaviour {
 		if (weaponname == "potionweak") {
 			inventory [inventory4].GetComponent<Image> ().sprite = null;
 			playerx = player.transform.position.x;
-			playery = player.transform.position.y;
+			playery = player.transform.position.y + 2.5f;
 			Instantiate (weak, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
@@ -785,7 +785,7 @@ public class Inventory_1 : MonoBehaviour {
 		if (weaponname == "potionweak") {
 			inventory [inventory5].GetComponent<Image> ().sprite = null;
 			playerx = player.transform.position.x;
-			playery = player.transform.position.y;
+			playery = player.transform.position.y + 2.5f;
 			Instantiate (weak, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
@@ -1056,5 +1056,4 @@ public class Inventory_1 : MonoBehaviour {
 		yield return new WaitForSecondsRealtime (10);
 		doubledamage = 1;
 	}
-
 }
