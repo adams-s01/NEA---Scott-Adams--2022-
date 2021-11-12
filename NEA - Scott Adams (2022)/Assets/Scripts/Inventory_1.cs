@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 2
-* Last Edited: Sprint 6
+* Last Edited: Sprint 7
 * Purpose: Causes an inventory to exist
 */
 using System.Collections;
@@ -100,6 +100,7 @@ public class Inventory_1 : MonoBehaviour {
 	float playerx;
 	float playery;
 	public GameObject weak;
+	private GameObject weakwall;
 
 	// Use this for initialization
 	void Start () {
@@ -373,7 +374,7 @@ public class Inventory_1 : MonoBehaviour {
 			inventory [inventory1].GetComponent<Image> ().sprite = null;
 			playerx = player.transform.position.x;
 			playery = player.transform.position.y + 2.5f;
-			Instantiate (weak, new Vector2 (playerx, playery), Quaternion.identity);
+			StartCoroutine (weakcoroutine ());
 		}
 	}
 	//Acitvates when slot two clicked
@@ -476,7 +477,7 @@ public class Inventory_1 : MonoBehaviour {
 			inventory [inventory2].GetComponent<Image> ().sprite = null;
 			playerx = player.transform.position.x;
 			playery = player.transform.position.y + 2.5f;
-			Instantiate (weak, new Vector2 (playerx, playery), Quaternion.identity);
+			StartCoroutine (weakcoroutine ());
 		}
 
 	}
@@ -580,7 +581,7 @@ public class Inventory_1 : MonoBehaviour {
 			inventory [inventory3].GetComponent<Image> ().sprite = null;
 			playerx = player.transform.position.x;
 			playery = player.transform.position.y + 2.5f;
-			Instantiate (weak, new Vector2 (playerx, playery), Quaternion.identity);
+			StartCoroutine (weakcoroutine ());
 		}
 	}
 	//Activates when slot four clicked
@@ -683,7 +684,7 @@ public class Inventory_1 : MonoBehaviour {
 			inventory [inventory4].GetComponent<Image> ().sprite = null;
 			playerx = player.transform.position.x;
 			playery = player.transform.position.y + 2.5f;
-			Instantiate (weak, new Vector2 (playerx, playery), Quaternion.identity);
+			StartCoroutine (weakcoroutine ());
 		}
 	}
 	//Activated when slot five clicked
@@ -786,7 +787,7 @@ public class Inventory_1 : MonoBehaviour {
 			inventory [inventory5].GetComponent<Image> ().sprite = null;
 			playerx = player.transform.position.x;
 			playery = player.transform.position.y + 2.5f;
-			Instantiate (weak, new Vector2 (playerx, playery), Quaternion.identity);
+			StartCoroutine (weakcoroutine ());
 		}
 	}
 	//Activates canvas showing armour
@@ -1055,5 +1056,12 @@ public class Inventory_1 : MonoBehaviour {
 		hidepotiondouble.SetActive (true);
 		yield return new WaitForSecondsRealtime (10);
 		doubledamage = 1;
+	}
+	//Destroys weakness area of effect after 5 seconds
+	IEnumerator weakcoroutine()
+	{
+		weakwall = Instantiate (weak, new Vector2 (playerx, playery), Quaternion.identity);
+		yield return new WaitForSecondsRealtime (5);
+		Destroy (weakwall);
 	}
 }

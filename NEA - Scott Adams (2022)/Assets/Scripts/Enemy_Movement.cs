@@ -12,13 +12,13 @@ public class Enemy_Movement : MonoBehaviour {
 	Rigidbody2D rb;
 	GameObject enemy;
 	bool sleep;
-	public int enemyhealth;
+	public float enemyhealth;
 	public GameObject hitpoint;
 	float enemyx;
 	float enemyy;
 	public GameObject other;
 	int damage1;
-	public int playerdamage;
+	public float playerdamage;
 	public bool spawnerfalse;
 	public GameObject coin;
 	public GameObject coin2;
@@ -27,6 +27,8 @@ public class Enemy_Movement : MonoBehaviour {
 	public GameObject[] hitpoints;
 	int enemyhealthdifficulty;
 	int enemydamagedifficulty;
+	public GameObject other2;
+	Weakpotion other3;
 
 
 	// Initialises variables
@@ -229,6 +231,14 @@ public class Enemy_Movement : MonoBehaviour {
 					Instantiate (coin3, new Vector2 (enemyx, enemyy), Quaternion.identity);
 				}
 			}
+		}
+		if (col.gameObject.tag == "weak") {
+			string enemyname = gameObject.name;
+			enemy = GameObject.Find (enemyname);
+			other2=col.gameObject;
+			other3 = other2.GetComponent<Weakpotion> ();
+			enemyhealth = other3.enemyhealth;
+			playerdamage = other3.enemydamage;
 		}
 	}
 	//Ends collide with the player, stops the damage of the player

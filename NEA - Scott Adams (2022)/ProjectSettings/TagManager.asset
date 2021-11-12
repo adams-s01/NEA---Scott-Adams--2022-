@@ -58,6 +58,7 @@ TagManager:
   - spikes
   - pausecanvas
   - tutorialcanvas
+  - weak
   layers:
   - Default
   - TransparentFX
