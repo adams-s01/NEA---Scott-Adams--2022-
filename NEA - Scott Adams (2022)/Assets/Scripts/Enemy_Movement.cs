@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 1
-* Last Edited: Sprint 4
+* Last Edited: Sprint 7
 * Purpose: Causes the enemy to move
 */
 using System.Collections;
@@ -29,6 +29,7 @@ public class Enemy_Movement : MonoBehaviour {
 	int enemydamagedifficulty;
 	public GameObject other2;
 	Weakpotion other3;
+	bool weaktrue;
 
 
 	// Initialises variables
@@ -232,13 +233,14 @@ public class Enemy_Movement : MonoBehaviour {
 				}
 			}
 		}
-		if (col.gameObject.tag == "weak") {
+		if (col.gameObject.tag == "weak"&&weaktrue==false) {
 			string enemyname = gameObject.name;
 			enemy = GameObject.Find (enemyname);
 			other2=col.gameObject;
 			other3 = other2.GetComponent<Weakpotion> ();
 			enemyhealth = other3.enemyhealth;
 			playerdamage = other3.enemydamage;
+			weaktrue = true;
 		}
 	}
 	//Ends collide with the player, stops the damage of the player

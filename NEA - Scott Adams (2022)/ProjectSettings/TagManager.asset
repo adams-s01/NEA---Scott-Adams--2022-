@@ -59,6 +59,7 @@ TagManager:
   - pausecanvas
   - tutorialcanvas
   - weak
+  - pumpkin
   layers:
   - Default
   - TransparentFX
