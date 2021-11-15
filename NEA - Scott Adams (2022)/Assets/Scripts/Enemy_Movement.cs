@@ -30,6 +30,8 @@ public class Enemy_Movement : MonoBehaviour {
 	public GameObject other2;
 	Weakpotion other3;
 	bool weaktrue;
+	public GameObject blind;
+	GameObject blindarea;
 
 
 	// Initialises variables
@@ -176,6 +178,10 @@ public class Enemy_Movement : MonoBehaviour {
 				{
 					Instantiate (coin3, new Vector2 (enemyx, enemyy), Quaternion.identity);
 				}
+				if (gameObject.tag == "pumpkin") {
+					Instantiate (coin2, new Vector2 (enemyx, enemyy), Quaternion.identity);
+					StartCoroutine (blindcoroutine ());
+				}
 			}
 			//Sets the damage to the player for slime2
 			if (gameObject.tag == "slime2") {
@@ -267,5 +273,13 @@ public class Enemy_Movement : MonoBehaviour {
 			enemyy = enemy.transform.position.y + 2;
 			Instantiate (hitpoint, new Vector2 (enemyx, enemyy), Quaternion.identity);
 		}
+	}
+	//Waits for 5 seconds to remove the blind area
+	IEnumerator blindcoroutine()
+	{
+		blindarea = Instantiate (blind, new Vector2 (enemyx, enemyy), Quaternion.identity);
+		Debug.Log ("3");
+		yield return new WaitForSecondsRealtime (5);
+		Destroy (blindarea);
 	}
 }

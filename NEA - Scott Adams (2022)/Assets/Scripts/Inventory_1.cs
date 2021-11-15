@@ -152,6 +152,7 @@ public class Inventory_1 : MonoBehaviour {
 		sleep = false;
 		playerspeedtrue = false;
 		armourstat = 0;
+		doubledamage = 1;
 		if (SceneManager.GetActiveScene ().buildIndex == 1) {
 			inventory1 = 1;
 			inventory2 = 4;
