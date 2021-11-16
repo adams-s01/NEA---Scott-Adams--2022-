@@ -180,8 +180,8 @@ public class Player_Movement : MonoBehaviour {
 	{
 		sleep = true;
 		playerhealth -= playerdamage;
-		Debug.Log (playerhealth);
-		Debug.Log (playerdamage);
+		//Debug.Log (playerhealth);
+		//Debug.Log (playerdamage);
 		yield return new WaitForSecondsRealtime (1);
 		sleep = false;
 	}

@@ -32,7 +32,9 @@ public class Enemy_Movement : MonoBehaviour {
 	bool weaktrue;
 	public GameObject blind;
 	GameObject blindarea;
-
+	bool sleep1;
+	Pumpkin_Raycast other4;
+	float distance1;
 
 	// Initialises variables
 	void Start () {
@@ -57,6 +59,7 @@ public class Enemy_Movement : MonoBehaviour {
 	
 	// Calls slime movement sets GameObject to call other script
 	void Update () {
+		
 		if (gameObject.tag=="slime") {
 			SlimeMovement ();
 		}
@@ -71,6 +74,21 @@ public class Enemy_Movement : MonoBehaviour {
 		}
 		other = GameObject.FindGameObjectWithTag ("inventory");
 		//PlayerPrefs.SetInt ("playerdamage", playerdamage);
+		if (gameObject.tag == "pumpkin") {
+			other4 = GetComponent<Pumpkin_Raycast> ();
+			distance1 = other4.distance;
+			Debug.Log ("222" + distance1);
+
+			if (distance1 == 0) {
+				rb.velocity = Vector2.zero;
+			} else {
+				if (other4.righttrue == true) {
+					rb.velocity = Vector2.right;
+				} else if (other4.lefttrue == true) {
+					rb.velocity = Vector2.left;
+				}
+			}
+		}
 
 
 
@@ -180,7 +198,9 @@ public class Enemy_Movement : MonoBehaviour {
 				}
 				if (gameObject.tag == "pumpkin") {
 					Instantiate (coin2, new Vector2 (enemyx, enemyy), Quaternion.identity);
-					StartCoroutine (blindcoroutine ());
+					if (sleep1 == false) {
+						StartCoroutine (blindcoroutine2 ());
+					}
 				}
 			}
 			//Sets the damage to the player for slime2
@@ -237,6 +257,13 @@ public class Enemy_Movement : MonoBehaviour {
 				{
 					Instantiate (coin3, new Vector2 (enemyx, enemyy), Quaternion.identity);
 				}
+				if (gameObject.tag == "pumpkin") {
+					Instantiate (coin2, new Vector2 (enemyx, enemyy), Quaternion.identity);
+					if (sleep1 == false) {
+						StartCoroutine (blindcoroutine2 ());
+						Debug.Log ("call made");
+					}
+				}
 			}
 		}
 		if (col.gameObject.tag == "weak"&&weaktrue==false) {
@@ -275,11 +302,14 @@ public class Enemy_Movement : MonoBehaviour {
 		}
 	}
 	//Waits for 5 seconds to remove the blind area
-	IEnumerator blindcoroutine()
+	IEnumerator blindcoroutine2()
 	{
+		sleep1 = true;
 		blindarea = Instantiate (blind, new Vector2 (enemyx, enemyy), Quaternion.identity);
-		Debug.Log ("3");
+		Debug.Log ("start of call");
 		yield return new WaitForSecondsRealtime (5);
+		Debug.Log ("after call");
 		Destroy (blindarea);
+		sleep1 = false;
 	}
 }
