@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 1
-* Last Edited: Sprint 6
+* Last Edited: Sprint 8
 * Purpose: Cause the player to move
 */
 using System.Collections;
@@ -17,10 +17,12 @@ public class Player_Movement : MonoBehaviour {
 	GameObject leg;
 	GameObject vase;
 	GameObject vase2;
+	GameObject vase3;
 	GameObject keyvase;
 	public Image speedbar;
 	public GameObject bow;
 	public GameObject potion;
+	public GameObject weakpotion;
 	public GameObject key;
 	bool resting;
 	float speed;
@@ -152,6 +154,14 @@ public class Player_Movement : MonoBehaviour {
 			vase2 = GameObject.Find (vasename);
 			Destroy (vase2);
 			Instantiate (potion, new Vector2 (vase2.transform.position.x, vase2.transform.position.y), Quaternion.identity);
+		}
+		//Potion vase
+		if(Input.GetKeyDown(KeyCode.Mouse0)&&col.gameObject.tag=="vase3")
+		{
+			string vasename = col.gameObject.name;
+			vase3 = GameObject.Find (vasename);
+			Destroy (vase3);
+			Instantiate (weakpotion, new Vector2 (vase3.transform.position.x, vase3.transform.position.y), Quaternion.identity);
 		}
 		//Key vase
 		if(Input.GetKeyDown(KeyCode.Mouse0)&&col.gameObject.tag=="keyvase")

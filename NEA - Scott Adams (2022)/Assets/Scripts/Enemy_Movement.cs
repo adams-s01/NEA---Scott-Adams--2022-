@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 1
-* Last Edited: Sprint 7
+* Last Edited: Sprint 8
 * Purpose: Causes the enemy to move
 */
 using System.Collections;
@@ -210,6 +210,11 @@ public class Enemy_Movement : MonoBehaviour {
 			}
 			//Sets the damage to the player for skeleton
 			if (gameObject.tag == "skeleton") {
+				playerdamage = 1 * enemydamagedifficulty;
+				col.gameObject.SendMessage ("Damage", playerdamage);
+			}
+			//Sets the damage to the player for pumpkin
+			if (gameObject.tag == "pumpkin") {
 				playerdamage = 1 * enemydamagedifficulty;
 				col.gameObject.SendMessage ("Damage", playerdamage);
 			}
