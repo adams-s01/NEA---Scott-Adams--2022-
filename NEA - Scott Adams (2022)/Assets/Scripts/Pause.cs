@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 6
-* Last Edited: Sprint 6
+* Last Edited: Sprint 8
 * Purpose: Creates a pause menu
 */
 using System.Collections;
@@ -15,6 +15,7 @@ public class Pause : MonoBehaviour {
 	GameObject inventorycanvas;
 	GameObject shopcanvas;
 	GameObject tutorialscreen;
+	GameObject mapscreen;
 	public TextMeshProUGUI timer;
 	public TextMeshProUGUI lives;
 	public TextMeshProUGUI gold;
@@ -29,8 +30,10 @@ public class Pause : MonoBehaviour {
 		inventorycanvas = GameObject.FindGameObjectWithTag ("inventory");
 		shopcanvas = GameObject.FindGameObjectWithTag ("shopmenu");
 		tutorialscreen = GameObject.FindGameObjectWithTag ("tutorialcanvas");
+		mapscreen = GameObject.FindGameObjectWithTag ("mapcanvas");
 		pausescreen.SetActive (false);
 		tutorialscreen.SetActive (false);
+		mapscreen.SetActive (false);
 		other2 = other.GetComponent<Player_Movement> ();
 		other4 = other3.GetComponent<Shop> ();
 	}
@@ -61,6 +64,14 @@ public class Pause : MonoBehaviour {
 	{
 		pausescreen.SetActive (false);
 		tutorialscreen.SetActive (true);
+		mapscreen.SetActive (false);
+	}
+	//Activates when map button clicked
+	public void Map()
+	{
+		pausescreen.SetActive (false);
+		tutorialscreen.SetActive (false);
+		mapscreen.SetActive (true);
 	}
 	//Activates when exit button clicked
 	public void Exit()

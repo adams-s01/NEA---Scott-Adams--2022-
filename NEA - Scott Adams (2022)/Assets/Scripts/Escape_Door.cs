@@ -10,15 +10,15 @@ using UnityEngine.SceneManagement;
 
 public class Escape_Door : MonoBehaviour {
 
-	GameObject closeddoor;
-	GameObject opendoor;
+	public GameObject closeddoor;
+	public GameObject opendoor;
 	public GameObject other;
 	private Inventory_1 other2;
 
 	// Use this for initialization
 	void Start () {
-		closeddoor = GameObject.FindGameObjectWithTag ("closeddoor");
-		opendoor = GameObject.FindGameObjectWithTag ("opendoor");
+		//closeddoor = GameObject.FindGameObjectWithTag ("closeddoor");
+		//opendoor = GameObject.FindGameObjectWithTag ("opendoor");
 		opendoor.SetActive (false);
 		other2 = other.GetComponent<Inventory_1> ();
 		Debug.Log ("2");
@@ -29,8 +29,9 @@ public class Escape_Door : MonoBehaviour {
 		//Changes door from closed to open when got key
 		if (other2.keytrue == true) {
 			Debug.Log ("£");
-			closeddoor.SetActive (false);
 			opendoor.SetActive (true);
+			closeddoor.SetActive (false);
+
 		}
 	}
 	//Sends player to start menu from the end door

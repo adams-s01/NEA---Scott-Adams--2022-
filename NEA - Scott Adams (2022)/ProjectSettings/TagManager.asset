@@ -62,6 +62,7 @@ TagManager:
   - pumpkin
   - blindcanvas
   - vase3
+  - mapcanvas
   layers:
   - Default
   - TransparentFX
