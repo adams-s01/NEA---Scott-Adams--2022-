@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -228,6 +228,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e354f7592b3a70d409b80454cb149979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  closeddoor: {fileID: 0}
+  opendoor: {fileID: 0}
   other: {fileID: 969310108}
 --- !u!1 &10786284
 GameObject:
@@ -701,6 +703,7 @@ GameObject:
   - component: {fileID: 49283983}
   - component: {fileID: 49283982}
   - component: {fileID: 49283985}
+  - component: {fileID: 49283986}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -765,6 +768,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   other: {fileID: 1438591794}
+--- !u!114 &49283986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 49283981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e354f7592b3a70d409b80454cb149979, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  closeddoor: {fileID: 311227801}
+  opendoor: {fileID: 8787545}
+  other: {fileID: 969310108}
 --- !u!1 &52692783
 GameObject:
   m_ObjectHideFlags: 0
@@ -1664,6 +1681,241 @@ Prefab:
       propertyPath: hideshield
       value: 
       objectReference: {fileID: 182791715}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: bow
+      value: 
+      objectReference: {fileID: 21300000, guid: 668df6f48e59c80439fa587624e5a84d,
+        type: 3}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: sword
+      value: 
+      objectReference: {fileID: 21300000, guid: c60f7cf1ed80f5840ac51195ae687e71,
+        type: 3}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: potion
+      value: 
+      objectReference: {fileID: 21300000, guid: 19576ffc906f90b4a80790bea1c14ffa,
+        type: 3}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: apple
+      value: 
+      objectReference: {fileID: 21300000, guid: ba277220d79b8d34a99a39932ea08859,
+        type: 3}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: armour1
+      value: 
+      objectReference: {fileID: 21300000, guid: ef419fce13384654bab5cbf27232d640,
+        type: 3}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: armour2
+      value: 
+      objectReference: {fileID: 21300000, guid: 4ec5e8e694bc3334db32778bebfd01e7,
+        type: 3}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: bat
+      value: 
+      objectReference: {fileID: 21300000, guid: b0ab5287685813a41bacfc4ec20baac6,
+        type: 3}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: belt
+      value: 
+      objectReference: {fileID: 21300000, guid: d6a5be75ee20dd94682b602816b88b5d,
+        type: 3}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: bow2
+      value: 
+      objectReference: {fileID: 21300000, guid: ed5c3e58951bf304c943dcb7430c42c7,
+        type: 3}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: club
+      value: 
+      objectReference: {fileID: 21300000, guid: f47fa1a8e8c158a42b11fd455234581d,
+        type: 3}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: dagger
+      value: 
+      objectReference: {fileID: 21300000, guid: d459b9fcda543454dafcae327ebe0a42,
+        type: 3}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: gloves
+      value: 
+      objectReference: {fileID: 21300000, guid: e85a4f4a40f9cca409993136dabd3bcc,
+        type: 3}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: mage
+      value: 
+      objectReference: {fileID: 21300000, guid: 98ceb165e895b7f47ab880e0d1c64104,
+        type: 3}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: ring
+      value: 
+      objectReference: {fileID: 21300000, guid: e76b30749d6bac4489c3ccf1ccb2c8fc,
+        type: 3}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: ring2
+      value: 
+      objectReference: {fileID: 21300000, guid: f84b6dd0347a94f4a9a69ac911fc1f9d,
+        type: 3}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: ring3
+      value: 
+      objectReference: {fileID: 21300000, guid: 8661c2c7e325a33438f06b02458fd199,
+        type: 3}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: ring4
+      value: 
+      objectReference: {fileID: 21300000, guid: 0f1303cfff6593747a97f9c964728649,
+        type: 3}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: ring5
+      value: 
+      objectReference: {fileID: 21300000, guid: 8bcb07d9c2c4c484caf61c33f48e3dd8,
+        type: 3}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: ring6
+      value: 
+      objectReference: {fileID: 21300000, guid: f66c057114b8725409847a8a8e83a75b,
+        type: 3}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: shield
+      value: 
+      objectReference: {fileID: 21300000, guid: 0c6de69acca756c409be4810a8510ac5,
+        type: 3}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 21300000, guid: 1eef36d1305e37b46a9377c8d12cdac6,
+        type: 3}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 404711626}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: image2
+      value: 
+      objectReference: {fileID: 2046626908}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: image3
+      value: 
+      objectReference: {fileID: 1942857506}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: image4
+      value: 
+      objectReference: {fileID: 343220348}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: image5
+      value: 
+      objectReference: {fileID: 1258635463}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: armourimage
+      value: 
+      objectReference: {fileID: 1605899002}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: glovesimage
+      value: 
+      objectReference: {fileID: 1406343053}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: bootsimage
+      value: 
+      objectReference: {fileID: 1139745197}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: ring1image
+      value: 
+      objectReference: {fileID: 591582067}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: ring2image
+      value: 
+      objectReference: {fileID: 1777907639}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: ring3image
+      value: 
+      objectReference: {fileID: 1641345678}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: ring4image
+      value: 
+      objectReference: {fileID: 403851907}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: ring5image
+      value: 
+      objectReference: {fileID: 381389156}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: ring6image
+      value: 
+      objectReference: {fileID: 1355484672}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: keyimage
+      value: 
+      objectReference: {fileID: 52692785}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: armourcanvas
+      value: 
+      objectReference: {fileID: 626643347}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: ringcanvas
+      value: 
+      objectReference: {fileID: 1130451886}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: potiondoubledamage
+      value: 
+      objectReference: {fileID: 21300000, guid: 74f3ff7910cd94f41af53cfb1413fa03,
+        type: 3}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: potionweak
+      value: 
+      objectReference: {fileID: 21300000, guid: 39ff590519daa884fb25d400b68a52b8,
+        type: 3}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: hidepotiondouble
+      value: 
+      objectReference: {fileID: 1309472743967740, guid: ca2b923618186fd498733fe3db319f7d,
+        type: 2}
+    - target: {fileID: 114351924758295624, guid: 2219772d1d914214b9fdb96740b710b3,
+        type: 2}
+      propertyPath: hidepotionweak
+      value: 
+      objectReference: {fileID: 1972222728416954, guid: 15a8f36c8484a3f4cbd5e81dc26f5261,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2219772d1d914214b9fdb96740b710b3, type: 2}
   m_IsPrefabAsset: 0
@@ -3230,11 +3482,13 @@ MonoBehaviour:
   speedbar: {fileID: 138155538}
   bow: {fileID: 1090393844292218, guid: 409d4de753753f846b79c31e599f8dda, type: 2}
   potion: {fileID: 1104004081482022, guid: 06e684ad2f7a87344932e072de9119ed, type: 2}
+  weakpotion: {fileID: 0}
   key: {fileID: 1812200584171212, guid: 1a21e0af2113580418ad8d07f9268158, type: 2}
   playerhealth: 10
   other: {fileID: 969310108}
   lives: 0
   gold: 0
+  healthtext: {fileID: 0}
 --- !u!4 &272588712
 Transform:
   m_ObjectHideFlags: 0
@@ -3683,6 +3937,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e354f7592b3a70d409b80454cb149979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  closeddoor: {fileID: 0}
+  opendoor: {fileID: 0}
   other: {fileID: 969310108}
 --- !u!1 &343220346
 GameObject:
@@ -8784,6 +9040,241 @@ Prefab:
       propertyPath: hideshield
       value: 
       objectReference: {fileID: 182791715}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: bow
+      value: 
+      objectReference: {fileID: 21300000, guid: 668df6f48e59c80439fa587624e5a84d,
+        type: 3}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: sword
+      value: 
+      objectReference: {fileID: 21300000, guid: c60f7cf1ed80f5840ac51195ae687e71,
+        type: 3}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: potion
+      value: 
+      objectReference: {fileID: 21300000, guid: 19576ffc906f90b4a80790bea1c14ffa,
+        type: 3}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: apple
+      value: 
+      objectReference: {fileID: 21300000, guid: ba277220d79b8d34a99a39932ea08859,
+        type: 3}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: armour1
+      value: 
+      objectReference: {fileID: 21300000, guid: ef419fce13384654bab5cbf27232d640,
+        type: 3}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: armour2
+      value: 
+      objectReference: {fileID: 21300000, guid: 4ec5e8e694bc3334db32778bebfd01e7,
+        type: 3}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: bat
+      value: 
+      objectReference: {fileID: 21300000, guid: b0ab5287685813a41bacfc4ec20baac6,
+        type: 3}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: boots
+      value: 
+      objectReference: {fileID: 21300000, guid: be57094a84846274f8365205b4fdec95,
+        type: 3}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: bow2
+      value: 
+      objectReference: {fileID: 21300000, guid: ed5c3e58951bf304c943dcb7430c42c7,
+        type: 3}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: club
+      value: 
+      objectReference: {fileID: 21300000, guid: f47fa1a8e8c158a42b11fd455234581d,
+        type: 3}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: dagger
+      value: 
+      objectReference: {fileID: 21300000, guid: d459b9fcda543454dafcae327ebe0a42,
+        type: 3}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: gloves
+      value: 
+      objectReference: {fileID: 21300000, guid: e85a4f4a40f9cca409993136dabd3bcc,
+        type: 3}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: mage
+      value: 
+      objectReference: {fileID: 21300000, guid: 98ceb165e895b7f47ab880e0d1c64104,
+        type: 3}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: ring
+      value: 
+      objectReference: {fileID: 21300000, guid: e76b30749d6bac4489c3ccf1ccb2c8fc,
+        type: 3}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: ring2
+      value: 
+      objectReference: {fileID: 21300000, guid: f84b6dd0347a94f4a9a69ac911fc1f9d,
+        type: 3}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: ring3
+      value: 
+      objectReference: {fileID: 21300000, guid: 8661c2c7e325a33438f06b02458fd199,
+        type: 3}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: ring4
+      value: 
+      objectReference: {fileID: 21300000, guid: 0f1303cfff6593747a97f9c964728649,
+        type: 3}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: ring5
+      value: 
+      objectReference: {fileID: 21300000, guid: 8bcb07d9c2c4c484caf61c33f48e3dd8,
+        type: 3}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: ring6
+      value: 
+      objectReference: {fileID: 21300000, guid: f66c057114b8725409847a8a8e83a75b,
+        type: 3}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: shield
+      value: 
+      objectReference: {fileID: 21300000, guid: 0c6de69acca756c409be4810a8510ac5,
+        type: 3}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 21300000, guid: 1eef36d1305e37b46a9377c8d12cdac6,
+        type: 3}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 404711626}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: image2
+      value: 
+      objectReference: {fileID: 2046626908}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: image3
+      value: 
+      objectReference: {fileID: 1942857506}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: image4
+      value: 
+      objectReference: {fileID: 343220348}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: image5
+      value: 
+      objectReference: {fileID: 1258635463}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: armourimage
+      value: 
+      objectReference: {fileID: 1605899002}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: glovesimage
+      value: 
+      objectReference: {fileID: 1406343053}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: bootsimage
+      value: 
+      objectReference: {fileID: 1139745197}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: ring1image
+      value: 
+      objectReference: {fileID: 591582067}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: ring2image
+      value: 
+      objectReference: {fileID: 1777907639}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: ring3image
+      value: 
+      objectReference: {fileID: 1641345678}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: ring4image
+      value: 
+      objectReference: {fileID: 403851907}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: ring5image
+      value: 
+      objectReference: {fileID: 381389156}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: ring6image
+      value: 
+      objectReference: {fileID: 1355484672}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: keyimage
+      value: 
+      objectReference: {fileID: 52692785}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: armourcanvas
+      value: 
+      objectReference: {fileID: 626643347}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: ringcanvas
+      value: 
+      objectReference: {fileID: 1130451886}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: potiondoubledamage
+      value: 
+      objectReference: {fileID: 21300000, guid: 74f3ff7910cd94f41af53cfb1413fa03,
+        type: 3}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: potionweak
+      value: 
+      objectReference: {fileID: 21300000, guid: 39ff590519daa884fb25d400b68a52b8,
+        type: 3}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: hidepotiondouble
+      value: 
+      objectReference: {fileID: 1309472743967740, guid: ca2b923618186fd498733fe3db319f7d,
+        type: 2}
+    - target: {fileID: 114976509992996742, guid: e6b1d2dbd3d3dda45a41507e760a7c6b,
+        type: 2}
+      propertyPath: hidepotionweak
+      value: 
+      objectReference: {fileID: 1972222728416954, guid: 15a8f36c8484a3f4cbd5e81dc26f5261,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6b1d2dbd3d3dda45a41507e760a7c6b, type: 2}
   m_IsPrefabAsset: 0
@@ -9630,6 +10121,7 @@ MonoBehaviour:
   coin: {fileID: 0}
   coin2: {fileID: 0}
   coin3: {fileID: 0}
+  ring2: {fileID: 0}
   hitpoints:
   - {fileID: 1399659383109238, guid: 85414c430381c224784b0d7fb2e00fbf, type: 2}
   - {fileID: 1915316913621360, guid: 150f82483ce9e464f947dedc29b0267d, type: 2}
@@ -9641,6 +10133,8 @@ MonoBehaviour:
   - {fileID: 1282225335504488, guid: d463045feb2e8da4699eea3f100c9532, type: 2}
   - {fileID: 1183904260319276, guid: f462940d0ec18cf429000273f704937a, type: 2}
   - {fileID: 1535202515768940, guid: 211e08155ac435b4281b1c965fd8ba43, type: 2}
+  other2: {fileID: 0}
+  blind: {fileID: 0}
 --- !u!50 &814440438
 Rigidbody2D:
   serializedVersion: 4
@@ -54861,6 +55355,8 @@ MonoBehaviour:
   ring6: {fileID: 21300000, guid: f66c057114b8725409847a8a8e83a75b, type: 3}
   shield: {fileID: 21300000, guid: 0c6de69acca756c409be4810a8510ac5, type: 3}
   key: {fileID: 21300000, guid: 1eef36d1305e37b46a9377c8d12cdac6, type: 3}
+  potiondoubledamage: {fileID: 21300000, guid: 74f3ff7910cd94f41af53cfb1413fa03, type: 3}
+  potionweak: {fileID: 21300000, guid: 39ff590519daa884fb25d400b68a52b8, type: 3}
   image: {fileID: 404711626}
   image2: {fileID: 2046626908}
   image3: {fileID: 1942857506}
@@ -54897,10 +55393,17 @@ MonoBehaviour:
   hidemage: {fileID: 1027459875}
   hidering: {fileID: 1714530439}
   hideshield: {fileID: 182791715}
+  hidepotiondouble: {fileID: 1309472743967740, guid: ca2b923618186fd498733fe3db319f7d,
+    type: 2}
+  hidepotionweak: {fileID: 1972222728416954, guid: 15a8f36c8484a3f4cbd5e81dc26f5261,
+    type: 2}
   playerhealth: 0
   playerhealth2: 0
   playerhealth3: 0
   keytrue: 0
+  armourcanvas: {fileID: 626643347}
+  ringcanvas: {fileID: 1130451886}
+  weak: {fileID: 0}
 --- !u!1 &983284606
 GameObject:
   m_ObjectHideFlags: 0
@@ -55422,6 +55925,241 @@ Prefab:
       propertyPath: hideshield
       value: 
       objectReference: {fileID: 182791715}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: bow
+      value: 
+      objectReference: {fileID: 21300000, guid: 668df6f48e59c80439fa587624e5a84d,
+        type: 3}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: sword
+      value: 
+      objectReference: {fileID: 21300000, guid: c60f7cf1ed80f5840ac51195ae687e71,
+        type: 3}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: apple
+      value: 
+      objectReference: {fileID: 21300000, guid: ba277220d79b8d34a99a39932ea08859,
+        type: 3}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: armour1
+      value: 
+      objectReference: {fileID: 21300000, guid: ef419fce13384654bab5cbf27232d640,
+        type: 3}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: armour2
+      value: 
+      objectReference: {fileID: 21300000, guid: 4ec5e8e694bc3334db32778bebfd01e7,
+        type: 3}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: bat
+      value: 
+      objectReference: {fileID: 21300000, guid: b0ab5287685813a41bacfc4ec20baac6,
+        type: 3}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: belt
+      value: 
+      objectReference: {fileID: 21300000, guid: d6a5be75ee20dd94682b602816b88b5d,
+        type: 3}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: boots
+      value: 
+      objectReference: {fileID: 21300000, guid: be57094a84846274f8365205b4fdec95,
+        type: 3}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: bow2
+      value: 
+      objectReference: {fileID: 21300000, guid: ed5c3e58951bf304c943dcb7430c42c7,
+        type: 3}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: club
+      value: 
+      objectReference: {fileID: 21300000, guid: f47fa1a8e8c158a42b11fd455234581d,
+        type: 3}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: dagger
+      value: 
+      objectReference: {fileID: 21300000, guid: d459b9fcda543454dafcae327ebe0a42,
+        type: 3}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: gloves
+      value: 
+      objectReference: {fileID: 21300000, guid: e85a4f4a40f9cca409993136dabd3bcc,
+        type: 3}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: mage
+      value: 
+      objectReference: {fileID: 21300000, guid: 98ceb165e895b7f47ab880e0d1c64104,
+        type: 3}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: ring
+      value: 
+      objectReference: {fileID: 21300000, guid: e76b30749d6bac4489c3ccf1ccb2c8fc,
+        type: 3}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: ring2
+      value: 
+      objectReference: {fileID: 21300000, guid: f84b6dd0347a94f4a9a69ac911fc1f9d,
+        type: 3}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: ring3
+      value: 
+      objectReference: {fileID: 21300000, guid: 8661c2c7e325a33438f06b02458fd199,
+        type: 3}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: ring4
+      value: 
+      objectReference: {fileID: 21300000, guid: 0f1303cfff6593747a97f9c964728649,
+        type: 3}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: ring5
+      value: 
+      objectReference: {fileID: 21300000, guid: 8bcb07d9c2c4c484caf61c33f48e3dd8,
+        type: 3}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: ring6
+      value: 
+      objectReference: {fileID: 21300000, guid: f66c057114b8725409847a8a8e83a75b,
+        type: 3}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: shield
+      value: 
+      objectReference: {fileID: 21300000, guid: 0c6de69acca756c409be4810a8510ac5,
+        type: 3}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 21300000, guid: 1eef36d1305e37b46a9377c8d12cdac6,
+        type: 3}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 404711626}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: image2
+      value: 
+      objectReference: {fileID: 2046626908}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: image3
+      value: 
+      objectReference: {fileID: 1942857506}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: image4
+      value: 
+      objectReference: {fileID: 343220348}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: image5
+      value: 
+      objectReference: {fileID: 1258635463}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: armourimage
+      value: 
+      objectReference: {fileID: 1605899002}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: glovesimage
+      value: 
+      objectReference: {fileID: 1406343053}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: bootsimage
+      value: 
+      objectReference: {fileID: 1139745197}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: ring1image
+      value: 
+      objectReference: {fileID: 591582067}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: ring2image
+      value: 
+      objectReference: {fileID: 1777907639}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: ring3image
+      value: 
+      objectReference: {fileID: 1641345678}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: ring4image
+      value: 
+      objectReference: {fileID: 403851907}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: ring5image
+      value: 
+      objectReference: {fileID: 381389156}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: ring6image
+      value: 
+      objectReference: {fileID: 1355484672}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: keyimage
+      value: 
+      objectReference: {fileID: 52692785}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: armourcanvas
+      value: 
+      objectReference: {fileID: 626643347}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: ringcanvas
+      value: 
+      objectReference: {fileID: 1130451886}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: potiondoubledamage
+      value: 
+      objectReference: {fileID: 21300000, guid: 74f3ff7910cd94f41af53cfb1413fa03,
+        type: 3}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: potionweak
+      value: 
+      objectReference: {fileID: 21300000, guid: 39ff590519daa884fb25d400b68a52b8,
+        type: 3}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: hidepotiondouble
+      value: 
+      objectReference: {fileID: 1309472743967740, guid: ca2b923618186fd498733fe3db319f7d,
+        type: 2}
+    - target: {fileID: 114398740833422164, guid: 06e684ad2f7a87344932e072de9119ed,
+        type: 2}
+      propertyPath: hidepotionweak
+      value: 
+      objectReference: {fileID: 1972222728416954, guid: 15a8f36c8484a3f4cbd5e81dc26f5261,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06e684ad2f7a87344932e072de9119ed, type: 2}
   m_IsPrefabAsset: 0
@@ -55620,6 +56358,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e354f7592b3a70d409b80454cb149979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  closeddoor: {fileID: 0}
+  opendoor: {fileID: 0}
   other: {fileID: 969310108}
 --- !u!1 &1000270260
 GameObject:
@@ -55758,6 +56498,7 @@ MonoBehaviour:
   coin: {fileID: 0}
   coin2: {fileID: 0}
   coin3: {fileID: 0}
+  ring2: {fileID: 0}
   hitpoints:
   - {fileID: 1399659383109238, guid: 85414c430381c224784b0d7fb2e00fbf, type: 2}
   - {fileID: 1915316913621360, guid: 150f82483ce9e464f947dedc29b0267d, type: 2}
@@ -55769,6 +56510,8 @@ MonoBehaviour:
   - {fileID: 1282225335504488, guid: d463045feb2e8da4699eea3f100c9532, type: 2}
   - {fileID: 1183904260319276, guid: f462940d0ec18cf429000273f704937a, type: 2}
   - {fileID: 1535202515768940, guid: 211e08155ac435b4281b1c965fd8ba43, type: 2}
+  other2: {fileID: 0}
+  blind: {fileID: 0}
 --- !u!212 &1010158825
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -56485,6 +57228,7 @@ MonoBehaviour:
   coin: {fileID: 0}
   coin2: {fileID: 0}
   coin3: {fileID: 0}
+  ring2: {fileID: 0}
   hitpoints:
   - {fileID: 1399659383109238, guid: 85414c430381c224784b0d7fb2e00fbf, type: 2}
   - {fileID: 1915316913621360, guid: 150f82483ce9e464f947dedc29b0267d, type: 2}
@@ -56496,6 +57240,8 @@ MonoBehaviour:
   - {fileID: 1282225335504488, guid: d463045feb2e8da4699eea3f100c9532, type: 2}
   - {fileID: 1183904260319276, guid: f462940d0ec18cf429000273f704937a, type: 2}
   - {fileID: 1535202515768940, guid: 211e08155ac435b4281b1c965fd8ba43, type: 2}
+  other2: {fileID: 0}
+  blind: {fileID: 0}
 --- !u!50 &1069801599
 Rigidbody2D:
   serializedVersion: 4
@@ -56963,6 +57709,241 @@ Prefab:
       propertyPath: hideshield
       value: 
       objectReference: {fileID: 182791715}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: bow
+      value: 
+      objectReference: {fileID: 21300000, guid: 668df6f48e59c80439fa587624e5a84d,
+        type: 3}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: sword
+      value: 
+      objectReference: {fileID: 21300000, guid: c60f7cf1ed80f5840ac51195ae687e71,
+        type: 3}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: potion
+      value: 
+      objectReference: {fileID: 21300000, guid: 19576ffc906f90b4a80790bea1c14ffa,
+        type: 3}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: apple
+      value: 
+      objectReference: {fileID: 21300000, guid: ba277220d79b8d34a99a39932ea08859,
+        type: 3}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: armour1
+      value: 
+      objectReference: {fileID: 21300000, guid: ef419fce13384654bab5cbf27232d640,
+        type: 3}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: armour2
+      value: 
+      objectReference: {fileID: 21300000, guid: 4ec5e8e694bc3334db32778bebfd01e7,
+        type: 3}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: belt
+      value: 
+      objectReference: {fileID: 21300000, guid: d6a5be75ee20dd94682b602816b88b5d,
+        type: 3}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: boots
+      value: 
+      objectReference: {fileID: 21300000, guid: be57094a84846274f8365205b4fdec95,
+        type: 3}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: bow2
+      value: 
+      objectReference: {fileID: 21300000, guid: ed5c3e58951bf304c943dcb7430c42c7,
+        type: 3}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: club
+      value: 
+      objectReference: {fileID: 21300000, guid: f47fa1a8e8c158a42b11fd455234581d,
+        type: 3}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: dagger
+      value: 
+      objectReference: {fileID: 21300000, guid: d459b9fcda543454dafcae327ebe0a42,
+        type: 3}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: gloves
+      value: 
+      objectReference: {fileID: 21300000, guid: e85a4f4a40f9cca409993136dabd3bcc,
+        type: 3}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: mage
+      value: 
+      objectReference: {fileID: 21300000, guid: 98ceb165e895b7f47ab880e0d1c64104,
+        type: 3}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: ring
+      value: 
+      objectReference: {fileID: 21300000, guid: e76b30749d6bac4489c3ccf1ccb2c8fc,
+        type: 3}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: ring2
+      value: 
+      objectReference: {fileID: 21300000, guid: f84b6dd0347a94f4a9a69ac911fc1f9d,
+        type: 3}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: ring3
+      value: 
+      objectReference: {fileID: 21300000, guid: 8661c2c7e325a33438f06b02458fd199,
+        type: 3}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: ring4
+      value: 
+      objectReference: {fileID: 21300000, guid: 0f1303cfff6593747a97f9c964728649,
+        type: 3}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: ring5
+      value: 
+      objectReference: {fileID: 21300000, guid: 8bcb07d9c2c4c484caf61c33f48e3dd8,
+        type: 3}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: ring6
+      value: 
+      objectReference: {fileID: 21300000, guid: f66c057114b8725409847a8a8e83a75b,
+        type: 3}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: shield
+      value: 
+      objectReference: {fileID: 21300000, guid: 0c6de69acca756c409be4810a8510ac5,
+        type: 3}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 21300000, guid: 1eef36d1305e37b46a9377c8d12cdac6,
+        type: 3}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 404711626}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: image2
+      value: 
+      objectReference: {fileID: 2046626908}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: image3
+      value: 
+      objectReference: {fileID: 1942857506}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: image4
+      value: 
+      objectReference: {fileID: 343220348}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: image5
+      value: 
+      objectReference: {fileID: 1258635463}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: armourimage
+      value: 
+      objectReference: {fileID: 1605899002}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: glovesimage
+      value: 
+      objectReference: {fileID: 1406343053}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: bootsimage
+      value: 
+      objectReference: {fileID: 1139745197}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: ring1image
+      value: 
+      objectReference: {fileID: 591582067}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: ring2image
+      value: 
+      objectReference: {fileID: 1777907639}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: ring3image
+      value: 
+      objectReference: {fileID: 1641345678}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: ring4image
+      value: 
+      objectReference: {fileID: 403851907}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: ring5image
+      value: 
+      objectReference: {fileID: 381389156}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: ring6image
+      value: 
+      objectReference: {fileID: 1355484672}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: keyimage
+      value: 
+      objectReference: {fileID: 52692785}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: armourcanvas
+      value: 
+      objectReference: {fileID: 626643347}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: ringcanvas
+      value: 
+      objectReference: {fileID: 1130451886}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: potiondoubledamage
+      value: 
+      objectReference: {fileID: 21300000, guid: 74f3ff7910cd94f41af53cfb1413fa03,
+        type: 3}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: potionweak
+      value: 
+      objectReference: {fileID: 21300000, guid: 39ff590519daa884fb25d400b68a52b8,
+        type: 3}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: hidepotiondouble
+      value: 
+      objectReference: {fileID: 1309472743967740, guid: ca2b923618186fd498733fe3db319f7d,
+        type: 2}
+    - target: {fileID: 114073311068349000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab,
+        type: 2}
+      propertyPath: hidepotionweak
+      value: 
+      objectReference: {fileID: 1972222728416954, guid: 15a8f36c8484a3f4cbd5e81dc26f5261,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba4b794ef7fe27e41a0d2ea0438d9dab, type: 2}
   m_IsPrefabAsset: 0
@@ -57696,6 +58677,241 @@ Prefab:
       propertyPath: hideshield
       value: 
       objectReference: {fileID: 182791715}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: bow
+      value: 
+      objectReference: {fileID: 21300000, guid: 668df6f48e59c80439fa587624e5a84d,
+        type: 3}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: sword
+      value: 
+      objectReference: {fileID: 21300000, guid: c60f7cf1ed80f5840ac51195ae687e71,
+        type: 3}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: potion
+      value: 
+      objectReference: {fileID: 21300000, guid: 19576ffc906f90b4a80790bea1c14ffa,
+        type: 3}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: apple
+      value: 
+      objectReference: {fileID: 21300000, guid: ba277220d79b8d34a99a39932ea08859,
+        type: 3}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: armour1
+      value: 
+      objectReference: {fileID: 21300000, guid: ef419fce13384654bab5cbf27232d640,
+        type: 3}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: armour2
+      value: 
+      objectReference: {fileID: 21300000, guid: 4ec5e8e694bc3334db32778bebfd01e7,
+        type: 3}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: bat
+      value: 
+      objectReference: {fileID: 21300000, guid: b0ab5287685813a41bacfc4ec20baac6,
+        type: 3}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: belt
+      value: 
+      objectReference: {fileID: 21300000, guid: d6a5be75ee20dd94682b602816b88b5d,
+        type: 3}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: boots
+      value: 
+      objectReference: {fileID: 21300000, guid: be57094a84846274f8365205b4fdec95,
+        type: 3}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: bow2
+      value: 
+      objectReference: {fileID: 21300000, guid: ed5c3e58951bf304c943dcb7430c42c7,
+        type: 3}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: dagger
+      value: 
+      objectReference: {fileID: 21300000, guid: d459b9fcda543454dafcae327ebe0a42,
+        type: 3}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: gloves
+      value: 
+      objectReference: {fileID: 21300000, guid: e85a4f4a40f9cca409993136dabd3bcc,
+        type: 3}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: mage
+      value: 
+      objectReference: {fileID: 21300000, guid: 98ceb165e895b7f47ab880e0d1c64104,
+        type: 3}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: ring
+      value: 
+      objectReference: {fileID: 21300000, guid: e76b30749d6bac4489c3ccf1ccb2c8fc,
+        type: 3}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: ring2
+      value: 
+      objectReference: {fileID: 21300000, guid: f84b6dd0347a94f4a9a69ac911fc1f9d,
+        type: 3}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: ring3
+      value: 
+      objectReference: {fileID: 21300000, guid: 8661c2c7e325a33438f06b02458fd199,
+        type: 3}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: ring4
+      value: 
+      objectReference: {fileID: 21300000, guid: 0f1303cfff6593747a97f9c964728649,
+        type: 3}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: ring5
+      value: 
+      objectReference: {fileID: 21300000, guid: 8bcb07d9c2c4c484caf61c33f48e3dd8,
+        type: 3}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: ring6
+      value: 
+      objectReference: {fileID: 21300000, guid: f66c057114b8725409847a8a8e83a75b,
+        type: 3}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: shield
+      value: 
+      objectReference: {fileID: 21300000, guid: 0c6de69acca756c409be4810a8510ac5,
+        type: 3}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 21300000, guid: 1eef36d1305e37b46a9377c8d12cdac6,
+        type: 3}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 404711626}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: image2
+      value: 
+      objectReference: {fileID: 2046626908}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: image3
+      value: 
+      objectReference: {fileID: 1942857506}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: image4
+      value: 
+      objectReference: {fileID: 343220348}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: image5
+      value: 
+      objectReference: {fileID: 1258635463}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: armourimage
+      value: 
+      objectReference: {fileID: 1605899002}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: glovesimage
+      value: 
+      objectReference: {fileID: 1406343053}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: bootsimage
+      value: 
+      objectReference: {fileID: 1139745197}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: ring1image
+      value: 
+      objectReference: {fileID: 591582067}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: ring2image
+      value: 
+      objectReference: {fileID: 1777907639}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: ring3image
+      value: 
+      objectReference: {fileID: 1641345678}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: ring4image
+      value: 
+      objectReference: {fileID: 403851907}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: ring5image
+      value: 
+      objectReference: {fileID: 381389156}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: ring6image
+      value: 
+      objectReference: {fileID: 1355484672}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: keyimage
+      value: 
+      objectReference: {fileID: 52692785}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: armourcanvas
+      value: 
+      objectReference: {fileID: 626643347}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: ringcanvas
+      value: 
+      objectReference: {fileID: 1130451886}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: potiondoubledamage
+      value: 
+      objectReference: {fileID: 21300000, guid: 74f3ff7910cd94f41af53cfb1413fa03,
+        type: 3}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: potionweak
+      value: 
+      objectReference: {fileID: 21300000, guid: 39ff590519daa884fb25d400b68a52b8,
+        type: 3}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: hidepotiondouble
+      value: 
+      objectReference: {fileID: 1309472743967740, guid: ca2b923618186fd498733fe3db319f7d,
+        type: 2}
+    - target: {fileID: 114008124954030602, guid: 6dd9b33bcb66ed347a31fa1ccbca0810,
+        type: 2}
+      propertyPath: hidepotionweak
+      value: 
+      objectReference: {fileID: 1972222728416954, guid: 15a8f36c8484a3f4cbd5e81dc26f5261,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dd9b33bcb66ed347a31fa1ccbca0810, type: 2}
   m_IsPrefabAsset: 0
@@ -58617,6 +59833,241 @@ Prefab:
       propertyPath: hideshield
       value: 
       objectReference: {fileID: 182791715}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: bow
+      value: 
+      objectReference: {fileID: 21300000, guid: 668df6f48e59c80439fa587624e5a84d,
+        type: 3}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: sword
+      value: 
+      objectReference: {fileID: 21300000, guid: c60f7cf1ed80f5840ac51195ae687e71,
+        type: 3}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: potion
+      value: 
+      objectReference: {fileID: 21300000, guid: 19576ffc906f90b4a80790bea1c14ffa,
+        type: 3}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: apple
+      value: 
+      objectReference: {fileID: 21300000, guid: ba277220d79b8d34a99a39932ea08859,
+        type: 3}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: armour1
+      value: 
+      objectReference: {fileID: 21300000, guid: ef419fce13384654bab5cbf27232d640,
+        type: 3}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: armour2
+      value: 
+      objectReference: {fileID: 21300000, guid: 4ec5e8e694bc3334db32778bebfd01e7,
+        type: 3}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: bat
+      value: 
+      objectReference: {fileID: 21300000, guid: b0ab5287685813a41bacfc4ec20baac6,
+        type: 3}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: belt
+      value: 
+      objectReference: {fileID: 21300000, guid: d6a5be75ee20dd94682b602816b88b5d,
+        type: 3}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: boots
+      value: 
+      objectReference: {fileID: 21300000, guid: be57094a84846274f8365205b4fdec95,
+        type: 3}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: bow2
+      value: 
+      objectReference: {fileID: 21300000, guid: ed5c3e58951bf304c943dcb7430c42c7,
+        type: 3}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: club
+      value: 
+      objectReference: {fileID: 21300000, guid: f47fa1a8e8c158a42b11fd455234581d,
+        type: 3}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: dagger
+      value: 
+      objectReference: {fileID: 21300000, guid: d459b9fcda543454dafcae327ebe0a42,
+        type: 3}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: gloves
+      value: 
+      objectReference: {fileID: 21300000, guid: e85a4f4a40f9cca409993136dabd3bcc,
+        type: 3}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: mage
+      value: 
+      objectReference: {fileID: 21300000, guid: 98ceb165e895b7f47ab880e0d1c64104,
+        type: 3}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: ring2
+      value: 
+      objectReference: {fileID: 21300000, guid: f84b6dd0347a94f4a9a69ac911fc1f9d,
+        type: 3}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: ring3
+      value: 
+      objectReference: {fileID: 21300000, guid: 8661c2c7e325a33438f06b02458fd199,
+        type: 3}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: ring4
+      value: 
+      objectReference: {fileID: 21300000, guid: 0f1303cfff6593747a97f9c964728649,
+        type: 3}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: ring5
+      value: 
+      objectReference: {fileID: 21300000, guid: 8bcb07d9c2c4c484caf61c33f48e3dd8,
+        type: 3}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: ring6
+      value: 
+      objectReference: {fileID: 21300000, guid: f66c057114b8725409847a8a8e83a75b,
+        type: 3}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: shield
+      value: 
+      objectReference: {fileID: 21300000, guid: 0c6de69acca756c409be4810a8510ac5,
+        type: 3}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 21300000, guid: 1eef36d1305e37b46a9377c8d12cdac6,
+        type: 3}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 404711626}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: image2
+      value: 
+      objectReference: {fileID: 2046626908}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: image3
+      value: 
+      objectReference: {fileID: 1942857506}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: image4
+      value: 
+      objectReference: {fileID: 343220348}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: image5
+      value: 
+      objectReference: {fileID: 1258635463}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: armourimage
+      value: 
+      objectReference: {fileID: 1605899002}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: glovesimage
+      value: 
+      objectReference: {fileID: 1406343053}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: bootsimage
+      value: 
+      objectReference: {fileID: 1139745197}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: ring1image
+      value: 
+      objectReference: {fileID: 591582067}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: ring2image
+      value: 
+      objectReference: {fileID: 1777907639}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: ring3image
+      value: 
+      objectReference: {fileID: 1641345678}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: ring4image
+      value: 
+      objectReference: {fileID: 403851907}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: ring5image
+      value: 
+      objectReference: {fileID: 381389156}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: ring6image
+      value: 
+      objectReference: {fileID: 1355484672}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: keyimage
+      value: 
+      objectReference: {fileID: 52692785}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: armourcanvas
+      value: 
+      objectReference: {fileID: 626643347}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: ringcanvas
+      value: 
+      objectReference: {fileID: 1130451886}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: potiondoubledamage
+      value: 
+      objectReference: {fileID: 21300000, guid: 74f3ff7910cd94f41af53cfb1413fa03,
+        type: 3}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: potionweak
+      value: 
+      objectReference: {fileID: 21300000, guid: 39ff590519daa884fb25d400b68a52b8,
+        type: 3}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: hidepotiondouble
+      value: 
+      objectReference: {fileID: 1309472743967740, guid: ca2b923618186fd498733fe3db319f7d,
+        type: 2}
+    - target: {fileID: 114838754906370314, guid: db255565d90e36e4388a92198e41dbff,
+        type: 2}
+      propertyPath: hidepotionweak
+      value: 
+      objectReference: {fileID: 1972222728416954, guid: 15a8f36c8484a3f4cbd5e81dc26f5261,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db255565d90e36e4388a92198e41dbff, type: 2}
   m_IsPrefabAsset: 0
@@ -60838,6 +62289,7 @@ MonoBehaviour:
   coin: {fileID: 0}
   coin2: {fileID: 0}
   coin3: {fileID: 0}
+  ring2: {fileID: 0}
   hitpoints:
   - {fileID: 1399659383109238, guid: 85414c430381c224784b0d7fb2e00fbf, type: 2}
   - {fileID: 1915316913621360, guid: 150f82483ce9e464f947dedc29b0267d, type: 2}
@@ -60849,6 +62301,8 @@ MonoBehaviour:
   - {fileID: 1282225335504488, guid: d463045feb2e8da4699eea3f100c9532, type: 2}
   - {fileID: 1183904260319276, guid: f462940d0ec18cf429000273f704937a, type: 2}
   - {fileID: 1535202515768940, guid: 211e08155ac435b4281b1c965fd8ba43, type: 2}
+  other2: {fileID: 0}
+  blind: {fileID: 0}
 --- !u!50 &1370460748
 Rigidbody2D:
   serializedVersion: 4
@@ -61104,6 +62558,241 @@ Prefab:
       propertyPath: hideshield
       value: 
       objectReference: {fileID: 182791715}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: bow
+      value: 
+      objectReference: {fileID: 21300000, guid: 668df6f48e59c80439fa587624e5a84d,
+        type: 3}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: sword
+      value: 
+      objectReference: {fileID: 21300000, guid: c60f7cf1ed80f5840ac51195ae687e71,
+        type: 3}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: potion
+      value: 
+      objectReference: {fileID: 21300000, guid: 19576ffc906f90b4a80790bea1c14ffa,
+        type: 3}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: armour1
+      value: 
+      objectReference: {fileID: 21300000, guid: ef419fce13384654bab5cbf27232d640,
+        type: 3}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: armour2
+      value: 
+      objectReference: {fileID: 21300000, guid: 4ec5e8e694bc3334db32778bebfd01e7,
+        type: 3}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: bat
+      value: 
+      objectReference: {fileID: 21300000, guid: b0ab5287685813a41bacfc4ec20baac6,
+        type: 3}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: belt
+      value: 
+      objectReference: {fileID: 21300000, guid: d6a5be75ee20dd94682b602816b88b5d,
+        type: 3}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: boots
+      value: 
+      objectReference: {fileID: 21300000, guid: be57094a84846274f8365205b4fdec95,
+        type: 3}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: bow2
+      value: 
+      objectReference: {fileID: 21300000, guid: ed5c3e58951bf304c943dcb7430c42c7,
+        type: 3}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: club
+      value: 
+      objectReference: {fileID: 21300000, guid: f47fa1a8e8c158a42b11fd455234581d,
+        type: 3}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: dagger
+      value: 
+      objectReference: {fileID: 21300000, guid: d459b9fcda543454dafcae327ebe0a42,
+        type: 3}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: gloves
+      value: 
+      objectReference: {fileID: 21300000, guid: e85a4f4a40f9cca409993136dabd3bcc,
+        type: 3}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: mage
+      value: 
+      objectReference: {fileID: 21300000, guid: 98ceb165e895b7f47ab880e0d1c64104,
+        type: 3}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: ring
+      value: 
+      objectReference: {fileID: 21300000, guid: e76b30749d6bac4489c3ccf1ccb2c8fc,
+        type: 3}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: ring2
+      value: 
+      objectReference: {fileID: 21300000, guid: f84b6dd0347a94f4a9a69ac911fc1f9d,
+        type: 3}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: ring3
+      value: 
+      objectReference: {fileID: 21300000, guid: 8661c2c7e325a33438f06b02458fd199,
+        type: 3}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: ring4
+      value: 
+      objectReference: {fileID: 21300000, guid: 0f1303cfff6593747a97f9c964728649,
+        type: 3}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: ring5
+      value: 
+      objectReference: {fileID: 21300000, guid: 8bcb07d9c2c4c484caf61c33f48e3dd8,
+        type: 3}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: ring6
+      value: 
+      objectReference: {fileID: 21300000, guid: f66c057114b8725409847a8a8e83a75b,
+        type: 3}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: shield
+      value: 
+      objectReference: {fileID: 21300000, guid: 0c6de69acca756c409be4810a8510ac5,
+        type: 3}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 21300000, guid: 1eef36d1305e37b46a9377c8d12cdac6,
+        type: 3}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 404711626}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: image2
+      value: 
+      objectReference: {fileID: 2046626908}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: image3
+      value: 
+      objectReference: {fileID: 1942857506}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: image4
+      value: 
+      objectReference: {fileID: 343220348}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: image5
+      value: 
+      objectReference: {fileID: 1258635463}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: armourimage
+      value: 
+      objectReference: {fileID: 1605899002}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: glovesimage
+      value: 
+      objectReference: {fileID: 1406343053}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: bootsimage
+      value: 
+      objectReference: {fileID: 1139745197}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: ring1image
+      value: 
+      objectReference: {fileID: 591582067}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: ring2image
+      value: 
+      objectReference: {fileID: 1777907639}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: ring3image
+      value: 
+      objectReference: {fileID: 1641345678}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: ring4image
+      value: 
+      objectReference: {fileID: 403851907}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: ring5image
+      value: 
+      objectReference: {fileID: 381389156}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: ring6image
+      value: 
+      objectReference: {fileID: 1355484672}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: keyimage
+      value: 
+      objectReference: {fileID: 52692785}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: armourcanvas
+      value: 
+      objectReference: {fileID: 626643347}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: ringcanvas
+      value: 
+      objectReference: {fileID: 1130451886}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: potiondoubledamage
+      value: 
+      objectReference: {fileID: 21300000, guid: 74f3ff7910cd94f41af53cfb1413fa03,
+        type: 3}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: potionweak
+      value: 
+      objectReference: {fileID: 21300000, guid: 39ff590519daa884fb25d400b68a52b8,
+        type: 3}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: hidepotiondouble
+      value: 
+      objectReference: {fileID: 1309472743967740, guid: ca2b923618186fd498733fe3db319f7d,
+        type: 2}
+    - target: {fileID: 114075104978788578, guid: fc1426381a2856f4ea43f169705e2ee5,
+        type: 2}
+      propertyPath: hidepotionweak
+      value: 
+      objectReference: {fileID: 1972222728416954, guid: 15a8f36c8484a3f4cbd5e81dc26f5261,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc1426381a2856f4ea43f169705e2ee5, type: 2}
   m_IsPrefabAsset: 0
@@ -62568,6 +64257,241 @@ Prefab:
       propertyPath: hideshield
       value: 
       objectReference: {fileID: 182791715}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: bow
+      value: 
+      objectReference: {fileID: 21300000, guid: 668df6f48e59c80439fa587624e5a84d,
+        type: 3}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: sword
+      value: 
+      objectReference: {fileID: 21300000, guid: c60f7cf1ed80f5840ac51195ae687e71,
+        type: 3}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: potion
+      value: 
+      objectReference: {fileID: 21300000, guid: 19576ffc906f90b4a80790bea1c14ffa,
+        type: 3}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: apple
+      value: 
+      objectReference: {fileID: 21300000, guid: ba277220d79b8d34a99a39932ea08859,
+        type: 3}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: armour1
+      value: 
+      objectReference: {fileID: 21300000, guid: ef419fce13384654bab5cbf27232d640,
+        type: 3}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: armour2
+      value: 
+      objectReference: {fileID: 21300000, guid: 4ec5e8e694bc3334db32778bebfd01e7,
+        type: 3}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: bat
+      value: 
+      objectReference: {fileID: 21300000, guid: b0ab5287685813a41bacfc4ec20baac6,
+        type: 3}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: belt
+      value: 
+      objectReference: {fileID: 21300000, guid: d6a5be75ee20dd94682b602816b88b5d,
+        type: 3}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: boots
+      value: 
+      objectReference: {fileID: 21300000, guid: be57094a84846274f8365205b4fdec95,
+        type: 3}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: bow2
+      value: 
+      objectReference: {fileID: 21300000, guid: ed5c3e58951bf304c943dcb7430c42c7,
+        type: 3}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: club
+      value: 
+      objectReference: {fileID: 21300000, guid: f47fa1a8e8c158a42b11fd455234581d,
+        type: 3}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: dagger
+      value: 
+      objectReference: {fileID: 21300000, guid: d459b9fcda543454dafcae327ebe0a42,
+        type: 3}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: mage
+      value: 
+      objectReference: {fileID: 21300000, guid: 98ceb165e895b7f47ab880e0d1c64104,
+        type: 3}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: ring
+      value: 
+      objectReference: {fileID: 21300000, guid: e76b30749d6bac4489c3ccf1ccb2c8fc,
+        type: 3}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: ring2
+      value: 
+      objectReference: {fileID: 21300000, guid: f84b6dd0347a94f4a9a69ac911fc1f9d,
+        type: 3}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: ring3
+      value: 
+      objectReference: {fileID: 21300000, guid: 8661c2c7e325a33438f06b02458fd199,
+        type: 3}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: ring4
+      value: 
+      objectReference: {fileID: 21300000, guid: 0f1303cfff6593747a97f9c964728649,
+        type: 3}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: ring5
+      value: 
+      objectReference: {fileID: 21300000, guid: 8bcb07d9c2c4c484caf61c33f48e3dd8,
+        type: 3}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: ring6
+      value: 
+      objectReference: {fileID: 21300000, guid: f66c057114b8725409847a8a8e83a75b,
+        type: 3}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: shield
+      value: 
+      objectReference: {fileID: 21300000, guid: 0c6de69acca756c409be4810a8510ac5,
+        type: 3}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 21300000, guid: 1eef36d1305e37b46a9377c8d12cdac6,
+        type: 3}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 404711626}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: image2
+      value: 
+      objectReference: {fileID: 2046626908}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: image3
+      value: 
+      objectReference: {fileID: 1942857506}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: image4
+      value: 
+      objectReference: {fileID: 343220348}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: image5
+      value: 
+      objectReference: {fileID: 1258635463}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: armourimage
+      value: 
+      objectReference: {fileID: 1605899002}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: glovesimage
+      value: 
+      objectReference: {fileID: 1406343053}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: bootsimage
+      value: 
+      objectReference: {fileID: 1139745197}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: ring1image
+      value: 
+      objectReference: {fileID: 591582067}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: ring2image
+      value: 
+      objectReference: {fileID: 1777907639}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: ring3image
+      value: 
+      objectReference: {fileID: 1641345678}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: ring4image
+      value: 
+      objectReference: {fileID: 403851907}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: ring5image
+      value: 
+      objectReference: {fileID: 381389156}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: ring6image
+      value: 
+      objectReference: {fileID: 1355484672}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: keyimage
+      value: 
+      objectReference: {fileID: 52692785}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: armourcanvas
+      value: 
+      objectReference: {fileID: 626643347}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: ringcanvas
+      value: 
+      objectReference: {fileID: 1130451886}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: potiondoubledamage
+      value: 
+      objectReference: {fileID: 21300000, guid: 74f3ff7910cd94f41af53cfb1413fa03,
+        type: 3}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: potionweak
+      value: 
+      objectReference: {fileID: 21300000, guid: 39ff590519daa884fb25d400b68a52b8,
+        type: 3}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: hidepotiondouble
+      value: 
+      objectReference: {fileID: 1309472743967740, guid: ca2b923618186fd498733fe3db319f7d,
+        type: 2}
+    - target: {fileID: 114751474597041296, guid: 6684ba93c41d5c44f92864e973cb4922,
+        type: 2}
+      propertyPath: hidepotionweak
+      value: 
+      objectReference: {fileID: 1972222728416954, guid: 15a8f36c8484a3f4cbd5e81dc26f5261,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6684ba93c41d5c44f92864e973cb4922, type: 2}
   m_IsPrefabAsset: 0
@@ -63384,6 +65308,241 @@ Prefab:
       propertyPath: hideshield
       value: 
       objectReference: {fileID: 182791715}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: bow
+      value: 
+      objectReference: {fileID: 21300000, guid: 668df6f48e59c80439fa587624e5a84d,
+        type: 3}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: sword
+      value: 
+      objectReference: {fileID: 21300000, guid: c60f7cf1ed80f5840ac51195ae687e71,
+        type: 3}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: potion
+      value: 
+      objectReference: {fileID: 21300000, guid: 19576ffc906f90b4a80790bea1c14ffa,
+        type: 3}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: apple
+      value: 
+      objectReference: {fileID: 21300000, guid: ba277220d79b8d34a99a39932ea08859,
+        type: 3}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: armour2
+      value: 
+      objectReference: {fileID: 21300000, guid: 4ec5e8e694bc3334db32778bebfd01e7,
+        type: 3}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: bat
+      value: 
+      objectReference: {fileID: 21300000, guid: b0ab5287685813a41bacfc4ec20baac6,
+        type: 3}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: belt
+      value: 
+      objectReference: {fileID: 21300000, guid: d6a5be75ee20dd94682b602816b88b5d,
+        type: 3}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: boots
+      value: 
+      objectReference: {fileID: 21300000, guid: be57094a84846274f8365205b4fdec95,
+        type: 3}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: bow2
+      value: 
+      objectReference: {fileID: 21300000, guid: ed5c3e58951bf304c943dcb7430c42c7,
+        type: 3}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: club
+      value: 
+      objectReference: {fileID: 21300000, guid: f47fa1a8e8c158a42b11fd455234581d,
+        type: 3}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: dagger
+      value: 
+      objectReference: {fileID: 21300000, guid: d459b9fcda543454dafcae327ebe0a42,
+        type: 3}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: gloves
+      value: 
+      objectReference: {fileID: 21300000, guid: e85a4f4a40f9cca409993136dabd3bcc,
+        type: 3}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: mage
+      value: 
+      objectReference: {fileID: 21300000, guid: 98ceb165e895b7f47ab880e0d1c64104,
+        type: 3}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: ring
+      value: 
+      objectReference: {fileID: 21300000, guid: e76b30749d6bac4489c3ccf1ccb2c8fc,
+        type: 3}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: ring2
+      value: 
+      objectReference: {fileID: 21300000, guid: f84b6dd0347a94f4a9a69ac911fc1f9d,
+        type: 3}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: ring3
+      value: 
+      objectReference: {fileID: 21300000, guid: 8661c2c7e325a33438f06b02458fd199,
+        type: 3}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: ring4
+      value: 
+      objectReference: {fileID: 21300000, guid: 0f1303cfff6593747a97f9c964728649,
+        type: 3}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: ring5
+      value: 
+      objectReference: {fileID: 21300000, guid: 8bcb07d9c2c4c484caf61c33f48e3dd8,
+        type: 3}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: ring6
+      value: 
+      objectReference: {fileID: 21300000, guid: f66c057114b8725409847a8a8e83a75b,
+        type: 3}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: shield
+      value: 
+      objectReference: {fileID: 21300000, guid: 0c6de69acca756c409be4810a8510ac5,
+        type: 3}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 21300000, guid: 1eef36d1305e37b46a9377c8d12cdac6,
+        type: 3}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 404711626}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: image2
+      value: 
+      objectReference: {fileID: 2046626908}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: image3
+      value: 
+      objectReference: {fileID: 1942857506}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: image4
+      value: 
+      objectReference: {fileID: 343220348}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: image5
+      value: 
+      objectReference: {fileID: 1258635463}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: armourimage
+      value: 
+      objectReference: {fileID: 1605899002}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: glovesimage
+      value: 
+      objectReference: {fileID: 1406343053}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: bootsimage
+      value: 
+      objectReference: {fileID: 1139745197}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: ring1image
+      value: 
+      objectReference: {fileID: 591582067}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: ring2image
+      value: 
+      objectReference: {fileID: 1777907639}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: ring3image
+      value: 
+      objectReference: {fileID: 1641345678}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: ring4image
+      value: 
+      objectReference: {fileID: 403851907}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: ring5image
+      value: 
+      objectReference: {fileID: 381389156}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: ring6image
+      value: 
+      objectReference: {fileID: 1355484672}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: keyimage
+      value: 
+      objectReference: {fileID: 52692785}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: armourcanvas
+      value: 
+      objectReference: {fileID: 626643347}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: ringcanvas
+      value: 
+      objectReference: {fileID: 1130451886}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: potiondoubledamage
+      value: 
+      objectReference: {fileID: 21300000, guid: 74f3ff7910cd94f41af53cfb1413fa03,
+        type: 3}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: potionweak
+      value: 
+      objectReference: {fileID: 21300000, guid: 39ff590519daa884fb25d400b68a52b8,
+        type: 3}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: hidepotiondouble
+      value: 
+      objectReference: {fileID: 1309472743967740, guid: ca2b923618186fd498733fe3db319f7d,
+        type: 2}
+    - target: {fileID: 114147565784585980, guid: 401f7a78c963b84498cbc57014b48bea,
+        type: 2}
+      propertyPath: hidepotionweak
+      value: 
+      objectReference: {fileID: 1972222728416954, guid: 15a8f36c8484a3f4cbd5e81dc26f5261,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 401f7a78c963b84498cbc57014b48bea, type: 2}
   m_IsPrefabAsset: 0
@@ -65871,6 +68030,241 @@ Prefab:
       propertyPath: hideshield
       value: 
       objectReference: {fileID: 182791715}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: bow
+      value: 
+      objectReference: {fileID: 21300000, guid: 668df6f48e59c80439fa587624e5a84d,
+        type: 3}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: sword
+      value: 
+      objectReference: {fileID: 21300000, guid: c60f7cf1ed80f5840ac51195ae687e71,
+        type: 3}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: potion
+      value: 
+      objectReference: {fileID: 21300000, guid: 19576ffc906f90b4a80790bea1c14ffa,
+        type: 3}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: apple
+      value: 
+      objectReference: {fileID: 21300000, guid: ba277220d79b8d34a99a39932ea08859,
+        type: 3}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: armour1
+      value: 
+      objectReference: {fileID: 21300000, guid: ef419fce13384654bab5cbf27232d640,
+        type: 3}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: armour2
+      value: 
+      objectReference: {fileID: 21300000, guid: 4ec5e8e694bc3334db32778bebfd01e7,
+        type: 3}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: bat
+      value: 
+      objectReference: {fileID: 21300000, guid: b0ab5287685813a41bacfc4ec20baac6,
+        type: 3}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: belt
+      value: 
+      objectReference: {fileID: 21300000, guid: d6a5be75ee20dd94682b602816b88b5d,
+        type: 3}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: boots
+      value: 
+      objectReference: {fileID: 21300000, guid: be57094a84846274f8365205b4fdec95,
+        type: 3}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: bow2
+      value: 
+      objectReference: {fileID: 21300000, guid: ed5c3e58951bf304c943dcb7430c42c7,
+        type: 3}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: club
+      value: 
+      objectReference: {fileID: 21300000, guid: f47fa1a8e8c158a42b11fd455234581d,
+        type: 3}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: gloves
+      value: 
+      objectReference: {fileID: 21300000, guid: e85a4f4a40f9cca409993136dabd3bcc,
+        type: 3}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: mage
+      value: 
+      objectReference: {fileID: 21300000, guid: 98ceb165e895b7f47ab880e0d1c64104,
+        type: 3}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: ring
+      value: 
+      objectReference: {fileID: 21300000, guid: e76b30749d6bac4489c3ccf1ccb2c8fc,
+        type: 3}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: ring2
+      value: 
+      objectReference: {fileID: 21300000, guid: f84b6dd0347a94f4a9a69ac911fc1f9d,
+        type: 3}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: ring3
+      value: 
+      objectReference: {fileID: 21300000, guid: 8661c2c7e325a33438f06b02458fd199,
+        type: 3}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: ring4
+      value: 
+      objectReference: {fileID: 21300000, guid: 0f1303cfff6593747a97f9c964728649,
+        type: 3}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: ring5
+      value: 
+      objectReference: {fileID: 21300000, guid: 8bcb07d9c2c4c484caf61c33f48e3dd8,
+        type: 3}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: ring6
+      value: 
+      objectReference: {fileID: 21300000, guid: f66c057114b8725409847a8a8e83a75b,
+        type: 3}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: shield
+      value: 
+      objectReference: {fileID: 21300000, guid: 0c6de69acca756c409be4810a8510ac5,
+        type: 3}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 21300000, guid: 1eef36d1305e37b46a9377c8d12cdac6,
+        type: 3}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 404711626}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: image2
+      value: 
+      objectReference: {fileID: 2046626908}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: image3
+      value: 
+      objectReference: {fileID: 1942857506}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: image4
+      value: 
+      objectReference: {fileID: 343220348}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: image5
+      value: 
+      objectReference: {fileID: 1258635463}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: armourimage
+      value: 
+      objectReference: {fileID: 1605899002}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: glovesimage
+      value: 
+      objectReference: {fileID: 1406343053}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: bootsimage
+      value: 
+      objectReference: {fileID: 1139745197}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: ring1image
+      value: 
+      objectReference: {fileID: 591582067}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: ring2image
+      value: 
+      objectReference: {fileID: 1777907639}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: ring3image
+      value: 
+      objectReference: {fileID: 1641345678}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: ring4image
+      value: 
+      objectReference: {fileID: 403851907}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: ring5image
+      value: 
+      objectReference: {fileID: 381389156}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: ring6image
+      value: 
+      objectReference: {fileID: 1355484672}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: keyimage
+      value: 
+      objectReference: {fileID: 52692785}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: armourcanvas
+      value: 
+      objectReference: {fileID: 626643347}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: ringcanvas
+      value: 
+      objectReference: {fileID: 1130451886}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: potiondoubledamage
+      value: 
+      objectReference: {fileID: 21300000, guid: 74f3ff7910cd94f41af53cfb1413fa03,
+        type: 3}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: potionweak
+      value: 
+      objectReference: {fileID: 21300000, guid: 39ff590519daa884fb25d400b68a52b8,
+        type: 3}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: hidepotiondouble
+      value: 
+      objectReference: {fileID: 1309472743967740, guid: ca2b923618186fd498733fe3db319f7d,
+        type: 2}
+    - target: {fileID: 114297178706994064, guid: d05bddd920a4b3340a12c73110564ba7,
+        type: 2}
+      propertyPath: hidepotionweak
+      value: 
+      objectReference: {fileID: 1972222728416954, guid: 15a8f36c8484a3f4cbd5e81dc26f5261,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d05bddd920a4b3340a12c73110564ba7, type: 2}
   m_IsPrefabAsset: 0
@@ -71165,6 +73559,241 @@ Prefab:
       propertyPath: hideshield
       value: 
       objectReference: {fileID: 182791715}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: bow
+      value: 
+      objectReference: {fileID: 21300000, guid: 668df6f48e59c80439fa587624e5a84d,
+        type: 3}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: sword
+      value: 
+      objectReference: {fileID: 21300000, guid: c60f7cf1ed80f5840ac51195ae687e71,
+        type: 3}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: potion
+      value: 
+      objectReference: {fileID: 21300000, guid: 19576ffc906f90b4a80790bea1c14ffa,
+        type: 3}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: apple
+      value: 
+      objectReference: {fileID: 21300000, guid: ba277220d79b8d34a99a39932ea08859,
+        type: 3}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: armour1
+      value: 
+      objectReference: {fileID: 21300000, guid: ef419fce13384654bab5cbf27232d640,
+        type: 3}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: bat
+      value: 
+      objectReference: {fileID: 21300000, guid: b0ab5287685813a41bacfc4ec20baac6,
+        type: 3}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: belt
+      value: 
+      objectReference: {fileID: 21300000, guid: d6a5be75ee20dd94682b602816b88b5d,
+        type: 3}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: boots
+      value: 
+      objectReference: {fileID: 21300000, guid: be57094a84846274f8365205b4fdec95,
+        type: 3}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: bow2
+      value: 
+      objectReference: {fileID: 21300000, guid: ed5c3e58951bf304c943dcb7430c42c7,
+        type: 3}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: club
+      value: 
+      objectReference: {fileID: 21300000, guid: f47fa1a8e8c158a42b11fd455234581d,
+        type: 3}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: dagger
+      value: 
+      objectReference: {fileID: 21300000, guid: d459b9fcda543454dafcae327ebe0a42,
+        type: 3}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: gloves
+      value: 
+      objectReference: {fileID: 21300000, guid: e85a4f4a40f9cca409993136dabd3bcc,
+        type: 3}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: mage
+      value: 
+      objectReference: {fileID: 21300000, guid: 98ceb165e895b7f47ab880e0d1c64104,
+        type: 3}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: ring
+      value: 
+      objectReference: {fileID: 21300000, guid: e76b30749d6bac4489c3ccf1ccb2c8fc,
+        type: 3}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: ring2
+      value: 
+      objectReference: {fileID: 21300000, guid: f84b6dd0347a94f4a9a69ac911fc1f9d,
+        type: 3}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: ring3
+      value: 
+      objectReference: {fileID: 21300000, guid: 8661c2c7e325a33438f06b02458fd199,
+        type: 3}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: ring4
+      value: 
+      objectReference: {fileID: 21300000, guid: 0f1303cfff6593747a97f9c964728649,
+        type: 3}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: ring5
+      value: 
+      objectReference: {fileID: 21300000, guid: 8bcb07d9c2c4c484caf61c33f48e3dd8,
+        type: 3}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: ring6
+      value: 
+      objectReference: {fileID: 21300000, guid: f66c057114b8725409847a8a8e83a75b,
+        type: 3}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: shield
+      value: 
+      objectReference: {fileID: 21300000, guid: 0c6de69acca756c409be4810a8510ac5,
+        type: 3}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 21300000, guid: 1eef36d1305e37b46a9377c8d12cdac6,
+        type: 3}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 404711626}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: image2
+      value: 
+      objectReference: {fileID: 2046626908}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: image3
+      value: 
+      objectReference: {fileID: 1942857506}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: image4
+      value: 
+      objectReference: {fileID: 343220348}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: image5
+      value: 
+      objectReference: {fileID: 1258635463}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: armourimage
+      value: 
+      objectReference: {fileID: 1605899002}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: glovesimage
+      value: 
+      objectReference: {fileID: 1406343053}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: bootsimage
+      value: 
+      objectReference: {fileID: 1139745197}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: ring1image
+      value: 
+      objectReference: {fileID: 591582067}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: ring2image
+      value: 
+      objectReference: {fileID: 1777907639}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: ring3image
+      value: 
+      objectReference: {fileID: 1641345678}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: ring4image
+      value: 
+      objectReference: {fileID: 403851907}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: ring5image
+      value: 
+      objectReference: {fileID: 381389156}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: ring6image
+      value: 
+      objectReference: {fileID: 1355484672}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: keyimage
+      value: 
+      objectReference: {fileID: 52692785}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: armourcanvas
+      value: 
+      objectReference: {fileID: 626643347}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: ringcanvas
+      value: 
+      objectReference: {fileID: 1130451886}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: potiondoubledamage
+      value: 
+      objectReference: {fileID: 21300000, guid: 74f3ff7910cd94f41af53cfb1413fa03,
+        type: 3}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: potionweak
+      value: 
+      objectReference: {fileID: 21300000, guid: 39ff590519daa884fb25d400b68a52b8,
+        type: 3}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: hidepotiondouble
+      value: 
+      objectReference: {fileID: 1309472743967740, guid: ca2b923618186fd498733fe3db319f7d,
+        type: 2}
+    - target: {fileID: 114445765638129536, guid: 6947950a6ae8c384b86e8d4ecaac6863,
+        type: 2}
+      propertyPath: hidepotionweak
+      value: 
+      objectReference: {fileID: 1972222728416954, guid: 15a8f36c8484a3f4cbd5e81dc26f5261,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6947950a6ae8c384b86e8d4ecaac6863, type: 2}
   m_IsPrefabAsset: 0
@@ -72500,6 +75129,241 @@ Prefab:
       propertyPath: hideshield
       value: 
       objectReference: {fileID: 182791715}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: bow
+      value: 
+      objectReference: {fileID: 21300000, guid: 668df6f48e59c80439fa587624e5a84d,
+        type: 3}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: sword
+      value: 
+      objectReference: {fileID: 21300000, guid: c60f7cf1ed80f5840ac51195ae687e71,
+        type: 3}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: potion
+      value: 
+      objectReference: {fileID: 21300000, guid: 19576ffc906f90b4a80790bea1c14ffa,
+        type: 3}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: apple
+      value: 
+      objectReference: {fileID: 21300000, guid: ba277220d79b8d34a99a39932ea08859,
+        type: 3}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: armour1
+      value: 
+      objectReference: {fileID: 21300000, guid: ef419fce13384654bab5cbf27232d640,
+        type: 3}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: armour2
+      value: 
+      objectReference: {fileID: 21300000, guid: 4ec5e8e694bc3334db32778bebfd01e7,
+        type: 3}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: bat
+      value: 
+      objectReference: {fileID: 21300000, guid: b0ab5287685813a41bacfc4ec20baac6,
+        type: 3}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: belt
+      value: 
+      objectReference: {fileID: 21300000, guid: d6a5be75ee20dd94682b602816b88b5d,
+        type: 3}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: boots
+      value: 
+      objectReference: {fileID: 21300000, guid: be57094a84846274f8365205b4fdec95,
+        type: 3}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: club
+      value: 
+      objectReference: {fileID: 21300000, guid: f47fa1a8e8c158a42b11fd455234581d,
+        type: 3}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: dagger
+      value: 
+      objectReference: {fileID: 21300000, guid: d459b9fcda543454dafcae327ebe0a42,
+        type: 3}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: gloves
+      value: 
+      objectReference: {fileID: 21300000, guid: e85a4f4a40f9cca409993136dabd3bcc,
+        type: 3}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: mage
+      value: 
+      objectReference: {fileID: 21300000, guid: 98ceb165e895b7f47ab880e0d1c64104,
+        type: 3}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: ring
+      value: 
+      objectReference: {fileID: 21300000, guid: e76b30749d6bac4489c3ccf1ccb2c8fc,
+        type: 3}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: ring2
+      value: 
+      objectReference: {fileID: 21300000, guid: f84b6dd0347a94f4a9a69ac911fc1f9d,
+        type: 3}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: ring3
+      value: 
+      objectReference: {fileID: 21300000, guid: 8661c2c7e325a33438f06b02458fd199,
+        type: 3}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: ring4
+      value: 
+      objectReference: {fileID: 21300000, guid: 0f1303cfff6593747a97f9c964728649,
+        type: 3}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: ring5
+      value: 
+      objectReference: {fileID: 21300000, guid: 8bcb07d9c2c4c484caf61c33f48e3dd8,
+        type: 3}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: ring6
+      value: 
+      objectReference: {fileID: 21300000, guid: f66c057114b8725409847a8a8e83a75b,
+        type: 3}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: shield
+      value: 
+      objectReference: {fileID: 21300000, guid: 0c6de69acca756c409be4810a8510ac5,
+        type: 3}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 21300000, guid: 1eef36d1305e37b46a9377c8d12cdac6,
+        type: 3}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 404711626}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: image2
+      value: 
+      objectReference: {fileID: 2046626908}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: image3
+      value: 
+      objectReference: {fileID: 1942857506}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: image4
+      value: 
+      objectReference: {fileID: 343220348}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: image5
+      value: 
+      objectReference: {fileID: 1258635463}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: armourimage
+      value: 
+      objectReference: {fileID: 1605899002}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: glovesimage
+      value: 
+      objectReference: {fileID: 1406343053}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: bootsimage
+      value: 
+      objectReference: {fileID: 1139745197}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: ring1image
+      value: 
+      objectReference: {fileID: 591582067}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: ring2image
+      value: 
+      objectReference: {fileID: 1777907639}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: ring3image
+      value: 
+      objectReference: {fileID: 1641345678}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: ring4image
+      value: 
+      objectReference: {fileID: 403851907}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: ring5image
+      value: 
+      objectReference: {fileID: 381389156}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: ring6image
+      value: 
+      objectReference: {fileID: 1355484672}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: keyimage
+      value: 
+      objectReference: {fileID: 52692785}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: armourcanvas
+      value: 
+      objectReference: {fileID: 626643347}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: ringcanvas
+      value: 
+      objectReference: {fileID: 1130451886}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: potiondoubledamage
+      value: 
+      objectReference: {fileID: 21300000, guid: 74f3ff7910cd94f41af53cfb1413fa03,
+        type: 3}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: potionweak
+      value: 
+      objectReference: {fileID: 21300000, guid: 39ff590519daa884fb25d400b68a52b8,
+        type: 3}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: hidepotiondouble
+      value: 
+      objectReference: {fileID: 1309472743967740, guid: ca2b923618186fd498733fe3db319f7d,
+        type: 2}
+    - target: {fileID: 114753108793847134, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30,
+        type: 2}
+      propertyPath: hidepotionweak
+      value: 
+      objectReference: {fileID: 1972222728416954, guid: 15a8f36c8484a3f4cbd5e81dc26f5261,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a0fddbd89a9f7a4f8de95f2e0e87d30, type: 2}
   m_IsPrefabAsset: 0
@@ -73305,6 +76169,241 @@ Prefab:
       propertyPath: hideshield
       value: 
       objectReference: {fileID: 182791715}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: bow
+      value: 
+      objectReference: {fileID: 21300000, guid: 668df6f48e59c80439fa587624e5a84d,
+        type: 3}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: sword
+      value: 
+      objectReference: {fileID: 21300000, guid: c60f7cf1ed80f5840ac51195ae687e71,
+        type: 3}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: potion
+      value: 
+      objectReference: {fileID: 21300000, guid: 19576ffc906f90b4a80790bea1c14ffa,
+        type: 3}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: apple
+      value: 
+      objectReference: {fileID: 21300000, guid: ba277220d79b8d34a99a39932ea08859,
+        type: 3}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: armour1
+      value: 
+      objectReference: {fileID: 21300000, guid: ef419fce13384654bab5cbf27232d640,
+        type: 3}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: armour2
+      value: 
+      objectReference: {fileID: 21300000, guid: 4ec5e8e694bc3334db32778bebfd01e7,
+        type: 3}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: bat
+      value: 
+      objectReference: {fileID: 21300000, guid: b0ab5287685813a41bacfc4ec20baac6,
+        type: 3}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: belt
+      value: 
+      objectReference: {fileID: 21300000, guid: d6a5be75ee20dd94682b602816b88b5d,
+        type: 3}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: boots
+      value: 
+      objectReference: {fileID: 21300000, guid: be57094a84846274f8365205b4fdec95,
+        type: 3}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: bow2
+      value: 
+      objectReference: {fileID: 21300000, guid: ed5c3e58951bf304c943dcb7430c42c7,
+        type: 3}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: club
+      value: 
+      objectReference: {fileID: 21300000, guid: f47fa1a8e8c158a42b11fd455234581d,
+        type: 3}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: dagger
+      value: 
+      objectReference: {fileID: 21300000, guid: d459b9fcda543454dafcae327ebe0a42,
+        type: 3}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: gloves
+      value: 
+      objectReference: {fileID: 21300000, guid: e85a4f4a40f9cca409993136dabd3bcc,
+        type: 3}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: ring
+      value: 
+      objectReference: {fileID: 21300000, guid: e76b30749d6bac4489c3ccf1ccb2c8fc,
+        type: 3}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: ring2
+      value: 
+      objectReference: {fileID: 21300000, guid: f84b6dd0347a94f4a9a69ac911fc1f9d,
+        type: 3}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: ring3
+      value: 
+      objectReference: {fileID: 21300000, guid: 8661c2c7e325a33438f06b02458fd199,
+        type: 3}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: ring4
+      value: 
+      objectReference: {fileID: 21300000, guid: 0f1303cfff6593747a97f9c964728649,
+        type: 3}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: ring5
+      value: 
+      objectReference: {fileID: 21300000, guid: 8bcb07d9c2c4c484caf61c33f48e3dd8,
+        type: 3}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: ring6
+      value: 
+      objectReference: {fileID: 21300000, guid: f66c057114b8725409847a8a8e83a75b,
+        type: 3}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: shield
+      value: 
+      objectReference: {fileID: 21300000, guid: 0c6de69acca756c409be4810a8510ac5,
+        type: 3}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 21300000, guid: 1eef36d1305e37b46a9377c8d12cdac6,
+        type: 3}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 404711626}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: image2
+      value: 
+      objectReference: {fileID: 2046626908}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: image3
+      value: 
+      objectReference: {fileID: 1942857506}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: image4
+      value: 
+      objectReference: {fileID: 343220348}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: image5
+      value: 
+      objectReference: {fileID: 1258635463}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: armourimage
+      value: 
+      objectReference: {fileID: 1605899002}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: glovesimage
+      value: 
+      objectReference: {fileID: 1406343053}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: bootsimage
+      value: 
+      objectReference: {fileID: 1139745197}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: ring1image
+      value: 
+      objectReference: {fileID: 591582067}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: ring2image
+      value: 
+      objectReference: {fileID: 1777907639}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: ring3image
+      value: 
+      objectReference: {fileID: 1641345678}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: ring4image
+      value: 
+      objectReference: {fileID: 403851907}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: ring5image
+      value: 
+      objectReference: {fileID: 381389156}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: ring6image
+      value: 
+      objectReference: {fileID: 1355484672}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: keyimage
+      value: 
+      objectReference: {fileID: 52692785}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: armourcanvas
+      value: 
+      objectReference: {fileID: 626643347}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: ringcanvas
+      value: 
+      objectReference: {fileID: 1130451886}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: potiondoubledamage
+      value: 
+      objectReference: {fileID: 21300000, guid: 74f3ff7910cd94f41af53cfb1413fa03,
+        type: 3}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: potionweak
+      value: 
+      objectReference: {fileID: 21300000, guid: 39ff590519daa884fb25d400b68a52b8,
+        type: 3}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: hidepotiondouble
+      value: 
+      objectReference: {fileID: 1309472743967740, guid: ca2b923618186fd498733fe3db319f7d,
+        type: 2}
+    - target: {fileID: 114291128783060786, guid: 50762176e56840f4bba423f6691bee7a,
+        type: 2}
+      propertyPath: hidepotionweak
+      value: 
+      objectReference: {fileID: 1972222728416954, guid: 15a8f36c8484a3f4cbd5e81dc26f5261,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50762176e56840f4bba423f6691bee7a, type: 2}
   m_IsPrefabAsset: 0
@@ -73978,6 +77077,241 @@ Prefab:
       propertyPath: hideshield
       value: 
       objectReference: {fileID: 182791715}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: bow
+      value: 
+      objectReference: {fileID: 21300000, guid: 668df6f48e59c80439fa587624e5a84d,
+        type: 3}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: sword
+      value: 
+      objectReference: {fileID: 21300000, guid: c60f7cf1ed80f5840ac51195ae687e71,
+        type: 3}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: potion
+      value: 
+      objectReference: {fileID: 21300000, guid: 19576ffc906f90b4a80790bea1c14ffa,
+        type: 3}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: apple
+      value: 
+      objectReference: {fileID: 21300000, guid: ba277220d79b8d34a99a39932ea08859,
+        type: 3}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: armour1
+      value: 
+      objectReference: {fileID: 21300000, guid: ef419fce13384654bab5cbf27232d640,
+        type: 3}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: armour2
+      value: 
+      objectReference: {fileID: 21300000, guid: 4ec5e8e694bc3334db32778bebfd01e7,
+        type: 3}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: bat
+      value: 
+      objectReference: {fileID: 21300000, guid: b0ab5287685813a41bacfc4ec20baac6,
+        type: 3}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: belt
+      value: 
+      objectReference: {fileID: 21300000, guid: d6a5be75ee20dd94682b602816b88b5d,
+        type: 3}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: boots
+      value: 
+      objectReference: {fileID: 21300000, guid: be57094a84846274f8365205b4fdec95,
+        type: 3}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: bow2
+      value: 
+      objectReference: {fileID: 21300000, guid: ed5c3e58951bf304c943dcb7430c42c7,
+        type: 3}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: club
+      value: 
+      objectReference: {fileID: 21300000, guid: f47fa1a8e8c158a42b11fd455234581d,
+        type: 3}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: dagger
+      value: 
+      objectReference: {fileID: 21300000, guid: d459b9fcda543454dafcae327ebe0a42,
+        type: 3}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: gloves
+      value: 
+      objectReference: {fileID: 21300000, guid: e85a4f4a40f9cca409993136dabd3bcc,
+        type: 3}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: mage
+      value: 
+      objectReference: {fileID: 21300000, guid: 98ceb165e895b7f47ab880e0d1c64104,
+        type: 3}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: ring
+      value: 
+      objectReference: {fileID: 21300000, guid: e76b30749d6bac4489c3ccf1ccb2c8fc,
+        type: 3}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: ring2
+      value: 
+      objectReference: {fileID: 21300000, guid: f84b6dd0347a94f4a9a69ac911fc1f9d,
+        type: 3}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: ring3
+      value: 
+      objectReference: {fileID: 21300000, guid: 8661c2c7e325a33438f06b02458fd199,
+        type: 3}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: ring4
+      value: 
+      objectReference: {fileID: 21300000, guid: 0f1303cfff6593747a97f9c964728649,
+        type: 3}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: ring5
+      value: 
+      objectReference: {fileID: 21300000, guid: 8bcb07d9c2c4c484caf61c33f48e3dd8,
+        type: 3}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: ring6
+      value: 
+      objectReference: {fileID: 21300000, guid: f66c057114b8725409847a8a8e83a75b,
+        type: 3}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 21300000, guid: 1eef36d1305e37b46a9377c8d12cdac6,
+        type: 3}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 404711626}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: image2
+      value: 
+      objectReference: {fileID: 2046626908}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: image3
+      value: 
+      objectReference: {fileID: 1942857506}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: image4
+      value: 
+      objectReference: {fileID: 343220348}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: image5
+      value: 
+      objectReference: {fileID: 1258635463}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: armourimage
+      value: 
+      objectReference: {fileID: 1605899002}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: glovesimage
+      value: 
+      objectReference: {fileID: 1406343053}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: bootsimage
+      value: 
+      objectReference: {fileID: 1139745197}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: ring1image
+      value: 
+      objectReference: {fileID: 591582067}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: ring2image
+      value: 
+      objectReference: {fileID: 1777907639}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: ring3image
+      value: 
+      objectReference: {fileID: 1641345678}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: ring4image
+      value: 
+      objectReference: {fileID: 403851907}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: ring5image
+      value: 
+      objectReference: {fileID: 381389156}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: ring6image
+      value: 
+      objectReference: {fileID: 1355484672}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: keyimage
+      value: 
+      objectReference: {fileID: 52692785}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: armourcanvas
+      value: 
+      objectReference: {fileID: 626643347}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: ringcanvas
+      value: 
+      objectReference: {fileID: 1130451886}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: potiondoubledamage
+      value: 
+      objectReference: {fileID: 21300000, guid: 74f3ff7910cd94f41af53cfb1413fa03,
+        type: 3}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: potionweak
+      value: 
+      objectReference: {fileID: 21300000, guid: 39ff590519daa884fb25d400b68a52b8,
+        type: 3}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: hidepotiondouble
+      value: 
+      objectReference: {fileID: 1309472743967740, guid: ca2b923618186fd498733fe3db319f7d,
+        type: 2}
+    - target: {fileID: 114072603241203920, guid: 73260d016e2cd31479f05719c88d3ff8,
+        type: 2}
+      propertyPath: hidepotionweak
+      value: 
+      objectReference: {fileID: 1972222728416954, guid: 15a8f36c8484a3f4cbd5e81dc26f5261,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73260d016e2cd31479f05719c88d3ff8, type: 2}
   m_IsPrefabAsset: 0

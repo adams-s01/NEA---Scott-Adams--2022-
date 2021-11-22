@@ -23,6 +23,7 @@ public class Enemy_Movement : MonoBehaviour {
 	public GameObject coin;
 	public GameObject coin2;
 	public GameObject coin3;
+	public GameObject ring2;
 	string setting;
 	public GameObject[] hitpoints;
 	int enemyhealthdifficulty;
@@ -198,6 +199,7 @@ public class Enemy_Movement : MonoBehaviour {
 				}
 				if (gameObject.tag == "pumpkin") {
 					Instantiate (coin2, new Vector2 (enemyx, enemyy), Quaternion.identity);
+					Instantiate (ring2, new Vector2 (enemyx, enemyy), Quaternion.identity);
 					if (sleep1 == false) {
 						StartCoroutine (blindcoroutine2 ());
 					}

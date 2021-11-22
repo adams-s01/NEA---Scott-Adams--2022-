@@ -103,7 +103,7 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
-		gold = 10;
+		gold = 1000;
 		unusablecolour = item1button.colors;
 		usablecolour = item1button.colors;
 		unusablecolour.highlightedColor = new Color32 (204, 0, 0, 255);

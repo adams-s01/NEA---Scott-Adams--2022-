@@ -122,9 +122,11 @@ public class Player_Movement : MonoBehaviour {
 			playerhealth += 10;
 			other3.playerhealth3 = false;
 		}
+		//If all lives lost, go to start screen
 		if (lives == 0) {
 			SceneManager.LoadScene (0);
 		}
+		//Shows health
 		healthtext.text = "Health: " + playerhealth.ToString ();
 
 	}
@@ -169,14 +171,17 @@ public class Player_Movement : MonoBehaviour {
 			Destroy (keyvase);
 			Instantiate (key, new Vector2 (keyvase.transform.position.x, keyvase.transform.position.y), Quaternion.identity);
 		}
+		//Coin1
 		if (col.gameObject.name == "coin(Clone)") {
 			gold = 2;
 			Destroy (col.gameObject);
 		}
+		//Coin2
 		if (col.gameObject.name == "coin2(Clone)") {
 			gold = 4;
 			Destroy (col.gameObject);
 		}
+		//Coin3
 		if (col.gameObject.name == "coin3(Clone)") {
 			gold = 3;
 			Destroy (col.gameObject);
