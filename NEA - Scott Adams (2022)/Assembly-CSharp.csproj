@@ -62,6 +62,7 @@
      <Compile Include="Assets\Scripts\Enemy_Spawner.cs" />
      <Compile Include="Assets\Scripts\Escape_Door.cs" />
      <Compile Include="Assets\Scripts\Inventory_1.cs" />
+     <Compile Include="Assets\Scripts\Map_Boundaries.cs" />
      <Compile Include="Assets\Scripts\Map_Screen.cs" />
      <Compile Include="Assets\Scripts\Menu_Buttons.cs" />
      <Compile Include="Assets\Scripts\Pause.cs" />
