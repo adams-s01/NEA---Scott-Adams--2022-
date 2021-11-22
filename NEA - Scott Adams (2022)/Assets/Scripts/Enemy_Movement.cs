@@ -43,14 +43,17 @@ public class Enemy_Movement : MonoBehaviour {
 		rb = GetComponent<Rigidbody2D>();
 		setting = PlayerPrefs.GetString ("setting", "easy");
 		Debug.Log ("1"+setting);
+		//Sets enemy settings for easy(low health and attack)
 		if (setting == "easy") {
 			enemyhealthdifficulty = 1;
 			enemydamagedifficulty = 1;
 		}
+		//Sets enemy settings for medium(high health and low attack)
 		if (setting == "medium") {
 			enemyhealthdifficulty = 2;
 			enemydamagedifficulty = 1;
 		}
+		//Sets enemy settings for hard(high health and attack)
 		if (setting == "hard") {
 			enemyhealthdifficulty = 2;
 			enemydamagedifficulty = 2;
@@ -75,11 +78,12 @@ public class Enemy_Movement : MonoBehaviour {
 		}
 		other = GameObject.FindGameObjectWithTag ("inventory");
 		//PlayerPrefs.SetInt ("playerdamage", playerdamage);
+		//Determines distance between player and pumpkin
 		if (gameObject.tag == "pumpkin") {
 			other4 = GetComponent<Pumpkin_Raycast> ();
 			distance1 = other4.distance;
 			Debug.Log ("222" + distance1);
-
+			//Determines which way to move
 			if (distance1 == 0) {
 				rb.velocity = Vector2.zero;
 			} else {
@@ -185,18 +189,22 @@ public class Enemy_Movement : MonoBehaviour {
 				Destroy (enemy);
 				enemyx = enemy.transform.position.x;
 				enemyy = enemy.transform.position.y;
+				//Gives coin when slime2 types destroyed
 				if(gameObject.tag=="slime2")
 				{
 					Instantiate (coin, new Vector2 (enemyx, enemyy), Quaternion.identity);
 				}
+				//Gives coin2 when bat types destroyed
 				if(gameObject.tag=="bat")
 				{
 					Instantiate (coin2, new Vector2 (enemyx, enemyy), Quaternion.identity);
 				}
+				//Gives coin3 when skeleton types destroyed
 				if(gameObject.tag=="skeleton")
 				{
 					Instantiate (coin3, new Vector2 (enemyx, enemyy), Quaternion.identity);
 				}
+				//Gives coin2 when pumpkin types destroyed and gives blind debuff
 				if (gameObject.tag == "pumpkin") {
 					Instantiate (coin2, new Vector2 (enemyx, enemyy), Quaternion.identity);
 					Instantiate (ring2, new Vector2 (enemyx, enemyy), Quaternion.identity);
@@ -248,6 +256,7 @@ public class Enemy_Movement : MonoBehaviour {
 				enemyy = enemy.transform.position.y+2;
 				Instantiate (hitpoints[damage1], new Vector2 (enemyx, enemyy), Quaternion.identity);
 			}
+			//Copy of code for collision
 			if (enemyhealth <= 0) {
 				Destroy (enemy);
 				enemyx = enemy.transform.position.x;
@@ -273,6 +282,7 @@ public class Enemy_Movement : MonoBehaviour {
 				}
 			}
 		}
+		//If enemy is in weakness field, make them weak
 		if (col.gameObject.tag == "weak"&&weaktrue==false) {
 			string enemyname = gameObject.name;
 			enemy = GameObject.Find (enemyname);

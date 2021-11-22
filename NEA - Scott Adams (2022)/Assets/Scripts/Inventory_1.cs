@@ -101,6 +101,8 @@ public class Inventory_1 : MonoBehaviour {
 	float playery;
 	public GameObject weak;
 	private GameObject weakwall;
+	public int sound;
+
 
 	// Use this for initialization
 	void Start () {
@@ -153,6 +155,7 @@ public class Inventory_1 : MonoBehaviour {
 		playerspeedtrue = false;
 		armourstat = 0;
 		doubledamage = 1;
+		//Sets which part of list for tutorial link to which inventory slot
 		if (SceneManager.GetActiveScene ().buildIndex == 1) {
 			inventory1 = 1;
 			inventory2 = 4;
@@ -160,6 +163,7 @@ public class Inventory_1 : MonoBehaviour {
 			inventory4 = 0;
 			inventory5 = 2;
 		}
+		//Sets which part of list for level 1 link to which inventory slot
 		if (SceneManager.GetActiveScene ().buildIndex == 2) {
 			inventory1 = 2;
 			inventory2 = 4;
@@ -184,7 +188,6 @@ public class Inventory_1 : MonoBehaviour {
 		} else {
 			speeddouble = 1;
 		}
-
 		
 	}
 	//Collides with the player, causes them to pick up the item if space available
@@ -1036,6 +1039,7 @@ public class Inventory_1 : MonoBehaviour {
 				if(sleep==false)
 				{
 					playerspeed = Random.Range (0f, 5f) * speeddouble;
+					sound++;
 					Debug.Log (playerspeed);
 					StartCoroutine (speedcoroutine ());
 

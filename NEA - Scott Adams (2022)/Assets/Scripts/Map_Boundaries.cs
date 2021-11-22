@@ -55,6 +55,7 @@ public class Map_Boundaries : MonoBehaviour {
 	void Update () {
 		
 	}
+	//Determines whether passed through barrier, sets that part of map active
 	public void OnTriggerEnter2D(Collider2D col)
 	{
 		if (col.gameObject.name == "Startzoneboundary") {

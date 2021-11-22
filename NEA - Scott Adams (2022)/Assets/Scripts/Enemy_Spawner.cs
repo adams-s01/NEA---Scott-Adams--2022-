@@ -22,12 +22,14 @@ public class Enemy_Spawner : MonoBehaviour {
 	void Start () {
 		spawner = GameObject.FindGameObjectWithTag ("spawner");
 		enemyspawned=new List<GameObject>();
+		//Determines location to spawn skeletons for tutorial
 		if (SceneManager.GetActiveScene ().buildIndex == 1) {
 			for (int i = 0; i < 3; i++) {
 				enemyspawned.Add (Instantiate (enemy, new Vector2 (90.1f, 2.8f), Quaternion.identity));
 				spawnerfull [i] = true;
 			}
 		}
+		//Determines location to spawn skeletons for level 1
 		if (SceneManager.GetActiveScene ().buildIndex == 2) {
 			for (int i = 0; i < 3; i++) {
 				enemyspawned.Add (Instantiate (enemy, new Vector2 (10.91f, -27.54f), Quaternion.identity));

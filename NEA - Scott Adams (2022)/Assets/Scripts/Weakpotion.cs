@@ -23,6 +23,7 @@ public class Weakpotion : MonoBehaviour {
 	void Update () {
 		
 	}
+	//Reduces stats for enemies when in weakness field
 	void OnTriggerEnter2D(Collider2D col)
 	{
 		if(col.gameObject.tag=="slime2"||col.gameObject.tag=="bat"||col.gameObject.tag=="skeleton")

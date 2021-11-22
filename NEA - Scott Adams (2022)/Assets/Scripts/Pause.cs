@@ -11,11 +11,11 @@ using TMPro;
 
 public class Pause : MonoBehaviour {
 
-	GameObject pausescreen;
-	GameObject inventorycanvas;
-	GameObject shopcanvas;
-	GameObject tutorialscreen;
-	GameObject mapscreen;
+	public GameObject pausescreen;
+	public GameObject inventorycanvas;
+	public GameObject shopcanvas;
+	public GameObject tutorialscreen;
+	public GameObject mapscreen;
 	public TextMeshProUGUI timer;
 	public TextMeshProUGUI lives;
 	public TextMeshProUGUI gold;
@@ -26,11 +26,11 @@ public class Pause : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		pausescreen = GameObject.FindGameObjectWithTag ("pausecanvas");
-		inventorycanvas = GameObject.FindGameObjectWithTag ("inventory");
-		shopcanvas = GameObject.FindGameObjectWithTag ("shopmenu");
-		tutorialscreen = GameObject.FindGameObjectWithTag ("tutorialcanvas");
-		mapscreen = GameObject.FindGameObjectWithTag ("mapcanvas");
+		//pausescreen = GameObject.FindGameObjectWithTag ("pausecanvas");
+		//inventorycanvas = GameObject.FindGameObjectWithTag ("inventory");
+		//shopcanvas = GameObject.FindGameObjectWithTag ("shopmenu");
+		//tutorialscreen = GameObject.FindGameObjectWithTag ("tutorialcanvas");
+		//mapscreen = GameObject.FindGameObjectWithTag ("mapcanvas");
 		pausescreen.SetActive (false);
 		tutorialscreen.SetActive (false);
 		mapscreen.SetActive (false);
@@ -43,6 +43,12 @@ public class Pause : MonoBehaviour {
 		timer.text = "Time: " + Time.fixedTime.ToString ("0.00");
 		lives.text = "Lives: " + other2.lives;
 		gold.text = "Gold: " + other4.gold;
+		if (Input.GetKey (KeyCode.Escape)) {
+			pausescreen.SetActive (true);
+			inventorycanvas.SetActive (false);
+			shopcanvas.SetActive (false);
+			Time.timeScale = 0;
+		}
 	}
 	//Activates when pause button pressed
 	public void Pause1()

@@ -28,18 +28,21 @@ public class Pumpkin_Raycast : MonoBehaviour {
 		startxright = transform.position.x + 1;
 		startxleft = transform.position.x - 1;
 		starty = transform.position.y;
+		//Makes raycasts left and right out ten units
 		RaycastHit2D hitright = Physics2D.Raycast (new Vector2 (startxright, starty), right);
 		RaycastHit2D hitleft = Physics2D.Raycast (new Vector2 (startxleft, starty), left);
 		Debug.Log (hitright.collider.tag);
 		Debug.Log (hitleft.collider.tag);
 		Debug.DrawRay (new Vector2 (startxleft, starty), left, Color.green);
 		Debug.DrawRay (new Vector2 (startxright, starty), right, Color.green);
+		//If player if right of pumpkin, determines distance right
 		if (hitright.collider.tag == "Player") {
 			distance = Mathf.Abs (hitright.point.x - transform.position.x);
 			Debug.Log (distance);
 			righttrue = true;
 			lefttrue = false;
 		}
+		//If player is left of pumpkin, determines distance left
 		if (hitleft.collider.tag == "Player") {
 			distance = Mathf.Abs (hitleft.point.x - transform.position.x);
 			Debug.Log (distance);

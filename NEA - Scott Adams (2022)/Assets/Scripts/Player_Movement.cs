@@ -130,7 +130,7 @@ public class Player_Movement : MonoBehaviour {
 		healthtext.text = "Health: " + playerhealth.ToString ();
 
 	}
-	//Causes the palyer to not be able to sprint for 10 seconds
+	//Causes the player to not be able to sprint for 10 seconds
 	IEnumerator restingcoroutine()
 	{
 		resting=true;
@@ -186,6 +186,7 @@ public class Player_Movement : MonoBehaviour {
 			gold = 3;
 			Destroy (col.gameObject);
 		}
+		//If no coins being collided with, add no more gold to player
 		if (col.gameObject.name != "coin(Clone)" && col.gameObject.name != "coin2(Clone)" && col.gameObject.name != "coin3(Clone)") {
 			gold = 0;
 		}

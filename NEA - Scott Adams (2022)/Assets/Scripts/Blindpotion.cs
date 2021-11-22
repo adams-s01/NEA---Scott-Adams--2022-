@@ -22,6 +22,7 @@ public class Blindpotion : MonoBehaviour {
 	void Update () {
 		
 	}
+	//Effects player when in blindness area
 	void OnTriggerStay2D(Collider2D col)
 	{
 		if(col.gameObject.tag=="Player")
@@ -32,6 +33,7 @@ public class Blindpotion : MonoBehaviour {
 			}
 		}
 	}
+	//Keeps blindness for 10 seconds
 	IEnumerator blindcoroutine()
 	{
 		sleep = true;
