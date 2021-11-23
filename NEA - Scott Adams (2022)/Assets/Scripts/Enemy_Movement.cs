@@ -36,6 +36,9 @@ public class Enemy_Movement : MonoBehaviour {
 	bool sleep1;
 	Pumpkin_Raycast other4;
 	float distance1;
+	bool doubledamagetrue;
+	public GameObject other5;
+	Double_Damage other6;
 
 	// Initialises variables
 	void Start () {
@@ -59,6 +62,7 @@ public class Enemy_Movement : MonoBehaviour {
 			enemydamagedifficulty = 2;
 		}
 		enemyhealth = enemyhealth * enemyhealthdifficulty;
+		playerdamage = 1;
 	}
 	
 	// Calls slime movement sets GameObject to call other script
@@ -209,23 +213,24 @@ public class Enemy_Movement : MonoBehaviour {
 					Instantiate (coin2, new Vector2 (enemyx, enemyy), Quaternion.identity);
 					Instantiate (ring2, new Vector2 (enemyx, enemyy), Quaternion.identity);
 					if (sleep1 == false) {
-						StartCoroutine (blindcoroutine2 ());
+						StartCoroutine (removeblindcoroutine ());
+						Debug.Log ("call made1");
 					}
 				}
 			}
 			//Sets the damage to the player for slime2
 			if (gameObject.tag == "slime2") {
-				playerdamage = 1 * enemydamagedifficulty;
+				playerdamage = playerdamage * enemydamagedifficulty;
 				col.gameObject.SendMessage ("Damage", playerdamage);
 			}
 			//Sets the damage to the player for skeleton
 			if (gameObject.tag == "skeleton") {
-				playerdamage = 1 * enemydamagedifficulty;
+				playerdamage = playerdamage * enemydamagedifficulty;
 				col.gameObject.SendMessage ("Damage", playerdamage);
 			}
 			//Sets the damage to the player for pumpkin
 			if (gameObject.tag == "pumpkin") {
-				playerdamage = 1 * enemydamagedifficulty;
+				playerdamage = playerdamage * enemydamagedifficulty;
 				col.gameObject.SendMessage ("Damage", playerdamage);
 			}
 		}
@@ -242,7 +247,7 @@ public class Enemy_Movement : MonoBehaviour {
 		if (col.gameObject.tag == "Player") {
 			//Sets the damage for the player for bat
 			if (gameObject.tag == "bat") {
-				playerdamage = 1 * enemydamagedifficulty;
+				playerdamage = playerdamage * enemydamagedifficulty;
 				col.gameObject.SendMessage ("Damage", playerdamage);
 			}
 			string enemyname = gameObject.name;
@@ -276,7 +281,7 @@ public class Enemy_Movement : MonoBehaviour {
 				if (gameObject.tag == "pumpkin") {
 					Instantiate (coin2, new Vector2 (enemyx, enemyy), Quaternion.identity);
 					if (sleep1 == false) {
-						StartCoroutine (blindcoroutine2 ());
+						StartCoroutine (removeblindcoroutine ());
 						Debug.Log ("call made");
 					}
 				}
@@ -291,6 +296,14 @@ public class Enemy_Movement : MonoBehaviour {
 			enemyhealth = other3.enemyhealth;
 			playerdamage = other3.enemydamage;
 			weaktrue = true;
+		}
+		//If enemy is in double damage field, make them have double damage
+		if (col.gameObject.tag == "doubledamage") {
+			string enemyname = gameObject.name;
+			enemy = GameObject.Find (enemyname);
+			other5=col.gameObject;
+			other6 = other5.GetComponent<Double_Damage> ();
+			playerdamage = other6.enemydamage;
 		}
 	}
 	//Ends collide with the player, stops the damage of the player
@@ -319,12 +332,12 @@ public class Enemy_Movement : MonoBehaviour {
 		}
 	}
 	//Waits for 5 seconds to remove the blind area
-	IEnumerator blindcoroutine2()
+	IEnumerator removeblindcoroutine()
 	{
 		sleep1 = true;
 		blindarea = Instantiate (blind, new Vector2 (enemyx, enemyy), Quaternion.identity);
 		Debug.Log ("start of call");
-		yield return new WaitForSecondsRealtime (5);
+		yield return new WaitForSecondsRealtime (5f);
 		Debug.Log ("after call");
 		Destroy (blindarea);
 		sleep1 = false;

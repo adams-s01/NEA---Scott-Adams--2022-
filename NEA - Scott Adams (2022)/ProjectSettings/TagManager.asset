@@ -63,6 +63,7 @@ TagManager:
   - blindcanvas
   - vase3
   - mapcanvas
+  - doubledamage
   layers:
   - Default
   - TransparentFX

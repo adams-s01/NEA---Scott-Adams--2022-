@@ -19,6 +19,7 @@ public class Player_Movement : MonoBehaviour {
 	GameObject vase2;
 	GameObject vase3;
 	GameObject keyvase;
+	public GameObject doubledamage;
 	public Image speedbar;
 	public GameObject bow;
 	public GameObject potion;
@@ -170,6 +171,7 @@ public class Player_Movement : MonoBehaviour {
 		{
 			Destroy (keyvase);
 			Instantiate (key, new Vector2 (keyvase.transform.position.x, keyvase.transform.position.y), Quaternion.identity);
+			Instantiate (doubledamage, new Vector2 (keyvase.transform.position.x, keyvase.transform.position.y), Quaternion.identity);
 		}
 		//Coin1
 		if (col.gameObject.name == "coin(Clone)") {

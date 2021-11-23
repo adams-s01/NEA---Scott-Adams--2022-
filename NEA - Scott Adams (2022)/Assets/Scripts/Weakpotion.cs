@@ -26,7 +26,7 @@ public class Weakpotion : MonoBehaviour {
 	//Reduces stats for enemies when in weakness field
 	void OnTriggerEnter2D(Collider2D col)
 	{
-		if(col.gameObject.tag=="slime2"||col.gameObject.tag=="bat"||col.gameObject.tag=="skeleton")
+		if(col.gameObject.tag=="slime2"||col.gameObject.tag=="bat"||col.gameObject.tag=="skeleton"||col.gameObject.tag=="pumpkin")
 		{
 			string enemyname = col.gameObject.name;
 			enemy = GameObject.Find (enemyname);
