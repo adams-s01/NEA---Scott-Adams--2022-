@@ -26,7 +26,7 @@ public class Player_Movement : MonoBehaviour {
 	public GameObject weakpotion;
 	public GameObject key;
 	bool resting;
-	float speed;
+	public float speed;
 	Enemy_Movement other2;
 	int playerdamage1;
 	public int playerhealth;

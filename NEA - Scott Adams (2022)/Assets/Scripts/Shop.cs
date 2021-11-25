@@ -12,21 +12,37 @@ using UnityEngine.UI;
 public class Shop : MonoBehaviour {
 
 	public GameObject shopmenu;
-	GameObject item1;
-	GameObject item2;
-	GameObject item3;
-	GameObject item4;
-	GameObject item5;
-	GameObject item6;
-	GameObject item7;
-	GameObject item8;
-	GameObject item9;
-	GameObject item10;
-	GameObject item11;
-	GameObject item12;
-	GameObject item13;
-	GameObject item14;
-	GameObject item15;
+	public GameObject shopmenu2;
+	public GameObject item1;
+	public GameObject item2;
+	public GameObject item3;
+	public GameObject item4;
+	public GameObject item5;
+	public GameObject item6;
+	public GameObject item7;
+	public GameObject item8;
+	public GameObject item9;
+	public GameObject item10;
+	public GameObject item11;
+	public GameObject item12;
+	public GameObject item13;
+	public GameObject item14;
+	public GameObject item15;
+	public GameObject item16;
+	public GameObject item17;
+	public GameObject item18;
+	public GameObject item19;
+	public GameObject item20;
+	public GameObject item21;
+	public GameObject item22;
+	public GameObject item23;
+	public GameObject item24;
+	public GameObject item25;
+	public GameObject item26;
+	public GameObject item27;
+	public GameObject item28;
+	public GameObject item29;
+	public GameObject item30;
 	public Button item1button;
 	public Button item2button;
 	public Button item3button;
@@ -42,6 +58,21 @@ public class Shop : MonoBehaviour {
 	public Button item13button;
 	public Button item14button;
 	public Button item15button;
+	public Button item16button;
+	public Button item17button;
+	public Button item18button;
+	public Button item19button;
+	public Button item20button;
+	public Button item21button;
+	public Button item22button;
+	public Button item23button;
+	public Button item24button;
+	public Button item25button;
+	public Button item26button;
+	public Button item27button;
+	public Button item28button;
+	public Button item29button;
+	public Button item30button;
 	public int gold;
 	public TextMeshProUGUI goldtext;
 	ColorBlock unusablecolour;
@@ -71,8 +102,8 @@ public class Shop : MonoBehaviour {
 
 	//Initialises shopmenu and hides the shop menu canvas
 	void Start () {
-		shopmenu = GameObject.FindGameObjectWithTag ("shopmenu");
-		item1 = GameObject.FindGameObjectWithTag ("item1");
+		//shopmenu2 = GameObject.FindGameObjectWithTag ("shopmenu2");
+		/*item1 = GameObject.FindGameObjectWithTag ("item1");
 		item2 = GameObject.FindGameObjectWithTag ("item2");
 		item3 = GameObject.FindGameObjectWithTag ("item3");
 		item4 = GameObject.FindGameObjectWithTag ("item4");
@@ -87,7 +118,23 @@ public class Shop : MonoBehaviour {
 		item13 = GameObject.FindGameObjectWithTag ("item13");
 		item14 = GameObject.FindGameObjectWithTag ("item14");
 		item15 = GameObject.FindGameObjectWithTag ("item15");
+		item16 = GameObject.FindGameObjectWithTag ("item16");
+		item17 = GameObject.FindGameObjectWithTag ("item17");
+		item18 = GameObject.FindGameObjectWithTag ("item18");
+		item19 = GameObject.FindGameObjectWithTag ("item19");
+		item20 = GameObject.FindGameObjectWithTag ("item20");
+		item21 = GameObject.FindGameObjectWithTag ("item21");
+		item22 = GameObject.FindGameObjectWithTag ("item22");
+		item23 = GameObject.FindGameObjectWithTag ("item23");
+		item24 = GameObject.FindGameObjectWithTag ("item24");
+		item25 = GameObject.FindGameObjectWithTag ("item25");
+		item26 = GameObject.FindGameObjectWithTag ("item26");
+		item27 = GameObject.FindGameObjectWithTag ("item27");
+		item28 = GameObject.FindGameObjectWithTag ("item28");
+		item29 = GameObject.FindGameObjectWithTag ("item29");
+		item30 = GameObject.FindGameObjectWithTag ("item30");*/
 		shopmenu.SetActive (false);
+		shopmenu2.SetActive (false);
 		item1.SetActive (false);
 		item2.SetActive (false);
 		item3.SetActive (false);
@@ -103,6 +150,21 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		item16.SetActive (false);
+		item17.SetActive (false);
+		item18.SetActive (false);
+		item19.SetActive (false);
+		item20.SetActive (false);
+		item21.SetActive (false);
+		item22.SetActive (false);
+		item23.SetActive (false);
+		item24.SetActive (false);
+		item25.SetActive (false);
+		item26.SetActive (false);
+		item27.SetActive (false);
+		item28.SetActive (false);
+		item29.SetActive (false);
+		item30.SetActive (false);
 		gold = 10;
 		unusablecolour = item1button.colors;
 		usablecolour = item1button.colors;
@@ -112,7 +174,7 @@ public class Shop : MonoBehaviour {
 		usablecolour.highlightedColor = new Color32 (0, 204, 0, 255);
 		usablecolour.normalColor = new Color32 (0, 255, 0, 255);
 		usablecolour.pressedColor = new Color32 (73, 255, 73, 255);
-		player = GameObject.FindGameObjectWithTag ("Player");
+		//player = GameObject.FindGameObjectWithTag ("Player");
 		other2 = other.GetComponent<Player_Movement> ();
 	}
 	
@@ -141,6 +203,19 @@ public class Shop : MonoBehaviour {
 	public void Exit()
 	{
 		shopmenu.SetActive (false);
+		shopmenu2.SetActive (false);
+	}
+	//Button to move to next shop menu
+	public void Shopmenu2()
+	{
+		shopmenu2.SetActive (true);
+		shopmenu.SetActive (false);
+	}
+	//Button to move to previous shop menu
+	public void Shopmenu()
+	{
+		shopmenu.SetActive (true);
+		shopmenu2.SetActive (false);
 	}
 	//Button to make item 1 stats appear
 	public void Item1()
@@ -160,6 +235,21 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		item16.SetActive (false);
+		item17.SetActive (false);
+		item18.SetActive (false);
+		item19.SetActive (false);
+		item20.SetActive (false);
+		item21.SetActive (false);
+		item22.SetActive (false);
+		item23.SetActive (false);
+		item24.SetActive (false);
+		item25.SetActive (false);
+		item26.SetActive (false);
+		item27.SetActive (false);
+		item28.SetActive (false);
+		item29.SetActive (false);
+		item30.SetActive (false);
 		//Mokes button green
 		if (gold >= 10) {
 			item1button.colors = usablecolour;
@@ -187,6 +277,21 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		item16.SetActive (false);
+		item17.SetActive (false);
+		item18.SetActive (false);
+		item19.SetActive (false);
+		item20.SetActive (false);
+		item21.SetActive (false);
+		item22.SetActive (false);
+		item23.SetActive (false);
+		item24.SetActive (false);
+		item25.SetActive (false);
+		item26.SetActive (false);
+		item27.SetActive (false);
+		item28.SetActive (false);
+		item29.SetActive (false);
+		item30.SetActive (false);
 		//Makes button green
 		if (gold >= 15) {
 			item2button.colors = usablecolour;
@@ -214,6 +319,21 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		item16.SetActive (false);
+		item17.SetActive (false);
+		item18.SetActive (false);
+		item19.SetActive (false);
+		item20.SetActive (false);
+		item21.SetActive (false);
+		item22.SetActive (false);
+		item23.SetActive (false);
+		item24.SetActive (false);
+		item25.SetActive (false);
+		item26.SetActive (false);
+		item27.SetActive (false);
+		item28.SetActive (false);
+		item29.SetActive (false);
+		item30.SetActive (false);
 		//Makes button green
 		if (gold >= 20) {
 			item3button.colors = usablecolour;
@@ -241,6 +361,21 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		item16.SetActive (false);
+		item17.SetActive (false);
+		item18.SetActive (false);
+		item19.SetActive (false);
+		item20.SetActive (false);
+		item21.SetActive (false);
+		item22.SetActive (false);
+		item23.SetActive (false);
+		item24.SetActive (false);
+		item25.SetActive (false);
+		item26.SetActive (false);
+		item27.SetActive (false);
+		item28.SetActive (false);
+		item29.SetActive (false);
+		item30.SetActive (false);
 		//Makes button green
 		if (gold >= 15) {
 			item4button.colors = usablecolour;
@@ -268,6 +403,21 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		item16.SetActive (false);
+		item17.SetActive (false);
+		item18.SetActive (false);
+		item19.SetActive (false);
+		item20.SetActive (false);
+		item21.SetActive (false);
+		item22.SetActive (false);
+		item23.SetActive (false);
+		item24.SetActive (false);
+		item25.SetActive (false);
+		item26.SetActive (false);
+		item27.SetActive (false);
+		item28.SetActive (false);
+		item29.SetActive (false);
+		item30.SetActive (false);
 		//Makes button green
 		if (gold >= 20) {
 			item5button.colors = usablecolour;
@@ -295,6 +445,21 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		item16.SetActive (false);
+		item17.SetActive (false);
+		item18.SetActive (false);
+		item19.SetActive (false);
+		item20.SetActive (false);
+		item21.SetActive (false);
+		item22.SetActive (false);
+		item23.SetActive (false);
+		item24.SetActive (false);
+		item25.SetActive (false);
+		item26.SetActive (false);
+		item27.SetActive (false);
+		item28.SetActive (false);
+		item29.SetActive (false);
+		item30.SetActive (false);
 		//Makes button green
 		if (gold >= 100) {
 			item6button.colors = usablecolour;
@@ -322,6 +487,21 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		item16.SetActive (false);
+		item17.SetActive (false);
+		item18.SetActive (false);
+		item19.SetActive (false);
+		item20.SetActive (false);
+		item21.SetActive (false);
+		item22.SetActive (false);
+		item23.SetActive (false);
+		item24.SetActive (false);
+		item25.SetActive (false);
+		item26.SetActive (false);
+		item27.SetActive (false);
+		item28.SetActive (false);
+		item29.SetActive (false);
+		item30.SetActive (false);
 		//Makes button green
 		if (gold >= 30) {
 			item7button.colors = usablecolour;
@@ -349,6 +529,21 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		item16.SetActive (false);
+		item17.SetActive (false);
+		item18.SetActive (false);
+		item19.SetActive (false);
+		item20.SetActive (false);
+		item21.SetActive (false);
+		item22.SetActive (false);
+		item23.SetActive (false);
+		item24.SetActive (false);
+		item25.SetActive (false);
+		item26.SetActive (false);
+		item27.SetActive (false);
+		item28.SetActive (false);
+		item29.SetActive (false);
+		item30.SetActive (false);
 		//Makes button green
 		if (gold >= 30) {
 			item8button.colors = usablecolour;
@@ -376,6 +571,21 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		item16.SetActive (false);
+		item17.SetActive (false);
+		item18.SetActive (false);
+		item19.SetActive (false);
+		item20.SetActive (false);
+		item21.SetActive (false);
+		item22.SetActive (false);
+		item23.SetActive (false);
+		item24.SetActive (false);
+		item25.SetActive (false);
+		item26.SetActive (false);
+		item27.SetActive (false);
+		item28.SetActive (false);
+		item29.SetActive (false);
+		item30.SetActive (false);
 		//Makes button green
 		if (gold >= 15) {
 			item9button.colors = usablecolour;
@@ -403,6 +613,21 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		item16.SetActive (false);
+		item17.SetActive (false);
+		item18.SetActive (false);
+		item19.SetActive (false);
+		item20.SetActive (false);
+		item21.SetActive (false);
+		item22.SetActive (false);
+		item23.SetActive (false);
+		item24.SetActive (false);
+		item25.SetActive (false);
+		item26.SetActive (false);
+		item27.SetActive (false);
+		item28.SetActive (false);
+		item29.SetActive (false);
+		item30.SetActive (false);
 		//Makes button green
 		if (gold >= 25) {
 			item10button.colors = usablecolour;
@@ -430,6 +655,21 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		item16.SetActive (false);
+		item17.SetActive (false);
+		item18.SetActive (false);
+		item19.SetActive (false);
+		item20.SetActive (false);
+		item21.SetActive (false);
+		item22.SetActive (false);
+		item23.SetActive (false);
+		item24.SetActive (false);
+		item25.SetActive (false);
+		item26.SetActive (false);
+		item27.SetActive (false);
+		item28.SetActive (false);
+		item29.SetActive (false);
+		item30.SetActive (false);
 		//Makes button green
 		if (gold >= 25) {
 			item11button.colors = usablecolour;
@@ -457,6 +697,21 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		item16.SetActive (false);
+		item17.SetActive (false);
+		item18.SetActive (false);
+		item19.SetActive (false);
+		item20.SetActive (false);
+		item21.SetActive (false);
+		item22.SetActive (false);
+		item23.SetActive (false);
+		item24.SetActive (false);
+		item25.SetActive (false);
+		item26.SetActive (false);
+		item27.SetActive (false);
+		item28.SetActive (false);
+		item29.SetActive (false);
+		item30.SetActive (false);
 		//Makes button green
 		if (gold >= 50) {
 			item12button.colors = usablecolour;
@@ -484,6 +739,21 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (true);
 		item14.SetActive (false);
 		item15.SetActive (false);
+		item16.SetActive (false);
+		item17.SetActive (false);
+		item18.SetActive (false);
+		item19.SetActive (false);
+		item20.SetActive (false);
+		item21.SetActive (false);
+		item22.SetActive (false);
+		item23.SetActive (false);
+		item24.SetActive (false);
+		item25.SetActive (false);
+		item26.SetActive (false);
+		item27.SetActive (false);
+		item28.SetActive (false);
+		item29.SetActive (false);
+		item30.SetActive (false);
 		//Makes button green
 		if (gold >= 15) {
 			item13button.colors = usablecolour;
@@ -511,6 +781,21 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (true);
 		item15.SetActive (false);
+		item16.SetActive (false);
+		item17.SetActive (false);
+		item18.SetActive (false);
+		item19.SetActive (false);
+		item20.SetActive (false);
+		item21.SetActive (false);
+		item22.SetActive (false);
+		item23.SetActive (false);
+		item24.SetActive (false);
+		item25.SetActive (false);
+		item26.SetActive (false);
+		item27.SetActive (false);
+		item28.SetActive (false);
+		item29.SetActive (false);
+		item30.SetActive (false);
 		//Makes button green
 		if (gold >= 20) {
 			item14button.colors = usablecolour;
@@ -538,12 +823,657 @@ public class Shop : MonoBehaviour {
 		item13.SetActive (false);
 		item14.SetActive (false);
 		item15.SetActive (true);
+		item16.SetActive (false);
+		item17.SetActive (false);
+		item18.SetActive (false);
+		item19.SetActive (false);
+		item20.SetActive (false);
+		item21.SetActive (false);
+		item22.SetActive (false);
+		item23.SetActive (false);
+		item24.SetActive (false);
+		item25.SetActive (false);
+		item26.SetActive (false);
+		item27.SetActive (false);
+		item28.SetActive (false);
+		item29.SetActive (false);
+		item30.SetActive (false);
 		//Makes button green
 		if (gold >= 25) {
 			item15button.colors = usablecolour;
 		}
 		//Makes button red
 		if (gold < 25) {
+			item15button.colors = unusablecolour;
+		}
+	}
+	//Button to make item 16 stats appear
+	public void Item16()
+	{
+		item1.SetActive (false);
+		item2.SetActive (false);
+		item3.SetActive (false);
+		item4.SetActive (false);
+		item5.SetActive (false);
+		item6.SetActive (false);
+		item7.SetActive (false);
+		item8.SetActive (false);
+		item9.SetActive (false);
+		item10.SetActive (false);
+		item11.SetActive (false);
+		item12.SetActive (false);
+		item13.SetActive (false);
+		item14.SetActive (false);
+		item15.SetActive (false);
+		item16.SetActive (true);
+		item17.SetActive (false);
+		item18.SetActive (false);
+		item19.SetActive (false);
+		item20.SetActive (false);
+		item21.SetActive (false);
+		item22.SetActive (false);
+		item23.SetActive (false);
+		item24.SetActive (false);
+		item25.SetActive (false);
+		item26.SetActive (false);
+		item27.SetActive (false);
+		item28.SetActive (false);
+		item29.SetActive (false);
+		item30.SetActive (false);
+		//Makes button green
+		if (gold >= 40) {
+			item15button.colors = usablecolour;
+		}
+		//Makes button red
+		if (gold < 40) {
+			item15button.colors = unusablecolour;
+		}
+	}
+	//Button to make item 17 stats appear
+	public void Item17()
+	{
+		item1.SetActive (false);
+		item2.SetActive (false);
+		item3.SetActive (false);
+		item4.SetActive (false);
+		item5.SetActive (false);
+		item6.SetActive (false);
+		item7.SetActive (false);
+		item8.SetActive (false);
+		item9.SetActive (false);
+		item10.SetActive (false);
+		item11.SetActive (false);
+		item12.SetActive (false);
+		item13.SetActive (false);
+		item14.SetActive (false);
+		item15.SetActive (false);
+		item16.SetActive (false);
+		item17.SetActive (true);
+		item18.SetActive (false);
+		item19.SetActive (false);
+		item20.SetActive (false);
+		item21.SetActive (false);
+		item22.SetActive (false);
+		item23.SetActive (false);
+		item24.SetActive (false);
+		item25.SetActive (false);
+		item26.SetActive (false);
+		item27.SetActive (false);
+		item28.SetActive (false);
+		item29.SetActive (false);
+		item30.SetActive (false);
+		//Makes button green
+		if (gold >= 35) {
+			item15button.colors = usablecolour;
+		}
+		//Makes button red
+		if (gold < 35) {
+			item15button.colors = unusablecolour;
+		}
+	}
+	//Button to make item 18 stats appear
+	public void Item18()
+	{
+		item1.SetActive (false);
+		item2.SetActive (false);
+		item3.SetActive (false);
+		item4.SetActive (false);
+		item5.SetActive (false);
+		item6.SetActive (false);
+		item7.SetActive (false);
+		item8.SetActive (false);
+		item9.SetActive (false);
+		item10.SetActive (false);
+		item11.SetActive (false);
+		item12.SetActive (false);
+		item13.SetActive (false);
+		item14.SetActive (false);
+		item15.SetActive (false);
+		item16.SetActive (false);
+		item17.SetActive (false);
+		item18.SetActive (true);
+		item19.SetActive (false);
+		item20.SetActive (false);
+		item21.SetActive (false);
+		item22.SetActive (false);
+		item23.SetActive (false);
+		item24.SetActive (false);
+		item25.SetActive (false);
+		item26.SetActive (false);
+		item27.SetActive (false);
+		item28.SetActive (false);
+		item29.SetActive (false);
+		item30.SetActive (false);
+		//Makes button green
+		if (gold >= 30) {
+			item15button.colors = usablecolour;
+		}
+		//Makes button red
+		if (gold < 30) {
+			item15button.colors = unusablecolour;
+		}
+	}
+	//Button to make item 19 stats appear
+	public void Item19()
+	{
+		item1.SetActive (false);
+		item2.SetActive (false);
+		item3.SetActive (false);
+		item4.SetActive (false);
+		item5.SetActive (false);
+		item6.SetActive (false);
+		item7.SetActive (false);
+		item8.SetActive (false);
+		item9.SetActive (false);
+		item10.SetActive (false);
+		item11.SetActive (false);
+		item12.SetActive (false);
+		item13.SetActive (false);
+		item14.SetActive (false);
+		item15.SetActive (false);
+		item16.SetActive (false);
+		item17.SetActive (false);
+		item18.SetActive (false);
+		item19.SetActive (true);
+		item20.SetActive (false);
+		item21.SetActive (false);
+		item22.SetActive (false);
+		item23.SetActive (false);
+		item24.SetActive (false);
+		item25.SetActive (false);
+		item26.SetActive (false);
+		item27.SetActive (false);
+		item28.SetActive (false);
+		item29.SetActive (false);
+		item30.SetActive (false);
+		//Makes button green
+		if (gold >= 65) {
+			item15button.colors = usablecolour;
+		}
+		//Makes button red
+		if (gold < 65) {
+			item15button.colors = unusablecolour;
+		}
+	}
+	//Button to make item 20 stats appear
+	public void Item20()
+	{
+		item1.SetActive (false);
+		item2.SetActive (false);
+		item3.SetActive (false);
+		item4.SetActive (false);
+		item5.SetActive (false);
+		item6.SetActive (false);
+		item7.SetActive (false);
+		item8.SetActive (false);
+		item9.SetActive (false);
+		item10.SetActive (false);
+		item11.SetActive (false);
+		item12.SetActive (false);
+		item13.SetActive (false);
+		item14.SetActive (false);
+		item15.SetActive (false);
+		item16.SetActive (false);
+		item17.SetActive (false);
+		item18.SetActive (false);
+		item19.SetActive (false);
+		item20.SetActive (true);
+		item21.SetActive (false);
+		item22.SetActive (false);
+		item23.SetActive (false);
+		item24.SetActive (false);
+		item25.SetActive (false);
+		item26.SetActive (false);
+		item27.SetActive (false);
+		item28.SetActive (false);
+		item29.SetActive (false);
+		item30.SetActive (false);
+		//Makes button green
+		if (gold >= 35) {
+			item15button.colors = usablecolour;
+		}
+		//Makes button red
+		if (gold < 35) {
+			item15button.colors = unusablecolour;
+		}
+	}
+	//Button to make item 21 stats appear
+	public void Item21()
+	{
+		item1.SetActive (false);
+		item2.SetActive (false);
+		item3.SetActive (false);
+		item4.SetActive (false);
+		item5.SetActive (false);
+		item6.SetActive (false);
+		item7.SetActive (false);
+		item8.SetActive (false);
+		item9.SetActive (false);
+		item10.SetActive (false);
+		item11.SetActive (false);
+		item12.SetActive (false);
+		item13.SetActive (false);
+		item14.SetActive (false);
+		item15.SetActive (false);
+		item16.SetActive (false);
+		item17.SetActive (false);
+		item18.SetActive (false);
+		item19.SetActive (false);
+		item20.SetActive (false);
+		item21.SetActive (true);
+		item22.SetActive (false);
+		item23.SetActive (false);
+		item24.SetActive (false);
+		item25.SetActive (false);
+		item26.SetActive (false);
+		item27.SetActive (false);
+		item28.SetActive (false);
+		item29.SetActive (false);
+		item30.SetActive (false);
+		//Makes button green
+		if (gold >= 50) {
+			item15button.colors = usablecolour;
+		}
+		//Makes button red
+		if (gold < 50) {
+			item15button.colors = unusablecolour;
+		}
+	}
+	//Button to make item 22 stats appear
+	public void Item22()
+	{
+		item1.SetActive (false);
+		item2.SetActive (false);
+		item3.SetActive (false);
+		item4.SetActive (false);
+		item5.SetActive (false);
+		item6.SetActive (false);
+		item7.SetActive (false);
+		item8.SetActive (false);
+		item9.SetActive (false);
+		item10.SetActive (false);
+		item11.SetActive (false);
+		item12.SetActive (false);
+		item13.SetActive (false);
+		item14.SetActive (false);
+		item15.SetActive (false);
+		item16.SetActive (false);
+		item17.SetActive (false);
+		item18.SetActive (false);
+		item19.SetActive (false);
+		item20.SetActive (false);
+		item21.SetActive (false);
+		item22.SetActive (true);
+		item23.SetActive (false);
+		item24.SetActive (false);
+		item25.SetActive (false);
+		item26.SetActive (false);
+		item27.SetActive (false);
+		item28.SetActive (false);
+		item29.SetActive (false);
+		item30.SetActive (false);
+		//Makes button green
+		if (gold >= 50) {
+			item15button.colors = usablecolour;
+		}
+		//Makes button red
+		if (gold < 50) {
+			item15button.colors = unusablecolour;
+		}
+	}
+	//Button to make item 23 stats appear
+	public void Item23()
+	{
+		item1.SetActive (false);
+		item2.SetActive (false);
+		item3.SetActive (false);
+		item4.SetActive (false);
+		item5.SetActive (false);
+		item6.SetActive (false);
+		item7.SetActive (false);
+		item8.SetActive (false);
+		item9.SetActive (false);
+		item10.SetActive (false);
+		item11.SetActive (false);
+		item12.SetActive (false);
+		item13.SetActive (false);
+		item14.SetActive (false);
+		item15.SetActive (false);
+		item16.SetActive (false);
+		item17.SetActive (false);
+		item18.SetActive (false);
+		item19.SetActive (false);
+		item20.SetActive (false);
+		item21.SetActive (false);
+		item22.SetActive (false);
+		item23.SetActive (true);
+		item24.SetActive (false);
+		item25.SetActive (false);
+		item26.SetActive (false);
+		item27.SetActive (false);
+		item28.SetActive (false);
+		item29.SetActive (false);
+		item30.SetActive (false);
+		//Makes button green
+		if (gold >= 45) {
+			item15button.colors = usablecolour;
+		}
+		//Makes button red
+		if (gold < 45) {
+			item15button.colors = unusablecolour;
+		}
+	}
+	//Button to make item 24 stats appear
+	public void Item24()
+	{
+		item1.SetActive (false);
+		item2.SetActive (false);
+		item3.SetActive (false);
+		item4.SetActive (false);
+		item5.SetActive (false);
+		item6.SetActive (false);
+		item7.SetActive (false);
+		item8.SetActive (false);
+		item9.SetActive (false);
+		item10.SetActive (false);
+		item11.SetActive (false);
+		item12.SetActive (false);
+		item13.SetActive (false);
+		item14.SetActive (false);
+		item15.SetActive (false);
+		item16.SetActive (false);
+		item17.SetActive (false);
+		item18.SetActive (false);
+		item19.SetActive (false);
+		item20.SetActive (false);
+		item21.SetActive (false);
+		item22.SetActive (false);
+		item23.SetActive (false);
+		item24.SetActive (true);
+		item25.SetActive (false);
+		item26.SetActive (false);
+		item27.SetActive (false);
+		item28.SetActive (false);
+		item29.SetActive (false);
+		item30.SetActive (false);
+		//Makes button green
+		if (gold >= 35) {
+			item15button.colors = usablecolour;
+		}
+		//Makes button red
+		if (gold < 35) {
+			item15button.colors = unusablecolour;
+		}
+	}
+	//Button to make item 25 stats appear
+	public void Item25()
+	{
+		item1.SetActive (false);
+		item2.SetActive (false);
+		item3.SetActive (false);
+		item4.SetActive (false);
+		item5.SetActive (false);
+		item6.SetActive (false);
+		item7.SetActive (false);
+		item8.SetActive (false);
+		item9.SetActive (false);
+		item10.SetActive (false);
+		item11.SetActive (false);
+		item12.SetActive (false);
+		item13.SetActive (false);
+		item14.SetActive (false);
+		item15.SetActive (false);
+		item16.SetActive (false);
+		item17.SetActive (false);
+		item18.SetActive (false);
+		item19.SetActive (false);
+		item20.SetActive (false);
+		item21.SetActive (false);
+		item22.SetActive (false);
+		item23.SetActive (false);
+		item24.SetActive (false);
+		item25.SetActive (true);
+		item26.SetActive (false);
+		item27.SetActive (false);
+		item28.SetActive (false);
+		item29.SetActive (false);
+		item30.SetActive (false);
+		//Makes button green
+		if (gold >= 40) {
+			item15button.colors = usablecolour;
+		}
+		//Makes button red
+		if (gold < 40) {
+			item15button.colors = unusablecolour;
+		}
+	}
+	//Button to make item 26 stats appear
+	public void Item26()
+	{
+		item1.SetActive (false);
+		item2.SetActive (false);
+		item3.SetActive (false);
+		item4.SetActive (false);
+		item5.SetActive (false);
+		item6.SetActive (false);
+		item7.SetActive (false);
+		item8.SetActive (false);
+		item9.SetActive (false);
+		item10.SetActive (false);
+		item11.SetActive (false);
+		item12.SetActive (false);
+		item13.SetActive (false);
+		item14.SetActive (false);
+		item15.SetActive (false);
+		item16.SetActive (false);
+		item17.SetActive (false);
+		item18.SetActive (false);
+		item19.SetActive (false);
+		item20.SetActive (false);
+		item21.SetActive (false);
+		item22.SetActive (false);
+		item23.SetActive (false);
+		item24.SetActive (false);
+		item25.SetActive (false);
+		item26.SetActive (true);
+		item27.SetActive (false);
+		item28.SetActive (false);
+		item29.SetActive (false);
+		item30.SetActive (false);
+		//Makes button green
+		if (gold >= 75) {
+			item15button.colors = usablecolour;
+		}
+		//Makes button red
+		if (gold < 75) {
+			item15button.colors = unusablecolour;
+		}
+	}
+	//Button to make item 27 stats appear
+	public void Item27()
+	{
+		item1.SetActive (false);
+		item2.SetActive (false);
+		item3.SetActive (false);
+		item4.SetActive (false);
+		item5.SetActive (false);
+		item6.SetActive (false);
+		item7.SetActive (false);
+		item8.SetActive (false);
+		item9.SetActive (false);
+		item10.SetActive (false);
+		item11.SetActive (false);
+		item12.SetActive (false);
+		item13.SetActive (false);
+		item14.SetActive (false);
+		item15.SetActive (false);
+		item16.SetActive (false);
+		item17.SetActive (false);
+		item18.SetActive (false);
+		item19.SetActive (false);
+		item20.SetActive (false);
+		item21.SetActive (false);
+		item22.SetActive (false);
+		item23.SetActive (false);
+		item24.SetActive (false);
+		item25.SetActive (false);
+		item26.SetActive (false);
+		item27.SetActive (true);
+		item28.SetActive (false);
+		item29.SetActive (false);
+		item30.SetActive (false);
+		//Makes button green
+		if (gold >= 70) {
+			item15button.colors = usablecolour;
+		}
+		//Makes button red
+		if (gold < 70) {
+			item15button.colors = unusablecolour;
+		}
+	}
+	//Button to make item 28 stats appear
+	public void Item28()
+	{
+		item1.SetActive (false);
+		item2.SetActive (false);
+		item3.SetActive (false);
+		item4.SetActive (false);
+		item5.SetActive (false);
+		item6.SetActive (false);
+		item7.SetActive (false);
+		item8.SetActive (false);
+		item9.SetActive (false);
+		item10.SetActive (false);
+		item11.SetActive (false);
+		item12.SetActive (false);
+		item13.SetActive (false);
+		item14.SetActive (false);
+		item15.SetActive (false);
+		item16.SetActive (false);
+		item17.SetActive (false);
+		item18.SetActive (false);
+		item19.SetActive (false);
+		item20.SetActive (false);
+		item21.SetActive (false);
+		item22.SetActive (false);
+		item23.SetActive (false);
+		item24.SetActive (false);
+		item25.SetActive (false);
+		item26.SetActive (false);
+		item27.SetActive (false);
+		item28.SetActive (true);
+		item29.SetActive (false);
+		item30.SetActive (false);
+		//Makes button green
+		if (gold >= 90) {
+			item15button.colors = usablecolour;
+		}
+		//Makes button red
+		if (gold < 90) {
+			item15button.colors = unusablecolour;
+		}
+	}
+	//Button to make item 29 stats appear
+	public void Item29()
+	{
+		item1.SetActive (false);
+		item2.SetActive (false);
+		item3.SetActive (false);
+		item4.SetActive (false);
+		item5.SetActive (false);
+		item6.SetActive (false);
+		item7.SetActive (false);
+		item8.SetActive (false);
+		item9.SetActive (false);
+		item10.SetActive (false);
+		item11.SetActive (false);
+		item12.SetActive (false);
+		item13.SetActive (false);
+		item14.SetActive (false);
+		item15.SetActive (false);
+		item16.SetActive (false);
+		item17.SetActive (false);
+		item18.SetActive (false);
+		item19.SetActive (false);
+		item20.SetActive (false);
+		item21.SetActive (false);
+		item22.SetActive (false);
+		item23.SetActive (false);
+		item24.SetActive (false);
+		item25.SetActive (false);
+		item26.SetActive (false);
+		item27.SetActive (false);
+		item28.SetActive (false);
+		item29.SetActive (true);
+		item30.SetActive (false);
+		//Makes button green
+		if (gold >= 75) {
+			item15button.colors = usablecolour;
+		}
+		//Makes button red
+		if (gold < 75) {
+			item15button.colors = unusablecolour;
+		}
+	}
+	//Button to make item 30 stats appear
+	public void Item30()
+	{
+		item1.SetActive (false);
+		item2.SetActive (false);
+		item3.SetActive (false);
+		item4.SetActive (false);
+		item5.SetActive (false);
+		item6.SetActive (false);
+		item7.SetActive (false);
+		item8.SetActive (false);
+		item9.SetActive (false);
+		item10.SetActive (false);
+		item11.SetActive (false);
+		item12.SetActive (false);
+		item13.SetActive (false);
+		item14.SetActive (false);
+		item15.SetActive (false);
+		item16.SetActive (false);
+		item17.SetActive (false);
+		item18.SetActive (false);
+		item19.SetActive (false);
+		item20.SetActive (false);
+		item21.SetActive (false);
+		item22.SetActive (false);
+		item23.SetActive (false);
+		item24.SetActive (false);
+		item25.SetActive (false);
+		item26.SetActive (false);
+		item27.SetActive (false);
+		item28.SetActive (false);
+		item29.SetActive (false);
+		item30.SetActive (true);
+		//Makes button green
+		if (gold >= 35) {
+			item15button.colors = usablecolour;
+		}
+		//Makes button red
+		if (gold < 35) {
 			item15button.colors = unusablecolour;
 		}
 	}
