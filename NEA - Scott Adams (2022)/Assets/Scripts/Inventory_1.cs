@@ -34,6 +34,8 @@ public class Inventory_1 : MonoBehaviour {
 	public Sprite ring5;
 	public Sprite ring6;
 	public Sprite shield;
+	public Sprite warhammer;
+	public Sprite mountainsword;
 	public Sprite key;
 	public Sprite potiondoubledamage;
 	public Sprite potionweak;

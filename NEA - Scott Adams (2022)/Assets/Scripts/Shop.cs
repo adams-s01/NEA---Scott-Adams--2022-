@@ -79,7 +79,7 @@ public class Shop : MonoBehaviour {
 	ColorBlock usablecolour;
 	float playerx;
 	float playery;
-	GameObject player;
+	public GameObject player;
 	public GameObject sword;
 	public GameObject apple;
 	public GameObject armour1;
@@ -96,6 +96,21 @@ public class Shop : MonoBehaviour {
 	public GameObject ring;
 	public GameObject potion;
 	public GameObject dagger;
+	public GameObject ring3;
+	public GameObject warhammer;
+	public GameObject mountainsword;
+	public GameObject greyarmour;
+	public GameObject boots2;
+	public GameObject wand;
+	public GameObject greygloves;
+	public GameObject greyboots;
+	public GameObject bow3;
+	public GameObject axe;
+	public GameObject ring4;
+	public GameObject darkgloves;
+	public GameObject darkarmour;
+	public GameObject darkboots;
+	public GameObject cheese;
 	public GameObject other;
 	private Player_Movement other2;
 
@@ -165,7 +180,7 @@ public class Shop : MonoBehaviour {
 		item28.SetActive (false);
 		item29.SetActive (false);
 		item30.SetActive (false);
-		gold = 10;
+		gold = 1000;
 		unusablecolour = item1button.colors;
 		usablecolour = item1button.colors;
 		unusablecolour.highlightedColor = new Color32 (204, 0, 0, 255);
@@ -1655,6 +1670,186 @@ public class Shop : MonoBehaviour {
 			playerx = player.transform.position.x;
 			playery = player.transform.position.y;
 			Instantiate (dagger, new Vector2 (playerx, playery), Quaternion.identity);
+		}
+	}
+	//Activates Button 16
+	public void Button16()
+	{
+		//Button 16 only works when gold is 40 or over, creates image of item
+		if(gold>=40)
+		{
+			gold -= 40;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (ring3, new Vector2 (playerx, playery), Quaternion.identity);
+		}
+	}
+	//Activates Button 17
+	public void Button17()
+	{
+		//Button 17 only works when gold is 35 or over, creates image of item
+		if(gold>=35)
+		{
+			gold -= 35;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (warhammer, new Vector2 (playerx, playery), Quaternion.identity);
+		}
+	}
+	//Activates Button 18
+	public void Button18()
+	{
+		//Button 18 only works when gold is 30 or over, creates image of item
+		if(gold>=30)
+		{
+			gold -= 30;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (mountainsword, new Vector2 (playerx, playery), Quaternion.identity);
+		}
+	}
+	//Activates Button 19
+	public void Button19()
+	{
+		//Button 19 only works when gold is 65 or over, creates image of item
+		if(gold>=65)
+		{
+			gold -= 65;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (greyarmour, new Vector2 (playerx, playery), Quaternion.identity);
+		}
+	}
+	//Activates Button 20
+	public void Button20()
+	{
+		//Button 20 only works when gold is 35 or over, creates image of item
+		if(gold>=35)
+		{
+			gold -= 35;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (boots2, new Vector2 (playerx, playery), Quaternion.identity);
+		}
+	}
+	//Activates Button 21
+	public void Button21()
+	{
+		//Button 21 only works when gold is 50 or over, creates image of item
+		if(gold>=50)
+		{
+			gold -= 50;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (wand, new Vector2 (playerx, playery), Quaternion.identity);
+		}
+	}
+	//Activates Button 22
+	public void Button22()
+	{
+		//Button 22 only works when gold is 50 or over, creates image of item
+		if(gold>=50)
+		{
+			gold -= 50;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (greygloves, new Vector2 (playerx, playery), Quaternion.identity);
+		}
+	}
+	//Activates Button 23
+	public void Button23()
+	{
+		//Button 23 only works when gold is 45 or over, creates image of item
+		if(gold>=45)
+		{
+			gold -= 45;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (greyboots, new Vector2 (playerx, playery), Quaternion.identity);
+		}
+	}
+	//Activates Button 24
+	public void Button24()
+	{
+		//Button 24 only works when gold is 35 or over, creates image of item
+		if(gold>=35)
+		{
+			gold -= 35;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (bow3, new Vector2 (playerx, playery), Quaternion.identity);
+		}
+	}
+	//Activates Button 25
+	public void Button25()
+	{
+		//Button 25 only works when gold is 40 or over, creates image of item
+		if(gold>=40)
+		{
+			gold -= 40;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (axe, new Vector2 (playerx, playery), Quaternion.identity);
+		}
+	}
+	//Activates Button 26
+	public void Button26()
+	{
+		//Button 26 only works when gold is 75 or over, creates image of item
+		if(gold>=75)
+		{
+			gold -= 75;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (ring4, new Vector2 (playerx, playery), Quaternion.identity);
+		}
+	}
+	//Activates Button 27
+	public void Button27()
+	{
+		//Button 27 only works when gold is 70 or over, creates image of item
+		if(gold>=70)
+		{
+			gold -= 70;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (darkgloves, new Vector2 (playerx, playery), Quaternion.identity);
+		}
+	}
+	//Activates Button 28
+	public void Button28()
+	{
+		//Button 28 only works when gold is 90 or over, creates image of item
+		if(gold>=90)
+		{
+			gold -= 90;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (darkarmour, new Vector2 (playerx, playery), Quaternion.identity);
+		}
+	}
+	//Activates Button 29
+	public void Button29()
+	{
+		//Button 29 only works when gold is 75 or over, creates image of item
+		if(gold>=75)
+		{
+			gold -= 75;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (darkboots, new Vector2 (playerx, playery), Quaternion.identity);
+		}
+	}
+	//Activates Button 30
+	public void Button30()
+	{
+		//Button 30 only works when gold is 35 or over, creates image of item
+		if(gold>=35)
+		{
+			gold -= 35;
+			playerx = player.transform.position.x;
+			playery = player.transform.position.y;
+			Instantiate (cheese, new Vector2 (playerx, playery), Quaternion.identity);
 		}
 	}
 
