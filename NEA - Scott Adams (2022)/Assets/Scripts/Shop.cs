@@ -897,11 +897,11 @@ public class Shop : MonoBehaviour {
 		item30.SetActive (false);
 		//Makes button green
 		if (gold >= 40) {
-			item15button.colors = usablecolour;
+			item16button.colors = usablecolour;
 		}
 		//Makes button red
 		if (gold < 40) {
-			item15button.colors = unusablecolour;
+			item16button.colors = unusablecolour;
 		}
 	}
 	//Button to make item 17 stats appear
@@ -939,11 +939,11 @@ public class Shop : MonoBehaviour {
 		item30.SetActive (false);
 		//Makes button green
 		if (gold >= 35) {
-			item15button.colors = usablecolour;
+			item17button.colors = usablecolour;
 		}
 		//Makes button red
 		if (gold < 35) {
-			item15button.colors = unusablecolour;
+			item17button.colors = unusablecolour;
 		}
 	}
 	//Button to make item 18 stats appear
@@ -981,11 +981,11 @@ public class Shop : MonoBehaviour {
 		item30.SetActive (false);
 		//Makes button green
 		if (gold >= 30) {
-			item15button.colors = usablecolour;
+			item18button.colors = usablecolour;
 		}
 		//Makes button red
 		if (gold < 30) {
-			item15button.colors = unusablecolour;
+			item18button.colors = unusablecolour;
 		}
 	}
 	//Button to make item 19 stats appear
@@ -1023,11 +1023,11 @@ public class Shop : MonoBehaviour {
 		item30.SetActive (false);
 		//Makes button green
 		if (gold >= 65) {
-			item15button.colors = usablecolour;
+			item19button.colors = usablecolour;
 		}
 		//Makes button red
 		if (gold < 65) {
-			item15button.colors = unusablecolour;
+			item19button.colors = unusablecolour;
 		}
 	}
 	//Button to make item 20 stats appear
@@ -1065,11 +1065,11 @@ public class Shop : MonoBehaviour {
 		item30.SetActive (false);
 		//Makes button green
 		if (gold >= 35) {
-			item15button.colors = usablecolour;
+			item20button.colors = usablecolour;
 		}
 		//Makes button red
 		if (gold < 35) {
-			item15button.colors = unusablecolour;
+			item20button.colors = unusablecolour;
 		}
 	}
 	//Button to make item 21 stats appear
@@ -1107,11 +1107,11 @@ public class Shop : MonoBehaviour {
 		item30.SetActive (false);
 		//Makes button green
 		if (gold >= 50) {
-			item15button.colors = usablecolour;
+			item21button.colors = usablecolour;
 		}
 		//Makes button red
 		if (gold < 50) {
-			item15button.colors = unusablecolour;
+			item21button.colors = unusablecolour;
 		}
 	}
 	//Button to make item 22 stats appear
@@ -1149,11 +1149,11 @@ public class Shop : MonoBehaviour {
 		item30.SetActive (false);
 		//Makes button green
 		if (gold >= 50) {
-			item15button.colors = usablecolour;
+			item22button.colors = usablecolour;
 		}
 		//Makes button red
 		if (gold < 50) {
-			item15button.colors = unusablecolour;
+			item22button.colors = unusablecolour;
 		}
 	}
 	//Button to make item 23 stats appear
@@ -1191,11 +1191,11 @@ public class Shop : MonoBehaviour {
 		item30.SetActive (false);
 		//Makes button green
 		if (gold >= 45) {
-			item15button.colors = usablecolour;
+			item23button.colors = usablecolour;
 		}
 		//Makes button red
 		if (gold < 45) {
-			item15button.colors = unusablecolour;
+			item23button.colors = unusablecolour;
 		}
 	}
 	//Button to make item 24 stats appear
@@ -1233,11 +1233,11 @@ public class Shop : MonoBehaviour {
 		item30.SetActive (false);
 		//Makes button green
 		if (gold >= 35) {
-			item15button.colors = usablecolour;
+			item24button.colors = usablecolour;
 		}
 		//Makes button red
 		if (gold < 35) {
-			item15button.colors = unusablecolour;
+			item24button.colors = unusablecolour;
 		}
 	}
 	//Button to make item 25 stats appear
@@ -1275,11 +1275,11 @@ public class Shop : MonoBehaviour {
 		item30.SetActive (false);
 		//Makes button green
 		if (gold >= 40) {
-			item15button.colors = usablecolour;
+			item25button.colors = usablecolour;
 		}
 		//Makes button red
 		if (gold < 40) {
-			item15button.colors = unusablecolour;
+			item25button.colors = unusablecolour;
 		}
 	}
 	//Button to make item 26 stats appear
@@ -1317,11 +1317,11 @@ public class Shop : MonoBehaviour {
 		item30.SetActive (false);
 		//Makes button green
 		if (gold >= 75) {
-			item15button.colors = usablecolour;
+			item26button.colors = usablecolour;
 		}
 		//Makes button red
 		if (gold < 75) {
-			item15button.colors = unusablecolour;
+			item26button.colors = unusablecolour;
 		}
 	}
 	//Button to make item 27 stats appear
@@ -1359,11 +1359,11 @@ public class Shop : MonoBehaviour {
 		item30.SetActive (false);
 		//Makes button green
 		if (gold >= 70) {
-			item15button.colors = usablecolour;
+			item27button.colors = usablecolour;
 		}
 		//Makes button red
 		if (gold < 70) {
-			item15button.colors = unusablecolour;
+			item27button.colors = unusablecolour;
 		}
 	}
 	//Button to make item 28 stats appear
@@ -1401,11 +1401,11 @@ public class Shop : MonoBehaviour {
 		item30.SetActive (false);
 		//Makes button green
 		if (gold >= 90) {
-			item15button.colors = usablecolour;
+			item28button.colors = usablecolour;
 		}
 		//Makes button red
 		if (gold < 90) {
-			item15button.colors = unusablecolour;
+			item28button.colors = unusablecolour;
 		}
 	}
 	//Button to make item 29 stats appear
@@ -1443,11 +1443,11 @@ public class Shop : MonoBehaviour {
 		item30.SetActive (false);
 		//Makes button green
 		if (gold >= 75) {
-			item15button.colors = usablecolour;
+			item29button.colors = usablecolour;
 		}
 		//Makes button red
 		if (gold < 75) {
-			item15button.colors = unusablecolour;
+			item29button.colors = unusablecolour;
 		}
 	}
 	//Button to make item 30 stats appear
@@ -1485,11 +1485,11 @@ public class Shop : MonoBehaviour {
 		item30.SetActive (true);
 		//Makes button green
 		if (gold >= 35) {
-			item15button.colors = usablecolour;
+			item30button.colors = usablecolour;
 		}
 		//Makes button red
 		if (gold < 35) {
-			item15button.colors = unusablecolour;
+			item30button.colors = unusablecolour;
 		}
 	}
 	//Activates Button 1

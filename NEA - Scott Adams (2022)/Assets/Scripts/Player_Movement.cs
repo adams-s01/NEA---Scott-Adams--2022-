@@ -123,6 +123,11 @@ public class Player_Movement : MonoBehaviour {
 			playerhealth += 10;
 			other3.playerhealth3 = false;
 		}
+		//Adds 20 health from eating cheese
+		if (other3.playerhealth4 == true) {
+			playerhealth += 20;
+			other3.playerhealth4 = false;
+		}
 		//If all lives lost, go to start screen
 		if (lives == 0) {
 			SceneManager.LoadScene (0);

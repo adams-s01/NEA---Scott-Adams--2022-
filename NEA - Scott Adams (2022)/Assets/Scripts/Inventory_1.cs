@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 2
-* Last Edited: Sprint 7
+* Last Edited: Sprint 9
 * Purpose: Causes an inventory to exist
 */
 using System.Collections;
@@ -36,6 +36,17 @@ public class Inventory_1 : MonoBehaviour {
 	public Sprite shield;
 	public Sprite warhammer;
 	public Sprite mountainsword;
+	public Sprite greyarmour;
+	public Sprite boots2;
+	public Sprite wand;
+	public Sprite greygloves;
+	public Sprite greyboots;
+	public Sprite bow3;
+	public Sprite axe;
+	public Sprite darkgloves;
+	public Sprite darkarmour;
+	public Sprite darkboots;
+	public Sprite cheese;
 	public Sprite key;
 	public Sprite potiondoubledamage;
 	public Sprite potionweak;
@@ -80,6 +91,19 @@ public class Inventory_1 : MonoBehaviour {
 	public GameObject hidemage;
 	public GameObject hidering;
 	public GameObject hideshield;
+	public GameObject hidewarhammer;
+	public GameObject hidemountainsword;
+	public GameObject hidegreyarmour;
+	public GameObject hideboots2;
+	public GameObject hidewand;
+	public GameObject hidegreygloves;
+	public GameObject hidegreyboots;
+	public GameObject hidebow3;
+	public GameObject hideaxe;
+	public GameObject hidedarkgloves;
+	public GameObject hidedarkarmour;
+	public GameObject hidedarkboots;
+	public GameObject hidecheese;
 	public GameObject hidepotiondouble;
 	public GameObject hidepotionweak;
 	bool sleep;
@@ -90,6 +114,7 @@ public class Inventory_1 : MonoBehaviour {
 	public bool playerhealth;
 	public bool playerhealth2;
 	public bool playerhealth3;
+	public bool playerhealth4;
 	public bool keytrue;
 	public GameObject armourcanvas;
 	public GameObject ringcanvas;
@@ -151,7 +176,19 @@ public class Inventory_1 : MonoBehaviour {
 		hidemage.SetActive (false);
 		hidering.SetActive (false);
 		hideshield.SetActive (false);
-
+		hidewarhammer.SetActive (false);
+		hidemountainsword.SetActive (false);
+		hidegreyarmour.SetActive (false);
+		hideboots2.SetActive (false);
+		hidewand.SetActive (false);
+		hidegreygloves.SetActive (false);
+		hidegreyboots.SetActive (false);
+		hidebow3.SetActive (false);
+		hideaxe.SetActive (false);
+		hidedarkgloves.SetActive (false);
+		hidedarkarmour.SetActive (false);
+		hidedarkboots.SetActive (false);
+		hidecheese.SetActive (false);
 
 		sleep = false;
 		playerspeedtrue = false;
@@ -261,6 +298,45 @@ public class Inventory_1 : MonoBehaviour {
 					if (gameObject.name == "shield(Clone)") {
 						inventory [i + 0].GetComponent<Image> ().sprite = shield;
 					}
+					if (gameObject.name == "warhammer(Clone)") {
+						inventory [i + 0].GetComponent<Image> ().sprite = warhammer;
+					}
+					if (gameObject.name == "mountainsword(Clone)") {
+						inventory [i + 0].GetComponent<Image> ().sprite = mountainsword;
+					}
+					if (gameObject.name == "greyarmour(Clone)") {
+						inventory [i + 0].GetComponent<Image> ().sprite = greyarmour;
+					}
+					if (gameObject.name == "boots2(Clone)") {
+						inventory [i + 0].GetComponent<Image> ().sprite = boots2;
+					}
+					if (gameObject.name == "wand(Clone)") {
+						inventory [i + 0].GetComponent<Image> ().sprite = wand;
+					}
+					if (gameObject.name == "greygloves(Clone)") {
+						inventory [i + 0].GetComponent<Image> ().sprite = greygloves;
+					}
+					if (gameObject.name == "greyboots(Clone)") {
+						inventory [i + 0].GetComponent<Image> ().sprite = greyboots;
+					}
+					if (gameObject.name == "bow3(Clone)") {
+						inventory [i + 0].GetComponent<Image> ().sprite = bow3;
+					}
+					if (gameObject.name == "axe(Clone)") {
+						inventory [i + 0].GetComponent<Image> ().sprite = axe;
+					}
+					if (gameObject.name == "darkgloves(Clone)") {
+						inventory [i + 0].GetComponent<Image> ().sprite = darkgloves;
+					}
+					if (gameObject.name == "darkarmour(Clone)") {
+						inventory [i + 0].GetComponent<Image> ().sprite = darkarmour;
+					}
+					if (gameObject.name == "darkboots(Clone)") {
+						inventory [i + 0].GetComponent<Image> ().sprite = darkboots;
+					}
+					if (gameObject.name == "cheese(Clone)") {
+						inventory [i + 0].GetComponent<Image> ().sprite = cheese;
+					}
 					if (gameObject.name == "Key_B(Clone)") {
 						inventory [i + 0].GetComponent<Image> ().sprite = key;
 					}
@@ -301,6 +377,18 @@ public class Inventory_1 : MonoBehaviour {
 			armourimage.GetComponent<Image> ().sprite = armour2;
 			armourarmourstat = 5;
 		}
+		if (weaponname == "greyarmour") {
+			weaponname = null;
+			inventory [inventory1].GetComponent<Image> ().sprite = null;
+			armourimage.GetComponent<Image> ().sprite = greyarmour;
+			armourarmourstat = 7;
+		}
+		if (weaponname == "darkarmour") {
+			weaponname = null;
+			inventory [inventory1].GetComponent<Image> ().sprite = null;
+			armourimage.GetComponent<Image> ().sprite = darkarmour;
+			armourarmourstat = 10;
+		}
 		if (weaponname == "belt") {
 			weaponname = null;
 			inventory [inventory1].GetComponent<Image> ().sprite = null;
@@ -312,6 +400,18 @@ public class Inventory_1 : MonoBehaviour {
 			inventory [inventory1].GetComponent<Image> ().sprite = null;
 			glovesimage.GetComponent<Image> ().sprite = gloves;
 			armourglovesstat = 3;
+		}
+		if (weaponname == "greygloves") {
+			weaponname = null;
+			inventory [inventory1].GetComponent<Image> ().sprite = null;
+			glovesimage.GetComponent<Image> ().sprite = greygloves;
+			armourglovesstat = 5;
+		}
+		if (weaponname == "darkgloves") {
+			weaponname = null;
+			inventory [inventory1].GetComponent<Image> ().sprite = null;
+			glovesimage.GetComponent<Image> ().sprite = darkgloves;
+			armourglovesstat = 7;
 		}
 		if (weaponname == "shield") {
 			weaponname = null;
@@ -325,9 +425,31 @@ public class Inventory_1 : MonoBehaviour {
 			bootsimage.GetComponent<Image> ().sprite = boots;
 			armourbootsstat = 2;
 		}
+		if (weaponname == "boots2") {
+			weaponname = null;
+			inventory [inventory1].GetComponent<Image> ().sprite = null;
+			bootsimage.GetComponent<Image> ().sprite = boots2;
+			armourbootsstat = 4;
+		}
+		if (weaponname == "greyboots") {
+			weaponname = null;
+			inventory [inventory1].GetComponent<Image> ().sprite = null;
+			bootsimage.GetComponent<Image> ().sprite = greyboots;
+			armourbootsstat = 6;
+		}
+		if (weaponname == "darkboots") {
+			weaponname = null;
+			inventory [inventory1].GetComponent<Image> ().sprite = null;
+			bootsimage.GetComponent<Image> ().sprite = darkboots;
+			armourbootsstat = 9;
+		}
 		if (weaponname == "apple") {
 			inventory [inventory1].GetComponent<Image> ().sprite = null;
 			playerhealth3 = true;
+		}
+		if (weaponname == "cheese") {
+			inventory [inventory1].GetComponent<Image> ().sprite = null;
+			playerhealth4 = true;
 		}
 		if (weaponname == "ring") {
 			weaponname = null;
@@ -404,6 +526,18 @@ public class Inventory_1 : MonoBehaviour {
 			armourimage.GetComponent<Image> ().sprite = armour2;
 			armourarmourstat = 5;
 		}
+		if (weaponname == "greyarmour") {
+			weaponname = null;
+			inventory [inventory2].GetComponent<Image> ().sprite = null;
+			armourimage.GetComponent<Image> ().sprite = greyarmour;
+			armourarmourstat = 7;
+		}
+		if (weaponname == "darkarmour") {
+			weaponname = null;
+			inventory [inventory2].GetComponent<Image> ().sprite = null;
+			armourimage.GetComponent<Image> ().sprite = darkarmour;
+			armourarmourstat = 10;
+		}
 		if (weaponname == "belt") {
 			weaponname = null;
 			inventory [inventory2].GetComponent<Image> ().sprite = null;
@@ -415,6 +549,18 @@ public class Inventory_1 : MonoBehaviour {
 			inventory [inventory2].GetComponent<Image> ().sprite = null;
 			glovesimage.GetComponent<Image> ().sprite = gloves;
 			armourglovesstat = 3;
+		}
+		if (weaponname == "greygloves") {
+			weaponname = null;
+			inventory [inventory2].GetComponent<Image> ().sprite = null;
+			glovesimage.GetComponent<Image> ().sprite = greygloves;
+			armourglovesstat = 5;
+		}
+		if (weaponname == "darkgloves") {
+			weaponname = null;
+			inventory [inventory2].GetComponent<Image> ().sprite = null;
+			glovesimage.GetComponent<Image> ().sprite = darkgloves;
+			armourglovesstat = 7;
 		}
 		if (weaponname == "shield") {
 			weaponname = null;
@@ -428,9 +574,31 @@ public class Inventory_1 : MonoBehaviour {
 			bootsimage.GetComponent<Image> ().sprite = boots;
 			armourbootsstat = 2;
 		}
+		if (weaponname == "boots2") {
+			weaponname = null;
+			inventory [inventory2].GetComponent<Image> ().sprite = null;
+			bootsimage.GetComponent<Image> ().sprite = boots2;
+			armourbootsstat = 4;
+		}
+		if (weaponname == "greyboots") {
+			weaponname = null;
+			inventory [inventory2].GetComponent<Image> ().sprite = null;
+			bootsimage.GetComponent<Image> ().sprite = greyboots;
+			armourbootsstat = 6;
+		}
+		if (weaponname == "darkboots") {
+			weaponname = null;
+			inventory [inventory2].GetComponent<Image> ().sprite = null;
+			bootsimage.GetComponent<Image> ().sprite = darkboots;
+			armourbootsstat = 9;
+		}
 		if (weaponname == "apple") {
 			inventory [inventory2].GetComponent<Image> ().sprite = null;
 			playerhealth3 = true;
+		}
+		if (weaponname == "cheese") {
+			inventory [inventory2].GetComponent<Image> ().sprite = null;
+			playerhealth4 = true;
 		}
 		if (weaponname == "ring") {
 			weaponname = null;
@@ -508,6 +676,18 @@ public class Inventory_1 : MonoBehaviour {
 			armourimage.GetComponent<Image> ().sprite = armour2;
 			armourarmourstat = 5;
 		}
+		if (weaponname == "greyarmour") {
+			weaponname = null;
+			inventory [inventory3].GetComponent<Image> ().sprite = null;
+			armourimage.GetComponent<Image> ().sprite = greyarmour;
+			armourarmourstat = 7;
+		}
+		if (weaponname == "darkarmour") {
+			weaponname = null;
+			inventory [inventory3].GetComponent<Image> ().sprite = null;
+			armourimage.GetComponent<Image> ().sprite = darkarmour;
+			armourarmourstat = 10;
+		}
 		if (weaponname == "belt") {
 			weaponname = null;
 			inventory [inventory3].GetComponent<Image> ().sprite = null;
@@ -519,6 +699,18 @@ public class Inventory_1 : MonoBehaviour {
 			inventory [inventory3].GetComponent<Image> ().sprite = null;
 			glovesimage.GetComponent<Image> ().sprite = gloves;
 			armourglovesstat = 3;
+		}
+		if (weaponname == "greygloves") {
+			weaponname = null;
+			inventory [inventory3].GetComponent<Image> ().sprite = null;
+			glovesimage.GetComponent<Image> ().sprite = greygloves;
+			armourglovesstat = 5;
+		}
+		if (weaponname == "darkgloves") {
+			weaponname = null;
+			inventory [inventory3].GetComponent<Image> ().sprite = null;
+			glovesimage.GetComponent<Image> ().sprite = darkgloves;
+			armourglovesstat = 7;
 		}
 		if (weaponname == "shield") {
 			weaponname = null;
@@ -532,9 +724,31 @@ public class Inventory_1 : MonoBehaviour {
 			bootsimage.GetComponent<Image> ().sprite = boots;
 			armourbootsstat = 2;
 		}
+		if (weaponname == "boots2") {
+			weaponname = null;
+			inventory [inventory3].GetComponent<Image> ().sprite = null;
+			bootsimage.GetComponent<Image> ().sprite = boots2;
+			armourbootsstat = 4;
+		}
+		if (weaponname == "greyboots") {
+			weaponname = null;
+			inventory [inventory3].GetComponent<Image> ().sprite = null;
+			bootsimage.GetComponent<Image> ().sprite = greyboots;
+			armourbootsstat = 6;
+		}
+		if (weaponname == "darkboots") {
+			weaponname = null;
+			inventory [inventory3].GetComponent<Image> ().sprite = null;
+			bootsimage.GetComponent<Image> ().sprite = darkboots;
+			armourbootsstat = 9;
+		}
 		if (weaponname == "apple") {
 			inventory [inventory3].GetComponent<Image> ().sprite = null;
 			playerhealth3 = true;
+		}
+		if (weaponname == "cheese") {
+			inventory [inventory3].GetComponent<Image> ().sprite = null;
+			playerhealth4 = true;
 		}
 		if (weaponname == "ring") {
 			weaponname = null;
@@ -611,6 +825,18 @@ public class Inventory_1 : MonoBehaviour {
 			armourimage.GetComponent<Image> ().sprite = armour2;
 			armourarmourstat = 5;
 		}
+		if (weaponname == "greyarmour") {
+			weaponname = null;
+			inventory [inventory4].GetComponent<Image> ().sprite = null;
+			armourimage.GetComponent<Image> ().sprite = greyarmour;
+			armourarmourstat = 7;
+		}
+		if (weaponname == "darkarmour") {
+			weaponname = null;
+			inventory [inventory4].GetComponent<Image> ().sprite = null;
+			armourimage.GetComponent<Image> ().sprite = darkarmour;
+			armourarmourstat = 10;
+		}
 		if (weaponname == "belt") {
 			weaponname = null;
 			inventory [inventory4].GetComponent<Image> ().sprite = null;
@@ -622,6 +848,18 @@ public class Inventory_1 : MonoBehaviour {
 			inventory [inventory4].GetComponent<Image> ().sprite = null;
 			glovesimage.GetComponent<Image> ().sprite = gloves;
 			armourglovesstat = 3;
+		}
+		if (weaponname == "greygloves") {
+			weaponname = null;
+			inventory [inventory4].GetComponent<Image> ().sprite = null;
+			glovesimage.GetComponent<Image> ().sprite = greygloves;
+			armourglovesstat = 5;
+		}
+		if (weaponname == "darkgloves") {
+			weaponname = null;
+			inventory [inventory4].GetComponent<Image> ().sprite = null;
+			glovesimage.GetComponent<Image> ().sprite = darkgloves;
+			armourglovesstat = 7;
 		}
 		if (weaponname == "shield") {
 			weaponname = null;
@@ -635,9 +873,31 @@ public class Inventory_1 : MonoBehaviour {
 			bootsimage.GetComponent<Image> ().sprite = boots;
 			armourbootsstat = 2;
 		}
+		if (weaponname == "boots2") {
+			weaponname = null;
+			inventory [inventory4].GetComponent<Image> ().sprite = null;
+			bootsimage.GetComponent<Image> ().sprite = boots2;
+			armourbootsstat = 4;
+		}
+		if (weaponname == "greyboots") {
+			weaponname = null;
+			inventory [inventory4].GetComponent<Image> ().sprite = null;
+			bootsimage.GetComponent<Image> ().sprite = greyboots;
+			armourbootsstat = 6;
+		}
+		if (weaponname == "darkboots") {
+			weaponname = null;
+			inventory [inventory4].GetComponent<Image> ().sprite = null;
+			bootsimage.GetComponent<Image> ().sprite = darkboots;
+			armourbootsstat = 9;
+		}
 		if (weaponname == "apple") {
 			inventory [inventory4].GetComponent<Image> ().sprite = null;
 			playerhealth3 = true;
+		}
+		if (weaponname == "cheese") {
+			inventory [inventory4].GetComponent<Image> ().sprite = null;
+			playerhealth4 = true;
 		}
 		if (weaponname == "ring") {
 			weaponname = null;
@@ -714,6 +974,18 @@ public class Inventory_1 : MonoBehaviour {
 			armourimage.GetComponent<Image> ().sprite = armour2;
 			armourarmourstat = 5;
 		}
+		if (weaponname == "greyarmour") {
+			weaponname = null;
+			inventory [inventory5].GetComponent<Image> ().sprite = null;
+			armourimage.GetComponent<Image> ().sprite = greyarmour;
+			armourarmourstat = 7;
+		}
+		if (weaponname == "darkarmour") {
+			weaponname = null;
+			inventory [inventory5].GetComponent<Image> ().sprite = null;
+			armourimage.GetComponent<Image> ().sprite = darkarmour;
+			armourarmourstat = 10;
+		}
 		if (weaponname == "belt") {
 			weaponname = null;
 			inventory [inventory5].GetComponent<Image> ().sprite = null;
@@ -725,6 +997,18 @@ public class Inventory_1 : MonoBehaviour {
 			inventory [inventory5].GetComponent<Image> ().sprite = null;
 			glovesimage.GetComponent<Image> ().sprite = gloves;
 			armourglovesstat = 3;
+		}
+		if (weaponname == "greygloves") {
+			weaponname = null;
+			inventory [inventory5].GetComponent<Image> ().sprite = null;
+			glovesimage.GetComponent<Image> ().sprite = greygloves;
+			armourglovesstat = 5;
+		}
+		if (weaponname == "darkgloves") {
+			weaponname = null;
+			inventory [inventory5].GetComponent<Image> ().sprite = null;
+			glovesimage.GetComponent<Image> ().sprite = darkgloves;
+			armourglovesstat = 7;
 		}
 		if (weaponname == "shield") {
 			weaponname = null;
@@ -738,9 +1022,31 @@ public class Inventory_1 : MonoBehaviour {
 			bootsimage.GetComponent<Image> ().sprite = boots;
 			armourbootsstat = 2;
 		}
+		if (weaponname == "boots2") {
+			weaponname = null;
+			inventory [inventory5].GetComponent<Image> ().sprite = null;
+			bootsimage.GetComponent<Image> ().sprite = boots2;
+			armourbootsstat = 4;
+		}
+		if (weaponname == "greyboots") {
+			weaponname = null;
+			inventory [inventory5].GetComponent<Image> ().sprite = null;
+			bootsimage.GetComponent<Image> ().sprite = greyboots;
+			armourbootsstat = 6;
+		}
+		if (weaponname == "darkboots") {
+			weaponname = null;
+			inventory [inventory5].GetComponent<Image> ().sprite = null;
+			bootsimage.GetComponent<Image> ().sprite = darkboots;
+			armourbootsstat = 9;
+		}
 		if (weaponname == "apple") {
 			inventory [inventory5].GetComponent<Image> ().sprite = null;
 			playerhealth3 = true;
+		}
+		if (weaponname == "cheese") {
+			inventory [inventory5].GetComponent<Image> ().sprite = null;
+			playerhealth4 = true;
 		}
 		if (weaponname == "ring") {
 			weaponname = null;
@@ -866,6 +1172,19 @@ public class Inventory_1 : MonoBehaviour {
 			hidering.SetActive (false);
 			hideshield.SetActive (false);
 			hidepotiondouble.SetActive (false);
+			hidewarhammer.SetActive (false);
+			hidemountainsword.SetActive (false);
+			hidegreyarmour.SetActive (false);
+			hideboots2.SetActive (false);
+			hidewand.SetActive (false);
+			hidegreygloves.SetActive (false);
+			hidegreyboots.SetActive (false);
+			hidebow3.SetActive (false);
+			hideaxe.SetActive (false);
+			hidedarkgloves.SetActive (false);
+			hidedarkarmour.SetActive (false);
+			hidedarkboots.SetActive (false);
+			hidecheese.SetActive (false);
 			return damage;
 		}
 		//Sets damage for the sword
@@ -889,6 +1208,19 @@ public class Inventory_1 : MonoBehaviour {
 			hidering.SetActive (false);
 			hideshield.SetActive (false);
 			hidepotiondouble.SetActive (false);
+			hidewarhammer.SetActive (false);
+			hidemountainsword.SetActive (false);
+			hidegreyarmour.SetActive (false);
+			hideboots2.SetActive (false);
+			hidewand.SetActive (false);
+			hidegreygloves.SetActive (false);
+			hidegreyboots.SetActive (false);
+			hidebow3.SetActive (false);
+			hideaxe.SetActive (false);
+			hidedarkgloves.SetActive (false);
+			hidedarkarmour.SetActive (false);
+			hidedarkboots.SetActive (false);
+			hidecheese.SetActive (false);
 			return damage;
 		}
 		//Sets damage for the bat
@@ -912,6 +1244,19 @@ public class Inventory_1 : MonoBehaviour {
 			hidering.SetActive (false);
 			hideshield.SetActive (false);
 			hidepotiondouble.SetActive (false);
+			hidewarhammer.SetActive (false);
+			hidemountainsword.SetActive (false);
+			hidegreyarmour.SetActive (false);
+			hideboots2.SetActive (false);
+			hidewand.SetActive (false);
+			hidegreygloves.SetActive (false);
+			hidegreyboots.SetActive (false);
+			hidebow3.SetActive (false);
+			hideaxe.SetActive (false);
+			hidedarkgloves.SetActive (false);
+			hidedarkarmour.SetActive (false);
+			hidedarkboots.SetActive (false);
+			hidecheese.SetActive (false);
 			return damage;
 		}
 		//Sets damage for the bow2
@@ -935,6 +1280,55 @@ public class Inventory_1 : MonoBehaviour {
 			hidering.SetActive (false);
 			hideshield.SetActive (false);
 			hidepotiondouble.SetActive (false);
+			hidewarhammer.SetActive (false);
+			hidemountainsword.SetActive (false);
+			hidegreyarmour.SetActive (false);
+			hideboots2.SetActive (false);
+			hidewand.SetActive (false);
+			hidegreygloves.SetActive (false);
+			hidegreyboots.SetActive (false);
+			hidebow3.SetActive (false);
+			hideaxe.SetActive (false);
+			hidedarkgloves.SetActive (false);
+			hidedarkarmour.SetActive (false);
+			hidedarkboots.SetActive (false);
+			hidecheese.SetActive (false);
+			return damage;
+		}
+		//Sets damage for the bow3
+		else if (weaponname == "bow3") {
+			damage = 4 * doubledamage;
+			hidesword.SetActive (false);
+			hidebow1.SetActive (false);
+			hidecrosshair.SetActive (true);
+			hidepotion.SetActive (false);
+			hideapple.SetActive (false);
+			hidearmour1.SetActive (false);
+			hidearmour2.SetActive (false);
+			hidebat.SetActive (false);
+			hidebelt.SetActive (false);
+			hideboots.SetActive (false);
+			hidebow2.SetActive (false);
+			hideclub.SetActive (false);
+			hidedagger.SetActive (false);
+			hidegloves.SetActive (false);
+			hidemage.SetActive (false);
+			hidering.SetActive (false);
+			hideshield.SetActive (false);
+			hidepotiondouble.SetActive (false);
+			hidewarhammer.SetActive (false);
+			hidemountainsword.SetActive (false);
+			hidegreyarmour.SetActive (false);
+			hideboots2.SetActive (false);
+			hidewand.SetActive (false);
+			hidegreygloves.SetActive (false);
+			hidegreyboots.SetActive (false);
+			hidebow3.SetActive (true);
+			hideaxe.SetActive (false);
+			hidedarkgloves.SetActive (false);
+			hidedarkarmour.SetActive (false);
+			hidedarkboots.SetActive (false);
+			hidecheese.SetActive (false);
 			return damage;
 		}
 		//Sets damage for the club
@@ -958,6 +1352,19 @@ public class Inventory_1 : MonoBehaviour {
 			hidering.SetActive (false);
 			hideshield.SetActive (false);
 			hidepotiondouble.SetActive (false);
+			hidewarhammer.SetActive (false);
+			hidemountainsword.SetActive (false);
+			hidegreyarmour.SetActive (false);
+			hideboots2.SetActive (false);
+			hidewand.SetActive (false);
+			hidegreygloves.SetActive (false);
+			hidegreyboots.SetActive (false);
+			hidebow3.SetActive (false);
+			hideaxe.SetActive (false);
+			hidedarkgloves.SetActive (false);
+			hidedarkarmour.SetActive (false);
+			hidedarkboots.SetActive (false);
+			hidecheese.SetActive (false);
 			return damage;
 		}
 		//Sets damage for the dagger
@@ -981,6 +1388,19 @@ public class Inventory_1 : MonoBehaviour {
 			hidering.SetActive (false);
 			hideshield.SetActive (false);
 			hidepotiondouble.SetActive (false);
+			hidewarhammer.SetActive (false);
+			hidemountainsword.SetActive (false);
+			hidegreyarmour.SetActive (false);
+			hideboots2.SetActive (false);
+			hidewand.SetActive (false);
+			hidegreygloves.SetActive (false);
+			hidegreyboots.SetActive (false);
+			hidebow3.SetActive (false);
+			hideaxe.SetActive (false);
+			hidedarkgloves.SetActive (false);
+			hidedarkarmour.SetActive (false);
+			hidedarkboots.SetActive (false);
+			hidecheese.SetActive (false);
 			return damage;
 		}
 		//Sets damage for the mage
@@ -1004,6 +1424,163 @@ public class Inventory_1 : MonoBehaviour {
 			hidering.SetActive (false);
 			hideshield.SetActive (false);
 			hidepotiondouble.SetActive (false);
+			hidewarhammer.SetActive (false);
+			hidemountainsword.SetActive (false);
+			hidegreyarmour.SetActive (false);
+			hideboots2.SetActive (false);
+			hidewand.SetActive (false);
+			hidegreygloves.SetActive (false);
+			hidegreyboots.SetActive (false);
+			hidebow3.SetActive (false);
+			hideaxe.SetActive (false);
+			hidedarkgloves.SetActive (false);
+			hidedarkarmour.SetActive (false);
+			hidedarkboots.SetActive (false);
+			hidecheese.SetActive (false);
+			return damage;
+		}
+		//Sets damage for the warhammer
+		else if (weaponname == "warhammer") {
+			damage = 5 * doubledamage;
+			hidesword.SetActive (false);
+			hidebow1.SetActive (false);
+			hidecrosshair.SetActive (false);
+			hidepotion.SetActive (false);
+			hideapple.SetActive (false);
+			hidearmour1.SetActive (false);
+			hidearmour2.SetActive (false);
+			hidebat.SetActive (false);
+			hidebelt.SetActive (false);
+			hideboots.SetActive (false);
+			hidebow2.SetActive (false);
+			hideclub.SetActive (false);
+			hidedagger.SetActive (false);
+			hidegloves.SetActive (false);
+			hidemage.SetActive (false);
+			hidering.SetActive (false);
+			hideshield.SetActive (false);
+			hidepotiondouble.SetActive (false);
+			hidewarhammer.SetActive (true);
+			hidemountainsword.SetActive (false);
+			hidegreyarmour.SetActive (false);
+			hideboots2.SetActive (false);
+			hidewand.SetActive (false);
+			hidegreygloves.SetActive (false);
+			hidegreyboots.SetActive (false);
+			hidebow3.SetActive (false);
+			hideaxe.SetActive (false);
+			hidedarkgloves.SetActive (false);
+			hidedarkarmour.SetActive (false);
+			hidedarkboots.SetActive (false);
+			hidecheese.SetActive (false);
+			return damage;
+		}
+		//Sets damage for the mountainsword
+		else if (weaponname == "mountainsword") {
+			damage = 4 * doubledamage;
+			hidesword.SetActive (false);
+			hidebow1.SetActive (false);
+			hidecrosshair.SetActive (false);
+			hidepotion.SetActive (false);
+			hideapple.SetActive (false);
+			hidearmour1.SetActive (false);
+			hidearmour2.SetActive (false);
+			hidebat.SetActive (false);
+			hidebelt.SetActive (false);
+			hideboots.SetActive (false);
+			hidebow2.SetActive (false);
+			hideclub.SetActive (false);
+			hidedagger.SetActive (false);
+			hidegloves.SetActive (false);
+			hidemage.SetActive (false);
+			hidering.SetActive (false);
+			hideshield.SetActive (false);
+			hidepotiondouble.SetActive (false);
+			hidewarhammer.SetActive (false);
+			hidemountainsword.SetActive (true);
+			hidegreyarmour.SetActive (false);
+			hideboots2.SetActive (false);
+			hidewand.SetActive (false);
+			hidegreygloves.SetActive (false);
+			hidegreyboots.SetActive (false);
+			hidebow3.SetActive (false);
+			hideaxe.SetActive (false);
+			hidedarkgloves.SetActive (false);
+			hidedarkarmour.SetActive (false);
+			hidedarkboots.SetActive (false);
+			hidecheese.SetActive (false);
+			return damage;
+		}
+		//Sets damage for the wand
+		else if (weaponname == "wand") {
+			damage = 10 * doubledamage;
+			hidesword.SetActive (false);
+			hidebow1.SetActive (false);
+			hidecrosshair.SetActive (false);
+			hidepotion.SetActive (false);
+			hideapple.SetActive (false);
+			hidearmour1.SetActive (false);
+			hidearmour2.SetActive (false);
+			hidebat.SetActive (false);
+			hidebelt.SetActive (false);
+			hideboots.SetActive (false);
+			hidebow2.SetActive (false);
+			hideclub.SetActive (false);
+			hidedagger.SetActive (false);
+			hidegloves.SetActive (false);
+			hidemage.SetActive (false);
+			hidering.SetActive (false);
+			hideshield.SetActive (false);
+			hidepotiondouble.SetActive (false);
+			hidewarhammer.SetActive (false);
+			hidemountainsword.SetActive (false);
+			hidegreyarmour.SetActive (false);
+			hideboots2.SetActive (false);
+			hidewand.SetActive (true);
+			hidegreygloves.SetActive (false);
+			hidegreyboots.SetActive (false);
+			hidebow3.SetActive (false);
+			hideaxe.SetActive (false);
+			hidedarkgloves.SetActive (false);
+			hidedarkarmour.SetActive (false);
+			hidedarkboots.SetActive (false);
+			hidecheese.SetActive (false);
+			return damage;
+		}
+		//Sets damage for the axe
+		else if (weaponname == "axe") {
+			damage = 7 * doubledamage;
+			hidesword.SetActive (false);
+			hidebow1.SetActive (false);
+			hidecrosshair.SetActive (false);
+			hidepotion.SetActive (false);
+			hideapple.SetActive (false);
+			hidearmour1.SetActive (false);
+			hidearmour2.SetActive (false);
+			hidebat.SetActive (false);
+			hidebelt.SetActive (false);
+			hideboots.SetActive (false);
+			hidebow2.SetActive (false);
+			hideclub.SetActive (false);
+			hidedagger.SetActive (false);
+			hidegloves.SetActive (false);
+			hidemage.SetActive (false);
+			hidering.SetActive (false);
+			hideshield.SetActive (false);
+			hidepotiondouble.SetActive (false);
+			hidewarhammer.SetActive (false);
+			hidemountainsword.SetActive (false);
+			hidegreyarmour.SetActive (false);
+			hideboots2.SetActive (false);
+			hidewand.SetActive (false);
+			hidegreygloves.SetActive (false);
+			hidegreyboots.SetActive (false);
+			hidebow3.SetActive (false);
+			hideaxe.SetActive (true);
+			hidedarkgloves.SetActive (false);
+			hidedarkarmour.SetActive (false);
+			hidedarkboots.SetActive (false);
+			hidecheese.SetActive (false);
 			return damage;
 		}
 		//Sets damage for when nothing is selected
