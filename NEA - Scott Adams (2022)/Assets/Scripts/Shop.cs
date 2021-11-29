@@ -75,6 +75,7 @@ public class Shop : MonoBehaviour {
 	public Button item30button;
 	public int gold;
 	public TextMeshProUGUI goldtext;
+	public TextMeshProUGUI goldtext2;
 	ColorBlock unusablecolour;
 	ColorBlock usablecolour;
 	float playerx;
@@ -197,6 +198,7 @@ public class Shop : MonoBehaviour {
 	void Update () {
 		gold += other2.gold;
 		goldtext.text = "Gold: " + gold.ToString ();
+		goldtext2.text = "Gold: " + gold.ToString ();
 		/*if (gold >= 10) {
 			item1button.colors = usablecolour;
 		}

@@ -29,11 +29,11 @@ public class Player_Movement : MonoBehaviour {
 	public float speed;
 	Enemy_Movement other2;
 	int playerdamage1;
-	public int playerhealth;
+	public float playerhealth;
 	bool sleep;
 	Transform player;
 	int damage;
-	int playerdamage;
+	float playerdamage;
 	public GameObject other;
 	private Inventory_1 other3;
 	bool ringhealth;
@@ -41,6 +41,7 @@ public class Player_Movement : MonoBehaviour {
 	public int lives;
 	public int gold;
 	public TextMeshProUGUI healthtext;
+	float armourstat;
 
 
 	// Use this for initialization
@@ -134,7 +135,7 @@ public class Player_Movement : MonoBehaviour {
 		}
 		//Shows health
 		healthtext.text = "Health: " + playerhealth.ToString ();
-
+		armourstat = (float)other3.armourstat / 100;
 	}
 	//Causes the player to not be able to sprint for 10 seconds
 	IEnumerator restingcoroutine()
@@ -199,17 +200,17 @@ public class Player_Movement : MonoBehaviour {
 		}
 	}
 	//Causes the player to be damaged once every second, by the amount of damage from the Enemy_Movement
-	IEnumerator damagecoroutine(int playerdamage)
+	IEnumerator damagecoroutine(float playerdamage)
 	{
 		sleep = true;
-		playerhealth -= playerdamage;
+		playerhealth -= playerdamage * (1 - armourstat);
 		//Debug.Log (playerhealth);
 		//Debug.Log (playerdamage);
 		yield return new WaitForSecondsRealtime (1);
 		sleep = false;
 	}
 	//Damages player, only once at a time
-	public void Damage(int playerdamage)
+	public void Damage(float playerdamage)
 	{
 		if (sleep == false) {
 			StartCoroutine (damagecoroutine (playerdamage));
