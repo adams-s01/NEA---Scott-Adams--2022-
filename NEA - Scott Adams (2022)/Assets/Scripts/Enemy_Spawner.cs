@@ -22,6 +22,7 @@ public class Enemy_Spawner : MonoBehaviour {
 	void Start () {
 		spawner = GameObject.FindGameObjectWithTag ("spawner");
 		enemyspawned=new List<GameObject>();
+
 		//Determines location to spawn skeletons for tutorial
 		if (SceneManager.GetActiveScene ().buildIndex == 1) {
 			for (int i = 0; i < 3; i++) {
@@ -34,6 +35,21 @@ public class Enemy_Spawner : MonoBehaviour {
 			for (int i = 0; i < 3; i++) {
 				enemyspawned.Add (Instantiate (enemy, new Vector2 (10.91f, -27.54f), Quaternion.identity));
 				spawnerfull [i] = true;
+			}
+		}
+		//Determines location to spawn skeletons for level 2
+		if (SceneManager.GetActiveScene ().buildIndex == 3) {
+			if (gameObject.name == "Spawnerdoor") {
+				for (int i = 0; i < 3; i++) {
+					enemyspawned.Add (Instantiate (enemy, new Vector2 (-16.55f, 7.45f), Quaternion.identity));
+					spawnerfull [i] = true;
+				}
+			}
+			if (gameObject.name == "Spawnerdoor2") {
+				for (int i = 0; i < 3; i++) {
+					enemyspawned.Add (Instantiate (enemy, new Vector2 (16.93f, -17.81f), Quaternion.identity));
+					spawnerfull [i] = true;
+				}
 			}
 		}
 	}
@@ -75,6 +91,43 @@ public class Enemy_Spawner : MonoBehaviour {
 				enemyspawned.Insert (0, (Instantiate (enemy, new Vector2 (10.91f, -27.54f), Quaternion.identity)));
 				spawnerfull [0] = true;
 				Debug.Log ("I0:True");
+			}
+		}
+		//Spawns at location in level 2
+		if(SceneManager.GetActiveScene ().buildIndex == 3) {
+			if (gameObject.name == "Spawnerdoor") {
+				if (spawnerfull [2] == false) {
+					enemyspawned.Insert (2, (Instantiate (enemy, new Vector2 (-16.55f, 7.45f), Quaternion.identity)));
+					spawnerfull [2] = true;
+					Debug.Log ("I2:True");
+				}
+				if (spawnerfull [1] == false) {
+					enemyspawned.Insert (1, (Instantiate (enemy, new Vector2 (-16.55f, 7.45f), Quaternion.identity)));
+					spawnerfull [1] = true;
+					Debug.Log ("I1:True");
+				}
+				if (spawnerfull [0] == false) {
+					enemyspawned.Insert (0, (Instantiate (enemy, new Vector2 (-16.55f, 7.45f), Quaternion.identity)));
+					spawnerfull [0] = true;
+					Debug.Log ("I0:True");
+				}
+			}
+			if (gameObject.name == "Spawnerdoor2") {
+				if (spawnerfull [2] == false) {
+					enemyspawned.Insert (2, (Instantiate (enemy, new Vector2 (16.93f, -17.81f), Quaternion.identity)));
+					spawnerfull [2] = true;
+					Debug.Log ("I2:True");
+				}
+				if (spawnerfull [1] == false) {
+					enemyspawned.Insert (1, (Instantiate (enemy, new Vector2 (16.93f, -17.81f), Quaternion.identity)));
+					spawnerfull [1] = true;
+					Debug.Log ("I1:True");
+				}
+				if (spawnerfull [0] == false) {
+					enemyspawned.Insert (0, (Instantiate (enemy, new Vector2 (16.93f, -17.81f), Quaternion.identity)));
+					spawnerfull [0] = true;
+					Debug.Log ("I0:True");
+				}
 			}
 		}
 			

@@ -40,7 +40,15 @@ public class Escape_Door : MonoBehaviour {
 		if(col.gameObject.tag=="Player"&&other2.keytrue==true)
 		{
 			Debug.Log ("End");
-			SceneManager.LoadScene (0);
+			if (SceneManager.GetActiveScene ().buildIndex == 1) {
+				SceneManager.LoadScene (0);
+			}
+			if (SceneManager.GetActiveScene ().buildIndex == 2) {
+				SceneManager.LoadScene (3);
+			}
+			if (SceneManager.GetActiveScene ().buildIndex == 3) {
+				SceneManager.LoadScene (0);
+			}
 		}
 	}
 }
