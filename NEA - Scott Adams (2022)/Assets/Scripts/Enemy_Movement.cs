@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 1
-* Last Edited: Sprint 8
+* Last Edited: Sprint 9
 * Purpose: Causes the enemy to move
 */
 using System.Collections;
@@ -14,8 +14,8 @@ public class Enemy_Movement : MonoBehaviour {
 	bool sleep;
 	public float enemyhealth;
 	public GameObject hitpoint;
-	float enemyx;
-	float enemyy;
+	public float enemyx;
+	public float enemyy;
 	public GameObject other;
 	int damage1;
 	public float playerdamage;
@@ -33,17 +33,19 @@ public class Enemy_Movement : MonoBehaviour {
 	bool weaktrue;
 	public GameObject blind;
 	GameObject blindarea;
-	bool sleep1;
+	public bool sleep1;
 	Pumpkin_Raycast other4;
 	float distance1;
 	bool doubledamagetrue;
 	public GameObject other5;
 	Double_Damage other6;
+	float timer;
 
 	// Initialises variables
 	void Start () {
 		sleep = false;
-		rb = GetComponent<Rigidbody2D>();
+		sleep1 = false;
+		rb = GetComponent<Rigidbody2D> ();
 		setting = PlayerPrefs.GetString ("setting", "easy");
 		Debug.Log ("1"+setting);
 		//Sets enemy settings for easy(low health and attack)
@@ -171,6 +173,7 @@ public class Enemy_Movement : MonoBehaviour {
 		yield return new WaitForSecondsRealtime (2);
 		sleep = false;
 	}
+
 	//Collides with player
 	public void OnCollisionStay2D(Collision2D col)
 	{
@@ -212,10 +215,7 @@ public class Enemy_Movement : MonoBehaviour {
 				if (gameObject.tag == "pumpkin") {
 					Instantiate (coin2, new Vector2 (enemyx, enemyy), Quaternion.identity);
 					Instantiate (ring2, new Vector2 (enemyx, enemyy), Quaternion.identity);
-					if (sleep1 == false) {
-						StartCoroutine (removeblindcoroutine ());
-						Debug.Log ("call made1");
-					}
+					sleep1 = true;
 				}
 			}
 			//Sets the damage to the player for slime2
@@ -280,10 +280,10 @@ public class Enemy_Movement : MonoBehaviour {
 				}
 				if (gameObject.tag == "pumpkin") {
 					Instantiate (coin2, new Vector2 (enemyx, enemyy), Quaternion.identity);
-					if (sleep1 == false) {
+					/*if (sleep1 == false) {
 						StartCoroutine (removeblindcoroutine ());
 						Debug.Log ("call made");
-					}
+					}*/
 				}
 			}
 		}
@@ -322,13 +322,29 @@ public class Enemy_Movement : MonoBehaviour {
 	public void OnCollisionEnter2D(Collision2D col)
 	{
 		//Damages enemy same way as player but when collides with arrow
-		if (col.gameObject.tag == "arrow") {
+		if (col.gameObject.name == "Arrow(Clone)") {
 			string enemyname = gameObject.name;
 			enemy = GameObject.Find (enemyname);
 			enemyhealth = enemyhealth - 2;
 			enemyx = enemy.transform.position.x;
 			enemyy = enemy.transform.position.y + 2;
-			Instantiate (hitpoint, new Vector2 (enemyx, enemyy), Quaternion.identity);
+			Instantiate (hitpoints[2], new Vector2 (enemyx, enemyy), Quaternion.identity);
+		}
+		if (col.gameObject.name == "Arrow2(Clone)") {
+			string enemyname = gameObject.name;
+			enemy = GameObject.Find (enemyname);
+			enemyhealth = enemyhealth - 4;
+			enemyx = enemy.transform.position.x;
+			enemyy = enemy.transform.position.y + 2;
+			Instantiate (hitpoints[4], new Vector2 (enemyx, enemyy), Quaternion.identity);
+		}
+		if (col.gameObject.name == "Arrow3(Clone)") {
+			string enemyname = gameObject.name;
+			enemy = GameObject.Find (enemyname);
+			enemyhealth = enemyhealth - 5;
+			enemyx = enemy.transform.position.x;
+			enemyy = enemy.transform.position.y + 2;
+			Instantiate (hitpoints[5], new Vector2 (enemyx, enemyy), Quaternion.identity);
 		}
 	}
 	//Waits for 5 seconds to remove the blind area
@@ -337,7 +353,7 @@ public class Enemy_Movement : MonoBehaviour {
 		sleep1 = true;
 		blindarea = Instantiate (blind, new Vector2 (enemyx, enemyy), Quaternion.identity);
 		Debug.Log ("start of call");
-		yield return new WaitForSecondsRealtime (5f);
+		yield return new WaitForSecondsRealtime (5);
 		Debug.Log ("after call");
 		Destroy (blindarea);
 		sleep1 = false;

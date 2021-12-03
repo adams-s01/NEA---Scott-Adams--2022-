@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 4
-* Last Edited: Sprint 6
+* Last Edited: Sprint 9
 * Purpose: To make the arrow shot work
 */
 using System.Collections;
@@ -35,7 +35,7 @@ public class Arrow_Movement : MonoBehaviour {
 	//Destroys arrow when it collides with anything not the player
 	void OnCollisionEnter2D(Collision2D col)
 	{
-		if (col.gameObject.tag != "Player") {
+		if (col.gameObject.tag != "Player" && col.gameObject.tag != "arrow") {
 			Debug.Log ("destroy");
 			Destroy (gameObject);
 		}

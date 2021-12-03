@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 4
-* Last Edited: Sprint 6
+* Last Edited: Sprint 9
 * Purpose: To make the bow shoot an arrow
 */
 using System.Collections;
@@ -10,6 +10,8 @@ using UnityEngine;
 public class Bow_Shooting : MonoBehaviour {
 
 	GameObject arrow;
+	public GameObject arrow2;
+	public GameObject arrow3;
 	float playerx;
 	float playery;
 	GameObject player;
@@ -30,8 +32,14 @@ public class Bow_Shooting : MonoBehaviour {
 		angle1 = other2.angle;
 		playerx = player.transform.position.x;
 		playery = player.transform.position.y;
-		if (Input.GetKeyDown (KeyCode.Mouse0)) {
+		if (Input.GetKeyDown (KeyCode.Mouse0)&&gameObject.name=="bow11") {
 			Instantiate (arrow, new Vector2 (playerx, playery), Quaternion.Euler (0, 0, angle1));
+		}
+		if (Input.GetKeyDown (KeyCode.Mouse0)&&gameObject.name=="bow2") {
+			Instantiate (arrow2, new Vector2 (playerx, playery), Quaternion.Euler (0, 0, angle1));
+		}
+		if (Input.GetKeyDown (KeyCode.Mouse0)&&gameObject.name=="bow3") {
+			Instantiate (arrow3, new Vector2 (playerx, playery), Quaternion.Euler (0, 0, angle1));
 		}
 	}
 }
