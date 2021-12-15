@@ -40,6 +40,26 @@ public class Escape_Door : MonoBehaviour {
 		if(col.gameObject.tag=="Player"&&other2.keytrue==true)
 		{
 			Debug.Log ("End");
+			if (other2.image.sprite != null) {
+				PlayerPrefs.SetString ("inventory1", other2.image.sprite.name);
+			}
+			if (other2.image2.sprite != null) {
+				PlayerPrefs.SetString ("inventory2", other2.image2.sprite.name);
+			}
+			if (other2.image3.sprite != null) {
+				PlayerPrefs.SetString ("inventory3", other2.image3.sprite.name);
+			}
+			if (other2.image4.sprite != null) {
+				PlayerPrefs.SetString ("inventory4", other2.image4.sprite.name);
+			}
+			if (other2.image5.sprite != null) {
+				PlayerPrefs.SetString ("inventory5", other2.image5.sprite.name);
+			}
+
+
+
+
+
 			if (SceneManager.GetActiveScene ().buildIndex == 1) {
 				SceneManager.LoadScene (0);
 			}

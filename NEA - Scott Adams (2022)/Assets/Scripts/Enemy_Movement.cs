@@ -215,7 +215,7 @@ public class Enemy_Movement : MonoBehaviour {
 				if (gameObject.tag == "pumpkin") {
 					Instantiate (coin2, new Vector2 (enemyx, enemyy), Quaternion.identity);
 					Instantiate (ring2, new Vector2 (enemyx, enemyy), Quaternion.identity);
-					sleep1 = true;
+					Instantiate (blind, new Vector2 (enemyx, enemyy), Quaternion.identity);
 				}
 			}
 			//Sets the damage to the player for slime2
