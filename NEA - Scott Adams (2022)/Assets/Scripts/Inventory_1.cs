@@ -792,6 +792,61 @@ public class Inventory_1 : MonoBehaviour {
 				weaponholder = null;
 			}
 			inventory [inventory5].GetComponent<Image> ().sprite = weaponholder;
+			if (PlayerPrefs.GetString ("armourimage") == null) {
+				weaponholder = null;
+			}
+			if (PlayerPrefs.GetString ("armourimage") == "armour1") {
+				armourimage.GetComponent<Image> ().sprite = armour1;
+				armourarmourstat = 2;
+			}
+			if (PlayerPrefs.GetString ("armourimage") == "armour2") {
+				armourimage.GetComponent<Image> ().sprite = armour2;
+				armourarmourstat = 5;
+			}
+			if (PlayerPrefs.GetString ("armourimage") == "greyarmour") {
+				armourimage.GetComponent<Image> ().sprite = greyarmour;
+				armourarmourstat = 7;
+			}
+			if (PlayerPrefs.GetString ("armourimage") == "darkarmour") {
+				armourimage.GetComponent<Image> ().sprite = darkarmour;
+				armourarmourstat = 10;
+			}
+			if (PlayerPrefs.GetString ("glovesimage") == "belt") {
+				glovesimage.GetComponent<Image> ().sprite = belt;
+				armourglovesstat = 2;
+			}
+			if (PlayerPrefs.GetString ("glovesimage") == "gloves") {
+				glovesimage.GetComponent<Image> ().sprite = gloves;
+				armourglovesstat = 3;
+			}
+			if (PlayerPrefs.GetString ("glovesimage") == "greygloves") {
+				glovesimage.GetComponent<Image> ().sprite = greygloves;
+				armourglovesstat = 5;
+			}
+			if (PlayerPrefs.GetString ("glovesimage") == "darkgloves") {
+				glovesimage.GetComponent<Image> ().sprite = darkgloves;
+				armourglovesstat = 7;
+			}
+			if (PlayerPrefs.GetString ("glovesimage") == "shield") {
+				glovesimage.GetComponent<Image> ().sprite = shield;
+				armourglovesstat = 5;
+			}
+			if (PlayerPrefs.GetString ("bootsimage") == "boots") {
+				bootsimage.GetComponent<Image> ().sprite = boots;
+				armourbootsstat = 2;
+			}
+			if (PlayerPrefs.GetString ("bootsimage") == "boots2") {
+				bootsimage.GetComponent<Image> ().sprite = boots2;
+				armourbootsstat = 4;
+			}
+			if (PlayerPrefs.GetString ("bootsimage") == "greyboots") {
+				bootsimage.GetComponent<Image> ().sprite = greyboots;
+				armourbootsstat = 6;
+			}
+			if (PlayerPrefs.GetString ("bootsimage") == "darkboots") {
+				bootsimage.GetComponent<Image> ().sprite = darkboots;
+				armourbootsstat = 9;
+			}
 			Debug.Log(PlayerPrefs.GetString("inventory1"));
 			Debug.Log(PlayerPrefs.GetString("inventory2"));
 			Debug.Log(PlayerPrefs.GetString("inventory3"));
