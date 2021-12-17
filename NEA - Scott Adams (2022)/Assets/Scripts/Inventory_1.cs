@@ -130,6 +130,12 @@ public class Inventory_1 : MonoBehaviour {
 	private GameObject weakwall;
 	public int sound;
 	Sprite weaponholder;
+	public string ring1true;
+	public string ring2true;
+	public string ring3true;
+	public string ring4true;
+	public string ring5true;
+	public string ring6true;
 
 
 	// Use this for initialization
@@ -195,6 +201,7 @@ public class Inventory_1 : MonoBehaviour {
 		playerspeedtrue = false;
 		armourstat = 0;
 		doubledamage = 1;
+
 		//Sets which part of list for tutorial link to which inventory slot
 		if (SceneManager.GetActiveScene ().buildIndex == 1) {
 			inventory1 = 1;
@@ -847,13 +854,42 @@ public class Inventory_1 : MonoBehaviour {
 				bootsimage.GetComponent<Image> ().sprite = darkboots;
 				armourbootsstat = 9;
 			}
+			if (PlayerPrefs.GetString ("ring1") == "true") {
+				ring1image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
+				armourringstat += 10;
+			}
+			if (PlayerPrefs.GetString ("ring2") == "true") {
+				ring2image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
+				playerspeedtrue = true;
+			}
+			if (PlayerPrefs.GetString ("ring3") == "true") {
+				ring3image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
+				playerhealth = true;
+			}
+			if (PlayerPrefs.GetString ("ring4") == "true") {
+				ring4image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
+				armourringstat += 40;
+			}
+			if (PlayerPrefs.GetString ("ring5") == "true") {
+				ring5image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
+				playerspeedtrue2 = true;
+			}
+			if (PlayerPrefs.GetString ("ring6") == "true") {
+				ring6image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
+				playerhealth2 = true;
+			}
 			Debug.Log(PlayerPrefs.GetString("inventory1"));
 			Debug.Log(PlayerPrefs.GetString("inventory2"));
 			Debug.Log(PlayerPrefs.GetString("inventory3"));
 			Debug.Log(PlayerPrefs.GetString("inventory4"));
 			Debug.Log(PlayerPrefs.GetString("inventory5"));
 		}
-
+		ring1true = "false";
+		ring2true = "false";
+		ring3true = "false";
+		ring4true = "false";
+		ring5true = "false";
+		ring6true = "false";
 	}
 	
 	// Sets damage to the damage in the function Weapon
@@ -1100,36 +1136,42 @@ public class Inventory_1 : MonoBehaviour {
 			inventory [inventory1].GetComponent<Image> ().sprite = null;
 			ring1image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			armourringstat += 10;
+			ring1true = "true";
 		}
 		if (weaponname == "ring2") {
 			weaponname = null;
 			inventory [inventory1].GetComponent<Image> ().sprite = null;
 			ring2image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerspeedtrue = true;
+			ring2true = "true";
 		}
 		if (weaponname == "ring3") {
 			weaponname = null;
 			inventory [inventory1].GetComponent<Image> ().sprite = null;
 			ring3image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerhealth = true;
+			ring3true = "true";
 		}
 		if (weaponname == "ring4") {
 			weaponname = null;
 			inventory [inventory1].GetComponent<Image> ().sprite = null;
 			ring4image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			armourringstat += 40;
+			ring4true = "true";
 		}
 		if (weaponname == "ring5") {
 			weaponname = null;
 			inventory [inventory1].GetComponent<Image> ().sprite = null;
 			ring5image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerspeedtrue2 = true;
+			ring5true = "true";
 		}
 		if (weaponname == "ring6") {
 			weaponname = null;
 			inventory [inventory1].GetComponent<Image> ().sprite = null;
 			ring6image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerhealth2 = true;
+			ring6true = "true";
 		}
 		if (weaponname == "Key_B") {
 			weaponname = null;
@@ -1249,36 +1291,42 @@ public class Inventory_1 : MonoBehaviour {
 			inventory [inventory2].GetComponent<Image> ().sprite = null;
 			ring1image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			armourringstat += 10;
+			ring1true = "true";
 		}
 		if (weaponname == "ring2") {
 			weaponname = null;
 			inventory [inventory2].GetComponent<Image> ().sprite = null;
 			ring2image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerspeedtrue = true;
+			ring2true = "true";
 		}
 		if (weaponname == "ring3") {
 			weaponname = null;
 			inventory [inventory2].GetComponent<Image> ().sprite = null;
 			ring3image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerhealth = true;
+			ring3true = "true";
 		}
 		if (weaponname == "ring4") {
 			weaponname = null;
 			inventory [inventory2].GetComponent<Image> ().sprite = null;
 			ring4image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			armourringstat += 40;
+			ring4true = "true";
 		}
 		if (weaponname == "ring5") {
 			weaponname = null;
 			inventory [inventory2].GetComponent<Image> ().sprite = null;
 			ring5image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerspeedtrue2 = true;
+			ring5true = "true";
 		}
 		if (weaponname == "ring6") {
 			weaponname = null;
 			inventory [inventory2].GetComponent<Image> ().sprite = null;
 			ring6image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerhealth2 = true;
+			ring6true = "true";
 		}
 		if (weaponname == "Key_B") {
 			weaponname = null;
@@ -1399,36 +1447,42 @@ public class Inventory_1 : MonoBehaviour {
 			inventory [inventory3].GetComponent<Image> ().sprite = null;
 			ring1image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			armourringstat += 10;
+			ring1true = "true";
 		}
 		if (weaponname == "ring2") {
 			weaponname = null;
 			inventory [inventory3].GetComponent<Image> ().sprite = null;
 			ring2image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerspeedtrue = true;
+			ring2true = "true";
 		}
 		if (weaponname == "ring3") {
 			weaponname = null;
 			inventory [inventory3].GetComponent<Image> ().sprite = null;
 			ring3image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerhealth = true;
+			ring3true = "true";
 		}
 		if (weaponname == "ring4") {
 			weaponname = null;
 			inventory [inventory3].GetComponent<Image> ().sprite = null;
 			ring4image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			armourringstat += 40;
+			ring4true = "true";
 		}
 		if (weaponname == "ring5") {
 			weaponname = null;
 			inventory [inventory3].GetComponent<Image> ().sprite = null;
 			ring5image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerspeedtrue2 = true;
+			ring5true = "true";
 		}
 		if (weaponname == "ring6") {
 			weaponname = null;
 			inventory [inventory3].GetComponent<Image> ().sprite = null;
 			ring6image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerhealth2 = true;
+			ring6true = "true";
 		}
 		if (weaponname == "Key_B") {
 			weaponname = null;
@@ -1548,36 +1602,42 @@ public class Inventory_1 : MonoBehaviour {
 			inventory [inventory4].GetComponent<Image> ().sprite = null;
 			ring1image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			armourringstat += 10;
+			ring1true = "true";
 		}
 		if (weaponname == "ring2") {
 			weaponname = null;
 			inventory [inventory4].GetComponent<Image> ().sprite = null;
 			ring2image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerspeedtrue = true;
+			ring2true = "true";
 		}
 		if (weaponname == "ring3") {
 			weaponname = null;
 			inventory [inventory4].GetComponent<Image> ().sprite = null;
 			ring3image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerhealth = true;
+			ring3true = "true";
 		}
 		if (weaponname == "ring4") {
 			weaponname = null;
 			inventory [inventory4].GetComponent<Image> ().sprite = null;
 			ring4image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			armourringstat += 40;
+			ring4true = "true";
 		}
 		if (weaponname == "ring5") {
 			weaponname = null;
 			inventory [inventory4].GetComponent<Image> ().sprite = null;
 			ring5image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerspeedtrue2 = true;
+			ring5true = "true";
 		}
 		if (weaponname == "ring6") {
 			weaponname = null;
 			inventory [inventory4].GetComponent<Image> ().sprite = null;
 			ring6image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerhealth2 = true;
+			ring6true = "true";
 		}
 		if (weaponname == "Key_B") {
 			weaponname = null;
@@ -1697,36 +1757,42 @@ public class Inventory_1 : MonoBehaviour {
 			inventory [inventory5].GetComponent<Image> ().sprite = null;
 			ring1image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			armourringstat += 10;
+			ring1true = "true";
 		}
 		if (weaponname == "ring2") {
 			weaponname = null;
 			inventory [inventory5].GetComponent<Image> ().sprite = null;
 			ring2image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerspeedtrue = true;
+			ring2true = "true";
 		}
 		if (weaponname == "ring3") {
 			weaponname = null;
 			inventory [inventory5].GetComponent<Image> ().sprite = null;
 			ring3image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerhealth = true;
+			ring3true = "true";
 		}
 		if (weaponname == "ring4") {
 			weaponname = null;
 			inventory [inventory5].GetComponent<Image> ().sprite = null;
 			ring4image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			armourringstat += 40;
+			ring4true = "true";
 		}
 		if (weaponname == "ring5") {
 			weaponname = null;
 			inventory [inventory5].GetComponent<Image> ().sprite = null;
 			ring5image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerspeedtrue2 = true;
+			ring5true = "true";
 		}
 		if (weaponname == "ring6") {
 			weaponname = null;
 			inventory [inventory5].GetComponent<Image> ().sprite = null;
 			ring6image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 			playerhealth2 = true;
+			ring6true = "true";
 		}
 		if (weaponname == "Key_B") {
 			weaponname = null;

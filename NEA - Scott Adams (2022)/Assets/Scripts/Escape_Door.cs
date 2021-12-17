@@ -88,6 +88,12 @@ public class Escape_Door : MonoBehaviour {
 			if (other2.bootsimage.sprite == null) {
 				PlayerPrefs.SetString ("bootsimage", null);
 			}
+			PlayerPrefs.SetString ("ring1", other2.ring1true);
+			PlayerPrefs.SetString ("ring2", other2.ring2true);
+			PlayerPrefs.SetString ("ring3", other2.ring3true);
+			PlayerPrefs.SetString ("ring4", other2.ring4true);
+			PlayerPrefs.SetString ("ring5", other2.ring5true);
+			PlayerPrefs.SetString ("ring6", other2.ring6true);
 			if (SceneManager.GetActiveScene ().buildIndex == 1) {
 				SceneManager.LoadScene (0);
 			}
