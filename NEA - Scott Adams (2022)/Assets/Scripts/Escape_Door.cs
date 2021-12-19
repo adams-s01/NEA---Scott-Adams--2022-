@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 5
-* Last Edited: Sprint 6
+* Last Edited: Sprint 11
 * Purpose: To make the escape door work
 */
 using System.Collections;
@@ -101,6 +101,9 @@ public class Escape_Door : MonoBehaviour {
 				SceneManager.LoadScene (3);
 			}
 			if (SceneManager.GetActiveScene ().buildIndex == 3) {
+				SceneManager.LoadScene (4);
+			}
+			if (SceneManager.GetActiveScene ().buildIndex == 4) {
 				SceneManager.LoadScene (0);
 			}
 		}

@@ -28,7 +28,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4141123191517418
 Transform:
   m_ObjectHideFlags: 1
@@ -106,6 +106,19 @@ MonoBehaviour:
   ring5: {fileID: 0}
   ring6: {fileID: 0}
   shield: {fileID: 0}
+  warhammer: {fileID: 0}
+  mountainsword: {fileID: 0}
+  greyarmour: {fileID: 0}
+  boots2: {fileID: 0}
+  wand: {fileID: 0}
+  greygloves: {fileID: 0}
+  greyboots: {fileID: 0}
+  bow3: {fileID: 0}
+  axe: {fileID: 0}
+  darkgloves: {fileID: 0}
+  darkarmour: {fileID: 0}
+  darkboots: {fileID: 0}
+  cheese: {fileID: 0}
   key: {fileID: 0}
   potiondoubledamage: {fileID: 21300000, guid: 74f3ff7910cd94f41af53cfb1413fa03, type: 3}
   potionweak: {fileID: 0}
@@ -145,16 +158,36 @@ MonoBehaviour:
   hidemage: {fileID: 0}
   hidering: {fileID: 0}
   hideshield: {fileID: 0}
+  hidewarhammer: {fileID: 0}
+  hidemountainsword: {fileID: 0}
+  hidegreyarmour: {fileID: 0}
+  hideboots2: {fileID: 0}
+  hidewand: {fileID: 0}
+  hidegreygloves: {fileID: 0}
+  hidegreyboots: {fileID: 0}
+  hidebow3: {fileID: 0}
+  hideaxe: {fileID: 0}
+  hidedarkgloves: {fileID: 0}
+  hidedarkarmour: {fileID: 0}
+  hidedarkboots: {fileID: 0}
+  hidecheese: {fileID: 0}
   hidepotiondouble: {fileID: 0}
   hidepotionweak: {fileID: 0}
   playerhealth: 0
   playerhealth2: 0
   playerhealth3: 0
+  playerhealth4: 0
   keytrue: 0
   armourcanvas: {fileID: 0}
   ringcanvas: {fileID: 0}
   weak: {fileID: 0}
   sound: 0
+  ring1true: 
+  ring2true: 
+  ring3true: 
+  ring4true: 
+  ring5true: 
+  ring6true: 
 --- !u!212 &212600875023722502
 SpriteRenderer:
   m_ObjectHideFlags: 1
