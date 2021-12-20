@@ -52,6 +52,15 @@ public class Enemy_Spawner : MonoBehaviour {
 				}
 			}
 		}
+		//Determines location to spawn skeletons for level 3
+		if (SceneManager.GetActiveScene ().buildIndex == 4) {
+			if (gameObject.name == "Spawnerdoor") {
+				for (int i = 0; i < 3; i++) {
+					enemyspawned.Add (Instantiate (enemy, new Vector2 (19.2f, -5.07f), Quaternion.identity));
+					spawnerfull [i] = true;
+				}
+			}
+		}
 	}
 
 	// Update is called once per frame
@@ -125,6 +134,26 @@ public class Enemy_Spawner : MonoBehaviour {
 				}
 				if (spawnerfull [0] == false) {
 					enemyspawned.Insert (0, (Instantiate (enemy, new Vector2 (16.93f, -17.81f), Quaternion.identity)));
+					spawnerfull [0] = true;
+					Debug.Log ("I0:True");
+				}
+			}
+		}
+		//Spawns at location in level 3
+		if(SceneManager.GetActiveScene ().buildIndex == 4) {
+			if (gameObject.name == "Spawnerdoor") {
+				if (spawnerfull [2] == false) {
+					enemyspawned.Insert (2, (Instantiate (enemy, new Vector2 (19.2f, -5.07f), Quaternion.identity)));
+					spawnerfull [2] = true;
+					Debug.Log ("I2:True");
+				}
+				if (spawnerfull [1] == false) {
+					enemyspawned.Insert (1, (Instantiate (enemy, new Vector2 (19.2f, -5.07f), Quaternion.identity)));
+					spawnerfull [1] = true;
+					Debug.Log ("I1:True");
+				}
+				if (spawnerfull [0] == false) {
+					enemyspawned.Insert (0, (Instantiate (enemy, new Vector2 (19.2f, -5.07f), Quaternion.identity)));
 					spawnerfull [0] = true;
 					Debug.Log ("I0:True");
 				}

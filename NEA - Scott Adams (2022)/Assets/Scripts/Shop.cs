@@ -199,6 +199,7 @@ public class Shop : MonoBehaviour {
 		gold += other2.gold;
 		goldtext.text = "Gold: " + gold.ToString ();
 		goldtext2.text = "Gold: " + gold.ToString ();
+		Debug.Log (gold);
 		/*if (gold >= 10) {
 			item1button.colors = usablecolour;
 		}

@@ -218,7 +218,675 @@ public class Inventory_1 : MonoBehaviour {
 			inventory4 = 1;
 			inventory5 = 0;
 		}
+		//Sets which part of list for level 2 link to which inventory slot and transfers items from level 1
 		if (SceneManager.GetActiveScene ().buildIndex == 3) {
+			inventory1 = 2;
+			inventory2 = 4;
+			inventory3 = 3;
+			inventory4 = 1;
+			inventory5 = 0;
+			if (PlayerPrefs.GetString ("inventory1") == "Bow1") {
+				weaponholder = bow;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "sword") {
+				weaponholder = sword;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "potion") {
+				weaponholder = potion;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "apple") {
+				weaponholder = apple;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "armour1") {
+				weaponholder = armour1;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "armour2") {
+				weaponholder = armour2;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "bat") {
+				weaponholder = bat;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "belt") {
+				weaponholder = belt;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "boots") {
+				weaponholder = boots;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "bow2") {
+				weaponholder = bow2;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "club") {
+				weaponholder = club;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "dagger") {
+				weaponholder = dagger;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "gloves") {
+				weaponholder = gloves;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "mage") {
+				weaponholder = mage;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "ring") {
+				weaponholder = ring;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "ring2") {
+				weaponholder = ring2;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "ring3") {
+				weaponholder = ring3;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "ring4") {
+				weaponholder = ring4;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "ring5") {
+				weaponholder = ring5;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "ring6") {
+				weaponholder = ring6;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "shield") {
+				weaponholder = shield;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "warhammer") {
+				weaponholder = warhammer;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "mountainsword") {
+				weaponholder = mountainsword;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "greyarmour") {
+				weaponholder = greyarmour;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "boots2") {
+				weaponholder = boots2;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "wand") {
+				weaponholder = wand;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "greygloves") {
+				weaponholder = greygloves;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "greyboots") {
+				weaponholder = greyboots;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "bow3") {
+				weaponholder = bow3;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "axe") {
+				weaponholder = axe;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "darkgloves") {
+				weaponholder = darkgloves;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "darkarmour") {
+				weaponholder = darkarmour;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "darkboots") {
+				weaponholder = darkboots;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "cheese") {
+				weaponholder = cheese;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "Key_B") {
+				weaponholder = key;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "potiondoubledamage") {
+				weaponholder = potiondoubledamage;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == "potionweak") {
+				weaponholder = potionweak;
+			}
+			if (PlayerPrefs.GetString ("inventory1") == null) {
+				weaponholder = null;
+			}
+			inventory [inventory1].GetComponent<Image> ().sprite = weaponholder;
+			if (PlayerPrefs.GetString ("inventory2") == "Bow1") {
+				weaponholder = bow;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "sword") {
+				weaponholder = sword;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "potion") {
+				weaponholder = potion;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "apple") {
+				weaponholder = apple;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "armour1") {
+				weaponholder = armour1;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "armour2") {
+				weaponholder = armour2;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "bat") {
+				weaponholder = bat;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "belt") {
+				weaponholder = belt;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "boots") {
+				weaponholder = boots;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "bow2") {
+				weaponholder = bow2;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "club") {
+				weaponholder = club;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "dagger") {
+				weaponholder = dagger;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "gloves") {
+				weaponholder = gloves;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "mage") {
+				weaponholder = mage;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "ring") {
+				weaponholder = ring;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "ring2") {
+				weaponholder = ring2;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "ring3") {
+				weaponholder = ring3;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "ring4") {
+				weaponholder = ring4;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "ring5") {
+				weaponholder = ring5;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "ring6") {
+				weaponholder = ring6;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "shield") {
+				weaponholder = shield;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "warhammer") {
+				weaponholder = warhammer;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "mountainsword") {
+				weaponholder = mountainsword;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "greyarmour") {
+				weaponholder = greyarmour;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "boots2") {
+				weaponholder = boots2;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "wand") {
+				weaponholder = wand;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "greygloves") {
+				weaponholder = greygloves;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "greyboots") {
+				weaponholder = greyboots;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "bow3") {
+				weaponholder = bow3;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "axe") {
+				weaponholder = axe;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "darkgloves") {
+				weaponholder = darkgloves;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "darkarmour") {
+				weaponholder = darkarmour;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "darkboots") {
+				weaponholder = darkboots;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "cheese") {
+				weaponholder = cheese;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "Key_B") {
+				weaponholder = key;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "potiondoubledamage") {
+				weaponholder = potiondoubledamage;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == "potionweak") {
+				weaponholder = potionweak;
+			}
+			if (PlayerPrefs.GetString ("inventory2") == null) {
+				weaponholder = null;
+			}
+			inventory [inventory2].GetComponent<Image> ().sprite = weaponholder;
+			if (PlayerPrefs.GetString ("inventory3") == "Bow1") {
+				weaponholder = bow;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "sword") {
+				weaponholder = sword;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "potion") {
+				weaponholder = potion;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "apple") {
+				weaponholder = apple;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "armour1") {
+				weaponholder = armour1;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "armour2") {
+				weaponholder = armour2;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "bat") {
+				weaponholder = bat;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "belt") {
+				weaponholder = belt;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "boots") {
+				weaponholder = boots;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "bow2") {
+				weaponholder = bow2;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "club") {
+				weaponholder = club;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "dagger") {
+				weaponholder = dagger;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "gloves") {
+				weaponholder = gloves;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "mage") {
+				weaponholder = mage;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "ring") {
+				weaponholder = ring;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "ring2") {
+				weaponholder = ring2;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "ring3") {
+				weaponholder = ring3;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "ring4") {
+				weaponholder = ring4;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "ring5") {
+				weaponholder = ring5;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "ring6") {
+				weaponholder = ring6;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "shield") {
+				weaponholder = shield;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "warhammer") {
+				weaponholder = warhammer;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "mountainsword") {
+				weaponholder = mountainsword;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "greyarmour") {
+				weaponholder = greyarmour;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "boots2") {
+				weaponholder = boots2;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "wand") {
+				weaponholder = wand;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "greygloves") {
+				weaponholder = greygloves;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "greyboots") {
+				weaponholder = greyboots;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "bow3") {
+				weaponholder = bow3;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "axe") {
+				weaponholder = axe;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "darkgloves") {
+				weaponholder = darkgloves;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "darkarmour") {
+				weaponholder = darkarmour;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "darkboots") {
+				weaponholder = darkboots;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "cheese") {
+				weaponholder = cheese;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "Key_B") {
+				weaponholder = key;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "potiondoubledamage") {
+				weaponholder = potiondoubledamage;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == "potionweak") {
+				weaponholder = potionweak;
+			}
+			if (PlayerPrefs.GetString ("inventory3") == null) {
+				weaponholder = null;
+			}
+			inventory [inventory3].GetComponent<Image> ().sprite = weaponholder;
+			if (PlayerPrefs.GetString ("inventory4") == "Bow1") {
+				weaponholder = bow;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "sword") {
+				weaponholder = sword;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "potion") {
+				weaponholder = potion;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "apple") {
+				weaponholder = apple;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "armour1") {
+				weaponholder = armour1;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "armour2") {
+				weaponholder = armour2;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "bat") {
+				weaponholder = bat;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "belt") {
+				weaponholder = belt;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "boots") {
+				weaponholder = boots;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "bow2") {
+				weaponholder = bow2;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "club") {
+				weaponholder = club;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "dagger") {
+				weaponholder = dagger;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "gloves") {
+				weaponholder = gloves;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "mage") {
+				weaponholder = mage;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "ring") {
+				weaponholder = ring;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "ring2") {
+				weaponholder = ring2;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "ring3") {
+				weaponholder = ring3;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "ring4") {
+				weaponholder = ring4;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "ring5") {
+				weaponholder = ring5;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "ring6") {
+				weaponholder = ring6;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "shield") {
+				weaponholder = shield;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "warhammer") {
+				weaponholder = warhammer;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "mountainsword") {
+				weaponholder = mountainsword;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "greyarmour") {
+				weaponholder = greyarmour;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "boots2") {
+				weaponholder = boots2;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "wand") {
+				weaponholder = wand;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "greygloves") {
+				weaponholder = greygloves;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "greyboots") {
+				weaponholder = greyboots;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "bow3") {
+				weaponholder = bow3;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "axe") {
+				weaponholder = axe;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "darkgloves") {
+				weaponholder = darkgloves;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "darkarmour") {
+				weaponholder = darkarmour;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "darkboots") {
+				weaponholder = darkboots;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "cheese") {
+				weaponholder = cheese;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "Key_B") {
+				weaponholder = key;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "potiondoubledamage") {
+				weaponholder = potiondoubledamage;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == "potionweak") {
+				weaponholder = potionweak;
+			}
+			if (PlayerPrefs.GetString ("inventory4") == null) {
+				weaponholder = null;
+			}
+			inventory [inventory4].GetComponent<Image> ().sprite = weaponholder;
+			if (PlayerPrefs.GetString ("inventory5") == "Bow1") {
+				weaponholder = bow;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "sword") {
+				weaponholder = sword;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "potion") {
+				weaponholder = potion;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "apple") {
+				weaponholder = apple;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "armour1") {
+				weaponholder = armour1;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "armour2") {
+				weaponholder = armour2;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "bat") {
+				weaponholder = bat;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "belt") {
+				weaponholder = belt;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "boots") {
+				weaponholder = boots;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "bow2") {
+				weaponholder = bow2;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "club") {
+				weaponholder = club;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "dagger") {
+				weaponholder = dagger;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "gloves") {
+				weaponholder = gloves;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "mage") {
+				weaponholder = mage;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "ring") {
+				weaponholder = ring;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "ring2") {
+				weaponholder = ring2;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "ring3") {
+				weaponholder = ring3;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "ring4") {
+				weaponholder = ring4;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "ring5") {
+				weaponholder = ring5;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "ring6") {
+				weaponholder = ring6;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "shield") {
+				weaponholder = shield;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "warhammer") {
+				weaponholder = warhammer;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "mountainsword") {
+				weaponholder = mountainsword;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "greyarmour") {
+				weaponholder = greyarmour;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "boots2") {
+				weaponholder = boots2;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "wand") {
+				weaponholder = wand;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "greygloves") {
+				weaponholder = greygloves;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "greyboots") {
+				weaponholder = greyboots;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "bow3") {
+				weaponholder = bow3;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "axe") {
+				weaponholder = axe;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "darkgloves") {
+				weaponholder = darkgloves;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "darkarmour") {
+				weaponholder = darkarmour;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "darkboots") {
+				weaponholder = darkboots;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "cheese") {
+				weaponholder = cheese;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "Key_B") {
+				weaponholder = key;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "potiondoubledamage") {
+				weaponholder = potiondoubledamage;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == "potionweak") {
+				weaponholder = potionweak;
+			}
+			if (PlayerPrefs.GetString ("inventory5") == null) {
+				weaponholder = null;
+			}
+			inventory [inventory5].GetComponent<Image> ().sprite = weaponholder;
+			if (PlayerPrefs.GetString ("armourimage") == null) {
+				weaponholder = null;
+			}
+			if (PlayerPrefs.GetString ("armourimage") == "armour1") {
+				armourimage.GetComponent<Image> ().sprite = armour1;
+				armourarmourstat = 2;
+			}
+			if (PlayerPrefs.GetString ("armourimage") == "armour2") {
+				armourimage.GetComponent<Image> ().sprite = armour2;
+				armourarmourstat = 5;
+			}
+			if (PlayerPrefs.GetString ("armourimage") == "greyarmour") {
+				armourimage.GetComponent<Image> ().sprite = greyarmour;
+				armourarmourstat = 7;
+			}
+			if (PlayerPrefs.GetString ("armourimage") == "darkarmour") {
+				armourimage.GetComponent<Image> ().sprite = darkarmour;
+				armourarmourstat = 10;
+			}
+			if (PlayerPrefs.GetString ("glovesimage") == "belt") {
+				glovesimage.GetComponent<Image> ().sprite = belt;
+				armourglovesstat = 2;
+			}
+			if (PlayerPrefs.GetString ("glovesimage") == "gloves") {
+				glovesimage.GetComponent<Image> ().sprite = gloves;
+				armourglovesstat = 3;
+			}
+			if (PlayerPrefs.GetString ("glovesimage") == "greygloves") {
+				glovesimage.GetComponent<Image> ().sprite = greygloves;
+				armourglovesstat = 5;
+			}
+			if (PlayerPrefs.GetString ("glovesimage") == "darkgloves") {
+				glovesimage.GetComponent<Image> ().sprite = darkgloves;
+				armourglovesstat = 7;
+			}
+			if (PlayerPrefs.GetString ("glovesimage") == "shield") {
+				glovesimage.GetComponent<Image> ().sprite = shield;
+				armourglovesstat = 5;
+			}
+			if (PlayerPrefs.GetString ("bootsimage") == "boots") {
+				bootsimage.GetComponent<Image> ().sprite = boots;
+				armourbootsstat = 2;
+			}
+			if (PlayerPrefs.GetString ("bootsimage") == "boots2") {
+				bootsimage.GetComponent<Image> ().sprite = boots2;
+				armourbootsstat = 4;
+			}
+			if (PlayerPrefs.GetString ("bootsimage") == "greyboots") {
+				bootsimage.GetComponent<Image> ().sprite = greyboots;
+				armourbootsstat = 6;
+			}
+			if (PlayerPrefs.GetString ("bootsimage") == "darkboots") {
+				bootsimage.GetComponent<Image> ().sprite = darkboots;
+				armourbootsstat = 9;
+			}
+			if (PlayerPrefs.GetString ("ring1") == "true") {
+				ring1image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
+				armourringstat += 10;
+			}
+			if (PlayerPrefs.GetString ("ring2") == "true") {
+				ring2image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
+				playerspeedtrue = true;
+			}
+			if (PlayerPrefs.GetString ("ring3") == "true") {
+				ring3image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
+				playerhealth = true;
+			}
+			if (PlayerPrefs.GetString ("ring4") == "true") {
+				ring4image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
+				armourringstat += 40;
+			}
+			if (PlayerPrefs.GetString ("ring5") == "true") {
+				ring5image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
+				playerspeedtrue2 = true;
+			}
+			if (PlayerPrefs.GetString ("ring6") == "true") {
+				ring6image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
+				playerhealth2 = true;
+			}
+			Debug.Log(PlayerPrefs.GetString("inventory1"));
+			Debug.Log(PlayerPrefs.GetString("inventory2"));
+			Debug.Log(PlayerPrefs.GetString("inventory3"));
+			Debug.Log(PlayerPrefs.GetString("inventory4"));
+			Debug.Log(PlayerPrefs.GetString("inventory5"));
+		}
+		//Sets which part of list for level 3 link to which inventory slot and transfers items from level 2
+		if (SceneManager.GetActiveScene ().buildIndex == 4) {
 			inventory1 = 2;
 			inventory2 = 4;
 			inventory3 = 3;
