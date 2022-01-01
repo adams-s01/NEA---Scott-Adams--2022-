@@ -50,6 +50,34 @@ public class Map_Boundaries : MonoBehaviour {
 	public GameObject hallwaytoescaperoom2;
 	public GameObject escaperoom2;
 	public GameObject startzone3;
+	public GameObject firstup3;
+	public GameObject platformroom3;
+	public GameObject firstacross3;
+	public GameObject uptosmallroom3;
+	public GameObject smallroom3;
+	public GameObject firstdiagonal3;
+	public GameObject connectingroom3;
+	public GameObject firstdown3;
+	public GameObject longhallway3;
+	public GameObject seconddown3;
+	public GameObject pumpkinroom3;
+	public GameObject shoproom3;
+	public GameObject secondconnectingroom3;
+	public GameObject smallacross3;
+	public GameObject secondplatformroom3;
+	public GameObject acrosstodown3;
+	public GameObject thirddown3;
+	public GameObject fourthacross3;
+	public GameObject thirdconnectingroom3;
+	public GameObject fourthconnectingroom3;
+	public GameObject keyroom3;
+	public GameObject acrosstodiagonal3;
+	public GameObject seconddiagonal3;
+	public GameObject fifthconnectingroom3;
+	public GameObject fifthacross3;
+	public GameObject fourthdown3;
+	public GameObject lastacross3;
+	public GameObject escaperoom3;
 
 	// Use this for initialization
 	void Start () {
@@ -95,6 +123,37 @@ public class Map_Boundaries : MonoBehaviour {
 			secondemptyroom2.SetActive (false);
 			hallwaytoescaperoom2.SetActive (false);
 			escaperoom2.SetActive (false);
+		}
+		if (SceneManager.GetActiveScene ().buildIndex == 4) {
+			startzone3.SetActive (false);
+			firstup3.SetActive (false);
+			platformroom3.SetActive (false);
+			firstacross3.SetActive (false);
+			uptosmallroom3.SetActive (false);
+			smallroom3.SetActive (false);
+			firstdiagonal3.SetActive (false);
+			connectingroom3.SetActive (false);
+			firstdown3.SetActive (false);
+			longhallway3.SetActive (false);
+			seconddown3.SetActive (false);
+			pumpkinroom3.SetActive (false);
+			shoproom3.SetActive (false);
+			secondconnectingroom3.SetActive (false);
+			smallacross3.SetActive (false);
+			secondplatformroom3.SetActive (false);
+			acrosstodown3.SetActive (false);
+			thirddown3.SetActive (false);
+			fourthacross3.SetActive (false);
+			thirdconnectingroom3.SetActive (false);
+			fourthconnectingroom3.SetActive (false);
+			keyroom3.SetActive (false);
+			acrosstodiagonal3.SetActive (false);
+			seconddiagonal3.SetActive (false);
+			fifthconnectingroom3.SetActive (false);
+			fifthacross3.SetActive (false);
+			fourthdown3.SetActive (false);
+			lastacross3.SetActive (false);
+			escaperoom3.SetActive (false);
 		}
 	}
 	
@@ -221,6 +280,93 @@ public class Map_Boundaries : MonoBehaviour {
 		}
 		if (col.gameObject.name == "Escaperoom2boundary") {
 			escaperoom2.SetActive (true);
+		}
+		if (col.gameObject.name == "Startzone3boundary") {
+			startzone3.SetActive (true);
+		}
+		if (col.gameObject.name == "Firstup3boundary") {
+			firstup3.SetActive (true);
+		}
+		if (col.gameObject.name == "Platformroom3boundary") {
+			platformroom3.SetActive (true);
+		}
+		if (col.gameObject.name == "Firstacross3boundary") {
+			firstacross3.SetActive (true);
+		}
+		if (col.gameObject.name == "Uptosmallroom3boundary") {
+			uptosmallroom3.SetActive (true);
+		}
+		if (col.gameObject.name == "Smallroom3boundary") {
+			smallroom3.SetActive (true);
+		}
+		if (col.gameObject.name == "Firstdiagonal3boundary") {
+			firstdiagonal3.SetActive (true);
+		}
+		if (col.gameObject.name == "Connectingroom3boundary") {
+			connectingroom3.SetActive (true);
+		}
+		if (col.gameObject.name == "Firstdown3boundary") {
+			firstdown3.SetActive (true);
+		}
+		if (col.gameObject.name == "Longhallway3boundary") {
+			longhallway3.SetActive (true);
+		}
+		if (col.gameObject.name == "Seconddown3boundary") {
+			seconddown3.SetActive (true);
+		}
+		if (col.gameObject.name == "Pumpkinroom3boundary") {
+			pumpkinroom3.SetActive (true);
+		}
+		if (col.gameObject.name == "Shoproom3boundary") {
+			shoproom3.SetActive (true);
+		}
+		if (col.gameObject.name == "Secondconnectingroom3boundary") {
+			secondconnectingroom3.SetActive (true);
+		}
+		if (col.gameObject.name == "Smallacross3boundary") {
+			smallacross3.SetActive (true);
+		}
+		if (col.gameObject.name == "Secondplatformroom3boundary") {
+			secondplatformroom3.SetActive (true);
+		}
+		if (col.gameObject.name == "Acrosstodown3boundary") {
+			acrosstodown3.SetActive (true);
+		}
+		if (col.gameObject.name == "Thirddown3boundary") {
+			thirddown3.SetActive (true);
+		}
+		if (col.gameObject.name == "Fourthacross3boundary") {
+			fourthacross3.SetActive (true);
+		}
+		if (col.gameObject.name == "Thirdconnectingroom3boundary") {
+			thirdconnectingroom3.SetActive (true);
+		}
+		if (col.gameObject.name == "Fourthconnectingroom3boundary") {
+			fourthconnectingroom3.SetActive (true);
+		}
+		if (col.gameObject.name == "Keyroom3boundary") {
+			keyroom3.SetActive (true);
+		}
+		if (col.gameObject.name == "Acrosstodiagonal3boundary") {
+			acrosstodiagonal3.SetActive (true);
+		}
+		if (col.gameObject.name == "Seconddiagonal3boundary") {
+			seconddiagonal3.SetActive (true);
+		}
+		if (col.gameObject.name == "Fifthconnectingroom3boundary") {
+			fifthconnectingroom3.SetActive (true);
+		}
+		if (col.gameObject.name == "Fifthacross3boundary") {
+			fifthacross3.SetActive (true);
+		}
+		if (col.gameObject.name == "Fourthdown3boundary") {
+			fourthdown3.SetActive (true);
+		}
+		if (col.gameObject.name == "Lastacross3boundary") {
+			lastacross3.SetActive (true);
+		}
+		if (col.gameObject.name == "Escaperoom3boundary") {
+			escaperoom3.SetActive (true);
 		}
 	}
 }
