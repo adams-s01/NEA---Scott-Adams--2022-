@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 8
-* Last Edited: Sprint 9
+* Last Edited: Sprint 11
 * Purpose: Shows which sections have been visited
 */
 using System.Collections;
@@ -49,6 +49,7 @@ public class Map_Boundaries : MonoBehaviour {
 	public GameObject secondemptyroom2;
 	public GameObject hallwaytoescaperoom2;
 	public GameObject escaperoom2;
+	public GameObject startzone3;
 
 	// Use this for initialization
 	void Start () {
