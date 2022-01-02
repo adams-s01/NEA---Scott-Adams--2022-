@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 2
-* Last Edited: Sprint 6
+* Last Edited: Sprint 11
 * Purpose: Causes a shop to exist
 */
 using System.Collections;
@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Shop : MonoBehaviour {
 
@@ -181,7 +182,12 @@ public class Shop : MonoBehaviour {
 		item28.SetActive (false);
 		item29.SetActive (false);
 		item30.SetActive (false);
-		gold = 1000;
+		if (SceneManager.GetActiveScene ().buildIndex == 2) {
+			gold = 1000;
+		}
+		if (SceneManager.GetActiveScene ().buildIndex == 3 || SceneManager.GetActiveScene ().buildIndex == 4) {
+			gold = PlayerPrefs.GetInt ("gold");
+		}
 		unusablecolour = item1button.colors;
 		usablecolour = item1button.colors;
 		unusablecolour.highlightedColor = new Color32 (204, 0, 0, 255);

@@ -14,6 +14,8 @@ public class Escape_Door : MonoBehaviour {
 	public GameObject opendoor;
 	public GameObject other;
 	private Inventory_1 other2;
+	public GameObject other3;
+	Shop other4;
 
 	// Use this for initialization
 	void Start () {
@@ -22,6 +24,7 @@ public class Escape_Door : MonoBehaviour {
 		opendoor.SetActive (false);
 		other2 = other.GetComponent<Inventory_1> ();
 		Debug.Log ("2");
+		other4 = other3.GetComponent<Shop> ();
 	}
 	
 	// Update is called once per frame
@@ -94,6 +97,7 @@ public class Escape_Door : MonoBehaviour {
 			PlayerPrefs.SetString ("ring4", other2.ring4true);
 			PlayerPrefs.SetString ("ring5", other2.ring5true);
 			PlayerPrefs.SetString ("ring6", other2.ring6true);
+			PlayerPrefs.SetInt ("gold", other4.gold);
 			if (SceneManager.GetActiveScene ().buildIndex == 1) {
 				SceneManager.LoadScene (0);
 			}
