@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 2
-* Last Edited: Sprint 9
+* Last Edited: Sprint 11
 * Purpose: Causes an inventory to exist
 */
 using System.Collections;
@@ -183,19 +183,21 @@ public class Inventory_1 : MonoBehaviour {
 		hidemage.SetActive (false);
 		hidering.SetActive (false);
 		hideshield.SetActive (false);
-		hidewarhammer.SetActive (false);
-		hidemountainsword.SetActive (false);
-		hidegreyarmour.SetActive (false);
-		hideboots2.SetActive (false);
-		hidewand.SetActive (false);
-		hidegreygloves.SetActive (false);
-		hidegreyboots.SetActive (false);
-		hidebow3.SetActive (false);
-		hideaxe.SetActive (false);
-		hidedarkgloves.SetActive (false);
-		hidedarkarmour.SetActive (false);
-		hidedarkboots.SetActive (false);
-		hidecheese.SetActive (false);
+		if (SceneManager.GetActiveScene ().buildIndex != 1) {
+			hidewarhammer.SetActive (false);
+			hidemountainsword.SetActive (false);
+			hidegreyarmour.SetActive (false);
+			hideboots2.SetActive (false);
+			hidewand.SetActive (false);
+			hidegreygloves.SetActive (false);
+			hidegreyboots.SetActive (false);
+			hidebow3.SetActive (false);
+			hideaxe.SetActive (false);
+			hidedarkgloves.SetActive (false);
+			hidedarkarmour.SetActive (false);
+			hidedarkboots.SetActive (false);
+			hidecheese.SetActive (false);
+		}
 
 		sleep = false;
 		playerspeedtrue = false;

@@ -1,6 +1,6 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Shop.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Inventory_1.cs">
     <Files>
       <File FileName="Assets\Scripts\Menu_Buttons.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Settings_Menu.cs" Line="1" Column="1" />
@@ -8,25 +8,25 @@
       <File FileName="Assets\Scripts\Tutorials.cs" Line="1" Column="1" />
       <File FileName="Assets\ActRPGsprites\readme.txt" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Enemy_Movement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Inventory_1.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Shop.cs" Line="189" Column="39" />
+      <File FileName="Assets\Scripts\Inventory_1.cs" Line="1701" Column="1" />
+      <File FileName="Assets\Scripts\Shop.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Crosshair.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Enemy_Spawner.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Bow_Shooting.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Arrow_Movement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Escape_Door.cs" Line="27" Column="1" />
+      <File FileName="Assets\Scripts\Escape_Door.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Spikes.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Pause.cs" Line="37" Column="3" />
+      <File FileName="Assets\Scripts\Pause.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Tutorial_Screen.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Weakpotion.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Blindpotion.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Pumpkin_Raycast.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Sound_Manager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Map_Screen.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Map_Boundaries.cs" Line="369" Column="31" />
+      <File FileName="Assets\Scripts\Map_Boundaries.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Double_Damage.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Blind_Coroutine.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\End_Stats.cs" Line="32" Column="48" />
+      <File FileName="Assets\Scripts\End_Stats.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -7,6 +7,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class End_Stats : MonoBehaviour {
 
@@ -21,7 +22,7 @@ public class End_Stats : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//endstatscanvas.SetActive (false);
+		endstatscanvas.SetActive (false);
 		other2 = other.GetComponent<Player_Movement> ();
 		other4 = other3.GetComponent<Shop> ();
 	}
@@ -31,5 +32,10 @@ public class End_Stats : MonoBehaviour {
 		endtimer.text = "End time: " + Time.fixedTime.ToString ("0.00");
 		endlives.text = "End lives: " + other2.lives;
 		endgold.text = "End gold: " + other4.gold;
+	}
+	//Button to send the player back to the start screen
+	public void Return()
+	{
+		SceneManager.LoadScene (0);
 	}
 }

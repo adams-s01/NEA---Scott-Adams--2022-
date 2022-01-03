@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 1
-* Last Edited: Sprint 8
+* Last Edited: Sprint 11
 * Purpose: Cause the player to move
 */
 using System.Collections;
@@ -134,7 +134,9 @@ public class Player_Movement : MonoBehaviour {
 			SceneManager.LoadScene (0);
 		}
 		//Shows health
-		healthtext.text = "Health: " + playerhealth.ToString ();
+		if (SceneManager.GetActiveScene ().buildIndex != 1) {
+			healthtext.text = "Health: " + playerhealth.ToString ();
+		}
 		armourstat = (float)other3.armourstat / 100;
 	}
 	//Causes the player to not be able to sprint for 10 seconds

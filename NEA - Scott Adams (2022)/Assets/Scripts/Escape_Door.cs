@@ -16,6 +16,7 @@ public class Escape_Door : MonoBehaviour {
 	private Inventory_1 other2;
 	public GameObject other3;
 	Shop other4;
+	public GameObject endstatscanvas;
 
 	// Use this for initialization
 	void Start () {
@@ -108,7 +109,7 @@ public class Escape_Door : MonoBehaviour {
 				SceneManager.LoadScene (4);
 			}
 			if (SceneManager.GetActiveScene ().buildIndex == 4) {
-				SceneManager.LoadScene (0);
+				endstatscanvas.SetActive (true);
 			}
 		}
 	}
