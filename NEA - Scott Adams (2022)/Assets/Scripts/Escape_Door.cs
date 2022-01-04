@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 5
-* Last Edited: Sprint 11
+* Last Edited: Sprint 12
 * Purpose: To make the escape door work
 */
 using System.Collections;
@@ -24,7 +24,6 @@ public class Escape_Door : MonoBehaviour {
 		//opendoor = GameObject.FindGameObjectWithTag ("opendoor");
 		opendoor.SetActive (false);
 		other2 = other.GetComponent<Inventory_1> ();
-		Debug.Log ("2");
 		other4 = other3.GetComponent<Shop> ();
 	}
 	
@@ -32,7 +31,6 @@ public class Escape_Door : MonoBehaviour {
 	void Update () {
 		//Changes door from closed to open when got key
 		if (other2.keytrue == true) {
-			Debug.Log ("£");
 			opendoor.SetActive (true);
 			closeddoor.SetActive (false);
 
@@ -110,6 +108,7 @@ public class Escape_Door : MonoBehaviour {
 			}
 			if (SceneManager.GetActiveScene ().buildIndex == 4) {
 				endstatscanvas.SetActive (true);
+				Time.timeScale = 0;
 			}
 		}
 	}

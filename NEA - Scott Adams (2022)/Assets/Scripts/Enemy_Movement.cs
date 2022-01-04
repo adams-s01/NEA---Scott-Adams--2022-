@@ -88,7 +88,6 @@ public class Enemy_Movement : MonoBehaviour {
 		if (gameObject.tag == "pumpkin") {
 			other4 = GetComponent<Pumpkin_Raycast> ();
 			distance1 = other4.distance;
-			Debug.Log ("222" + distance1);
 			//Determines which way to move
 			if (distance1 == 0) {
 				rb.velocity = Vector2.zero;
@@ -352,9 +351,7 @@ public class Enemy_Movement : MonoBehaviour {
 	{
 		sleep1 = true;
 		blindarea = Instantiate (blind, new Vector2 (enemyx, enemyy), Quaternion.identity);
-		Debug.Log ("start of call");
 		yield return new WaitForSecondsRealtime (5);
-		Debug.Log ("after call");
 		Destroy (blindarea);
 		sleep1 = false;
 	}
