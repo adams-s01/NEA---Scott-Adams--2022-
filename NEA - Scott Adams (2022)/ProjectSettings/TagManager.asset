@@ -81,6 +81,7 @@ TagManager:
   - item29
   - item30
   - spikes2
+  - scoreboard
   layers:
   - Default
   - TransparentFX

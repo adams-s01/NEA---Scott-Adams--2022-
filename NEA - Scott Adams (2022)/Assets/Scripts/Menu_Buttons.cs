@@ -1,6 +1,6 @@
 ﻿/*
 	 * Created: Sprint 1
-	 * Last Edited: Sprint 7
+	 * Last Edited: Sprint 12
 	 * Purpose: Start menu buttons
 	 */
 using System.Collections;
@@ -12,11 +12,15 @@ public class Menu_Buttons : MonoBehaviour {
 
 	private GameObject menu;
 	GameObject settings;
+	GameObject scoreboard;
+
 	// Initialises menu and settings canvases
 	void Start () {
 		menu = GameObject.FindGameObjectWithTag ("menu");
 		settings = GameObject.FindGameObjectWithTag ("settingsmenu");
+		scoreboard = GameObject.FindGameObjectWithTag ("scoreboard");
 		settings.SetActive (false);
+		scoreboard.SetActive (false);
 	}
 	
 	// Update is called once per frame
@@ -41,6 +45,13 @@ public class Menu_Buttons : MonoBehaviour {
 		Debug.Log ("Settings");
 		menu.SetActive (false);
 		settings.SetActive (true);
+	}
+	//Activates when scores button clicked,changes to scoreboard
+	public void Scoresbutton()
+	{
+		Debug.Log ("Scores");
+		menu.SetActive (false);
+		scoreboard.SetActive (true);
 	}
 	//Sets the difficulty for other levels
 	public void Settings(string settings2)
