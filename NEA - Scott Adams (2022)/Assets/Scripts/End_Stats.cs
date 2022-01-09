@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 11
-* Last Edited: Sprint 11
+* Last Edited: Sprint 12
 * Purpose: Shows player's end stats
 */
 using System.Collections;
@@ -19,10 +19,13 @@ public class End_Stats : MonoBehaviour {
 	Player_Movement other2;
 	public GameObject other3;
 	Shop other4;
+	public GameObject namecanvas;
+	public bool sendscore;
 
 	// Use this for initialization
 	void Start () {
 		endstatscanvas.SetActive (false);
+		namecanvas.SetActive (false);
 		other2 = other.GetComponent<Player_Movement> ();
 		other4 = other3.GetComponent<Shop> ();
 	}
@@ -37,5 +40,12 @@ public class End_Stats : MonoBehaviour {
 	public void Return()
 	{
 		SceneManager.LoadScene (0);
+		sendscore = true;
+	}
+	//Button to change the canvas to the name canvas
+	public void Name()
+	{
+		namecanvas.SetActive (true);
+		endstatscanvas.SetActive (false);
 	}
 }

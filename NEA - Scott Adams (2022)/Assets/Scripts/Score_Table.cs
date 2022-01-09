@@ -30,15 +30,17 @@ public class Score_Table : MonoBehaviour {
 	string read;
 	public GameObject scoreboard;
 	public GameObject menu;
-	TMP_InputField input;
-	string name;
+	public GameObject other3;
+	Name other4;
+	public GameObject other5;
+	End_Stats other6;
 
 	// Use this for initialization
 	void Start () {
 		if (SceneManager.GetActiveScene ().buildIndex != 0) {
 			other2 = other.GetComponent<Escape_Door> ();
-			input = GameObject.FindGameObjectWithTag ("Name").GetComponent<TMP_InputField> ();
-
+			other4 = other3.GetComponent<Name> ();
+			other6 = other5.GetComponent<End_Stats> ();
 		}
 		filepath = getpath ();
 		if (SceneManager.GetActiveScene ().buildIndex == 0) {
@@ -50,12 +52,11 @@ public class Score_Table : MonoBehaviour {
 	void Update () {
 		if (SceneManager.GetActiveScene ().buildIndex != 0) {
 			//If the endstats canvas is active, open CSV
-			if (other2.endstatscanvas.activeSelf == true && once == false) {
+			if (other6.sendscore == true && once == false) {
 				//Writes name and time to the CSV file
 				once = true;
 				StreamWriter writer = new StreamWriter (filepath, true);
-				name = input.text;
-				writer.WriteLine (Time.fixedTime.ToString ("00.00") + "," + name);
+				writer.WriteLine (Time.fixedTime.ToString ("00.00") + "," + other4.name);
 				writer.Close ();
 				Debug.Log ("2345");
 			}
