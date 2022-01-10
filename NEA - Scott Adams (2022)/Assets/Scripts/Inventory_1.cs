@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 2
-* Last Edited: Sprint 11
+* Last Edited: Sprint 12
 * Purpose: Causes an inventory to exist
 */
 using System.Collections;
@@ -1554,12 +1554,7 @@ public class Inventory_1 : MonoBehaviour {
 			Debug.Log(PlayerPrefs.GetString("inventory4"));
 			Debug.Log(PlayerPrefs.GetString("inventory5"));
 		}
-		ring1true = "false";
-		ring2true = "false";
-		ring3true = "false";
-		ring4true = "false";
-		ring5true = "false";
-		ring6true = "false";
+
 	}
 	
 	// Sets damage to the damage in the function Weapon

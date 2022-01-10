@@ -14,6 +14,7 @@ public class Name : MonoBehaviour {
 	public TextMeshProUGUI nametext;
 	public GameObject namecanvas;
 	public GameObject endstatscanvas;
+	int length;
 
 	// Use this for initialization
 	void Start () {
@@ -159,5 +160,11 @@ public class Name : MonoBehaviour {
 	{
 		endstatscanvas.SetActive (true);
 		namecanvas.SetActive (false);
+	}
+	//Button to remove a letter
+	public void Remove()
+	{
+		length = name.Length;
+		name = name.Substring (0, length - 1);
 	}
 }
