@@ -8,7 +8,7 @@
       <File FileName="Assets\Scripts\Tutorials.cs" Line="1" Column="1" />
       <File FileName="Assets\ActRPGsprites\readme.txt" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Enemy_Movement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Inventory_1.cs" Line="1804" Column="9" />
+      <File FileName="Assets\Scripts\Inventory_1.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Shop.cs" Line="215" Column="5" />
       <File FileName="Assets\Scripts\Crosshair.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Enemy_Spawner.cs" Line="1" Column="1" />
@@ -20,7 +20,7 @@
       <File FileName="Assets\Scripts\Tutorial_Screen.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Weakpotion.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Blindpotion.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Pumpkin_Raycast.cs" Line="35" Column="1" />
+      <File FileName="Assets\Scripts\Pumpkin_Raycast.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Sound_Manager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Map_Screen.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Map_Boundaries.cs" Line="1" Column="1" />
@@ -28,7 +28,7 @@
       <File FileName="Assets\Scripts\Blind_Coroutine.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\End_Stats.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Score_Table.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Name.cs" Line="169" Column="3" />
+      <File FileName="Assets\Scripts\Name.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
