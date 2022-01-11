@@ -186,8 +186,8 @@ public class Shop : MonoBehaviour {
 			item29.SetActive (false);
 			item30.SetActive (false);
 		}
-		if (SceneManager.GetActiveScene ().buildIndex == 2) {
-			gold = 1000;
+		if (SceneManager.GetActiveScene ().buildIndex == 2||SceneManager.GetActiveScene ().buildIndex == 1) {
+			gold = 25;
 		}
 		if (SceneManager.GetActiveScene ().buildIndex == 3 || SceneManager.GetActiveScene ().buildIndex == 4) {
 			gold = PlayerPrefs.GetInt ("gold");
@@ -234,7 +234,9 @@ public class Shop : MonoBehaviour {
 	public void Exit()
 	{
 		shopmenu.SetActive (false);
-		shopmenu2.SetActive (false);
+		if (SceneManager.GetActiveScene ().buildIndex != 1) {
+			shopmenu2.SetActive (false);
+		}
 	}
 	//Button to move to next shop menu
 	public void Shopmenu2()

@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 4
-* Last Edited: Sprint 9
+* Last Edited: Sprint 13
 * Purpose: To make the bow shoot an arrow
 */
 using System.Collections;
@@ -32,7 +32,7 @@ public class Bow_Shooting : MonoBehaviour {
 		angle1 = other2.angle;
 		playerx = player.transform.position.x;
 		playery = player.transform.position.y;
-		if (Input.GetKeyDown (KeyCode.Mouse0)&&gameObject.name=="bow11") {
+		if (Input.GetKeyDown (KeyCode.Mouse0)&&gameObject.name=="Bow11") {
 			Instantiate (arrow, new Vector2 (playerx, playery), Quaternion.Euler (0, 0, angle1));
 		}
 		if (Input.GetKeyDown (KeyCode.Mouse0)&&gameObject.name=="bow2") {

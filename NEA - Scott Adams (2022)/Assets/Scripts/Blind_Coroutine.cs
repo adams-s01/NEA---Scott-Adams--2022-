@@ -11,6 +11,7 @@ public class Blind_Coroutine : MonoBehaviour {
 
 
 	public GameObject blind;
+	public bool makeblind;
 
 
 	// Use this for initialization
@@ -22,6 +23,14 @@ public class Blind_Coroutine : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+	}
+	//Effects player when in blindness area
+	void OnTriggerStay2D(Collider2D col)
+	{
+		if(col.gameObject.tag=="Player")
+		{
+			makeblind = true;
+		}
 	}
 	//Waits for 5 seconds to remove the blind area
 	IEnumerator removeblindcoroutine()

@@ -136,6 +136,7 @@ public class Inventory_1 : MonoBehaviour {
 	public string ring4true;
 	public string ring5true;
 	public string ring6true;
+	bool truth;
 
 
 	// Use this for initialization
@@ -1558,7 +1559,7 @@ public class Inventory_1 : MonoBehaviour {
 	}
 	
 	// Sets damage to the damage in the function Weapon
-	void Update () {
+	void FixedUpdate () {
 		damage=Weapon(damage);
 		playerspeed = Speed (playerspeed);
 		armourstat = armourarmourstat + armourglovesstat + armourbootsstat+armourringstat;
@@ -1580,11 +1581,16 @@ public class Inventory_1 : MonoBehaviour {
 		if (col.gameObject.tag == "Player") {
 			for (int i = 0; i < inventory.Length; i++) {
 				if (inventory [i].GetComponent<Image> ().sprite == null) {
+					if (gameObject.name == "Bow") {
+					}
 					if (gameObject.name == "Bow1(Clone)") {
 						inventory [i + 0].GetComponent<Image> ().sprite = bow;
+						Debug.Log ("332");
+						truth = false;
 					}
 					if (gameObject.name == "sword(Clone)") {
 						inventory [i + 0].GetComponent<Image> ().sprite = sword;
+						Debug.Log ("442");
 					}
 					if (gameObject.name == "potion(Clone)") {
 						inventory [i + 0].GetComponent<Image> ().sprite = potion;
@@ -1691,11 +1697,13 @@ public class Inventory_1 : MonoBehaviour {
 					if (gameObject.name == "potionweak(Clone)") {
 						inventory [i + 0].GetComponent<Image> ().sprite = potionweak;
 					}
+
+					Debug.Log ("552");
 					GameObject bow1 = GameObject.FindGameObjectWithTag ("bow");
 					Destroy (bow1);
-					full [i] = true;
+					//full [i] = true;
 					//break;
-					return;
+					break;
 				}
 					
 			}
@@ -3047,5 +3055,10 @@ public class Inventory_1 : MonoBehaviour {
 		weakwall = Instantiate (weak, new Vector2 (playerx, playery), Quaternion.identity);
 		yield return new WaitForSecondsRealtime (5);
 		Destroy (weakwall);
+	}
+	IEnumerator wait()
+	{
+		yield return new WaitForSecondsRealtime (1);
+		truth = true;
 	}
 }

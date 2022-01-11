@@ -11,29 +11,24 @@ public class Blindpotion : MonoBehaviour {
 
 	public GameObject blindcanvas;
 	bool sleep;
+	public GameObject other;
+	Blind_Coroutine other2;
 
 	// Use this for initialization
 	void Start () {
 		//blindcanvas = GameObject.FindGameObjectWithTag ("blindcanvas");
 		blindcanvas.SetActive (false);
+		other = GameObject.;
+		other2 = other.GetComponent<Blind_Coroutine> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
-	//Effects player when in blindness area
-	void OnTriggerStay2D(Collider2D col)
-	{
-		if(col.gameObject.tag=="Player")
-		{
-			if (sleep == false) {
-				blindcanvas.SetActive (true);
-				StartCoroutine (blindcoroutine ());
-			}
+		if (other2.makeblind == true) {
+			blindcanvas.SetActive (true);
+			StartCoroutine (blindcoroutine ());
 		}
 	}
-	//Keeps blindness for 10 seconds
 	IEnumerator blindcoroutine()
 	{
 		sleep = true;

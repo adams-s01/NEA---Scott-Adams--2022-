@@ -85,30 +85,43 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   full: 0000000000
-  bow: {fileID: 0}
-  sword: {fileID: 0}
-  potion: {fileID: 0}
-  apple: {fileID: 0}
-  armour1: {fileID: 0}
-  armour2: {fileID: 0}
-  bat: {fileID: 0}
-  belt: {fileID: 0}
-  boots: {fileID: 0}
+  bow: {fileID: 21300000, guid: 668df6f48e59c80439fa587624e5a84d, type: 3}
+  sword: {fileID: 21300000, guid: c60f7cf1ed80f5840ac51195ae687e71, type: 3}
+  potion: {fileID: 21300000, guid: 19576ffc906f90b4a80790bea1c14ffa, type: 3}
+  apple: {fileID: 21300000, guid: ba277220d79b8d34a99a39932ea08859, type: 3}
+  armour1: {fileID: 21300000, guid: ef419fce13384654bab5cbf27232d640, type: 3}
+  armour2: {fileID: 21300000, guid: 4ec5e8e694bc3334db32778bebfd01e7, type: 3}
+  bat: {fileID: 21300000, guid: b0ab5287685813a41bacfc4ec20baac6, type: 3}
+  belt: {fileID: 21300000, guid: d6a5be75ee20dd94682b602816b88b5d, type: 3}
+  boots: {fileID: 21300000, guid: be57094a84846274f8365205b4fdec95, type: 3}
   bow2: {fileID: 21300000, guid: ed5c3e58951bf304c943dcb7430c42c7, type: 3}
-  club: {fileID: 0}
-  dagger: {fileID: 0}
-  gloves: {fileID: 0}
-  mage: {fileID: 0}
-  ring: {fileID: 0}
-  ring2: {fileID: 0}
-  ring3: {fileID: 0}
-  ring4: {fileID: 0}
-  ring5: {fileID: 0}
-  ring6: {fileID: 0}
-  shield: {fileID: 0}
-  key: {fileID: 0}
-  potiondoubledamage: {fileID: 0}
-  potionweak: {fileID: 0}
+  club: {fileID: 21300000, guid: f47fa1a8e8c158a42b11fd455234581d, type: 3}
+  dagger: {fileID: 21300000, guid: d459b9fcda543454dafcae327ebe0a42, type: 3}
+  gloves: {fileID: 21300000, guid: e85a4f4a40f9cca409993136dabd3bcc, type: 3}
+  mage: {fileID: 21300000, guid: 98ceb165e895b7f47ab880e0d1c64104, type: 3}
+  ring: {fileID: 21300000, guid: e76b30749d6bac4489c3ccf1ccb2c8fc, type: 3}
+  ring2: {fileID: 21300000, guid: f84b6dd0347a94f4a9a69ac911fc1f9d, type: 3}
+  ring3: {fileID: 21300000, guid: 8661c2c7e325a33438f06b02458fd199, type: 3}
+  ring4: {fileID: 21300000, guid: 0f1303cfff6593747a97f9c964728649, type: 3}
+  ring5: {fileID: 21300000, guid: 8bcb07d9c2c4c484caf61c33f48e3dd8, type: 3}
+  ring6: {fileID: 21300000, guid: f66c057114b8725409847a8a8e83a75b, type: 3}
+  shield: {fileID: 21300000, guid: 0c6de69acca756c409be4810a8510ac5, type: 3}
+  warhammer: {fileID: 21300000, guid: 9f1252bb6b24d25438ebfc585441b5b2, type: 3}
+  mountainsword: {fileID: 21300000, guid: fa697c9f9ee44564fa6d5414bd536b3e, type: 3}
+  greyarmour: {fileID: 21300000, guid: 683e7d9d6853b8a4b9dbe41a0be44b5c, type: 3}
+  boots2: {fileID: 21300000, guid: a83c32cdf9c1bf14dbfb441debb08e25, type: 3}
+  wand: {fileID: 21300000, guid: 136c9f47fc323df4ba024baf251f04b6, type: 3}
+  greygloves: {fileID: 21300000, guid: 058bff32ace94c34cae0a8f6914f87a5, type: 3}
+  greyboots: {fileID: 21300000, guid: 16c1bab30244e46438e1968dda34bd70, type: 3}
+  bow3: {fileID: 21300000, guid: 53e5b1aea071ba648b23bb563877f54d, type: 3}
+  axe: {fileID: 21300000, guid: 4eaffc20e3e780a4aaab6483f5d6190d, type: 3}
+  darkgloves: {fileID: 21300000, guid: 6b5d537fb6d2b8b4abee9de72ec7c504, type: 3}
+  darkarmour: {fileID: 21300000, guid: fdf9505acc4050143af4484d372ca54a, type: 3}
+  darkboots: {fileID: 21300000, guid: 59404f171a3d5694fa1650a8c37fc39f, type: 3}
+  cheese: {fileID: 21300000, guid: b523df5621b5d9743b2ba49e01570b6f, type: 3}
+  key: {fileID: 21300000, guid: 1eef36d1305e37b46a9377c8d12cdac6, type: 3}
+  potiondoubledamage: {fileID: 21300000, guid: 74f3ff7910cd94f41af53cfb1413fa03, type: 3}
+  potionweak: {fileID: 21300000, guid: 39ff590519daa884fb25d400b68a52b8, type: 3}
   image: {fileID: 0}
   image2: {fileID: 0}
   image3: {fileID: 0}
@@ -145,15 +158,36 @@ MonoBehaviour:
   hidemage: {fileID: 0}
   hidering: {fileID: 0}
   hideshield: {fileID: 0}
+  hidewarhammer: {fileID: 0}
+  hidemountainsword: {fileID: 0}
+  hidegreyarmour: {fileID: 0}
+  hideboots2: {fileID: 0}
+  hidewand: {fileID: 0}
+  hidegreygloves: {fileID: 0}
+  hidegreyboots: {fileID: 0}
+  hidebow3: {fileID: 0}
+  hideaxe: {fileID: 0}
+  hidedarkgloves: {fileID: 0}
+  hidedarkarmour: {fileID: 0}
+  hidedarkboots: {fileID: 0}
+  hidecheese: {fileID: 0}
   hidepotiondouble: {fileID: 0}
   hidepotionweak: {fileID: 0}
   playerhealth: 0
   playerhealth2: 0
   playerhealth3: 0
+  playerhealth4: 0
   keytrue: 0
   armourcanvas: {fileID: 0}
   ringcanvas: {fileID: 0}
   weak: {fileID: 0}
+  sound: 0
+  ring1true: 
+  ring2true: 
+  ring3true: 
+  ring4true: 
+  ring5true: 
+  ring6true: 
 --- !u!212 &212722181480882770
 SpriteRenderer:
   m_ObjectHideFlags: 1

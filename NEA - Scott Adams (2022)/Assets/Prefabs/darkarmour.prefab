@@ -182,6 +182,12 @@ MonoBehaviour:
   ringcanvas: {fileID: 0}
   weak: {fileID: 0}
   sound: 0
+  ring1true: 
+  ring2true: 
+  ring3true: 
+  ring4true: 
+  ring5true: 
+  ring6true: 
 --- !u!212 &212397431926312376
 SpriteRenderer:
   m_ObjectHideFlags: 1

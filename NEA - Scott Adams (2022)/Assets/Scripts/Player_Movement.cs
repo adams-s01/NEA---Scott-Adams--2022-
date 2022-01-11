@@ -157,6 +157,7 @@ public class Player_Movement : MonoBehaviour {
 		{
 			Destroy (vase);
 			Instantiate (bow, new Vector2 (vase.transform.position.x, vase.transform.position.y), Quaternion.identity);
+			Debug.Log ("223");
 		}
 		//Potion vase
 		if(Input.GetKeyDown(KeyCode.Mouse0)&&col.gameObject.tag=="vase2")

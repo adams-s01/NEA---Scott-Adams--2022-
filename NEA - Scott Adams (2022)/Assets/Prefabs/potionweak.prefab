@@ -28,7 +28,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4442308411649038
 Transform:
   m_ObjectHideFlags: 1
@@ -106,19 +106,19 @@ MonoBehaviour:
   ring5: {fileID: 21300000, guid: 8bcb07d9c2c4c484caf61c33f48e3dd8, type: 3}
   ring6: {fileID: 21300000, guid: f66c057114b8725409847a8a8e83a75b, type: 3}
   shield: {fileID: 21300000, guid: 0c6de69acca756c409be4810a8510ac5, type: 3}
-  warhammer: {fileID: 0}
-  mountainsword: {fileID: 0}
-  greyarmour: {fileID: 0}
-  boots2: {fileID: 0}
-  wand: {fileID: 0}
-  greygloves: {fileID: 0}
-  greyboots: {fileID: 0}
-  bow3: {fileID: 0}
-  axe: {fileID: 0}
-  darkgloves: {fileID: 0}
-  darkarmour: {fileID: 0}
-  darkboots: {fileID: 0}
-  cheese: {fileID: 0}
+  warhammer: {fileID: 21300000, guid: 9f1252bb6b24d25438ebfc585441b5b2, type: 3}
+  mountainsword: {fileID: 21300000, guid: fa697c9f9ee44564fa6d5414bd536b3e, type: 3}
+  greyarmour: {fileID: 21300000, guid: 683e7d9d6853b8a4b9dbe41a0be44b5c, type: 3}
+  boots2: {fileID: 21300000, guid: a83c32cdf9c1bf14dbfb441debb08e25, type: 3}
+  wand: {fileID: 21300000, guid: 136c9f47fc323df4ba024baf251f04b6, type: 3}
+  greygloves: {fileID: 21300000, guid: 058bff32ace94c34cae0a8f6914f87a5, type: 3}
+  greyboots: {fileID: 21300000, guid: 16c1bab30244e46438e1968dda34bd70, type: 3}
+  bow3: {fileID: 21300000, guid: 53e5b1aea071ba648b23bb563877f54d, type: 3}
+  axe: {fileID: 21300000, guid: 4eaffc20e3e780a4aaab6483f5d6190d, type: 3}
+  darkgloves: {fileID: 21300000, guid: 6b5d537fb6d2b8b4abee9de72ec7c504, type: 3}
+  darkarmour: {fileID: 21300000, guid: fdf9505acc4050143af4484d372ca54a, type: 3}
+  darkboots: {fileID: 21300000, guid: 59404f171a3d5694fa1650a8c37fc39f, type: 3}
+  cheese: {fileID: 21300000, guid: b523df5621b5d9743b2ba49e01570b6f, type: 3}
   key: {fileID: 21300000, guid: 1eef36d1305e37b46a9377c8d12cdac6, type: 3}
   potiondoubledamage: {fileID: 21300000, guid: 74f3ff7910cd94f41af53cfb1413fa03, type: 3}
   potionweak: {fileID: 21300000, guid: 39ff590519daa884fb25d400b68a52b8, type: 3}
@@ -172,7 +172,7 @@ MonoBehaviour:
   hidedarkboots: {fileID: 0}
   hidecheese: {fileID: 0}
   hidepotiondouble: {fileID: 0}
-  hidepotionweak: {fileID: 1972222728416954}
+  hidepotionweak: {fileID: 0}
   playerhealth: 0
   playerhealth2: 0
   playerhealth3: 0
