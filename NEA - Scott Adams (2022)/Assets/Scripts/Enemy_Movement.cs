@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 1
-* Last Edited: Sprint 9
+* Last Edited: Sprint 13
 * Purpose: Causes the enemy to move
 */
 using System.Collections;
@@ -40,6 +40,7 @@ public class Enemy_Movement : MonoBehaviour {
 	public GameObject other5;
 	Double_Damage other6;
 	float timer;
+	public GameObject blindinstantiated;
 
 	// Initialises variables
 	void Start () {
@@ -214,7 +215,7 @@ public class Enemy_Movement : MonoBehaviour {
 				if (gameObject.tag == "pumpkin") {
 					Instantiate (coin2, new Vector2 (enemyx, enemyy), Quaternion.identity);
 					Instantiate (ring2, new Vector2 (enemyx, enemyy), Quaternion.identity);
-					Instantiate (blind, new Vector2 (enemyx, enemyy), Quaternion.identity);
+					blindinstantiated = Instantiate (blind, new Vector2 (enemyx, enemyy), Quaternion.identity);
 				}
 			}
 			//Sets the damage to the player for slime2
@@ -318,7 +319,7 @@ public class Enemy_Movement : MonoBehaviour {
 		}
 	}
 	//Starts collision with the enemy, from the arrow
-	public void OnCollisionEnter2D(Collision2D col)
+	public void OnTriggerEnter2D(Collider2D col)
 	{
 		//Damages enemy same way as player but when collides with arrow
 		if (col.gameObject.name == "Arrow(Clone)") {

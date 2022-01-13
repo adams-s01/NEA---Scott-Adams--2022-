@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 10
-* Last Edited: Sprint 10
+* Last Edited: Sprint 13
 * Purpose: Causes blind area to be destroyed
 */
 using System.Collections;

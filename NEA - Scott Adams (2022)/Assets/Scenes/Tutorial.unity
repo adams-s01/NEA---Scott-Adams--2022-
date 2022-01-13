@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5992,7 +5992,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -10281,6 +10281,7 @@ MonoBehaviour:
   blind: {fileID: 0}
   sleep1: 0
   other5: {fileID: 0}
+  blindinstantiated: {fileID: 0}
 --- !u!50 &814440438
 Rigidbody2D:
   serializedVersion: 4
@@ -56703,6 +56704,7 @@ MonoBehaviour:
   blind: {fileID: 0}
   sleep1: 0
   other5: {fileID: 0}
+  blindinstantiated: {fileID: 0}
 --- !u!212 &1010158825
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -57451,6 +57453,7 @@ MonoBehaviour:
   blind: {fileID: 0}
   sleep1: 0
   other5: {fileID: 0}
+  blindinstantiated: {fileID: 0}
 --- !u!50 &1069801599
 Rigidbody2D:
   serializedVersion: 4
@@ -62584,6 +62587,7 @@ MonoBehaviour:
   blind: {fileID: 0}
   sleep1: 0
   other5: {fileID: 0}
+  blindinstantiated: {fileID: 0}
 --- !u!50 &1370460748
 Rigidbody2D:
   serializedVersion: 4
@@ -64863,7 +64867,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

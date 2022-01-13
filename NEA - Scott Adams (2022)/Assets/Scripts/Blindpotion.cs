@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 7
-* Last Edited: Sprint 7
+* Last Edited: Sprint 13
 * Purpose: Causes player to be blinded for a certain amount of time
 */
 using System.Collections;
@@ -12,19 +12,22 @@ public class Blindpotion : MonoBehaviour {
 	public GameObject blindcanvas;
 	bool sleep;
 	public GameObject other;
-	Blind_Coroutine other2;
+	Enemy_Movement other2;
+	Blind_Coroutine other3;
 
 	// Use this for initialization
 	void Start () {
 		//blindcanvas = GameObject.FindGameObjectWithTag ("blindcanvas");
 		blindcanvas.SetActive (false);
-		other = GameObject.;
-		other2 = other.GetComponent<Blind_Coroutine> ();
+		other2 = other.GetComponent<Enemy_Movement> ();
+
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (other2.makeblind == true) {
+		other3 = other2.blindinstantiated.GetComponent<Blind_Coroutine> ();
+		if (other3.makeblind == true) {
 			blindcanvas.SetActive (true);
 			StartCoroutine (blindcoroutine ());
 		}
