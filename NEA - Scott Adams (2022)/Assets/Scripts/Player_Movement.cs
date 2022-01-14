@@ -18,12 +18,14 @@ public class Player_Movement : MonoBehaviour {
 	GameObject vase;
 	GameObject vase2;
 	GameObject vase3;
+	GameObject vase4;
 	GameObject keyvase;
 	public GameObject doubledamage;
 	public Image speedbar;
 	public GameObject bow;
 	public GameObject potion;
 	public GameObject weakpotion;
+	public GameObject ring6;
 	public GameObject key;
 	bool resting;
 	public float speed;
@@ -174,6 +176,14 @@ public class Player_Movement : MonoBehaviour {
 			vase3 = GameObject.Find (vasename);
 			Destroy (vase3);
 			Instantiate (weakpotion, new Vector2 (vase3.transform.position.x, vase3.transform.position.y), Quaternion.identity);
+		}
+		//Potion vase
+		if(Input.GetKeyDown(KeyCode.Mouse0)&&col.gameObject.tag=="vase4")
+		{
+			string vasename = col.gameObject.name;
+			vase4 = GameObject.Find (vasename);
+			Destroy (vase4);
+			Instantiate (ring6, new Vector2 (vase4.transform.position.x, vase4.transform.position.y), Quaternion.identity);
 		}
 		//Key vase
 		if(Input.GetKeyDown(KeyCode.Mouse0)&&col.gameObject.tag=="keyvase")

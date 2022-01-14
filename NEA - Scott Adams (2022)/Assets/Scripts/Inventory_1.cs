@@ -1549,11 +1549,11 @@ public class Inventory_1 : MonoBehaviour {
 				ring6image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 				playerhealth2 = true;
 			}
-			Debug.Log(PlayerPrefs.GetString("inventory1"));
-			Debug.Log(PlayerPrefs.GetString("inventory2"));
-			Debug.Log(PlayerPrefs.GetString("inventory3"));
-			Debug.Log(PlayerPrefs.GetString("inventory4"));
-			Debug.Log(PlayerPrefs.GetString("inventory5"));
+			//Debug.Log(PlayerPrefs.GetString("inventory1"));
+			//Debug.Log(PlayerPrefs.GetString("inventory2"));
+			//Debug.Log(PlayerPrefs.GetString("inventory3"));
+			//Debug.Log(PlayerPrefs.GetString("inventory4"));
+			//Debug.Log(PlayerPrefs.GetString("inventory5"));
 		}
 
 	}
@@ -1712,9 +1712,9 @@ public class Inventory_1 : MonoBehaviour {
 	//Activates when slot one clicked
 	public void Inventory1()
 	{
-		Debug.Log ("1");
+		//Debug.Log ("1");
 		weaponname = image.sprite.name;
-		Debug.Log (weaponname);
+		//Debug.Log (weaponname);
 		if (weaponname == "potion") {
 			inventory [inventory1].GetComponent<Image> ().sprite = null;
 		}
@@ -1867,9 +1867,9 @@ public class Inventory_1 : MonoBehaviour {
 	//Acitvates when slot two clicked
 	public void Inventory2()
 	{
-		Debug.Log ("2");
+		//Debug.Log ("2");
 		weaponname = image2.sprite.name;
-		Debug.Log (weaponname);
+		//Debug.Log (weaponname);
 		if (weaponname == "potion") {
 			inventory [inventory2].GetComponent<Image> ().sprite = null;
 		}
@@ -2023,9 +2023,9 @@ public class Inventory_1 : MonoBehaviour {
 	//Activates when slot three clicked
 	public void Inventory3()
 	{
-		Debug.Log ("3");
+		//Debug.Log ("3");
 		weaponname = image3.sprite.name;
-		Debug.Log (weaponname);
+		//Debug.Log (weaponname);
 		if (weaponname == "potion") {
 			inventory [inventory3].GetComponent<Image> ().sprite = null;
 		}
@@ -2178,9 +2178,9 @@ public class Inventory_1 : MonoBehaviour {
 	//Activates when slot four clicked
 	public void Inventory4()
 	{
-		Debug.Log ("4");
+		//Debug.Log ("4");
 		weaponname = image4.sprite.name;
-		Debug.Log (weaponname);
+		//Debug.Log (weaponname);
 		if (weaponname == "potion") {
 			inventory [inventory4].GetComponent<Image> ().sprite = null;
 		}
@@ -2333,9 +2333,9 @@ public class Inventory_1 : MonoBehaviour {
 	//Activated when slot five clicked
 	public void Inventory5()
 	{
-		Debug.Log ("5");
+		//Debug.Log ("5");
 		weaponname = image5.sprite.name;
-		Debug.Log (weaponname);
+		//Debug.Log (weaponname);
 		if (weaponname == "potion") {
 			inventory [inventory5].GetComponent<Image> ().sprite = null;
 		}

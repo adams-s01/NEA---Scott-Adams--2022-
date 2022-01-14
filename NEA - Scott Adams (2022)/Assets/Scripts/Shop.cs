@@ -207,7 +207,7 @@ public class Shop : MonoBehaviour {
 	// Sets text for amount of gold
 	void Update () {
 		gold += other2.gold;
-		Debug.Log (gold);
+		//Debug.Log (gold);
 		goldtext.text = "Gold: " + gold.ToString ();
 		if (SceneManager.GetActiveScene ().buildIndex != 1) {
 			goldtext2.text = "Gold: " + gold.ToString ();

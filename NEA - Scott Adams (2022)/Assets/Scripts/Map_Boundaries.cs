@@ -164,6 +164,7 @@ public class Map_Boundaries : MonoBehaviour {
 	//Determines whether passed through barrier, sets that part of map active
 	public void OnTriggerEnter2D(Collider2D col)
 	{
+		//For level 1
 		if (col.gameObject.name == "Startzoneboundary") {
 			startzone.SetActive (true);
 		}
@@ -218,6 +219,7 @@ public class Map_Boundaries : MonoBehaviour {
 		if (col.gameObject.name == "Escaperoomboundary") {
 			escaperoom.SetActive (true);
 		}
+		//For level 2
 		if (col.gameObject.name == "Startzone2boundary") {
 			startzone2.SetActive (true);
 		}
@@ -281,6 +283,7 @@ public class Map_Boundaries : MonoBehaviour {
 		if (col.gameObject.name == "Escaperoom2boundary") {
 			escaperoom2.SetActive (true);
 		}
+		//For level 3
 		if (col.gameObject.name == "Startzone3boundary") {
 			startzone3.SetActive (true);
 		}

@@ -27,11 +27,13 @@ public class Blindpotion : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		other3 = other2.blindinstantiated.GetComponent<Blind_Coroutine> ();
+		//Makes blind canvas visible
 		if (other3.makeblind == true) {
 			blindcanvas.SetActive (true);
 			StartCoroutine (blindcoroutine ());
 		}
 	}
+	//Coroutine to remove blind canvas
 	IEnumerator blindcoroutine()
 	{
 		sleep = true;

@@ -42,6 +42,7 @@ public class Escape_Door : MonoBehaviour {
 		if(col.gameObject.tag=="Player"&&other2.keytrue==true)
 		{
 			Debug.Log ("End");
+			//Carries players items through to next level
 			if (other2.image.sprite != null) {
 				PlayerPrefs.SetString ("inventory1", other2.image.sprite.name);
 			}
@@ -97,15 +98,19 @@ public class Escape_Door : MonoBehaviour {
 			PlayerPrefs.SetString ("ring5", other2.ring5true);
 			PlayerPrefs.SetString ("ring6", other2.ring6true);
 			PlayerPrefs.SetInt ("gold", other4.gold);
+			//Goes from tutorial to start
 			if (SceneManager.GetActiveScene ().buildIndex == 1) {
 				SceneManager.LoadScene (0);
 			}
+			//Goes from level 1 to level 2
 			if (SceneManager.GetActiveScene ().buildIndex == 2) {
 				SceneManager.LoadScene (3);
 			}
+			//Goes from level 2 to level 3
 			if (SceneManager.GetActiveScene ().buildIndex == 3) {
 				SceneManager.LoadScene (4);
 			}
+			//Goes from level 3 to start
 			if (SceneManager.GetActiveScene ().buildIndex == 4) {
 				endstatscanvas.SetActive (true);
 				Time.timeScale = 0;

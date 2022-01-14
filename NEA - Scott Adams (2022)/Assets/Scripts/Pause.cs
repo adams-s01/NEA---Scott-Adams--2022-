@@ -43,6 +43,7 @@ public class Pause : MonoBehaviour {
 		timer.text = "Time: " + Time.fixedTime.ToString ("0.00");
 		lives.text = "Lives: " + other2.lives;
 		gold.text = "Gold: " + other4.gold;
+		//Makes pause canvas visible if escape button clicked
 		if (Input.GetKey (KeyCode.Escape)) {
 			pausescreen.SetActive (true);
 			inventorycanvas.SetActive (false);
