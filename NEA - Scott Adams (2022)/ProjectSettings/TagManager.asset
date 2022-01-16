@@ -84,6 +84,8 @@ TagManager:
   - scoreboard
   - Name
   - vase4
+  - character
+  - teleport
   layers:
   - Default
   - TransparentFX

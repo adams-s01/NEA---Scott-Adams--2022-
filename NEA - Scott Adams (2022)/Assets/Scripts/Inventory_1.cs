@@ -1697,8 +1697,7 @@ public class Inventory_1 : MonoBehaviour {
 					if (gameObject.name == "potionweak(Clone)") {
 						inventory [i + 0].GetComponent<Image> ().sprite = potionweak;
 					}
-
-					Debug.Log ("552");
+						
 					GameObject bow1 = GameObject.FindGameObjectWithTag ("bow");
 					Destroy (bow1);
 					//full [i] = true;

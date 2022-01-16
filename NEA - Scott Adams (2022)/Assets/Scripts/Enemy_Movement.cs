@@ -206,7 +206,6 @@ public class Enemy_Movement : MonoBehaviour {
 					//Gives ring 5 when in level 2
 					if (SceneManager.GetActiveScene ().buildIndex == 3 && enemy.name == "Slime3") {
 						Instantiate (ring5, new Vector2 (enemyx, enemyy), Quaternion.identity);
-						Debug.Log ("22344");
 					}
 				}
 				//Gives coin2 when bat types destroyed
