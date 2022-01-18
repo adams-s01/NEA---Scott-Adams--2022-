@@ -137,6 +137,7 @@ public class Inventory_1 : MonoBehaviour {
 	public string ring5true;
 	public string ring6true;
 	bool truth;
+	GameObject bow1;
 
 
 	// Use this for initialization
@@ -1587,6 +1588,8 @@ public class Inventory_1 : MonoBehaviour {
 						inventory [i + 0].GetComponent<Image> ().sprite = bow;
 						Debug.Log ("332");
 						truth = false;
+						bow1 = GameObject.FindGameObjectWithTag ("bow");
+						Destroy (bow1);
 					}
 					if (gameObject.name == "sword(Clone)") {
 						inventory [i + 0].GetComponent<Image> ().sprite = sword;
@@ -1698,7 +1701,7 @@ public class Inventory_1 : MonoBehaviour {
 						inventory [i + 0].GetComponent<Image> ().sprite = potionweak;
 					}
 						
-					GameObject bow1 = GameObject.FindGameObjectWithTag ("bow");
+					bow1 = GameObject.FindGameObjectWithTag ("bow");
 					Destroy (bow1);
 					//full [i] = true;
 					//break;

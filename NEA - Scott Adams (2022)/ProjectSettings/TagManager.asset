@@ -86,6 +86,7 @@ TagManager:
   - vase4
   - character
   - teleport
+  - coin
   layers:
   - Default
   - TransparentFX

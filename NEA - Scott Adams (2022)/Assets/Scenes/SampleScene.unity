@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1494,9 +1494,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1377499153
+  m_SortingLayer: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300008, guid: ae3918a914038694d852d0bb81f62473, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1515,8 +1515,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 828382147}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.77, y: -6.41, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 17.134, y: -6.01, z: 0}
+  m_LocalScale: {x: 1.685, y: 1.685, z: 1.685}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
@@ -1594,9 +1594,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingLayerID: 1377499153
+  m_SortingLayer: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: d843bdc711e689e49b636a4b8a824c67, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1735,6 +1735,52 @@ MonoBehaviour:
   menu: {fileID: 1844706923}
   other3: {fileID: 0}
   other5: {fileID: 0}
+--- !u!1001 &1053557874
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -5.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1136828400172996, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_Name
+      value: Coins_Tiny_Gold (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1123617950
 GameObject:
   m_ObjectHideFlags: 0
@@ -1858,9 +1904,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1377499153
+  m_SortingLayer: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 681cdb2853ae7144c815013a86c8da7c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1885,6 +1931,48 @@ Transform:
   m_Father: {fileID: 1524967688}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1240147044
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1243647353
 GameObject:
   m_ObjectHideFlags: 0
@@ -1954,6 +2042,52 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1243647353}
   m_CullTransparentMesh: 0
+--- !u!1001 &1288184018
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 10.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1136828400172996, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_Name
+      value: Coins_Tiny_Gold (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1361119358
 GameObject:
   m_ObjectHideFlags: 0
@@ -7055,6 +7189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c92404b6bd34824ebc692f4545b97be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coin: {fileID: 1136828400172996, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
 --- !u!61 &1524967691
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7551,9 +7686,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1377499153
+  m_SortingLayer: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 72186849934bfde4484d95f21e9e9145, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7701,6 +7836,52 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1744063207}
   m_CullTransparentMesh: 0
+--- !u!1001 &1764871055
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385495484745666, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1136828400172996, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+      propertyPath: m_Name
+      value: Coins_Tiny_Gold (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9379b028f2a50ac4bbe8fa1a042a0a25, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1799452577
 GameObject:
   m_ObjectHideFlags: 0
@@ -7749,9 +7930,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1377499153
+  m_SortingLayer: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 72186849934bfde4484d95f21e9e9145, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
