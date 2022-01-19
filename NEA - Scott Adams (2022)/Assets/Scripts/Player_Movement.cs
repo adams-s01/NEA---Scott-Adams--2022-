@@ -25,6 +25,7 @@ public class Player_Movement : MonoBehaviour {
 	public GameObject bow;
 	public GameObject potion;
 	public GameObject weakpotion;
+	public GameObject doubledamagepotion;
 	public GameObject ring6;
 	public GameObject key;
 	bool resting;
@@ -44,6 +45,7 @@ public class Player_Movement : MonoBehaviour {
 	public int gold;
 	public TextMeshProUGUI healthtext;
 	float armourstat;
+	public int random;
 
 
 	// Use this for initialization
@@ -175,7 +177,13 @@ public class Player_Movement : MonoBehaviour {
 			string vasename = col.gameObject.name;
 			vase3 = GameObject.Find (vasename);
 			Destroy (vase3);
-			Instantiate (weakpotion, new Vector2 (vase3.transform.position.x, vase3.transform.position.y), Quaternion.identity);
+			random = Random.Range (0, 2);
+			if (random == 0) {
+				Instantiate (weakpotion, new Vector2 (vase3.transform.position.x, vase3.transform.position.y), Quaternion.identity);
+			}
+			if (random == 1) {
+				Instantiate (doubledamagepotion, new Vector2 (vase3.transform.position.x, vase3.transform.position.y), Quaternion.identity);
+			}
 		}
 		//Potion vase
 		if(Input.GetKeyDown(KeyCode.Mouse0)&&col.gameObject.tag=="vase4")

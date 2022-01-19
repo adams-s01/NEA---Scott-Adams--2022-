@@ -43,6 +43,7 @@ public class Enemy_Movement : MonoBehaviour {
 	float timer;
 	public GameObject blindinstantiated;
 	public GameObject ring5;
+	bool speed;
 
 	// Initialises variables
 	void Start () {
@@ -101,6 +102,9 @@ public class Enemy_Movement : MonoBehaviour {
 					rb.velocity = Vector2.left;
 				}
 			}
+		}
+		if (gameObject.tag == "eye" && speed == false) {
+			rb.velocity = Vector2.right;
 		}
 
 
@@ -240,6 +244,11 @@ public class Enemy_Movement : MonoBehaviour {
 				playerdamage = playerdamage * enemydamagedifficulty;
 				col.gameObject.SendMessage ("Damage", playerdamage);
 			}
+			//Sets the damage to the player for eye
+			if (gameObject.tag == "eye") {
+				playerdamage = playerdamage * enemydamagedifficulty;
+				col.gameObject.SendMessage ("Damage", playerdamage);
+			}
 		}
 
 	}
@@ -319,7 +328,7 @@ public class Enemy_Movement : MonoBehaviour {
 		//When enemy stops colliding with player
 		if (col.gameObject.tag == "Player") {
 			
-			if (gameObject.tag == "slime2"||gameObject.tag=="bat"||gameObject.tag=="skeleton") {
+			if (gameObject.tag == "slime2"||gameObject.tag=="bat"||gameObject.tag=="skeleton"||gameObject.tag=="pumpkin"||gameObject.tag=="eye") {
 				playerdamage = 0;
 				col.gameObject.SendMessage ("Damage", playerdamage);
 			}
@@ -352,6 +361,18 @@ public class Enemy_Movement : MonoBehaviour {
 			enemyx = enemy.transform.position.x;
 			enemyy = enemy.transform.position.y + 2;
 			Instantiate (hitpoints[5], new Vector2 (enemyx, enemyy), Quaternion.identity);
+		}
+		//Stops the eye from moving past the point
+		if (col.gameObject.tag == "wall") {
+			rb.velocity = Vector2.zero;
+			speed = true;
+		}
+	}
+	//Allows eye to move when no longer in contact with the wall
+	public void OnTriggerExit2D(Collider2D col)
+	{
+		if (col.gameObject.tag == "wall") {
+			speed = false;
 		}
 	}
 	//Waits for 5 seconds to remove the blind area

@@ -87,6 +87,7 @@ TagManager:
   - character
   - teleport
   - coin
+  - eye
   layers:
   - Default
   - TransparentFX

@@ -3030,7 +3030,8 @@ public class Inventory_1 : MonoBehaviour {
 	//Waits for 10 seconds for double damage potion
 	IEnumerator coroutine()
 	{
-		hidesword.SetActive (false);
+		sound++;
+		/*hidesword.SetActive (false);
 		hidebow1.SetActive (false);
 		hidecrosshair.SetActive (false);
 		hidepotion.SetActive (false);
@@ -3047,13 +3048,14 @@ public class Inventory_1 : MonoBehaviour {
 		hidemage.SetActive (false);
 		hidering.SetActive (false);
 		hideshield.SetActive (false);
-		hidepotiondouble.SetActive (true);
+		hidepotiondouble.SetActive (true);*/
 		yield return new WaitForSecondsRealtime (10);
 		doubledamage = 1;
 	}
 	//Destroys weakness area of effect after 5 seconds
 	IEnumerator weakcoroutine()
 	{
+		sound++;
 		weakwall = Instantiate (weak, new Vector2 (playerx, playery), Quaternion.identity);
 		yield return new WaitForSecondsRealtime (5);
 		Destroy (weakwall);

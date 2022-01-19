@@ -1,14 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player_Movement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Enemy_Movement.cs">
     <Files>
       <File FileName="Assets\Scripts\Menu_Buttons.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Settings_Menu.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Tutorials.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Player_Movement.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Player_Movement.cs" Line="180" Column="31" />
       <File FileName="Assets\ActRPGsprites\readme.txt" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Enemy_Movement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Inventory_1.cs" Line="1589" Column="1" />
+      <File FileName="Assets\Scripts\Enemy_Movement.cs" Line="250" Column="57" />
+      <File FileName="Assets\Scripts\Inventory_1.cs" Line="3051" Column="39" />
       <File FileName="Assets\Scripts\Shop.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Crosshair.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Enemy_Spawner.cs" Line="1" Column="1" />
@@ -29,7 +29,7 @@
       <File FileName="Assets\Scripts\End_Stats.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Score_Table.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Name.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Character_Movement.cs" Line="33" Column="49" />
+      <File FileName="Assets\Scripts\Character_Movement.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
