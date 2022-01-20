@@ -17,6 +17,10 @@ public class Sound_Manager : MonoBehaviour {
 	public GameObject other;
 	Inventory_1 other2;
 	int sound1;
+	bool sleep2;
+	IEnumerator coroutine;
+	public GameObject mutebutton;
+	public GameObject unmutebutton;
 
 	// Use this for initialization
 	void Awake () {
@@ -26,14 +30,22 @@ public class Sound_Manager : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (sleep == false) {
-			StartCoroutine (backgroundcoroutine ());
+		if (sleep == false && sleep2 == false) {
+			coroutine = backgroundcoroutine ();
+			StartCoroutine (coroutine);
 		}
 		if (other2.sound == sound1) {
 			if (sound1 != 0) {
 				source.PlayOneShot (potion, 1);
 			}
 			sound1++;
+		}
+		if (sleep2 == true) {
+			source.Pause ();
+		}
+		if (sleep2 == false) {
+			source.Play ();
+			Debug.Log ("789");
 		}
 	}
 	//Adds coin sound when collide with a coin
@@ -50,5 +62,15 @@ public class Sound_Manager : MonoBehaviour {
 		source.PlayOneShot (background, 0.5f);
 		yield return new WaitForSecondsRealtime (60);
 		sleep = false;
+	}
+	public void Mute()
+	{
+		sleep2 = true;
+		unmutebutton.SetActive (true);
+
+	}
+	public void Unmute()
+	{
+		sleep2 = false;
 	}
 }

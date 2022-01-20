@@ -23,6 +23,7 @@ public class Pause : MonoBehaviour {
 	Player_Movement other2;
 	public GameObject other3;
 	Shop other4;
+	public GameObject unmutebutton;
 
 	// Use this for initialization
 	void Start () {
@@ -34,6 +35,7 @@ public class Pause : MonoBehaviour {
 		pausescreen.SetActive (false);
 		tutorialscreen.SetActive (false);
 		mapscreen.SetActive (false);
+		unmutebutton.SetActive (false);
 		other2 = other.GetComponent<Player_Movement> ();
 		other4 = other3.GetComponent<Shop> ();
 	}
