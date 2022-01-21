@@ -862,26 +862,32 @@ public class Inventory_1 : MonoBehaviour {
 			if (PlayerPrefs.GetString ("ring1") == "true") {
 				ring1image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 				armourringstat += 10;
+				ring1true = "true";
 			}
 			if (PlayerPrefs.GetString ("ring2") == "true") {
 				ring2image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 				playerspeedtrue = true;
+				ring2true = "true";
 			}
 			if (PlayerPrefs.GetString ("ring3") == "true") {
 				ring3image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 				playerhealth = true;
+				ring3true = "true";
 			}
 			if (PlayerPrefs.GetString ("ring4") == "true") {
 				ring4image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 				armourringstat += 40;
+				ring4true = "true";
 			}
 			if (PlayerPrefs.GetString ("ring5") == "true") {
 				ring5image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 				playerspeedtrue2 = true;
+				ring5true = "true";
 			}
 			if (PlayerPrefs.GetString ("ring6") == "true") {
 				ring6image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 				playerhealth2 = true;
+				ring6true = "true";
 			}
 			Debug.Log(PlayerPrefs.GetString("inventory1"));
 			Debug.Log(PlayerPrefs.GetString("inventory2"));
@@ -1529,26 +1535,32 @@ public class Inventory_1 : MonoBehaviour {
 			if (PlayerPrefs.GetString ("ring1") == "true") {
 				ring1image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 				armourringstat += 10;
+				ring1true = "true";
 			}
 			if (PlayerPrefs.GetString ("ring2") == "true") {
 				ring2image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 				playerspeedtrue = true;
+				ring2true = "true";
 			}
 			if (PlayerPrefs.GetString ("ring3") == "true") {
 				ring3image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 				playerhealth = true;
+				ring3true = "true";
 			}
 			if (PlayerPrefs.GetString ("ring4") == "true") {
 				ring4image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 				armourringstat += 40;
+				ring4true = "true";
 			}
 			if (PlayerPrefs.GetString ("ring5") == "true") {
 				ring5image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 				playerspeedtrue2 = true;
+				ring5true = "true";
 			}
 			if (PlayerPrefs.GetString ("ring6") == "true") {
 				ring6image.GetComponent<Image> ().color = new Color32 (130, 98, 56, 255);
 				playerhealth2 = true;
+				ring6true = "true";
 			}
 			//Debug.Log(PlayerPrefs.GetString("inventory1"));
 			//Debug.Log(PlayerPrefs.GetString("inventory2"));

@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 8
-* Last Edited: Sprint 8
+* Last Edited: Sprint 14
 * Purpose: Adds sound to the game
 */
 using System.Collections;
@@ -22,8 +22,11 @@ public class Sound_Manager : MonoBehaviour {
 	public GameObject mutebutton;
 	public GameObject unmutebutton;
 
+	private AudioListener al;
+
 	// Use this for initialization
 	void Awake () {
+		al = GetComponent<AudioListener> ();
 		source = GetComponent<AudioSource> ();
 		other2 = other.GetComponent<Inventory_1> ();
 	}
@@ -42,9 +45,13 @@ public class Sound_Manager : MonoBehaviour {
 		}
 		if (sleep2 == true) {
 			source.Pause ();
+
+
+
+
 		}
 		if (sleep2 == false) {
-			source.Play ();
+			source.UnPause ();
 			Debug.Log ("789");
 		}
 	}
