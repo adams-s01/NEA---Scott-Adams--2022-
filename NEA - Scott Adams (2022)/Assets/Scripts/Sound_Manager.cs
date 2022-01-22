@@ -22,11 +22,8 @@ public class Sound_Manager : MonoBehaviour {
 	public GameObject mutebutton;
 	public GameObject unmutebutton;
 
-	private AudioListener al;
-
 	// Use this for initialization
 	void Awake () {
-		al = GetComponent<AudioListener> ();
 		source = GetComponent<AudioSource> ();
 		other2 = other.GetComponent<Inventory_1> ();
 	}
@@ -45,9 +42,6 @@ public class Sound_Manager : MonoBehaviour {
 		}
 		if (sleep2 == true) {
 			source.Pause ();
-
-
-
 
 		}
 		if (sleep2 == false) {
@@ -74,10 +68,12 @@ public class Sound_Manager : MonoBehaviour {
 	{
 		sleep2 = true;
 		unmutebutton.SetActive (true);
-
+		mutebutton.SetActive (false);
 	}
 	public void Unmute()
 	{
 		sleep2 = false;
+		mutebutton.SetActive (true);
+		unmutebutton.SetActive (false);
 	}
 }
