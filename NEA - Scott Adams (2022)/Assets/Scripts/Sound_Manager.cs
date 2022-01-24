@@ -21,6 +21,9 @@ public class Sound_Manager : MonoBehaviour {
 	IEnumerator coroutine;
 	public GameObject mutebutton;
 	public GameObject unmutebutton;
+	public GameObject mutesoundbutton;
+	public GameObject unmutesoundbutton;
+	bool sound2;
 
 	// Use this for initialization
 	void Awake () {
@@ -36,7 +39,9 @@ public class Sound_Manager : MonoBehaviour {
 		}
 		if (other2.sound == sound1) {
 			if (sound1 != 0) {
-				source.PlayOneShot (potion, 1);
+				if (sound2 == false) {
+					source.PlayOneShot (potion, 1);
+				}
 			}
 			sound1++;
 		}
@@ -53,7 +58,9 @@ public class Sound_Manager : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D col)
 	{
 		if (col.gameObject.name == "coin(Clone)" || col.gameObject.name == "coin2(Clone)" || col.gameObject.name == "coin3(Clone)") {
-			source.PlayOneShot (coin, 1);
+			if (sound2 == false) {
+				source.PlayOneShot (coin, 1);
+			}
 		}
 	}
 	//Loops background music everytime it ends
@@ -75,5 +82,17 @@ public class Sound_Manager : MonoBehaviour {
 		sleep2 = false;
 		mutebutton.SetActive (true);
 		unmutebutton.SetActive (false);
+	}
+	public void MuteSound()
+	{
+		sound2 = true;
+		unmutesoundbutton.SetActive (true);
+		mutesoundbutton.SetActive (false);
+	}
+	public void UnmuteSound()
+	{
+		sound2 = false;
+		mutesoundbutton.SetActive (true);
+		unmutesoundbutton.SetActive (false);
 	}
 }

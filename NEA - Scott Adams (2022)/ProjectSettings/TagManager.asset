@@ -88,6 +88,7 @@ TagManager:
   - teleport
   - coin
   - eye
+  - soundcanvas
   layers:
   - Default
   - TransparentFX

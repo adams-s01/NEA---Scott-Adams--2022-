@@ -16,6 +16,7 @@ public class Pause : MonoBehaviour {
 	public GameObject shopcanvas;
 	public GameObject tutorialscreen;
 	public GameObject mapscreen;
+	public GameObject soundcanvas;
 	public TextMeshProUGUI timer;
 	public TextMeshProUGUI lives;
 	public TextMeshProUGUI gold;
@@ -24,6 +25,7 @@ public class Pause : MonoBehaviour {
 	public GameObject other3;
 	Shop other4;
 	public GameObject unmutebutton;
+	public GameObject unmutesoundbutton;
 
 	// Use this for initialization
 	void Start () {
@@ -35,7 +37,9 @@ public class Pause : MonoBehaviour {
 		pausescreen.SetActive (false);
 		tutorialscreen.SetActive (false);
 		mapscreen.SetActive (false);
+		soundcanvas.SetActive (false);
 		unmutebutton.SetActive (false);
+		unmutesoundbutton.SetActive (false);
 		other2 = other.GetComponent<Player_Movement> ();
 		other4 = other3.GetComponent<Shop> ();
 	}
@@ -81,6 +85,18 @@ public class Pause : MonoBehaviour {
 		pausescreen.SetActive (false);
 		tutorialscreen.SetActive (false);
 		mapscreen.SetActive (true);
+	}
+	//Activates when sound button clicked
+	public void Sound()
+	{
+		pausescreen.SetActive (false);
+		soundcanvas.SetActive (true);
+	}
+	//Activates when exit on sound canvas clicked
+	public void ExitSound()
+	{
+		pausescreen.SetActive (true);
+		soundcanvas.SetActive (false);
 	}
 	//Activates when exit button clicked
 	public void Exit()
