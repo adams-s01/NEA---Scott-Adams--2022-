@@ -3617,6 +3617,8 @@ MonoBehaviour:
   bow: {fileID: 1090393844292218, guid: 409d4de753753f846b79c31e599f8dda, type: 2}
   potion: {fileID: 1104004081482022, guid: 06e684ad2f7a87344932e072de9119ed, type: 2}
   weakpotion: {fileID: 0}
+  doubledamagepotion: {fileID: 0}
+  ring6: {fileID: 0}
   key: {fileID: 1812200584171212, guid: 1a21e0af2113580418ad8d07f9268158, type: 2}
   speed: 0
   playerhealth: 10
@@ -3624,6 +3626,7 @@ MonoBehaviour:
   lives: 0
   gold: 0
   healthtext: {fileID: 0}
+  random: 0
 --- !u!4 &272588712
 Transform:
   m_ObjectHideFlags: 0
@@ -10282,6 +10285,7 @@ MonoBehaviour:
   sleep1: 0
   other5: {fileID: 0}
   blindinstantiated: {fileID: 0}
+  ring5: {fileID: 0}
 --- !u!50 &814440438
 Rigidbody2D:
   serializedVersion: 4
@@ -55404,10 +55408,10 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 600, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -56705,6 +56709,7 @@ MonoBehaviour:
   sleep1: 0
   other5: {fileID: 0}
   blindinstantiated: {fileID: 0}
+  ring5: {fileID: 0}
 --- !u!212 &1010158825
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -57454,6 +57459,7 @@ MonoBehaviour:
   sleep1: 0
   other5: {fileID: 0}
   blindinstantiated: {fileID: 0}
+  ring5: {fileID: 0}
 --- !u!50 &1069801599
 Rigidbody2D:
   serializedVersion: 4
@@ -61540,7 +61546,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e91459e871ab7534fa408b77cbefdce8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 1123168389253626, guid: e84d11bb250c6b8409892b353c66fa2f, type: 2}
+  enemy1: {fileID: 1123168389253626, guid: e84d11bb250c6b8409892b353c66fa2f, type: 2}
+  enemy2: {fileID: 1722012749756184, guid: ab6ccf329886ef34d8f601b85cee80a4, type: 2}
+  enemy3: {fileID: 1229401374164064, guid: 0f58e995960e6f549a3b2c56d0a0f545, type: 2}
   enemyspawned:
   - {fileID: 0}
   - {fileID: 0}
@@ -62588,6 +62596,7 @@ MonoBehaviour:
   sleep1: 0
   other5: {fileID: 0}
   blindinstantiated: {fileID: 0}
+  ring5: {fileID: 0}
 --- !u!50 &1370460748
 Rigidbody2D:
   serializedVersion: 4
@@ -67089,10 +67098,10 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 600, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3

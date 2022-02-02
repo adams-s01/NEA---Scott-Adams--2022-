@@ -1246,6 +1246,7 @@ public class Inventory_1 : MonoBehaviour {
 			if (PlayerPrefs.GetString ("inventory3") == null) {
 				weaponholder = null;
 			}
+			Debug.Log (weaponholder);
 			inventory [inventory3].GetComponent<Image> ().sprite = weaponholder;
 			if (PlayerPrefs.GetString ("inventory4") == "Bow1") {
 				weaponholder = bow;
@@ -2502,27 +2503,52 @@ public class Inventory_1 : MonoBehaviour {
 	//Activates when X for slot 1 pressed
 	public void Remove1()
 	{
-		inventory[inventory1].GetComponent<Image>().sprite=null;
+		if (SceneManager.GetActiveScene ().buildIndex == 4) {
+			inventory [inventory3].GetComponent<Image> ().sprite = null;
+		}
+		if (SceneManager.GetActiveScene ().buildIndex == 2 || SceneManager.GetActiveScene ().buildIndex == 3) {
+			inventory [inventory1].GetComponent<Image> ().sprite = null;
+		}
 	}
 	//Activates when X for slot 2 pressed
 	public void Remove2()
 	{
-		inventory[inventory2].GetComponent<Image>().sprite=null;
+		if (SceneManager.GetActiveScene ().buildIndex == 4) {
+			inventory [inventory5].GetComponent<Image> ().sprite = null;
+		}
+		if (SceneManager.GetActiveScene ().buildIndex == 2 || SceneManager.GetActiveScene ().buildIndex == 3) {
+			inventory [inventory2].GetComponent<Image> ().sprite = null;
+		}
 	}
 	//Activates when X for slot 3 pressed
 	public void Remove3()
 	{
-		inventory[inventory3].GetComponent<Image>().sprite=null;
+		if (SceneManager.GetActiveScene ().buildIndex == 4) {
+			inventory [inventory2].GetComponent<Image> ().sprite = null;
+		}
+		if (SceneManager.GetActiveScene ().buildIndex == 2 || SceneManager.GetActiveScene ().buildIndex == 3) {
+			inventory [inventory3].GetComponent<Image> ().sprite = null;
+		}
 	}
 	//Activates when X for slot 4 pressed
 	public void Remove4()
 	{
-		inventory[inventory4].GetComponent<Image>().sprite=null;
+		if (SceneManager.GetActiveScene ().buildIndex == 4) {
+			inventory [inventory1].GetComponent<Image> ().sprite = null;
+		}
+		if (SceneManager.GetActiveScene ().buildIndex == 2 || SceneManager.GetActiveScene ().buildIndex == 3) {
+			inventory [inventory4].GetComponent<Image> ().sprite = null;
+		}
 	}
 	//Activates when X for slot 5 pressed
 	public void Remove5()
 	{
-		inventory[inventory5].GetComponent<Image>().sprite=null;
+		if (SceneManager.GetActiveScene ().buildIndex == 4) {
+			inventory [inventory4].GetComponent<Image> ().sprite = null;
+		}
+		if (SceneManager.GetActiveScene ().buildIndex == 2 || SceneManager.GetActiveScene ().buildIndex == 3) {
+			inventory [inventory5].GetComponent<Image> ().sprite = null;
+		}
 	}
 	//Activates canvas showing armour
 	public void InventoryArmour()

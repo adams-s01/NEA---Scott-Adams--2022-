@@ -99,7 +99,7 @@ public class Enemy_Spawner : MonoBehaviour {
 			
 		//}
 		//Checks if old enemy is destroyed
-		/*if (enemyspawned [0] == null) {
+		if (enemyspawned [0] == null) {
 			spawnerfull [0] = false;
 			//spawnerfull [1] = true;
 			//spawnerfull [2] = true;
@@ -117,7 +117,7 @@ public class Enemy_Spawner : MonoBehaviour {
 			//spawnerfull [1] = true;
 			spawnerfull [2] = false;
 			Debug.Log ("I2:False");
-		}*/
+		}
 		//Removes excess enemies
 		if (enemyspawned.Count >= 4) {
 			for (int i = 3; i < enemyspawned.Count; i++) {
@@ -219,25 +219,29 @@ public class Enemy_Spawner : MonoBehaviour {
 		
 
 		//Spawns at location in level 3
-		if (gameObject.name == "Spawnerdoor") {
-			Debug.Log ("0" + enemyspawned [0]);
-			Debug.Log ("1" + enemyspawned [1]);
-			Debug.Log ("2" + enemyspawned [2]);
-			if (/*spawnerfull [1] == false*/enemyspawned [1] == null) {
-				enemyspawned.Insert (1, (Instantiate (enemy2, new Vector2 (19.2f, -5.07f), Quaternion.identity)));
-				spawnerfull [1] = true;
-				Debug.Log ("I1:True");
-			}
-			if (/*spawnerfull [0] == false*/enemyspawned [0] == null) {
-				enemyspawned.Insert (0, (Instantiate (enemy1, new Vector2 (19.2f, -5.07f), Quaternion.identity)));
-				spawnerfull [0] = true;
-				Debug.Log ("I0:True");
-			}
-			if (/*spawnerfull [2] == false*/enemyspawned [2] == null) {
-				enemyspawned.Insert (2, (Instantiate (enemy3, new Vector2 (19.2f, -5.07f), Quaternion.identity)));
-				spawnerfull [2] = true;
-				Debug.Log ("I2:True");
-			}
+		//if (gameObject.name == "Spawnerdoor") {
+		Debug.Log ("0" + enemyspawned [0]);
+		Debug.Log ("1" + enemyspawned [1]);
+		Debug.Log ("2" + enemyspawned [2]);
+		if (spawnerfull [1] == false/*enemyspawned [1] == null*/) {
+			enemyspawned.Insert (1, (Instantiate (enemy2, new Vector2 (19.2f, -5.07f), Quaternion.identity)));
+
+			spawnerfull [1] = true;
+			spawnerfull [2] = true;
+			Debug.Log ("I1:True");
 		}
+		if (spawnerfull [0] == false/*enemyspawned [0] == null*/) {
+			enemyspawned.Insert (0, (Instantiate (enemy1, new Vector2 (19.2f, -5.07f), Quaternion.identity)));
+			spawnerfull [0] = true;
+			spawnerfull [1] = true;
+			spawnerfull [2] = true;
+			Debug.Log ("I0:True");
+		}
+		if (spawnerfull [2] == false/*enemyspawned [2] == null*/) {
+			enemyspawned.Insert (2, (Instantiate (enemy3, new Vector2 (19.2f, -5.07f), Quaternion.identity)));
+			spawnerfull [2] = true;
+			Debug.Log ("I2:True");
+		}
+		//}
 	}
 }
