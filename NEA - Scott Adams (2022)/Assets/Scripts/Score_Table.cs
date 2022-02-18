@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 12
-* Last Edited: Sprint 12
+* Last Edited: Sprint 14
 * Purpose: Read and writes to CSV file
 */
 using System.Collections;
@@ -34,6 +34,7 @@ public class Score_Table : MonoBehaviour {
 	Name other4;
 	public GameObject other5;
 	End_Stats other6;
+	float time;
 
 	// Use this for initialization
 	void Start () {
@@ -41,6 +42,7 @@ public class Score_Table : MonoBehaviour {
 			other2 = other.GetComponent<Escape_Door> ();
 			other4 = other3.GetComponent<Name> ();
 			other6 = other5.GetComponent<End_Stats> ();
+			time = PlayerPrefs.GetFloat ("time");
 		}
 		filepath = getpath ();
 		if (SceneManager.GetActiveScene ().buildIndex == 0) {
@@ -56,7 +58,7 @@ public class Score_Table : MonoBehaviour {
 				//Writes name and time to the CSV file
 				once = true;
 				StreamWriter writer = new StreamWriter (filepath, true);
-				writer.WriteLine (Time.fixedTime.ToString ("00.00") + "," + other4.name);
+				writer.WriteLine ((Time.fixedTime - time).ToString ("00.00") + "," + other4.name);
 				writer.Close ();
 				Debug.Log ("2345");
 			}

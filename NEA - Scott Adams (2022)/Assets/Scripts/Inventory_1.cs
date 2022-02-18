@@ -343,6 +343,7 @@ public class Inventory_1 : MonoBehaviour {
 			if (PlayerPrefs.GetString ("inventory1") == null) {
 				weaponholder = null;
 			}
+			Debug.Log (weaponholder);
 			inventory [inventory1].GetComponent<Image> ().sprite = weaponholder;
 			if (PlayerPrefs.GetString ("inventory2") == "Bow1") {
 				weaponholder = bow;
@@ -457,7 +458,9 @@ public class Inventory_1 : MonoBehaviour {
 			}
 			if (PlayerPrefs.GetString ("inventory2") == null) {
 				weaponholder = null;
+				Debug.Log ("1234564");
 			}
+			Debug.Log (weaponholder);
 			inventory [inventory2].GetComponent<Image> ().sprite = weaponholder;
 			if (PlayerPrefs.GetString ("inventory3") == "Bow1") {
 				weaponholder = bow;

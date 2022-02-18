@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 11
-* Last Edited: Sprint 12
+* Last Edited: Sprint 14
 * Purpose: Shows player's end stats
 */
 using System.Collections;
@@ -21,6 +21,7 @@ public class End_Stats : MonoBehaviour {
 	Shop other4;
 	public GameObject namecanvas;
 	public bool sendscore;
+	float time;
 
 	// Use this for initialization
 	void Start () {
@@ -28,11 +29,12 @@ public class End_Stats : MonoBehaviour {
 		namecanvas.SetActive (false);
 		other2 = other.GetComponent<Player_Movement> ();
 		other4 = other3.GetComponent<Shop> ();
+		time = PlayerPrefs.GetFloat ("time");
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		endtimer.text = "End time: " + Time.fixedTime.ToString ("0.00");
+		endtimer.text = "End time: " + (Time.fixedTime - time).ToString ("0.00");
 		endlives.text = "End lives: " + other2.lives;
 		endgold.text = "End gold: " + other4.gold;
 	}

@@ -1,6 +1,6 @@
 ﻿/*
 * Created: Sprint 6
-* Last Edited: Sprint 8
+* Last Edited: Sprint 14
 * Purpose: Creates a pause menu
 */
 using System.Collections;
@@ -26,6 +26,7 @@ public class Pause : MonoBehaviour {
 	Shop other4;
 	public GameObject unmutebutton;
 	public GameObject unmutesoundbutton;
+	float time;
 
 	// Use this for initialization
 	void Start () {
@@ -42,11 +43,12 @@ public class Pause : MonoBehaviour {
 		unmutesoundbutton.SetActive (false);
 		other2 = other.GetComponent<Player_Movement> ();
 		other4 = other3.GetComponent<Shop> ();
+		time = PlayerPrefs.GetFloat ("time");
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		timer.text = "Time: " + Time.fixedTime.ToString ("0.00");
+		timer.text = "Time: " + (Time.fixedTime - time).ToString ("0.00");
 		lives.text = "Lives: " + other2.lives;
 		gold.text = "Gold: " + other4.gold;
 		//Makes pause canvas visible if escape button clicked

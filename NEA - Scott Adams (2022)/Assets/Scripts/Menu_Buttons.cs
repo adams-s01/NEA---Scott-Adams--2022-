@@ -1,6 +1,6 @@
 ﻿/*
 	 * Created: Sprint 1
-	 * Last Edited: Sprint 12
+	 * Last Edited: Sprint 14
 	 * Purpose: Start menu buttons
 	 */
 using System.Collections;
@@ -31,6 +31,7 @@ public class Menu_Buttons : MonoBehaviour {
 	public void Startbutton()
 	{
 		Debug.Log ("Start");
+		PlayerPrefs.SetFloat ("time", Time.fixedTime);
 		SceneManager.LoadScene (2);
 	}
 	//Activates when tutorial button clicked

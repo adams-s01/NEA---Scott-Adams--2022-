@@ -203,6 +203,7 @@ public class Player_Movement : MonoBehaviour {
 		//Coin1
 		if (col.gameObject.name == "coin(Clone)") {
 			gold = 2;
+			Debug.Log ("234567");
 			Destroy (col.gameObject);
 		}
 		//Coin2
