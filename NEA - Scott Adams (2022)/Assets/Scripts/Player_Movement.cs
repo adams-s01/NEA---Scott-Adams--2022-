@@ -46,6 +46,7 @@ public class Player_Movement : MonoBehaviour {
 	public TextMeshProUGUI healthtext;
 	float armourstat;
 	public int random;
+	GameObject doubledamagearea;
 
 
 	// Use this for initialization
@@ -198,7 +199,7 @@ public class Player_Movement : MonoBehaviour {
 		{
 			Destroy (keyvase);
 			Instantiate (key, new Vector2 (keyvase.transform.position.x, keyvase.transform.position.y), Quaternion.identity);
-			Instantiate (doubledamage, new Vector2 (keyvase.transform.position.x, keyvase.transform.position.y), Quaternion.identity);
+			StartCoroutine (doubledamagecoroutine ());
 		}
 		//Coin1
 		if (col.gameObject.name == "coin(Clone)") {
@@ -238,5 +239,11 @@ public class Player_Movement : MonoBehaviour {
 			StartCoroutine (damagecoroutine (playerdamage));
 		}
 	}
-
+	//Removes double damage area after 5 seconds
+	IEnumerator doubledamagecoroutine()
+	{
+		doubledamagearea = Instantiate (doubledamage, new Vector2 (keyvase.transform.position.x, keyvase.transform.position.y), Quaternion.identity);
+		yield return new WaitForSecondsRealtime (5);
+		Destroy (doubledamagearea);
+	}
 }
