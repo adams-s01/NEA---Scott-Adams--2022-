@@ -35,7 +35,7 @@ public class Arrow_Movement : MonoBehaviour {
 	//Destroys arrow when it collides with anything not the player
 	void OnTriggerEnter2D(Collider2D col)
 	{
-		if (col.gameObject.tag != "Player" && col.gameObject.tag != "arrow") {
+		if (col.gameObject.tag != "Player" && col.gameObject.tag != "arrow" && col.gameObject.tag != "bow") {
 			Debug.Log ("destroy");
 			Destroy (gameObject);
 		}
