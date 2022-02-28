@@ -68,19 +68,19 @@ public class Escape_Door : MonoBehaviour {
 				PlayerPrefs.SetString ("bootsimage", other2.bootsimage.sprite.name);
 			}
 			if (other2.image.sprite == null) {
-				PlayerPrefs.SetString ("inventory1", null);
+				PlayerPrefs.SetString ("inventory1", "null");
 			}
 			if (other2.image2.sprite == null) {
-				PlayerPrefs.SetString ("inventory2", null);
+				PlayerPrefs.SetString ("inventory2", "null");
 			}
 			if (other2.image3.sprite == null) {
-				PlayerPrefs.SetString ("inventory3", null);
+				PlayerPrefs.SetString ("inventory3", "null");
 			}
 			if (other2.image4.sprite == null) {
-				PlayerPrefs.SetString ("inventory4", null);
+				PlayerPrefs.SetString ("inventory4", "null");
 			}
 			if (other2.image5.sprite == null) {
-				PlayerPrefs.SetString ("inventory5", null);
+				PlayerPrefs.SetString ("inventory5", "null");
 			}
 			if (other2.armourimage.sprite == null) {
 				PlayerPrefs.SetString ("armourimage", null);

@@ -456,7 +456,7 @@ public class Inventory_1 : MonoBehaviour {
 			if (PlayerPrefs.GetString ("inventory2") == "potionweak") {
 				weaponholder = potionweak;
 			}
-			if (PlayerPrefs.GetString("inventory2") == null) {
+			if (PlayerPrefs.GetString("inventory2") == "null") {
 				weaponholder = null;
 				Debug.Log ("1234564");
 			}
@@ -573,7 +573,7 @@ public class Inventory_1 : MonoBehaviour {
 			if (PlayerPrefs.GetString ("inventory3") == "potionweak") {
 				weaponholder = potionweak;
 			}
-			if (PlayerPrefs.GetString ("inventory3") == null) {
+			if (PlayerPrefs.GetString ("inventory3") == "null") {
 				weaponholder = null;
 			}
 			inventory [inventory3].GetComponent<Image> ().sprite = weaponholder;
@@ -688,7 +688,7 @@ public class Inventory_1 : MonoBehaviour {
 			if (PlayerPrefs.GetString ("inventory4") == "potionweak") {
 				weaponholder = potionweak;
 			}
-			if (PlayerPrefs.GetString ("inventory4") == null) {
+			if (PlayerPrefs.GetString ("inventory4") == "null") {
 				weaponholder = null;
 			}
 			inventory [inventory4].GetComponent<Image> ().sprite = weaponholder;
@@ -803,7 +803,7 @@ public class Inventory_1 : MonoBehaviour {
 			if (PlayerPrefs.GetString ("inventory5") == "potionweak") {
 				weaponholder = potionweak;
 			}
-			if (PlayerPrefs.GetString ("inventory5") == null) {
+			if (PlayerPrefs.GetString ("inventory5") == "null") {
 				weaponholder = null;
 			}
 			inventory [inventory5].GetComponent<Image> ().sprite = weaponholder;
